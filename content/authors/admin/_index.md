@@ -56,6 +56,9 @@ social:
 - icon: facebook
   icon_pack: fab
   link: 'https://www.facebook.com/riccardo.cantini.7'
+- icon: telegram
+  icon_pack: fab
+  link: "https://t.me/Ric_cant"
 - icon: cv
   icon_pack: ai
   link: files/cv.pdf
