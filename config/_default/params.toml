@@ -75,10 +75,10 @@ privacy_pack = false
 
 # Enable visitors to edit pages?
 #   `repo` defines the repository URL. `editable` defines which page types can be edited.
-edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = true, page = false, post = false}}
+edit_page = {repo_url = "https://github.com/gcushen/hugo-academic", content_dir = "", repo_branch = "master", editable = {docs = false, page = false, post = false}}
 
 # Show related content at the bottom of pages?
-show_related = {docs = false, page = false, post = false, project = false, publication = false, talk = false}
+show_related = {docs = true, page = true, post = true, project = true, publication = true, talk = true}
 
 ############################
 ## Contact details
@@ -97,7 +97,7 @@ address = {street = "Cubo 41C, via P. Bucci", city = "Rende (CS)", region = "Cal
 
 # Geographic coordinates
 # To get your coordinates, right-click on Google Maps and choose "What's here?". The coords will show up at the bottom.
-coordinates = {latitude = "39.36582", longitude = "16.22533"}
+coordinates = {latitude = "39.36560", longitude = "16.22539"}
 
 # Directions for visitors to locate you.
 directions = ""
