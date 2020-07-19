@@ -24,10 +24,11 @@ His research interests include social media and big data analysis, deep learning
 He is a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing e Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
 
 interests:
-- Social media and big data analysis
+- Social media analysis
 - Deep learning
 - Natural language processing
-- Parallel and distributed data mining
+- Big data analysis
+- Distributed data mining
 
 education:
   courses:
