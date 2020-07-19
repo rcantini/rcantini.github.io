@@ -43,9 +43,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:riccardo.cantini@unical.it'  # For a direct email link, use "mailto:test@example.org".
-- icon: research-gate
-  icon_pack: ai
-  link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
 - icon: github
   icon_pack: fab
   link: 'https://github.com/rcantini'
