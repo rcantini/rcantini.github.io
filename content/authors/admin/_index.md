@@ -39,7 +39,25 @@ education:
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
-
+social:
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:riccardo.cantini@unical.it'  # For a direct email link, use "mailto:test@example.org".
+- icon: research-gate
+  icon_pack: ai
+  link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
+- icon: github
+  icon_pack: fab
+  link: 'https://github.com/rcantini'
+- icon: instagram
+  icon_pack: fab
+  link: 'https://www.instagram.com/riccardo_cantini'
+- icon: facebook
+  icon_pack: fab
+  link: 'https://www.facebook.com/riccardo.cantini.7'
+- icon: cv
+  icon_pack: ai
+  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
