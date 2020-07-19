@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Nelson Bighetti
+title: Riccardo Cantini
 
 # Username (this should match the folder name)
 authors:
@@ -10,32 +10,30 @@ authors:
 superuser: true
 
 # Role/position
-role: Professor of Artificial Intelligence
+role: PhD student in Information and Communication Technologies
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: DIMES, University of Calabria
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His research interests include social media and big data analysis, deep learning, natural language processing, sentiment analysis, edge/fog computing, distributed knowledge discovery and data mining. He is also a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing e Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis. 
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Social media and big data analysis
+- Deep learning
+- Natural language processing
+- Parallel and distributed data mining
 
 education:
   courses:
-  - course: PhD in Artificial Intelligence
-    institution: Stanford University
-    year: 2012
-  - course: MEng in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2009
-  - course: BSc in Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    year: 2008
+  - course: M.Sc. in Computer Engineering
+    institution: University of Calabria,
+    year: 2019
+  - course: B.Sc. in Computer Engineering
+    institution: University of Calabria
+    year: 2016
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -44,21 +42,25 @@ education:
 social:
 - icon: envelope
   icon_pack: fas
-  link: '#contact'  # For a direct email link, use "mailto:test@example.org".
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/GeorgeCushen
-- icon: google-scholar
+  link: 'mailto:riccardo.cantini@unical.it'  # For a direct email link, use "mailto:test@example.org".
+- icon: research-gate
   icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+  link: https://www.researchgate.net/profile/Riccardo_Cantini
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/rcantini
+- icon: instagram
+  icon_pack: fab
+  link: nstagram.com/riccardo_cantini
+- icon: facebook
+  icon_pack: fab
+  link: https://www.facebook.com/riccardo.cantini.7
+
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: files/cv.pdf
+ - icon: cv
+   icon_pack: ai
+   link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
@@ -70,6 +72,6 @@ user_groups:
 - Visitors
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His research interests include social media and big data analysis, deep learning, natural language processing, sentiment analysis, edge/fog computing, distributed knowledge discovery and data mining.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+He is also a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing e Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
