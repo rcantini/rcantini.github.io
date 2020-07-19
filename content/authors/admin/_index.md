@@ -45,16 +45,16 @@ social:
   link: 'mailto:riccardo.cantini@unical.it'  # For a direct email link, use "mailto:test@example.org".
 - icon: research-gate
   icon_pack: ai
-  link: https://www.researchgate.net/profile/Riccardo_Cantini
+  link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
 - icon: github
   icon_pack: fab
-  link: https://github.com/rcantini
+  link: 'https://github.com/rcantini'
 - icon: instagram
   icon_pack: fab
-  link: https://www.instagram.com/riccardo_cantini
+  link: 'https://www.instagram.com/riccardo_cantini'
 - icon: facebook
   icon_pack: fab
-  link: https://www.facebook.com/riccardo.cantini.7
+  link: 'https://www.facebook.com/riccardo.cantini.7'
 
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
