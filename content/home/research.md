@@ -55,7 +55,6 @@ preview_only = false
 +++
 
 My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, in order to extract useful knowledge in different application contexts. Particular attention is paid to:
-
 <ul>
   <li>Trajectory Mining, aimed at analyzing user behavior and their movements from geo-annotated data.</li>
   <li>Deep Learning and Natural Language Processing, in order to develop Sentiment Analysis and Opinion Mining techniques aimed at analyzing the mood of social users and their opinion regarding a specific topic of interest.</li>
