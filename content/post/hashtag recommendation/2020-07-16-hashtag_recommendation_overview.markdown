@@ -6,8 +6,10 @@ math: true
 disable_comments: true
 markup: mmark
 lastmod: 2020-07-16T18:10:09+02:00
-image:
-  placement: 3
+featured_image:
+  src: featured.png
+  alt: my alt text
+  title: my title text
   
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---

@@ -7,8 +7,9 @@ disable_comments: true
 markup: mmark
 lastmod: 2020-06-04T18:10:09+02:00
 featured_image:
-  placement: 2
-  src: iom.png
+  src: /path/to/image.jpg
+  alt: my alt text
+  title: my title text
   
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
