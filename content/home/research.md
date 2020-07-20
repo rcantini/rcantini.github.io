@@ -60,5 +60,5 @@ Particular attention is paid to:
   <li>Trajectory Mining, aimed at analyzing users’ behavior and their movements from geo-annotated data.</li>
   <li>Deep Learning and Natural Language Processing, for developing Sentiment Analysis and Opinion Mining techniques aimed at analyzing the mood of social users and their opinion regarding a specific topic/event of interest.</li>
   <li>Hashtag Recommendation, for developing model capable of predicting hashtags for posts that do not have any, in order to enrich the information content of social data involved in different mining processes.</li>
-  <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
+  <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source allowing context-awareness, latency reduction and bandwidth saving.</li>
 </ul>
