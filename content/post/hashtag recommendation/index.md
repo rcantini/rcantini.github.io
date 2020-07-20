@@ -1,6 +1,7 @@
 ---
 title: "An overview of current research on hashtag recommendation"
-subtitle: 'How to suggest a consistent set of hashtags for a given microblog post'
+subtitle: 'How to suggest a consistent set of hashtags for a microblog post'
+summary: 'With the fast growing of microblog services, several NLP techniques have been developed for learning the representation of microblog posts and recommending pertinent hashtags. In what follows I'll introduce some of the most effective state-of-art approaches in this field.'
 date: 2020-07-16T18:10:09+02:00
 draft: false
 math: true
@@ -15,8 +16,6 @@ tags:
 - Sentence Embedding
 - Word Embedding
 - Social Media
-  
-tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
