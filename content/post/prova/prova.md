@@ -11,7 +11,7 @@ categories:
 date: "2016-04-20T00:00:00Z"
 lastmod: "2019-04-17T00:00:00Z"
 featured: false
-draft: true
+draft: false
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
@@ -63,7 +63,7 @@ projects: []
 - **Industry-Leading SEO** - Help get your website found on search engines and social media
 - **Media Galleries** - Display your images and videos with captions in a customizable gallery
 - **Mobile Friendly** - Look amazing on every screen with a mobile friendly version of your site
-- **Multi-language** - 15+ language packs including English, ??, and Português
+- **Multi-language** - 15+ language packs including English, ??, and PortuguÃªs
 - **Multi-user** - Each author gets their own profile page
 - **Privacy Pack** - Assists with GDPR
 - **Stand Out** - Bring your site to life with animation, parallax backgrounds, and scroll effects
