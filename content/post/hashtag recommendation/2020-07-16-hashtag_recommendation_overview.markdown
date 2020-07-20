@@ -1,9 +1,15 @@
 ---
-layout: post
-title: An overview of current research on hashtag recommendation
-date: 2020-07-16-18
-description: my overview
-image: hashtag.jpg
+title: "An overview of current research on hashtag recommendation"
+date: 2020-07-16T18:10:09+02:00
+draft: false
+math: true
+disable_comments: true
+markup: mmark
+image:
+  placement: 3
+
+
+tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
