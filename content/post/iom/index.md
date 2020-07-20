@@ -42,7 +42,7 @@ Nel caso degli Usa, il sistema Unical ha correttamente previsto i risultati fina
 
 La ricerca è stata pubblicata su IEEE Access. Insieme al professor Domenico Talia ne sono autori anche i ricercatori del DIMES (Dipartimento di Ingegneria Informatica, Modellistica, Elettronica e Sistemistica) Loris Belcastro, **Riccardo Cantini**, Fabrizio Marozzo e Paolo Trunfio. 
 
-<img src="../assets/img/iom_res.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
+<img src="iom_res.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
 <hr>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?100297&fbclid=IwAR1WC13GLzbYeVz3B4Cem93M6xjtfM-10VTEYm3tvYeiAYZieEQbKkd2qQ0" target="_blank">Portale UNICAL - Notizie</a></span></p>
