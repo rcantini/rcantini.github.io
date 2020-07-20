@@ -1,11 +1,17 @@
 ---
 title: Chi vincerà le elezioni? Twitter (e l'intelligenza artificiale) aiutano a prevederlo
 subtitle: '**IOM-NN** (Iterative Opinion Mining using Neural Networks)'
+disable_comments: true
+markup: kramdown
 authors:
 - admin
 tags:
-- Political polarization
-categories:
+- Social Media Analysis
+- Opinion Mining
+- User Polarization
+- Neural Networks
+- Sentiment Analysis
+- Political Events
 date: "2016-04-20T00:00:00Z"
 lastmod: "2019-04-17T00:00:00Z"
 featured: false
@@ -14,6 +20,8 @@ draft: false
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<img src="unical.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
 
 Il gruppo di ricerca del professor Talia ha messo a punto un sistema basato su reti neurali che analizza gli hashtag e interpreta l’orientamento di voto degli elettori. Metodologia testata con successo per le presidenziali Usa 2016 e le Politiche italiane.
 

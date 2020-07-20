@@ -1,15 +1,20 @@
 ---
 title: "An overview of current research on hashtag recommendation"
+subtitle: 'How to suggest a consistent set of hashtags for a given microblog post'
 date: 2020-07-16T18:10:09+02:00
 draft: false
 math: true
 disable_comments: true
 markup: kramdown
 lastmod: 2020-07-16T18:10:09+02:00
-featured_image:
-  src: featured.png
-  alt: my alt text
-  title: my title text
+authors:
+- admin
+tags:
+- Deep Neural Networks
+- Hashtag Recommendation
+- Sentence Embedding
+- Word Embedding
+- Social Media
   
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
