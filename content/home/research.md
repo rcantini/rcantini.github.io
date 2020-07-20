@@ -54,10 +54,11 @@ preview_only = false
 
 +++
 
-My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, in order to extract useful knowledge in different application contexts. Particular attention is paid to:
+My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for extracting valuable information in different application contexts.
+Particular attention is paid to:
 <ul>
-  <li>Trajectory Mining, aimed at analyzing user behavior and their movements from geo-annotated data.</li>
-  <li>Deep Learning and Natural Language Processing, in order to develop Sentiment Analysis and Opinion Mining techniques aimed at analyzing the mood of social users and their opinion regarding a specific topic of interest.</li>
-  <li>Hashtag Recommendation, in order to develop systems based on Natural Language Processing able to suggest hashtags that enrich the information content of a set of posts involved in different mining processes.</li>
-   <li>Techniques for the integration between the classic centralized architectures relating to Cloud Computing and the innovative Edge / Fog Computing solutions, which allow to manage data close to the source that originates them allowing a low latency response.
+  <li>Trajectory Mining, aimed at analyzing users’ behavior and their movements from geo-annotated data.</li>
+  <li>Deep Learning and Natural Language Processing, for developing Sentiment Analysis and Opinion Mining techniques aimed at analyzing the mood of social users and their opinion regarding a specific topic/event of interest.</li>
+  <li>Hashtag Recommendation, for developing model capable of predicting hashtags for posts that do not have any, in order to enrich the information content of social data involved in different mining processes.</li>
+  <li>Techniques for the integration between the classic centralized architectures relating to Cloud Computing and the innovative IoT and Edge/Fog Computing solutions, which allow to manage data close to the source that originates them, allowing low latency responses and a more efficient communication.</li>
 </ul>
