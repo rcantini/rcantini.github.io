@@ -6,16 +6,9 @@ math: true
 disable_comments: true
 markup: mmark
 lastmod: 2020-07-16T18:10:09+02:00
-title: Writing technical content in Academic
-date: 2019-07-12
-draft: true
-math: true
-diagram: true
-markup: mmark
 image:
   placement: 3
-  caption: 'Image credit: [**John Moeses Bauan**](https://unsplash.com/photos/OGZtQF8iC0g)'
-
+  
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
 

@@ -1,9 +1,16 @@
 ---
 layout: post
 title: Chi vincerà le elezioni? Twitter (e l'intelligenza artificiale) aiutano a prevederlo
-date: 2020-06-04-20
-description: articolo repubblica
-img: IOM-NN-ga.svg
+date: 2020-06-04T18:10:09+02:00
+draft: false
+math: true
+disable_comments: true
+markup: mmark
+lastmod: 2020-06-04T18:10:09+02:00
+image:
+  placement: 3
+  
+tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
