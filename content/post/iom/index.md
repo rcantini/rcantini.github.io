@@ -21,8 +21,6 @@ draft: false
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-<img src="unical.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
-
 Il gruppo di ricerca del professor Talia ha messo a punto un sistema basato su reti neurali che analizza gli hashtag e interpreta l’orientamento di voto degli elettori. Metodologia testata con successo per le presidenziali Usa 2016 e le Politiche italiane.
 
 Si parte da un gruppo ristretto e ben selezionato di hashtag e se ne ricava, con l’aiuto dell’intelligenza artificiale, una previsione molto accurata delle intenzioni di voto degli elettori.
