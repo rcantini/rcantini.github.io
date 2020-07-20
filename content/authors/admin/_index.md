@@ -60,9 +60,6 @@ social:
 - icon: telegram
   icon_pack: fab
   link: "https://t.me/Ric_cant"
-- icon: cv
-  icon_pack: ai
-  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
