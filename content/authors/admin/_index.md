@@ -42,15 +42,15 @@ education:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "#contact" for contact widget.
 social:
-- icon: envelope
-  icon_pack: fas
-  link: 'mailto:riccardo.cantini@unical.it'  # For a direct email link, use "mailto:test@example.org".
 - icon: researchgate
   icon_pack: ai
   link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
 - icon: github
   icon_pack: fab
   link: 'https://github.com/rcantini'
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:riccardo.cantini@unical.it'
 - icon: instagram
   icon_pack: fab
   link: 'https://www.instagram.com/riccardo_cantini'
