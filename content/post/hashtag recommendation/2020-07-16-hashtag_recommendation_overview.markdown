@@ -5,9 +5,19 @@ draft: false
 math: true
 disable_comments: true
 markup: mmark
-image:
-  placement: 3
+lastmod: 2020-07-16T18:10:09+02:00
+featured: false
+draft: true
 
+# Featured image
+# To use, add an image named `featured.jpg/png` to your page's folder.
+# Placement options: 1 = Full column width, 2 = Out-set, 3 = Screen-width
+# Focal point options: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+image:
+  placement: 2
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/CpkOjOcXdUY)'
+  focal_point: ""
+  preview_only: false
 
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
