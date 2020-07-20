@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Chi vincerà le elezioni? Twitter (e l'intelligenza artificiale) aiutano a prevederlo
 date: 2020-06-04T18:10:09+02:00
 draft: false
