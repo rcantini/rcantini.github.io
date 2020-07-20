@@ -255,7 +255,7 @@ collections:
         widget: "list"
       - label: "Featured Image"
         name: "image"
-        required: false
+        required: true
         widget: object
         fields:
           - label: "Upload an image named `featured.jpg/png`"
