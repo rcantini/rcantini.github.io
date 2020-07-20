@@ -7,9 +7,8 @@ disable_comments: true
 markup: mmark
 lastmod: 2020-06-04T18:10:09+02:00
 image:
-  placement: 3
-  name: "featured"
-  widget: "image"
+  placement: 2
+  name: iom.png
   
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---
