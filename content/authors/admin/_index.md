@@ -21,12 +21,12 @@ organizations:
 bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His research interests include social media and big data analysis, deep learning, natural language processing, sentiment analysis, IoT and edge/fog computing, distributed knowledge discovery and data mining.
 
 interests:
-  - Social media analysis
-  - Deep learning
-  - Natural language processing
-  - Big data analysis
-  - Distributed data mining
-  - IoT and edge/fog computing
+  - Social Media Analysis
+  - Deep Learning
+  - Natural Language Processing
+  - Big Data Analysis
+  - Distributed Data Mining
+  - IoT and Edge/Fog Computing
 
 education:
   courses:
