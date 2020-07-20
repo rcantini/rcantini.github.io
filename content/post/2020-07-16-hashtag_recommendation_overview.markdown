@@ -3,7 +3,7 @@ layout: post
 title: An overview of current research on hashtag recommendation
 date: 2020-07-16-18
 description: my overview
-img: hashtag.jpg
+image: hashtag.jpg
 ---
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
