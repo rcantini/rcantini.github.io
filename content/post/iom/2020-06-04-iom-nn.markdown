@@ -6,9 +6,9 @@ math: true
 disable_comments: true
 markup: mmark
 lastmod: 2020-06-04T18:10:09+02:00
-image:
+featured_image:
   placement: 2
-  name: iom.png
+  src: iom.png
   
 tags: ["Variational Autoencoders", "Generative Models", "Semi-Supervised Learning"]	
 ---

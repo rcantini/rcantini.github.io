@@ -110,17 +110,13 @@ collections:
         required: false
         widget: "list"
       - label: "Featured Image"
-        name: "image"
+        name: "featured_image"
         required: false
         widget: object
         fields:
-          - label: "Upload an image named `featured.jpg/png`"
-            name: "filename"
-            widget: "image"
-            default: "featured"
-            media_library:
-              config:
-                multiple: false
+          - {name: src, label: Image, widget: image}
+          - {name: alt, label: Alt text, widget: string}
+          - {name: title, label: Title, widget: string}
           - {label: Caption, name: caption, widget: string, required: false}
           - {label: Description for screen readers, name: alt_text, widget: string, required: false}
           - {label: "Where's the focal point in the image? Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.", name: focal_point, widget: string, required: false, default: "Smart"}
@@ -255,7 +251,7 @@ collections:
         widget: "list"
       - label: "Featured Image"
         name: "image"
-        required: true
+        required: false
         widget: object
         fields:
           - label: "Upload an image named `featured.jpg/png`"
