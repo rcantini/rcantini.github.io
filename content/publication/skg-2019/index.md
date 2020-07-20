@@ -1,5 +1,5 @@
 ---
-title: "Discovering political polarization on social media: a case study"
+title: "Discovering political polarization on social media a case study"
 date: 2020-07-20
 publishDate: 2019-09-10T11:18:44.874439Z
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Paolo Trunfio", "Domenico Talia"]
