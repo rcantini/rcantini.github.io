@@ -142,6 +142,12 @@ time_format = "3:04 PM"
 # Address format (choose from the [address_formats] list below or add you own to the list).
 address_format = "en-us"
 
+# Load CSS and JS plugins
+#   E.g. To load `/assets/css/custom.css`, set `plugins_css = ["custom"]`.
+#   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
+plugins_css = ["custom"]
+plugins_js  = []
+
 ############################
 ## Advanced
 ############################
