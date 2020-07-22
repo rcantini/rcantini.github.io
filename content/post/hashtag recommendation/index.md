@@ -18,9 +18,6 @@ tags:
 - Social Media
 ---
 
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 ## Introduction
 
 Social media platforms have become part of everyday life, allowing the interconnection of a large number of users. Their intensive use leads to the generation of a huge amount of data, which hides a high exploitable intrinsic value.  One of the most widely used data sources comes from microblogging services such as Twitter, Facebook and Instagram. This type of publication generates a large amount of posts which leads to the need for effective data categorization and search. To address this problem, tweets often include one or more hashtags. However, finding out the correct hashtags is not very easy for users, and tweets are often published without hashtags. This issue, which hinders the quality of search results, led to the rise of different techniques for hashtag recommendation, aimed at suggesting a consistent set of keywords for a given microblog post. In the following sections, three of the most effective state-of-art approaches are described, which can be divided into generative, unsupervised and supervised models.
