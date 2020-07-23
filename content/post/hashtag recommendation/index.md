@@ -60,13 +60,13 @@ where \\( n^w_t \\) denotes the topic-word count of topic \\( t \\) and word \\(
 [Li et al.](https://dl.acm.org/doi/10.1145/2932192) proposed joint probabilistic latent factor model for effectively capturing user implicit feedbacks and exploiting the rich microblog information, which integrates user adoption behaviors, user *microtopic* (i.e. hashtags) content and contextual information. 
 Their model, namely **Microtopic Recommendation Model** (MTRM), builds on top of collaborative filtering, content analysis and feature regression, and consists og three main step:
  1. *Modeling user-microtopic adoptions*: given a user vector \\(v_u\\)  and a microtopic vector \\(v_u\\), they computed an affinity score which models user \\(u\\)'s preference to adopt microtopic \\(i\\) as \\(r_{u,i}=v_u^Tv_i+b_u+b_i\\), where  \\(b_u\\) and \\(b_i\\) are user and item's biases to be learned.Then, they adopted an optimization ranking criteroin, specifically the **Bayesian Personalized Ranking** (BPR), whose goal is to rank items according to user adoption. Let \\(\mathcal{P}\\) denote a set of triplets \\(<u, i, j>\\) derived from the training set where microtopic where user \\(u\\) used hashtag\\(i\\) but not \\(j\\). The BPR criterion minimizes the following function:
-> \\[
-> min_\theta \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})
-> \\]
+ > \\[
+ > min_\Theta \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})
+ > \\]
 
- where \\(\theta \\)  denotes the set of model parameters. Therefore, the above function maximes the difference between adopted and avoided microtopics.
-<br> 2. *Modeling user and microtopic content*: blablabla.
-<br> 3. *Modeling user and microtopic attributes*: blablabla.
+ where \\(\Theta \\)  denotes the set of model parameters. Therefore, the above function maximes the difference between adopted and avoided microtopics.
+ 2. *Modeling user and microtopic content*: blablabla.
+ 3. *Modeling user and microtopic attributes*: blablabla.
 
 
 
