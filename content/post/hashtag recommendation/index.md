@@ -65,8 +65,8 @@ Their model, namely **Microtopic Recommendation Model** (MTRM), builds on top of
 > \\]
 
  where \\(\theta \\)  denotes the set of model parameters. Therefore, the above function maximes the difference between adopted and avoided microtopics.
- 2. *Modeling user and microtopic content*:
- 3. *Modeling user and microtopic attributes*:
+ 2. *Modeling user and microtopic content*: blablabla.
+ 3. *Modeling user and microtopic attributes*: blablabla.
 
 
 
