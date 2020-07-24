@@ -15,6 +15,7 @@ tags:
 - Social Media Analysis
 - Density-Based Clustering
 - Sentence Embedding
+- Neural Networks
 - Topical Co-Attention
 - Matrix Factorization
 - Bayesian Personalized Ranking
