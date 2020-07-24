@@ -78,7 +78,7 @@ where \\( v(w_i) \\) is the Word2Vec encoded representation of \\( w_i \\).
 	$$
  4. *Softmax classifier*: the context vector is feed to a linear layer and then to a softmax classifier which outputs the probability distribution of all candidate hashtags. The authors trained the model using backpropagation, the cross-entropy loss function and the Adaptive Moment Estimation algorithm (ADAM), an adaptive optimization algorithm which compute a different learning rate for each parameter of the network.
 
-## Latent factor models: Bayesian Personalized Rankinkg matrix factorization for personalized hashtag recommendation
+## Latent factor models: Bayesian Personalized Ranking matrix factorization for personalized hashtag recommendation
 [Li et al.](https://dl.acm.org/doi/10.1145/2932192) proposed joint probabilistic latent factor model for effectively capturing user implicit feedbacks and exploiting the rich microblog information, which integrates user adoption behaviors, user *microtopics* (i.e. hashtags) content and contextual information. 
 The proposed model, namely **Microtopic Recommendation Model** (MTRM), builds on top of collaborative filtering, content analysis and feature regression, and consists of three main step:
 1. *Modeling user-microtopic adoptions*: given a user vector \\(v_u\\) and a microtopic vector \\(v_i\\), they computed an affinity score which models user \\(u\\)'s preference to adopt microtopic \\(i\\) as: $$r_{u,i}=v_u^Tv_i+b_u+b_i$$
