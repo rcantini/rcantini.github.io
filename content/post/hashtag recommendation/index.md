@@ -102,4 +102,4 @@ Therefore, the overall objective function, which combines the above mentioned te
 \end{aligned}
 </div>
 
-where the first term is the ranking optimization, the second the log likelihood of generating the content and the third an L2-norm regularization on the model parameters, while \\(\mu\\) and \\(\lambda\\) controls the contribution of each term on the overall loss function.
+where the first term is the ranking optimization, the second is the log likelihood of generating the content and the third is a L2-norm regularization on the model parameters, while \\(\mu\\) and \\(\lambda\\) controls the contribution of each term on the overall loss function.
