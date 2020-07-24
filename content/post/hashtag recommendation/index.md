@@ -94,12 +94,12 @@ where \\(G_u\\) is a regression coefficient matrix, \\(a_u\\) is the attribute v
 
 Therefore, the overall objective function, which combines the above mentioned terms, is defined as follows:
 
-$$
+<div class="math">
 \begin{aligned}
-min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})}) \\
-- &\mu(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta)) \\
-+ &\lambda R(\Theta)
+ min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})}) \\
+ - &\mu(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta)) \\
+ + &\lambda R(\Theta)
 \end{aligned}
-$$
+</div>
 
 where the first term is the ranking optimization, the second the log likelihood of generating the content and the third an L2-norm regularization on the model parameters, while \\(\mu\\) and \\(\lambda\\) controls the contribution of each term on the overall loss function.
