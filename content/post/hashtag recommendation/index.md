@@ -83,7 +83,7 @@ where \\(b_u\\) and \\(b_i\\) are user and item's biases to be learned. Then, th
 2. *Modeling user and microtopic content*: the authors incorporated the content into the model by combining user's an microtopic’s posts into a pseudo-document. Then they modeled the pseuso-documents generation through Latent Dirichlet Allocation, by assuming that each hidden factor of users and microtopics has a corresponding multinomial word distribution \\(\phi_k\\), and is therefore related to a hidden LDA topic.
 Each user has a distribution \\(\theta_u\\) over the \\(K\\) topics, derived from its hidden factor vector, given by:
 $$\theta_{u,k}=\frac{exp(\mathcal{k}v_{u,k})}{\sum_{k^\prime}exp(\mathcal{k}v_{u,k^\prime})}$$
-where \\(\mathcal{k}\\) is a parameter which controls the transformaion. All the words \\(w_u\\) in the pseudo-document representing the user \\(u\\) can be generated as:
+where \\(\mathcal{k}\\) is a parameter which controls the transformaion. All the words \\(w_u\\) in the pseudo-document representing a user \\(u\\) can be generated as:
 $$p(w_u | \theta_u, \phi)=\prod_{n}\sum_{k=1}^K\Theta_{u,k}\phi_{k,w_{u,n}}$$ Microtopic distribution \\(\Theta_i\\) and the generation related to microtopic \\(i\\) can be derived similarly.
 So, the second term to be added to the BPR optimization criterion is:
 $$-(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta))$$
