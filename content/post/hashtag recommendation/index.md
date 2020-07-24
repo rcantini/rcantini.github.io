@@ -6,7 +6,7 @@ date: 2020-07-16T18:10:09+02:00
 draft: false
 math: true
 disable_comments: true
-markup: mmark
+markup: kramdown
 lastmod: 2020-07-16T18:10:09+02:00
 authors:
 - admin
