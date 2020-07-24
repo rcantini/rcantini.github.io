@@ -104,4 +104,4 @@ Therefore, the overall objective function, which combines the above mentioned te
 \end{aligned}
 </div>
 
-where the first term is the ranking optimization, the second is the log likelihood of generating the content and the third is a L2-norm regularization on the model parameters, learned with the **EM Monte Carlo** algorithm which uses Gibbs sampling and gradient descent in the *E* and *M* steps respectively. Finally, the \\(\mu\\) and \\(\lambda\\) scalars control the contribution of each term on the overall loss function.
+where the first term is the ranking optimization, the second is the log likelihood of generating the content and the third is a L2-norm regularization on the model parameters, learned with the **EM Monte Carlo** algorithm, which uses Gibbs sampling and gradient descent in the *E* and *M* steps respectively. Finally, the \\(\mu\\) and \\(\lambda\\) scalars control the contribution of each term on the overall loss function.
