@@ -94,7 +94,7 @@ where \\(G_u\\) is a regression coefficient matrix, \\(a_u\\) is the attribute v
 
 Therefore, the overall objective function, which combines the above mentioned terms, is defined as follows:
 
-$$min_\Theta & \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})$$
+$$min_\Theta \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})$$
 $$-\mu(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta))$$
 $$+\lambda R(\Theta)$$
 
