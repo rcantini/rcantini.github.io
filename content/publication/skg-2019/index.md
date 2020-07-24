@@ -19,6 +19,6 @@ image:
   preview_only: false
 
 
-tags: ["social media analysis", "public opinion", "user polarization", "neural networks", "sentiment analysis","political events"]
+tags: ["social media analysis", opinion mining", "user polarization", "neural networks", "sentiment analysis","political events"]
 
 ---
