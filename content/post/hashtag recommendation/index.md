@@ -92,7 +92,7 @@ So, the second term to be added to the BPR optimization function is:
 $$-(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta))$$
 3. *Modeling user and microtopic attributes*: the authors incorporated also additional attibutes (e.g. gender) by exploiting a regression-based latent factorization method, which generates a latent factor vector for each attribute value. The main idea behind this kind of approach is that users or microtopics sharing the same attributes lead to similar vectors in the latent factor space. They modeled user latent factors \\(v_u\\) as:
 $$v_u=G_U^Ta_u + \sigma_u$$
-where \\(G_u\\) is a regression coefficient matrix, \\(a_u\\) is the attribute vector of the user \\(u\\), which specifies a binary values for each attribute, and \\(\sigma_u\\) is \\(u\\)'s deviation from regression. Microtopic latent factors \\(v_u\\) can be derived similarly.
+where \\(G_U\\) is a regression coefficient matrix, \\(a_u\\) is the attribute vector of the user \\(u\\), which specifies a binary values for each attribute, and \\(\sigma_u\\) is \\(u\\)'s deviation from regression. Microtopic latent factors \\(v_u\\) can be derived similarly.
 
 
 Therefore, the overall objective function, which combines the above mentioned terms, is defined as follows:
