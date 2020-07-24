@@ -91,23 +91,13 @@ $$-(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta))$$
 $$v_u=G_U^Ta_u + \sigma_u$$
 where \\(G_u\\) is a regression coefficient matrix, \\(a_u\\) is the attribute vector of the user \\(u\\), which specifies a binary values for each attribute, and \\(\sigma_u\\) is u's deviation from regression.
 
+
 Therefore, the overall objective function, which combines the above mentioned terms, is defined as follows:
 
-$$
-\begin{split}
-\log p(\mathbf{x}) \geq & \mathbb{E}_{q_\phi(\mathbf{z},\mathbf{y}| \mathbf{x})}\left[\log p_\theta(\mathbf{x}| \mathbf{z}) + \log p(\mathbf{z}) + \log p(\mathbf{y}) - \log q_\phi(\mathbf{z},\mathbf{y}| \mathbf{x})\right] \\
-= & \sum_\mathbf{y} \mathbb{E}_{q_\varphi(\mathbf{z}| \mathbf{x},\mathbf{y})}\Bigg[  q_\vartheta(\mathbf{y}| \mathbf{x})\bigg(\log p_\theta(\mathbf{x}| \mathbf{z}) + \log p(\mathbf{y}) - \log q_\vartheta(\mathbf{y}| \mathbf{x})\bigg) \\
-&  \qquad \qquad + \log p(\mathbf{z}) - \log q_\varphi(\mathbf{z}| \mathbf{x},\mathbf{y})\Bigg] 
-\end{split}
-$$
-
-where the first term is the ranking optimization, the second the log likelihood of generating the content and the third an L2-norm regularization on the model parameters, while \\(\mu\\) and \\(\lambda\\) controls the contribution of each term on the overall loss function.
-
-
-$$
-\begin{split}
+$$\begin{split}
 min_\Theta & \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})\\
 - & \mu(\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta))\\
 + & \lambda R(\Theta)
-\end{split}
-$$
+\end{split}$$
+
+where the first term is the ranking optimization, the second the log likelihood of generating the content and the third an L2-norm regularization on the model parameters, while \\(\mu\\) and \\(\lambda\\) controls the contribution of each term on the overall loss function.
