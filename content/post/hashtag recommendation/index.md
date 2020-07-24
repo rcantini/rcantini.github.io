@@ -61,7 +61,7 @@ where \\( v(w_i) \\) is the Word2Vec encoded representation of \\( w_i \\).
 	e_{tk}=h_T^TW^{hb}b_k
 	$$
 	where \\( W^{hb} \\) is a trainable weight matrix, and \\( e_{tk} \\) is the attention weight between the hidden state \\( h_t \\) and the topical word embedding \\( b_k \\).
-	- For the hidden state of a word \\( h_t \\), the relevant semantics in the global topic information, i.e. content-guided topic attention, is given by:
+	- For the hidden state of a word \\( h_t \\), the relevant semantics in the global topic information, (content-guided topic attention), is given by:
 	$$\tilde{h_t}=\sum_{k=1}^{M}a_k^bb_k$$
 	where \\(a_k^b\\) is the attention weight of \\( b_k \\), given by the softmax:
 	$$a_k^b=\frac{exp(e_{tk})}{\sum_{j=1}^{M}exp(e_{tj})}$$
