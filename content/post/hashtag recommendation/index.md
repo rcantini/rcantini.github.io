@@ -61,13 +61,17 @@ where \\( n^w_t \\) denotes the topic-word count of topic \\( t \\) and word \\(
 Their model, namely **Microtopic Recommendation Model** (MTRM), builds on top of collaborative filtering, content analysis and feature regression, and consists og three main step:
  1. *Modeling user-microtopic adoptions*: given a user vector \\(v_u\\)  and a microtopic vector \\(v_u\\), they computed an affinity score which models user \\(u\\)'s preference to adopt microtopic \\(i\\) as \\(r_{u,i}=v_u^Tv_i+b_u+b_i\\), where  \\(b_u\\) and \\(b_i\\) are user and item's biases to be learned.Then, they adopted an optimization ranking criteroin, specifically the **Bayesian Personalized Ranking** (BPR), whose goal is to rank items according to user adoption. Let \\(\mathcal{P}\\) denote a set of triplets \\(<u, i, j>\\) derived from the training set where microtopic where user \\(u\\) used hashtag\\(i\\) but not \\(j\\). The BPR criterion minimizes the following function:
  $$
- \begin{equation}\label{average}\tag{3}
- min_\Theta \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})
+ \begin{equation}\label{average}\tag{2}
+ p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{\frac{n^w_{t,\neg{i}} + \beta_w}{\sum_{w=1}^{V}n^w_{t,\neg{i}} + \beta_w} * \frac{n^t_{m,\neg{i}} + \alpha_k}{\sum_{t=1}^{T}n^t_{m,\neg{i}} + \alpha_k}}
  \end{equation}
  $$
  where \\(\Theta \\)  denotes the set of model parameters. Therefore, the above function maximes the difference between adopted and avoided microtopics.
  2. *Modeling user and microtopic content*: blablabla.
  3. *Modeling user and microtopic attributes*: blablabla.
 
-
+ $$
+ \begin{equation}\label{average}\tag{3}
+ min_\Theta \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})
+ \end{equation}
+ $$
 
