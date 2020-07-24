@@ -89,7 +89,7 @@ $$\theta_{u,k}=\frac{exp(\kappa v_{u,k})}{\sum_{k^\prime}exp(\kappa v_{u,k^\prim
 where \\(\kappa\\) is a parameter which controls the transformation. All the words \\(w_u\\) in the pseudo-document representing a user \\(u\\) can be generated as:
 $$p(w_u | \theta_u, \phi)=\prod_{n}\sum_{k=1}^K\Theta_{u,k}\phi_{k,w_{u,n}}$$ Microtopic distribution \\(\Theta_i\\) and the generation related to microtopic \\(i\\) can be derived similarly.
 So, the second term to be added to the BPR optimization function is:
-$$-\left\sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta)\right$$
+$$-\left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)$$
 3. *Modeling user and microtopic attributes*: the authors incorporated also additional attibutes (e.g. gender) by exploiting a regression-based latent factorization method, which generates a latent factor vector for each attribute value. The main idea behind this kind of approach is that users or microtopics sharing the same attributes lead to similar vectors in the latent factor space. They modeled user latent factors \\(v_u\\) as:
 $$v_u=G_U^Ta_u + \sigma_u$$
 where \\(G_U\\) is a regression coefficient matrix, \\(a_u\\) is the attribute vector of the user \\(u\\), which specifies a binary values for each attribute, and \\(\sigma_u\\) is the deviation of \\(u\\) from the regression. Microtopic latent factors \\(v_i\\) can be derived similarly.
@@ -100,7 +100,7 @@ Therefore, the overall objective function, which combines the above mentioned te
 <div class="math">
 \begin{aligned}
  min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})}) \\
- &-\mu \left \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right\\
+ &-\mu \left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)\\
  &+\lambda R(\Theta)
 \end{aligned}
 </div>
