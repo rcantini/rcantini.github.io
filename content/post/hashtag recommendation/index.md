@@ -31,7 +31,7 @@ Social media platforms have become part of everyday life, allowing the interconn
 
 <div class="math">
 \begin{aligned}
-p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{} & \frac{n^w_{t,\neg{i}} + \beta_w}{\sum_{w=1}^{V}n^w_{t,\neg{i}} + \beta_w}\\[0.6ex]
+p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{} & \frac{n^w_{t,\neg{i}} + \beta_w}{\sum_{w=1}^{V}n^w_{t,\neg{i}} + \beta_w}\\[0.7ex]
 *\hspace{0.22cm} & \frac{n^t_{m,\neg{i}} + \alpha_k}{\sum_{t=1}^{T}n^t_{m,\neg{i}} + \alpha_k}
 \end{aligned}
 </div>
@@ -102,8 +102,8 @@ Therefore, the overall objective function, which combines the above mentioned te
 
 <div class="math">
 \begin{aligned}
- min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})\\[0.6ex]
- &-\mu \left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)\\[0.6ex]
+ min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})\\[0.7ex]
+ &-\mu \left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)\\[0.7ex]
  &+\lambda R(\Theta)
 \end{aligned}
 </div>
