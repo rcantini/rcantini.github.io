@@ -31,8 +31,8 @@ Social media platforms have become part of everyday life, allowing the interconn
 
 <div class="math">
 \begin{aligned}
-p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{ & \frac{n^w_{t,\neg{i}} + \beta_w}{\sum_{w=1}^{V}n^w_{t,\neg{i}} + \beta_w}\\
-&* \frac{n^t_{m,\neg{i}} + \alpha_k}{\sum_{t=1}^{T}n^t_{m,\neg{i}} + \alpha_k}}
+p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{ & \frac{n^w_{t,\neg{i}} + \beta_w}{\sum_{w=1}^{V}n^w_{t,\neg{i}} + \beta_w}}\\
+& * \frac{n^t_{m,\neg{i}} + \alpha_k}{\sum_{t=1}^{T}n^t_{m,\neg{i}} + \alpha_k}
 \end{aligned}
 </div>
 
