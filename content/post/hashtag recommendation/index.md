@@ -102,8 +102,8 @@ Therefore, the overall objective function, which combines the above mentioned te
 
 <div class="math">
 \begin{aligned}
- min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})}) \\
- &-\mu \left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)\\
+ min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})\\[0.5ex]
+ &-\mu \left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)\\[0.5ex]
  &+\lambda R(\Theta)
 \end{aligned}
 </div>
