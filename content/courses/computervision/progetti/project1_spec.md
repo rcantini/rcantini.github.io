@@ -7,7 +7,10 @@ date: "2020-06-9T00:00:00+01:00"
 draft: false
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 200
+menu:
+  computervision:
+    parent: Progetti
+    weight: 2
 ---
 
 **Specifiche**
