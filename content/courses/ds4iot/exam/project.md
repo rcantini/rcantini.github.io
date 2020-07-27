@@ -18,22 +18,22 @@ menu:
 
 The practical part of the exam consists of two steps:
 
-### The discussion of the project
+### Oral exam
+One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/))
+
+### Discussion of the project
 - Selection of a topic
 - Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic.
 - Modeling and Simulation using iFogSim:
-	- compare different configurations selecting the best one, according to your needs
-	- a comparison of the obtained results is required in terms of:
+	- Compare different topologies and parameter settings.
+	- Compare the obtained results in terms of:
 		- Latency
 		- Network usage
 		- Energy consumption
-- Implement some functionalities of the modeled system using frameworks provided by Eclipse IoT, focusing on different layers (e.g. client and server side MQTT-based communication using Eclipse Paho and Mosquitto respectively).
-- Write a report and deliver it at least three days before the exam.
-- Prepare a presentation that will help you explain, during the exam, the work done in your project.
-
-## An oral exam
-One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/))
-
+		- Other metrics
+- Implement some functionalities of the modeled system using frameworks provided by Eclipse IoT, focusing on different layers.
+- Write a report to be delivered before the exam.
+- Prepare a presentation to be used during the discussion of the project.
 
 The **deadline** for delivering the projects is **7 days** before the exam.
 
@@ -42,5 +42,5 @@ Info about the project and the exam available [here](../../pdf/Projects.pdf)
 
 # Topic assignments
 
-| Studente               | Topic		  |
+| Students               | Topic		  |
 | ---------------------- | ---------------------- |

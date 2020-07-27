@@ -48,7 +48,7 @@ menu:
 
 
 ## News
-- **[27/07/2020]** course page is online!.
+- **[27/07/2020]** The course page is online!
 
 
 
