@@ -39,8 +39,7 @@ The **deadline** for delivering the project (*report + code*) is **7 days before
 
 More info about the project and the exam are available [here](../../pdf/Projects.pdf)
 
-
-# Topic assignments
+## Topic assignments
 
 | Students               | Topic		  |
 | ---------------------- | ---------------------- |
