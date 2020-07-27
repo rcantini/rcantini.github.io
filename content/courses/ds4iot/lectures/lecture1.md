@@ -25,7 +25,7 @@ weight: 2 #incremental id for page order
 - Overview of the main simulation tools.
 
 
-Slides disponibili [qui](../../pdf/DS4IOT-PL01.pdf)
+Lectures available [here](../../pdf/DS4IOT-PL01.pdf)
 
 
 ## Usefull links
