@@ -26,15 +26,7 @@ menu:
 
 ## Annunci
 
-- **[01/07/2020]** Rilasciate le [specifiche]({{< relref "../computervision/progetti/project2_spec.md" >}}) progetto per esame del 31/07/2020. La consegna degli elaborati deve avvenire il 29/07/2020. 
-- **[09/06/2020]** Rilasciate le [specifiche]({{< relref "../computervision/progetti/project1_spec.md" >}}) progetto per esame del 01/07/2020. La consegna degli elaborati deve avvenire il 28/06/2020. 
-- **[08/06/2020]** E disponibile la valutazione del secondo esonero, nalla rispettiva [pagina]({{< relref "../computervision/esoneri/convolution.md" >}}). 
-- **[07/05/2020]** E disponibile la valutazione del primo esonero, nalla rispettiva [pagina]({{< relref "../computervision/esoneri/listOfFeatureDescriptors.md" >}}). 
-- **[28/04/2020]** E disponibile la lista degli argomenti per il secondo esonero. La lista è disponibile [qui]({{< relref "../computervision/esoneri/convolution.md" >}}). Gli studenti che selgono di effettuare l'esonero devono concordare l'opzione con il docente tramite email. La deadline per la consegna degli elaborati è il 10 maggio 2020.
--  **[02/04/2020]** E disponibile la lista degli argomenti per il primo esonero. La lista è disponibile [qui]({{< relref "../computervision/esoneri/listOfFeatureDescriptors.md" >}}). Gli studenti che selgono di effettuare l'esonero devono comunicare le opzioni (3) al docente. Martedì 7 verrà comunicata l'assegnazione dei topic ai vari studenti. La deadline per la consegna degli elaborati è il 16 aprile 2020. 
-- **[03/03/2020]** Si avvisano gli studenti che il corso di Analisi di Immagini e Video – Corso di Laurea Magistrale in Ingegneria Informatica verrà erogato in modalità streaming, utilizzando l’applicativo TEAMS, a partire dal giorno 17/03/2019, alle ore 8:30. La richiesta di iscrizione al corso può essere effettuata cliccando sul seguente [link](https://teams.microsoft.com/l/channel/19%3ac60bff4a6e874db3b5e0d2034412ed18%40thread.tacv 2/Generale?groupId=b4509060-7b45-4eab-80ce-55182356fb88&tenantId=7519d0cd-2106-47d9- adcb-320023abff57). Gli studenti già pratici dell’utilizzo di TEAMS e che abbiano già scaricato l’APP, possono iscriversi direttamente al corso (senza approvazione del docente) utilizzando il codice: **khm7h4s**
-
-
+- **[27/07/2020]** created.
 
 
 ## Breve descrizione del corso
@@ -89,21 +81,5 @@ Competenze specifiche:
 
 | Lezione | Argomenti                                            | Materiale didattico | Data       |
 | ------- | ---------------------------------------------------- | ------------------- | ---------- |
-| 1       | Introduzione al corso |[Slides]({{< relref "../computervision/lecture1.md" >}}) |17/03/2020 |
-| 2       | Concetti fondamentali su Image processing e analysis |      [Slides, notebook]({{< relref "../computervision/lecture2.md" >}})               |19/03/2020 |
-| 3       | Filtri |      [Slides, notebook]({{< relref "../computervision/lecture3.md" >}})               |24/03/2020 |
-| 4       | Laboratorio 1: Image Processing in Python |      [Slides, notebook]({{< relref "../computervision/lecture_lab1.md" >}})               |26/03/2020 |
-| 5       | Edge detection. Fourier Transform |      [Slides, notebook]({{< relref "../computervision/lecture4.md" >}})               |31/03/2020 |
-| 6       | Classificazione. Feature detection & Description |      [Slides]({{< relref "../computervision/lecture5.md" >}}).    [Esonero]({{< relref "../computervision/esoneri/listOfFeatureDescriptors.md" >}})      |02/04/2020 |
-| 7       | Laboratorio 2: sklearn. Pytorch |      [Slides, notebook]({{< relref "../computervision/lecture_lab2.md" >}})               |07/04/2020 |
-| 8       | Modelli non lineari. CNN |      [Slides, notebook]({{< relref "../computervision/lecture6.md" >}})               |16/04/2020, 21/04/2020 |
-| 10 | Laboratorio 3: Architetture CNN, data augmentation, transfer learning | [Slides, notebook]({{< relref "../computervision/lecture_lab3.md" >}}) |23/04/2020 |
-| 11 | Object Detection. Region Proposal Networks, Single-Shot Detection. Yolo. | [Slides, notebooks]({{< relref "../computervision/lecture7.md" >}}) |28/04/2020, 30/04/2020 |
-| 12 | Laboratorio 4: Object Detection | [Notebook]({{< relref "../computervision/lecture_lab4.md" >}}) |05/05/2020 |
-| 13 | Segmentazione | [Slides, notebooks]({{< relref "../computervision/lecture8.md" >}}) |07/05/2020, 12/05/2020, 14/05/2020 |
-| 14 | Action Recognition | [Slides, notebooks]({{< relref "../computervision/lecture9.md" >}}) |19/05/2020 |
-| 15 | Modelli generativi. Variational Autoencoders | [Slides, notebooks]({{< relref "../computervision/lecture10.md" >}}) |21/05/2020 |
-| 16 | Generative Adversarial Networks. Image translation | [Slides, notebooks]({{< relref "../computervision/lecture11.md" >}}) |26/05/2020, 28/05/2020 |
-| 17 | Laboratorio 5: Generative Adversarial Networks | [Slides, notebook]({{< relref "../computervision/lecture_lab5.md" >}}) |04/06/2020 |
-
+| 1       | Introduzione al corso |[Slides]({{< relref "../ds4iot/lecture1.md" >}}) |27/07/2020 |
 
