@@ -22,7 +22,7 @@ The practical part of the exam consists of two steps:
 One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/))
 
 ### Discussion of the project
-- Selection of a topic
+- Selection of a topic.
 - Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic.
 - Modeling and Simulation using iFogSim:
 	- Compare different topologies and parameter settings.
