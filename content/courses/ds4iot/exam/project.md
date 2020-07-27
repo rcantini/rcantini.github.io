@@ -26,7 +26,7 @@ One question for each lecture (available [here](/courses/ds4iot/lectures/lecture
 - Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic.
 - Modeling and Simulation using iFogSim:
 	- Compare different topologies and parameter settings.
-	- Compare the obtained results in terms of:
+	- Describe the obtained results in terms of:
 		- Latency
 		- Network usage
 		- Energy consumption
