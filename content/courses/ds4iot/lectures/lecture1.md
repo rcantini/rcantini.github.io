@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Course introduction
 linktitle: Introduction
 toc: true
 type: docs

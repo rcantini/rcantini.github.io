@@ -19,14 +19,11 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu: 
   ds4iot:
+    parent: "Distributed Systems and Cloud/Edge Computing for IoT"
     name: "Course Overview"
     weight: 1
   
 ---
-
-## News
-- **[27/07/2020]** created.
-
 
 ## Course description *...in a nutshell...*
 
@@ -50,9 +47,9 @@ The practical part of the *Distributed Systems and Cloud/Edge Computing for IoT*
 	-	IoT cloud platforms
 
 
-## Teaching materials
-- Lectures
-- Related papers
+## News
+- **[27/07/2020]** course page is online!.
+
 
 
 ## Lessons outline
