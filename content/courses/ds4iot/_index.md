@@ -81,5 +81,5 @@ Competenze specifiche:
 
 | Lezione | Argomenti                                            | Materiale didattico | Data       |
 | ------- | ---------------------------------------------------- | ------------------- | ---------- |
-| 1       | Introduzione al corso |[Slides]({{< relref "../ds4iot/lecture1.md" >}}) |27/07/2020 |
+| 1       | Introduzione al corso |[Slides]({{< relref "../ds4iot/lectures/lecture1.md" >}}) |27/07/2020 |
 
