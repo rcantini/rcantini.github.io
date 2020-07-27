@@ -1,6 +1,6 @@
 ---
-title: Esonero 2
-linktitle: Esonero 2
+title: Project topics and instructions
+linktitle: Project
 toc: false
 type: docs
 date: "2020-04-28T00:00:00+01:00"
@@ -10,7 +10,7 @@ draft: false
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)menu:
 menu:
   computervision:
-    parent: Esoneri
+    parent: Exam
     weight: 2
 ---
 

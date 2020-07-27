@@ -24,14 +24,9 @@
   weight = 60
 
 [[esoneri]]
-  name = "Esoneri"
-  url = "/courses/computervision/esoneri/"
+  name = "Exam"
+  url = "/courses/ds4iot/exam/"
   weight = 70
-
-[[progetti]]
-  name = "Progetti"
-  url = "/courses/computervision/progetti/"
-  weight = 80
 
 [[main]]
   name = "Contact"
