@@ -52,7 +52,7 @@ menu:
 
 
 
-## Lessons outline
+## Lessons List
 
 
 | &#8470; | Lesson | Date |
