@@ -24,13 +24,13 @@
   weight = 60
 
 [[menu.esoneri]]
-  name = "Teaching"
-  url = "courses/computervision/esoneri/"
+  name = "Esoneri"
+  url = "esoneri/"
   weight = 61
 
 [[menu.progetti]]
-  name = "Teaching"
-  url = "courses/computervision/progetti/"
+  name = "Progetti"
+  url = "progetti/"
   weight = 62
 
 [[main]]
