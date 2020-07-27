@@ -2,7 +2,8 @@
 # Course title, summary, and position.
 linktitle: Distributed Systems and Cloud/Edge Computing for IoT
 summary: The practical part of this course is aimed at discussing the main concepts behind Edge and Fog computing in relation to Cloud and Internet of Things architectures, with a special focus on the main tools and frameworks for implementing and simulating large-scale context-aware applications.
-
+image:
+  placement: 2
 
 weight: 1
 
