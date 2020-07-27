@@ -9,8 +9,8 @@ draft: false
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)menu:
 menu:
-  computervision:
-    parent: Exam
+  ds4iot:
+    parent: exam
     weight: 2
 ---
 

@@ -23,10 +23,15 @@
   url = "/courses/"
   weight = 60
 
-[[esoneri]]
+[[lectures]]
+  name = "Lectures"
+  url = "/courses/ds4iot/lectures/"
+  weight = 70
+
+[[exam]]
   name = "Exam"
   url = "/courses/ds4iot/exam/"
-  weight = 70
+  weight = 80
 
 [[main]]
   name = "Contact"

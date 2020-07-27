@@ -7,8 +7,8 @@ date: "2020-03-26T00:00:00+01:00"
 draft: false
 
 menu:
-  computervision:
-    parent: Lezioni
+  ds4iot:
+    parent: lectures
     weight: 2
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
