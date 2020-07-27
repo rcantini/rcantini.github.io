@@ -12,7 +12,7 @@ menu:
   ds4iot:
     name: "Project topics and instructions"
     parent: Exam
-    weight: 2
+    weight: 100
 ---
 
 #  Convolutional Neural Networks
