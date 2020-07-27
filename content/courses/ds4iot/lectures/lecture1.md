@@ -28,13 +28,6 @@ weight: 2 #incremental id for page order
 Slides disponibili [qui](../../pdf/DS4IOT-PL01.pdf)
 
 
-## Riferimenti bibliografici
-
-- **[Davies18]**, ch. 1. 
-- **[Elg20]**, sect. 1.1-1.3. 
-- **[Gon18]**, Ch. 1. 
-- **[Sze11]**, Ch. 1,2.
-
 ## Usefull links
 
 - [Simulating Fog and Edge Computing Scenarios: An Overview and Research Challenges](https://www.researchgate.net/publication/331359471_Simulating_Fog_and_Edge_Computing_Scenarios_An_Overview_and_Research_Challenges)
