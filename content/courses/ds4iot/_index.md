@@ -55,7 +55,7 @@ menu:
 ## Lessons outline
 
 
-| &#8470; | Lesson | Data |
+| &#8470; | Lesson | Date |
 | ------- | -------| -----| 
 | 1       | [DS4IOT-PL01]({{< relref "../ds4iot/lectures/lecture1.md" >}}) | 27/07/2020 |
 
