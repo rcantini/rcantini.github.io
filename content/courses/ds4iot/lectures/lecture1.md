@@ -1,7 +1,7 @@
 ---
 title: Course introduction
 linktitle: Introduction
-toc: true
+toc: false
 type: docs
 date: "2020-07-27T00:00:00+01:00"
 draft: false
@@ -19,10 +19,11 @@ weight: 2 #incremental id for page order
 - Differences and integration with Cloud computing
 - Main reasons behind the use of Edge computing
 - Main use cases and characteristics
-- Microservice architactures and containerization vs. classic virtualization
-- Using Kubernates within Edge
-- Simulation and modeling issues
-- Overview of the main simulation tools.
+- Microservice architectures
+- Containerization vs. classic virtualization
+- Using Kubernates at the edge
+- Modeling and simulation issues
+- Overview of the main modeling and simulation tools.
 
 
 Slides available [here](../../pdf/DS4IOT-PL01.pdf)
