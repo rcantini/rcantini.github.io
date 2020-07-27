@@ -8,6 +8,7 @@ draft: false
 
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)menu:
+menu:
   computervision:
     parent: Esoneri
     weight: 2
