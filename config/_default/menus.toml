@@ -23,6 +23,16 @@
   url = "courses/"
   weight = 60
 
+[[menu.esoneri]]
+  name = "Teaching"
+  url = "courses/computervision/esoneri/"
+  weight = 61
+
+[[menu.progetti]]
+  name = "Teaching"
+  url = "courses/computervision/progetti/"
+  weight = 62
+
 [[main]]
   name = "Contact"
   url = "#contact"
