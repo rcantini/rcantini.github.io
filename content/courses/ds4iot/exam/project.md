@@ -19,7 +19,7 @@ menu:
 The practical part of the exam consists of two steps:
 
 ## Oral exam
-One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/))
+One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/)).
 
 ## Discussion of the project
 - Selection of a topic.
