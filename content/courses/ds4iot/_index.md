@@ -19,8 +19,8 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu: 
   ds4iot:
-    parent: "Distributed Systems and Cloud/Edge Computing for IoT"
-    name: "Course Overview"
+    parent: "Course Overview"
+    name: "Distributed Systems and Cloud/Edge Computing for IoT"
     weight: 1
   
 ---
