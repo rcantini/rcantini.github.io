@@ -8,7 +8,10 @@ draft: false
 
 
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)
-weight: 100
+menu:
+  computervision:
+    parent: Esoneri
+    weight: 1
 ---
 
 #  Feature descriptors
