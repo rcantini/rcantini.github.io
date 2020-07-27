@@ -20,17 +20,17 @@
 
 [[main]]
   name = "Teaching"
-  url = "courses/"
+  url = "/courses/"
   weight = 60
 
-[[menu.esoneri]]
+[[esoneri]]
   name = "Esoneri"
-  url = "courses/computervision/esoneri/"
+  url = "/courses/computervision/esoneri/"
   weight = 70
 
-[[menu.progetti]]
+[[progetti]]
   name = "Progetti"
-  url = "courses/computervision/progetti/"
+  url = "/courses/computervision/progetti/"
   weight = 80
 
 [[main]]
