@@ -27,7 +27,7 @@ menu:
 
 ## This course *...in a nutshell*
 
-The practical part of the *Distributed Systems and Cloud/Edge Computing for IoT* course is aimed at discussing the main concepts behind Edge and Fog computing in raletion to Cloud and Internet of Things architectures, with a special focus on the main tools and frameworks for implementing and simulating large-scale context-aware applications.
+ The practical part of the *Distributed Systems and Cloud/Edge Computing for IoT* course is aimed at discussing the main concepts behind Edge and Fog computing in raletion to Cloud and Internet of Things architectures, with a special focus on the main tools and frameworks for implementing and simulating large-scale context-aware applications.
 
 
 ## Course program
@@ -55,7 +55,7 @@ The practical part of the *Distributed Systems and Cloud/Edge Computing for IoT*
 ## Lessons outline
 
 
-| Lezione | Argomenti                                            | Materiale didattico | Data       |
-| ------- | ---------------------------------------------------- | ------------------- | ---------- |
-| 1       | Course introduction |[Lectures]({{< relref "../ds4iot/lectures/lecture1.md" >}}) |27/07/2020 |
+| &#8470; | Lesson | Data |
+| ------- | -------| -----| 
+| 1       | [DS4IOT-PL01]({{< relref "../ds4iot/lectures/lecture1.md" >}}) | 27/07/2020 |
 
