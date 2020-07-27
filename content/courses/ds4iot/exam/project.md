@@ -12,11 +12,14 @@ weight: 100
 menu:
   ds4iot:
     name: "Project topics and instructions"
-    parent: Exam
+    parent: Practical exam
     weight: 100
 ---
 
-#  Convolutional Neural Networks
+The practical part of the exam consists of two steps:
+
+- 
+-
 
 In questo esonero è chiesto agli studenti di studiare le reti convoluzionali. 
 
@@ -29,7 +32,7 @@ In questo esonero è chiesto agli studenti di studiare le reti convoluzionali.
 Gli studenti interessati ad effettuare l'esonero dovranno mandare una mail al docente indicando, in ordine di priorità, tre scelte dalla lista di cui sotto.
 Le assegnazioni verranno comunicate a lezione. La deadline per la consegna degli elaborati è il **10 maggio 2020**.
 
-
+Lectures available [here](../../pdf/Projects.pdf)
 
 ## GoogLeNet
 
