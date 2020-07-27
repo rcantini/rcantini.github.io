@@ -18,10 +18,10 @@ menu:
 
 The practical part of the exam consists of two steps:
 
-### Oral exam
+## Oral exam
 One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/))
 
-### Discussion of the project
+## Discussion of the project
 - Selection of a topic.
 - Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic.
 - Modeling and Simulation using iFogSim:
