@@ -37,7 +37,7 @@ One question for each lecture (available [here](/courses/ds4iot/lectures/lecture
 
 The **deadline** for delivering the projects (*report + code*) is **7 days before the exam**.
 
-Info about the project and the exam available [here](../../pdf/Projects.pdf)
+More info about the project and the exam are available [here](../../pdf/Projects.pdf)
 
 
 # Topic assignments
