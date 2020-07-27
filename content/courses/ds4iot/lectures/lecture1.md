@@ -23,7 +23,7 @@ weight: 2 #incremental id for page order
 - Containerization vs. classic virtualization
 - Using Kubernates at the edge
 - Modeling and simulation issues
-- Overview of the main modeling and simulation tools.
+- Overview of the main modeling and simulation tools
 
 
 Slides available [here](../../pdf/DS4IOT-PL01.pdf)
