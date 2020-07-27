@@ -35,7 +35,7 @@ One question for each lecture (available [here](/courses/ds4iot/lectures/lecture
 - Write a report to be delivered before the exam.
 - Prepare a presentation to be used during the discussion of the project.
 
-The **deadline** for delivering the projects (*report + code*)is **7 days before the exam**.
+The **deadline** for delivering the projects (*report + code*) is **7 days before the exam**.
 
 Info about the project and the exam available [here](../../pdf/Projects.pdf)
 
