@@ -39,7 +39,7 @@ p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{} & \frac{n^w_{t,\neg{i}} + \beta_
 where \\( n^w_t \\) denotes the topic-word count of topic \\( t \\) and word \\( w \\), and \\( n^t_m \\) the tweet-topic distribution. Specifically, they followed four main steps:
 1. They used the Gibbs sampling algorithm for determining the LDA model parameters.
 2. Given a tweet  \\(m\\), they used the topic-word count distribution \\( n^w_t \\) learned during the training phase for determining the topic distribution of \\(m\\) using Gibbs sampling again.
-3. Based on the number \\(k\\) of hashtags to be recommended, they sampled for \\(k\\) times the obtained multinomial topic distribution, getting the number of keywords for each topic \\(t\\), i.e. \\( k_t \\), with \\( \sum_{t=0}^{T}k_t = k \\), where \\( T \\) is the number of topics discovered by LDA. 
+3. Based on the number \\(k\\) of hashtags to be recommended, they sampled for \\(k\\) times the obtained multinomial topic distribution, getting the number of keywords for each topic \\(t\\), i.e. \\( k_t \\), with \\( \sum_{t=1}^{T}k_t = k \\), where \\( T \\) is the number of topics discovered by LDA. 
 4. The suggested hashtags will be the set of top-\\( k_t\\) words extracted from each topic \\(t\\) in ranked order.
 
 ## Unsupervised models: density-based clustering of tweet embeddings
