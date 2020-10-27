@@ -15,10 +15,10 @@ menu:
     weight: 3
 ---
 
-The practical part of the exam consists of two steps:
+The practical exam consists of two steps:
 
 ## Oral exam
-One question for each lecture (available [here](/courses/ds4iot/lectures/lecture1/)).
+One question for each lecture (available [here](/courses/ds4iot/lectures/)).
 
 ## Discussion of the project
 - Selection of a topic.
@@ -38,7 +38,7 @@ The **deadline** for delivering the project (*report + code*) is **7 days before
 
 More info about the project and some ideas about the topic are available [here](../../pdf/Projects.pdf).
 
-## Topic assignments
+## Topic assignment
 
 | Students               | Topic		  |
 | ---------------------- | ---------------------- |
