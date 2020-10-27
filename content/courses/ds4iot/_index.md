@@ -18,8 +18,7 @@ type: docs  # Do not modify.
 # - weight: Position of link in menu.
 menu: 
   ds4iot:
-    parent: "Course Overview"
-    name: "Distributed Systems and Cloud/Edge Computing for IoT"
+    name: "Course Overview"
     weight: 1
   
 ---
@@ -48,13 +47,3 @@ menu:
 
 ## News
 - **[27/07/2020]** The course page is online!
-
-
-
-## Lessons List
-
-
-| &#8470; | Lesson | Date |
-| ------- | -------| -----| 
-| 1       | [DS4IOT-PL01]({{< relref "../ds4iot/lectures/lecture1.md" >}}) | 27/07/2020 |
-
