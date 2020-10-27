@@ -14,7 +14,7 @@ menu:
 weight: 2 #incremental id for page order
 ---
 
-Slides available in the *File section* of the channel "***Lectures by Ing. Riccardo Cantini***" in the course team (Microsoft Teams).
+Slides are available in the *File section* of the channel "***Lectures by Ing. Riccardo Cantini***" in the course team (Microsoft Teams).
 
 
 ## Usefull links
