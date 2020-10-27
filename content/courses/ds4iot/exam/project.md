@@ -11,9 +11,8 @@ weight: 100
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)menu:
 menu:
   ds4iot:
-    name: "Project topics and instructions"
-    parent: Practical exam
-    weight: 100
+    name: "Practical exam"
+    weight: 3
 ---
 
 The practical part of the exam consists of two steps:
