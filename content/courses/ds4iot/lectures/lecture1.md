@@ -14,7 +14,7 @@ menu:
 weight: 2 #incremental id for page order
 ---
 
-Slides available [here](../../pdf/DS4IOT-PL01.pdf)
+Slides available in the *File section* of the ***Lectures by Ing. Riccardo Cantini*** channel in the course team in Microsoft Teams
 
 
 ## Usefull links
