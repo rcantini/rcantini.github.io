@@ -22,10 +22,11 @@ bio: Riccardo Cantini is a PhD student in Information and Communication Technolo
 
 interests:
   - Social Media Analysis
+  - Big Data Analysis
+  - Opinion Mining & Sentiment Analysis
   - Deep Learning
   - Natural Language Processing
-  - Big Data Analysis
-  - Distributed Data Mining
+  - Information Spread & Influence Maximization
   - IoT and Edge/Fog Computing
 
 education:
