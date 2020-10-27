@@ -47,3 +47,4 @@ menu:
 
 ## News
 - **[27/07/2020]** The course page is online!
+- **[21/10/2020]** The course will be delivered online using the Microsoft Teams platform channel ***Lectures by Ing. Riccardo Cantini***
