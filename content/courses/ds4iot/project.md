@@ -1,6 +1,6 @@
 ---
 title: Project topics and instructions
-linktitle: Project
+linktitle: Exam
 toc: true
 type: docs
 date: "2020-04-28T00:00:00+01:00"
