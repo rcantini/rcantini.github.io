@@ -11,6 +11,7 @@ weight: 100
 # Prev/next pager order (if `docs_section_pager` enabled in `params.toml`)menu:
 menu:
   ds4iot:
+    name: "Practical Exam"
     weight: 3
 ---
 
