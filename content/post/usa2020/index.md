@@ -18,9 +18,9 @@ featured: false
 draft: false	
 ---
 
-Chi sarà il prossimo presidente degli Stati Uniti? Secondo l’algoritmo messo a punto da un team di ricercatori dell’Università della Calabria per l’analisi del *sentiment* sui social media, sarà Joe Biden a vincere oggi le elezioni.
+Chi sarà il prossimo presidente degli Stati Uniti? Secondo l’algoritmo messo a punto da un team di ricercatori dell’Università della Calabria per l’analisi del *sentiment* sui social media, sarà **Joe Biden** a vincere oggi le elezioni.
 
-Il sistema utilizza le reti neurali per interpretare l’orientamento di voto degli elettori su Twitter, analizzando gli hashtag utilizzati dagli utenti. L’algoritmo è stato già testato con successo sulle Presidenziali Usa del 2016 e le Politiche italiane. In entrambi i casi ha restituito una previsione di voto molto vicina ai risultati reali e ancora più accurata rispetto ai sondaggi tradizionali e ad altre tecniche di rilevazione basate su intelligenza artificiale (maggiori dettagli qui).
+Il sistema utilizza le reti neurali per interpretare l’orientamento di voto degli elettori su Twitter, analizzando gli hashtag utilizzati dagli utenti. L’algoritmo è stato già testato con successo sulle Presidenziali Usa del 2016 e le Politiche italiane. In entrambi i casi ha restituito una previsione di voto molto vicina ai risultati reali e ancora più accurata rispetto ai sondaggi tradizionali e ad altre tecniche di rilevazione basate su intelligenza artificiale (maggiori dettagli [qui](/post/iom/)).
 
 Per le Presidenziali Usa 2020 sono stati presi in esame 550mila 979 tweet, pubblicati da 308mila 262 utenti nel periodo compreso tra il 18 e il 27 ottobre.
 
