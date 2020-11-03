@@ -38,7 +38,7 @@ Sono stati applicati dei filtri per garantire la validità del campione e quindi
 ## Gli stati in bilico
 Grazie alla georeferenziazione dei tweet, è stato possibile formulare previsioni anche per alcuni degli Stati in bilico (*Swing States*). In particolare, fra gli Stati più critici, in cui il vantaggio di un candidato sull'altro è sottilissimo se non nullo, a Biden dovrebbe andare la vittoria in almeno uno fra Georgia, North Carolina e Ohio, cosa che ne decreterebbe l'ascesa alla Casa Bianca. 
 
-[!(featured.png)](https://www.youtube.com/watch?v=XqDVzj0IiYs&feature=emb_logo)
+[!(<img src="featured.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>)](https://www.youtube.com/watch?v=XqDVzj0IiYs&feature=emb_logo)
 
 <hr>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
