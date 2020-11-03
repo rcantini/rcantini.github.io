@@ -20,7 +20,7 @@ draft: false
 
 Chi sarà il prossimo presidente degli Stati Uniti? Secondo l’algoritmo messo a punto da un team di ricercatori dell’Università della Calabria per l’analisi del *sentiment* sui social media, sarà **Joe Biden** a vincere oggi le elezioni.
 
-Il sistema utilizza le reti neurali per interpretare l’orientamento di voto degli elettori su Twitter, analizzando gli hashtag utilizzati dagli utenti. L’algoritmo è stato già testato con successo sulle Presidenziali Usa del 2016 e le Politiche italiane. In entrambi i casi ha restituito una previsione di voto molto vicina ai risultati reali e ancora più accurata rispetto ai sondaggi tradizionali e ad altre tecniche di rilevazione basate su intelligenza artificiale (maggiori dettagli [qui](/post/iom/)).
+Il sistema utilizzato, chiamato **IOM-NN** (*Iterative Opinion Mining using Neural Networks*), sfrutta le reti neurali per interpretare l’orientamento di voto degli elettori su Twitter, analizzando gli hashtag utilizzati dagli utenti. L’algoritmo è stato già testato con successo sulle Presidenziali Usa del 2016 e le Politiche italiane. In entrambi i casi ha restituito una previsione di voto molto vicina ai risultati reali e ancora più accurata rispetto ai sondaggi tradizionali e ad altre tecniche di rilevazione basate su intelligenza artificiale (maggiori dettagli [qui](/post/iom/)).
 
 Per le Presidenziali Usa 2020 sono stati presi in esame 550.979 tweet, pubblicati da 308.262 utenti nel periodo compreso tra il 18 e il 27 ottobre.
 
@@ -43,4 +43,4 @@ Grazie alla georeferenziazione dei tweet, è stato possibile formulare prevision
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?103993" target="_blank">Portale UNICAL - Notizie</a></span></p>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link alla pubblicazione: <a href="https://ieeexplore.ieee.org/document/9026882" target="_blank">Learning political polarization on social media using neural networks</a></span></p>
+&quot;Open Sans&quot;,sans-serif">IOM-NN (articolo su *IEEE Access*): <a href="https://ieeexplore.ieee.org/document/9026882" target="_blank">Learning political polarization on social media using neural networks</a></span></p>
