@@ -59,9 +59,6 @@ social:
 - icon: instagram
   icon_pack: fab
   link: 'https://www.instagram.com/riccardo_cantini'
-- icon: facebook
-  icon_pack: fab
-  link: 'https://www.facebook.com/riccardo.cantini.7'
 - icon: telegram
   icon_pack: fab
   link: "https://t.me/Ric_cant"
