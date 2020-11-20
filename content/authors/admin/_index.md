@@ -50,6 +50,9 @@ social:
 - icon: github
   icon_pack: fab
   link: 'https://github.com/rcantini'
+- icon: google-scholar
+  icon_pack: ai
+  link: 'https://scholar.google.com/citations?user=zdB_yUAAAAAJ&hl=it&oi=ao'
 - icon: researchgate
   icon_pack: ai
   link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
