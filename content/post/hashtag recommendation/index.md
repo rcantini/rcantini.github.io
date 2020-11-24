@@ -64,7 +64,7 @@ where \\( v(w_i) \\) is the Word2Vec encoded representation of \\( w_i \\).
 3. *Topical co-attention*: given all the hidden states \\( h_1, h_1,  ..., h_n \\) and the topical word embedding vectors \\( b_1, b_1,  ..., b_m \\) learned from topic modeling, the topical co-attention layer outputs a continuous context vector \\( vec \\) for each microblog post \\( s \\). This vector is obtained as follows:
 	- An affinity matrix \\( E \in \mathcal{R}^{NxM} \\) is computed, with each element determined as:
 	$$
-	e_{tk}=h_T^TW^{hb}b_k
+	e_{tk}=h_t^TW^{hb}b_k
 	$$
 	where \\( W^{hb} \\) is a trainable weight matrix, and \\( e_{tk} \\) is the attention weight between the hidden state \\( h_t \\) and the topical word embedding \\( b_k \\).
 	- For the hidden state of a word \\( h_t \\), the relevant semantics in the global topic information (content-guided topic attention) is given by:
