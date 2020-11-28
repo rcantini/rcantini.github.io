@@ -1,20 +1,18 @@
 ---
-title: 'What breed is that puppy?
+title: 'What breed is that puppy? Dog breed classification using Convolutional Neural Networks and Transfer Learning'
 
-Chihuahua vs. Pug'
-
-subtitle: 'How to build a dog breed binary classifier with Keras and Tensorflow using Convolutional Neural Networks and Transfer Learning'
+subtitle: 'How to exploit Convolutional Neural Networks and Transfer Learning in Keras for building an image recognition model that can distinguish a chihuahua from a pug'
 disable_comments: true
 markup: kramdown
 authors:
 - admin
 tags:
-- Social Media Analysis
-- Opinion Mining
-- User Polarization
-- Neural Networks
-- Sentiment Analysis
-- Political Events
+- Convolutional Neural Networks
+- Transfer Learning
+- Dog Breed Classification
+- Image Recognition
+- Deep Learning
+- Keras-Tensorflow
 date: "2020-11-28T00:00:00Z"
 lastmod: "2020-11-28T00:00:00Z"
 featured: false
