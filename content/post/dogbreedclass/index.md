@@ -1,5 +1,5 @@
 ---
-title: 'What breed is that puppy?: Chihuahua vs. Pug'
+title: 'What breed is that puppy?<br>Chihuahua vs. Pug'
 subtitle: 'How to build a dog breed binary classifier with Keras and Tensorflow using Convolutional Neural Networks and Transfer Learning'
 disable_comments: true
 markup: kramdown
@@ -12,8 +12,8 @@ tags:
 - Neural Networks
 - Sentiment Analysis
 - Political Events
-date: "2016-04-20T00:00:00Z"
-lastmod: "2019-04-17T00:00:00Z"
+date: "2020-11-28T00:00:00Z"
+lastmod: "2020-11-28T00:00:00Z"
 featured: false
 draft: false	
 ---
