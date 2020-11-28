@@ -1,5 +1,8 @@
 ---
-title: 'What breed is that puppy?<br>Chihuahua vs. Pug'
+title: 'What breed is that puppy?
+
+Chihuahua vs. Pug'
+
 subtitle: 'How to build a dog breed binary classifier with Keras and Tensorflow using Convolutional Neural Networks and Transfer Learning'
 disable_comments: true
 markup: kramdown
