@@ -20,6 +20,12 @@ tags:
 - Keras-Tensorflow
 ---
 
+In what follows I'll show how to build a computer vision application with Keras and Tensorflow for classifying dog images according to their breed. The presented model focuses on two particular breeds, **Chihuahua** and **Pug**, and relies on Convolutional Neural Networks, a state-of-art deep learning model for the image classification task.
+
+## Convolutional Neural Networks
+
+
+
 Il gruppo di ricerca del professor Talia ha messo a punto un sistema basato su reti neurali che analizza gli hashtag e interpreta l’orientamento di voto degli elettori. Metodologia testata con successo per le presidenziali Usa 2016 e le Politiche italiane.
 
 Si parte da un gruppo ristretto e ben selezionato di hashtag e se ne ricava, con l’aiuto dell’intelligenza artificiale, una previsione molto accurata delle intenzioni di voto degli elettori.
@@ -47,7 +53,7 @@ Nel caso degli Usa, il sistema Unical ha correttamente previsto i risultati fina
 
 La ricerca è stata pubblicata su IEEE Access. Insieme al professor Domenico Talia ne sono autori anche i ricercatori del DIMES (Dipartimento di Ingegneria Informatica, Modellistica, Elettronica e Sistemistica) Loris Belcastro, **Riccardo Cantini**, Fabrizio Marozzo e Paolo Trunfio. 
 
-<img src="iom_res.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
+<img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
 <hr>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?100297&fbclid=IwAR1WC13GLzbYeVz3B4Cem93M6xjtfM-10VTEYm3tvYeiAYZieEQbKkd2qQ0" target="_blank">Portale UNICAL - Notizie</a></span></p>
