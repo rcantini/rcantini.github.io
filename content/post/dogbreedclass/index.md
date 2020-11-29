@@ -1,5 +1,5 @@
 ---
-title: 'What breed is that puppy? Dog breed classification using Transfer Learning and Convolutional Neural Networks'
+title: 'What breed is that puppy? Dog breed classification using Convolutional Neural Networks and Transfer Learning'
 subtitle: 'How to exploit Convolutional Neural Networks and Transfer Learning for building a computer vision application that can distinguish a Chihuahua from a Pug'
 summary: "In what follows, I'll show how to build a dog breed classifier based on Convolutional Neural Networks, which focuses on two particular breeds: Chihuahua and Pug. In order to cope with the small amount of traning data, the model exploits three main techniques: real time data augmentation during training, Transfer Learning and fine tuning."
 date: 2020-11-28T00:00:00Z
