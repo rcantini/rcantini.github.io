@@ -23,8 +23,10 @@ tags:
 In what follows I'll show how to build a computer vision application with Keras and Tensorflow for classifying dog images according to their breed. The presented model focuses on two particular breeds, **Chihuahua** and **Pug**, and relies on Convolutional Neural Networks, a state-of-art deep learning model for the image classification task.
 
 ## Convolutional Neural Networks
-
-
+Convolutional neural networks (*CNNs*) are a deep learning model inspired by the organization and functioning of the animal visual cortex.
+Individual neurons are arranged so as to respond to partially overlapping regions that make up the visual field, called *receptive fields*.
+These networks, therefore, are very scalable as the complexity of the input increases, thanks to the reduction in the number of parameters and reusability of weights and can learn a meaningful representation of a given image, by automating the feature extraction process.
+The classical architecture of a CNN consists of a series of particular levels, showhed in the following.
 
 Il gruppo di ricerca del professor Talia ha messo a punto un sistema basato su reti neurali che analizza gli hashtag e interpreta l’orientamento di voto degli elettori. Metodologia testata con successo per le presidenziali Usa 2016 e le Politiche italiane.
 
