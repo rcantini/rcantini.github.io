@@ -35,16 +35,38 @@ This function has many interesting properties, including efficiency, robustness 
 - *Pooling layer*: the role of this layer is to reduce the spatial size of the output volume from the convolutional layer, extracting rotational and positional invariant features. Dimensionality reduction is carried out using a kernel which moves upon the input matrices, taking the maximum (or the average) of the covered values.
 - *Fully-connected layer*: the output of convolutional and pooling layers can be flattened and feed to a dense layer of fully connected neurons, in order to learn a non-linear combination of the learned features. Finally a softmax classifier can be used for determining a probability value for each class label.
 
-# Chihuahua vs. Pug
-Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.w3schools.com/">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
+## Chihuahua vs. Pug
+Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.kaggle.com/c/dog-breed-identification">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
 Now let's look at some example images from our dataset:
 <img src="dogs_example.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 This is a really challenging classification task, as the pattern to be learned are quite complex and the training images are few compared to how many a CNN would need to learn meaningful features. In order to cope with the small amount of traning data, the model exploits three main techniques:
-- Real time data augmentation during training
 - Transfer Learning
+- Real time data augmentation
 - Fine tuning
 
-
+## Transfer Learning
+Transfer Learning technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
+I exploited this strategy creating our dog breed classifier as follows:
+- Load the pre-trained model: is used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
+- Freeze VGG16 layers, so as to avoid destroying any of the information they contain during training.
+- Add a multilayer perceptron on top of them, composed by two trainable fully connected layers and a spftmax classifier.
+The implementation of the model in Keras is showed below:
+```python
+def transfer_learning():
+    vgg_conv = vgg16.VGG16(weights='imagenet', include_top=False, input_shape=(IMG_SIZE, IMG_SIZE, CHANNELS))
+    for layer in vgg_conv.layers[:]:
+        layer.trainable = False
+    model = Sequential()
+    model.add(vgg_conv)
+    model.add(Flatten())
+    model.add(Dense(1024, activation='relu'))
+    model.add(Dropout(0.5))
+    model.add(Dense(512, activation='relu'))
+    model.add(Dropout(0.5))
+    model.add(Dense(2, activation='softmax'))
+    model.summary()
+    return model
+```
 
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
