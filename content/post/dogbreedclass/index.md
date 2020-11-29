@@ -29,7 +29,7 @@ These networks, therefore, are very scalable as the complexity of the input incr
 The classical architecture of a CNN consists of a series of particular layers:
 - *Convolutional layer*: given an input image the convolution is carried out using a set of filters, called kernels, which are matrices of learnable weights. Convolution is performed using dot product between the filter and the portion of the image over which it is hovering; the filter is shifted according to a stride parameter and this process is repeated until the the entire imagehas been covered, generating an output volume composed by a set of convolved feature maps.
 The convolution of a \\(3\times 3\\) kernel applied to a single-channel \\(5\times 5\\) image is showed below:
-<img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+<img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 40%; height: 40%"/>
 - *Relu layer*: Rectified Linear Unit is the typical activation function of convolutional levels, defined as \\(f(x) = max(0, x)\\). It is designed to preserve non-linearity properties, without causing distortion effects on the receptive fileds.
 This function has many interesting properties, including efficiency, robustness against weight saturation or vanishing gradient, as well as the sparse activation of artificial neurons, which mimics what happens in biological systems, where only few neurons activate simultaneously.
 - *Pooling layer*: the role of this layer is to reduce the spatial size of the output volume from the convolutional layer, extracting rotational and positional invariant features. Dimensionality reduction is carried out using a kernel which moves upon the input matrices, taking the maximum (or the average) of the covered values.
@@ -37,8 +37,6 @@ This function has many interesting properties, including efficiency, robustness 
 
 
 
-<img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
-<hr>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?100297&fbclid=IwAR1WC13GLzbYeVz3B4Cem93M6xjtfM-10VTEYm3tvYeiAYZieEQbKkd2qQ0" target="_blank">Portale UNICAL - Notizie</a></span></p>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
