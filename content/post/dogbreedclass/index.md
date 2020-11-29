@@ -38,7 +38,7 @@ This function has many interesting properties, including efficiency, robustness 
 # Chihuahua vs. Pug
 Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.w3schools.com/">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
 Now let's look at some example images from our dataset:
-<img src="dogs_example.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 80%"/>
+<img src="dogs_example.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 This is a really challenging classification task, as the pattern to be learned are quite complex and the training images are few compared to how many a CNN would need to learn meaningful features. In order to cope with the small amount of traning data, the model exploits three main techniques:
 - Real time data augmentation during training
 - Transfer Learning
