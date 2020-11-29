@@ -35,6 +35,16 @@ This function has many interesting properties, including efficiency, robustness 
 - *Pooling layer*: the role of this layer is to reduce the spatial size of the output volume from the convolutional layer, extracting rotational and positional invariant features. Dimensionality reduction is carried out using a kernel which moves upon the input matrices, taking the maximum (or the average) of the covered values.
 - *Fully-connected layer*: the output of convolutional and pooling layers can be flattened and feed to a dense layer of fully connected neurons, in order to learn a non-linear combination of the learned features. Finally a softmax classifier can be used for determining a probability value for each class label.
 
+# Dog breed classifier: Chihuahua vs. Pug
+Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.w3schools.com/">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
+Now let's look at some example images from our dataset:
+<img src="dogs_example.png" style="display: block; margin-left: auto; margin-right: auto; width: 40%; height: 40%"/>
+This is a really challenging classification task, as the pattern to be learned are quite complex and the training images are few compared to how many a CNN would need to learn meaningful features. In order to cope with the small amount of traning data, the model exploits three main techniques:
+- Real time data augmentation during training
+- Transfer Learning
+- Fine tuning
+
+
 
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
