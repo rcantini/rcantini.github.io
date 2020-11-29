@@ -37,7 +37,7 @@ This function has many interesting properties, including efficiency, robustness 
 
 ## Chihuahua vs. Pug
 Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.kaggle.com/c/dog-breed-identification">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
-Now let's look at some example images from our dataset:
+Data are normalized and resized to a fixed shape of \\(350\times 350\\). Now let's look at some example images from our dataset:
 <img src="dogs_example.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 This is a really challenging classification task, as the pattern to be learned are quite complex and the training images are few compared to how many a CNN would need to learn meaningful features. In order to cope with the small amount of traning data, the model exploits three main techniques:
 - Transfer Learning
@@ -49,11 +49,11 @@ Transfer Learning technique consists of exploiting features learned on one probl
 I exploited this strategy creating our dog breed classifier as follows:
 - Load the pre-trained model: is used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
 - Freeze VGG16 layers, so as to avoid destroying any of the information they contain during training.
-- Add a multilayer perceptron on top of them, composed by two trainable fully connected layers and a spftmax classifier.
+- Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier.
 The implementation of the model in Keras is showed below:
 ```python
 def transfer_learning():
-    vgg_conv = vgg16.VGG16(weights='imagenet', include_top=False, input_shape=(IMG_SIZE, IMG_SIZE, CHANNELS))
+    vgg_conv = vgg16.VGG16(weights='imagenet', include_top=False, input_shape=(350, 350, 3))
     for layer in vgg_conv.layers[:]:
         layer.trainable = False
     model = Sequential()
@@ -67,6 +67,54 @@ def transfer_learning():
     model.summary()
     return model
 ```
+
+## Training the model with real time data augmentation
+Now our model is ready for the training step. As the amount of images available for training the model is small, we can use an ImageDataGenerator in order to obtain some additional training samples:
+```python
+datagenTrain = ImageDataGenerator(
+    featurewise_center=True,
+    featurewise_std_normalization=True,
+    rotation_range=20,
+    width_shift_range=0.2,
+    height_shift_range=0.2,
+    horizontal_flip=True)
+datagenTrain.fit(xTrain)
+```
+Now we can use our generator while training the model, obtaining data augmentation in real time
+```python
+# compile model
+model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
+# set callbacks for early stopping
+es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=5)
+best_weights_file = "weights.h5"
+mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=2,
+                     save_best_only=True)
+# train model testing it on each epoch with real time data augmentation
+history = model.fit(datagenTrain.flow(xTrain, y_train_cat, save_to_dir= "data_aug", batch_size=32), validation_data=(xTest, y_test_cat),
+                    batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
+```
+The model has been trained using the categorical_crossentropy loss function and the Adam classifier. Furthermore, two callback functions are used to stop the learning process by monitoring the loss, in order to store the best model and avoid overfitting.
+
+## Fine tuning
+
+...
+...
+...
+
+```python
+model.load_weights(best_weights_file) # load the best saved model
+model.trainable = True
+best_weights_file = "weights_fine_tuned.h5"
+mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=2,
+                     save_best_only=True)
+model.compile(loss='categorical_crossentropy', optimizer=Adam(1e-5), metrics=['accuracy'])
+history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), validation_data=(xTest, y_test_cat),
+                    batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
+```
+
+...
+...
+...
 
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
