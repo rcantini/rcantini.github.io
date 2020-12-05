@@ -25,12 +25,12 @@ In what follows I'll show how to build a computer vision application with Keras 
 ## Convolutional Neural Networks
 **Convolutional neural networks** (*CNNs*) are a deep learning model inspired by the organization and functioning of the animal visual cortex.
 Individual neurons are arranged so as to respond to partially overlapping regions that make up the visual field, called *receptive fields*.
-These networks, therefore, are very scalable as the complexity of the input increases, thanks to the reduction in the number of parameters and reusability of weights and can learn a meaningful representation of a given image, by automating the feature extraction process.
+These networks can learn a meaningful representation of a given image by automating the feature extraction process.
 The classical architecture of a CNN consists of a series of particular layers:
 - *Convolutional layer*: given an input image the convolution is carried out using a set of filters, called kernels, which are matrices of learnable weights. Convolution is performed using dot product between the filter and the portion of the image over which it is hovering; the filter is shifted according to a stride parameter and this process is repeated until the the entire image has been covered, generating an output volume composed by a set of convolved feature maps.
 The convolution of a \\(3\times 3\\) kernel  with stride = 1 applied to a single-channel \\(5\times 5\\) image is showed below:
 <img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
-- *Relu layer*: Rectified Linear Unit is the typical activation function of convolutional levels, defined as \\(f(x) = max(0, x)\\). It is designed to preserve non-linearity properties, without causing distortion effects on the receptive fileds.
+- *Relu layer*: Rectified Linear Unit is the typical activation function of convolutional levels, defined as \\(f(x) = max(0, x)\\).
 This function has many interesting properties, including efficiency, robustness against weight saturation or vanishing gradient, as well as the sparse activation of artificial neurons, which mimics what happens in biological systems, where only few neurons activate simultaneously.
 - *Pooling layer*: the role of this layer is to reduce the spatial size of the output volume from the convolutional layer, extracting rotational and positional invariant features. Dimensionality reduction is carried out using a kernel which moves upon the input matrices, taking the maximum (or the average) of the covered values.
 - *Fully-connected layer*: the output of convolutional and pooling layers can be flattened and feed to a dense layer of fully connected neurons, in order to learn a non-linear combination of the learned features. Finally a softmax classifier can be used for determining a probability value for each class label.
