@@ -118,6 +118,4 @@ history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), valid
 
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?100297&fbclid=IwAR1WC13GLzbYeVz3B4Cem93M6xjtfM-10VTEYm3tvYeiAYZieEQbKkd2qQ0" target="_blank">Portale UNICAL - Notizie</a></span></p>
-<p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link alla pubblicazione: <a href="https://ieeexplore.ieee.org/document/9026882" target="_blank">Learning political polarization on social media using neural networks</a></span></p>
+&quot;Open Sans&quot;,sans-serif">Link to the code: <a href="https:https://github.com/rcantini/Dog-breed-classification" target="_blank">GitHub - Dog-breed-classification</a></span></p>
