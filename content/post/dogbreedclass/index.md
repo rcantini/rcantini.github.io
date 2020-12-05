@@ -45,12 +45,12 @@ This is a really challenging classification task, as the pattern to be learned a
 - Fine tuning
 
 ## Transfer Learning
-Transfer Learning technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
+Transfer Learning technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way, the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
 I exploited this strategy creating our dog breed classifier as follows:
-- Load the pre-trained model: is used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
-- Freeze VGG16 layers, so as to avoid destroying any of the information they contain during training.
+- Load the pre-trained model: I used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
+- Freeze VGG16 layers, so as to avoid destroying the information they contain during training.
 - Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier.
-The implementation of the model in Keras is showed below:
+The Keras implementation of the model is showed below:
 ```python
 def transfer_learning():
     vgg_conv = vgg16.VGG16(weights='imagenet', include_top=False, input_shape=(350, 350, 3))
@@ -80,7 +80,7 @@ datagenTrain = ImageDataGenerator(
     horizontal_flip=True)
 datagenTrain.fit(xTrain)
 ```
-Now we can use our generator while training the model, obtaining data augmentation in real time
+Now we can use our generator while training the model, obtaining data augmentation in real time:
 ```python
 # compile model
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
@@ -93,7 +93,7 @@ mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=
 history = model.fit(datagenTrain.flow(xTrain, y_train_cat, save_to_dir= "data_aug", batch_size=32), validation_data=(xTest, y_test_cat),
                     batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
 ```
-The model has been trained using the categorical_crossentropy loss function and the Adam classifier. Furthermore, two callback functions are used to stop the learning process by monitoring the loss, in order to store the best model and avoid overfitting.
+The model has been trained using the *categorical_crossentropy* loss function and the *Adam* optimizer. Furthermore, in order to avoid overfitting, two callback functions are used for early stopping the learning process by monitoring the loss, storing the best model.
 
 ## Fine tuning
 
