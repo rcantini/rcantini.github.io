@@ -118,4 +118,4 @@ history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), valid
 
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link to the code on GitHub: <a href="https:https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
+&quot;Open Sans&quot;,sans-serif">Link to the code on GitHub: <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
