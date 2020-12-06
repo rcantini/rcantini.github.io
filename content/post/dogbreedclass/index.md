@@ -161,5 +161,5 @@ Lastly, we can test our breed classifier with external images. To do this I took
 Let's see what our model says about this beautiful puppy:
 <img src="emy.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 Great! The model recognizes very well that our cute Emy is a Chihuahua.
-<p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">GitHub code <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">here</a>.</span></p>
+<hr>
+GitHub code <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">here</a>.
