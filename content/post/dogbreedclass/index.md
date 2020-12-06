@@ -45,11 +45,12 @@ This is a really challenging classification task, as the pattern to be learned a
 - Fine tuning
 
 ## Transfer Learning
-Transfer Learning technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way, the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
+**Transfer Learning** technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way, the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
 I exploited this strategy creating our dog breed classifier as follows:
 - Load the pre-trained model: I used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
 - Freeze VGG16 layers, so as to avoid destroying the information they contain during training.
 - Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier.
+
 The Keras implementation of the model is showed below:
 ```python
 def transfer_learning():
@@ -69,7 +70,8 @@ def transfer_learning():
 ```
 
 ## Training the model with real time data augmentation
-Now our model is ready for the training step. As the amount of images available for training the model is small, we can use an ImageDataGenerator in order to obtain some additional training samples:
+Now our model is ready for the training step.
+As the amount of images available for training the model is small, we can use an ImageDataGenerator in order to obtain some additional training samples:
 ```python
 datagenTrain = ImageDataGenerator(
     featurewise_center=True,
@@ -80,7 +82,7 @@ datagenTrain = ImageDataGenerator(
     horizontal_flip=True)
 datagenTrain.fit(xTrain)
 ```
-Now we can use our generator while training the model, obtaining data augmentation in real time:
+Now we can use our generator while training the model, obtaining real time **data augmentation**:
 ```python
 # compile model
 model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
@@ -93,14 +95,19 @@ mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=
 history = model.fit(datagenTrain.flow(xTrain, y_train_cat, save_to_dir= "data_aug", batch_size=32), validation_data=(xTest, y_test_cat),
                     batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
 ```
+An example of what images our generator produces is showed below:
+<img src="data_aug.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 The model has been trained using the *categorical_crossentropy* loss function and the *Adam* optimizer. Furthermore, in order to avoid overfitting, two callback functions are used for early stopping the learning process by monitoring the loss, storing the best model.
 
 ## Fine tuning
+An additional step for further improving performances is **fine tuning**. It consists in re-training the entire model obtained above in order to incrementally adapt the pretrained features to our specific dataset.
+Specifically, fine tuning can be obtained as follows:
+- Load the best model achieved in the previous training step
+- Un-freeze the pretrained layers. I've choosen to make the entire model trainable for a full end-to-end tuning.
+- Compile the model.
+- Train it with a very low learning rate. It's crucial to set a low learing rate as we only want to readapt pretrained features to work with our dataset. If the learning reate is not low enough, we may overfit our data as we have few training samples.
 
-...
-...
-...
-
+The code is showed below:
 ```python
 model.load_weights(best_weights_file) # load the best saved model
 model.trainable = True
@@ -111,10 +118,6 @@ model.compile(loss='categorical_crossentropy', optimizer=Adam(1e-5), metrics=['a
 history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), validation_data=(xTest, y_test_cat),
                     batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
 ```
-
-...
-...
-...
 
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
