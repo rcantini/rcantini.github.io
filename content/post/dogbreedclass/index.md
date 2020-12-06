@@ -148,5 +148,8 @@ The following table shows a comparison between the performances achieved by the 
 
 As we can easily see, the use of Tranfer Learning has led to much higher performances than a simple Convolutional Neural Network trained from scratch (*0.68 vs. 0.87 accuracy*). In addition, the fine tuning step has further improved performance significantly, reaching a ***0.93 accuracy*** on the test set.
 
+Now let's take a closer look at the output of the model given some test images.
+<img src="cs.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link to the GitHub code: <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
