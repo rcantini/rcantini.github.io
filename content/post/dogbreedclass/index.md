@@ -157,7 +157,7 @@ Good job! The model is able to correctly classify dog images according to the br
 
 ## Special guest
 
-Lastly, we can test our breed classifier with external images. To do this I took some photos of my girlfriend's Chihuahua, **Emy**.
+Lastly, we can test our breed classifier with external images (this is the funniest part). To do this I took some photos of my girlfriend's Chihuahua, **Emy**.
 Let's see what our model says about this beautiful puppy:
 <img src="emy.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 Great! The model correctly classifies our cute Emy as a Chihuahua :clap::clap:
