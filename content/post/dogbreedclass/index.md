@@ -95,9 +95,9 @@ mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=
 history = model.fit(datagenTrain.flow(xTrain, y_train_cat, save_to_dir= "data_aug", batch_size=32), validation_data=(xTest, y_test_cat),
                     batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
 ```
-An example of what images our generator produces is showed below:
+An example of what images our generator produces, using 20° rotation, shift and horizontal flip, is showed below:
 <img src="data_aug.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-The model has been trained using the *categorical_crossentropy* loss function and the *Adam* optimizer. Furthermore, in order to avoid overfitting, two callback functions are used for early stopping the learning process by monitoring the loss, storing the best model.
+The model has been trained using the *categorical crossentropy* loss function and the *Adam* optimizer. Furthermore two callback functions have been used in oder to avoid overfitting: *EarlyStopping*, which monitors the loss on validation set, and *ModelCheckpoint* for storing the best model.
 
 ## Fine tuning
 An additional step for further improving performances is **fine tuning**. It consists in re-training the entire model obtained above in order to incrementally adapt the pretrained features to our specific dataset.
@@ -105,11 +105,11 @@ Specifically, fine tuning can be obtained as follows:
 - Load the best model achieved in the previous training step
 - Un-freeze the pretrained layers. I've choosen to make the entire model trainable for a full end-to-end tuning.
 - Compile the model.
-- Train it with a very low learning rate. It's crucial to set a low learing rate as we only want to readapt pretrained features to work with our dataset. If the learning reate is not low enough, we may overfit our data as we have few training samples.
+- Train it with a very low learning rate. It's crucial to set a low learing rate as we only want to readapt pretrained features to work with our dataset and therefore large weight updates are not desirable at this stage.
 
 The code is showed below:
 ```python
-model.load_weights(best_weights_file) # load the best saved model
+model.load_weights(best_weights_file) # load the best model saved by ModelCheckpoint
 model.trainable = True
 best_weights_file = "weights_fine_tuned.h5"
 mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=2,
