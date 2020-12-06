@@ -139,10 +139,12 @@ def build_simple_CNN():
     return model
 ```
 The following table shows a comparison between the performances achieved by the simple CNN and the proposed model:
+
 |  | Accuracy | Precision | Recall | F-Measure |
 |-|:-:|:-:|:-:|:-:|
 | Simple CNN | 0.68 | 0.70 | 0.68 | 0.64 |
 | Transfer Learning | 0.87 | 0.88 | 0.87 | 0.87 |
-| **Transfer Learning + Fine Tuning** | **0.93** | **0.93** | **0.93** | **0.93** |
+| Transfer Learning + Fine Tuning | 0.93 | 0.93 | 0.93 | 0.93 |
+
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link to the GitHub code: <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
