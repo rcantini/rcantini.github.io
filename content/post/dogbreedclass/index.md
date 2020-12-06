@@ -153,13 +153,13 @@ Now let's take a closer look at the output of the model given some test images.
 <img src="cs.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 <p style="text-align: center"><b>Pug</b></p>
 <img src="ps.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-As we can see, the model is able to correctly classify dog images according to the breed with a high confidence level.
+Good job! The model is able to correctly classify dog images according to the breed with a high confidence level.
 
 ## Special guest
 
 Lastly, we can test our breed classifier with external images. To do this I took some photos of my girlfriend's Chihuahua, **Emy**.
 Let's see what our model says about this beautiful puppy:
 <img src="emy.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-Great! The model recognizes very well that our cute Emy is a Chihuahua :clap::clap:.
+Great! The model recognizes very well that our cute Emy is a Chihuahua :clap:.
 <hr>
 You can find the full code on GitHub at this <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">link</a>.
