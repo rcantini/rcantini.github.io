@@ -49,7 +49,7 @@ This is a really challenging classification task, as the pattern to be learned a
 I exploited this strategy creating our dog breed classifier as follows:
 - Load the pre-trained model: I used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
 - Freeze VGG16 layers, so as to avoid destroying the information they contain during training.
-- Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier.
+- Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier for determining the output probability for each class.
 
 The Keras implementation of the model is showed below:
 ```python
@@ -119,6 +119,30 @@ history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), valid
                     batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
 ```
 
+## Results
 
+In order to analyze the benefits introduced by the use of transfer learning and fine tuning, I compared the model described above with a simple CNN, trained from scratch with data augmentation, whose structure is showed below:
+```python
+def build_simple_CNN():
+    model = Sequential()
+    model.add(Conv2D(filters=32, kernel_size=(3,3),strides=(2,2), padding="valid",
+                     activation="relu", input_shape=(IMG_SIZE,IMG_SIZE,CHANNELS)))
+    model.add(MaxPooling2D(pool_size=(3,3),strides=(2,2)))
+    model.add(BatchNormalization())
+    model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2), padding="valid",
+                     activation="relu"))
+    model.add(Flatten())
+    model.add(Dense(512, activation="relu"))
+    model.add(Dropout(0.3))
+    model.add(Dense(2, activation="softmax"))
+    model.summary()
+    return model
+```
+The following table shows a comparison between the performances achieved by the simple CNN and the proposed model:
+|  | Accuracy | Precision | Recall | F-Measure |
+|-|:-:|:-:|:-:|:-:|
+| Simple CNN | 0.68 | 0.70 | 0.68 | 0.64 |
+| Transfer Learning | 0.87 | 0.88 | 0.87 | 0.87 |
+| **Transfer Learning + Fine Tuning** | **0.93** | **0.93** | **0.93** | **0.93** |
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link to the code on GitHub: <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
+&quot;Open Sans&quot;,sans-serif">Link to the GitHub code: <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
