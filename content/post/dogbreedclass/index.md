@@ -121,7 +121,7 @@ history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), valid
 
 ## Results
 
-In order to analyze the benefits introduced by the use of transfer learning and fine tuning, I compared the model described above with a simple CNN, trained from scratch with data augmentation, whose structure is showed below:
+In order to analyze the benefits introduced by the use of Transfer Learning and fine tuning, I compared the model described above with a simple CNN, trained from scratch with data augmentation, whose structure is showed below:
 ```python
 def build_simple_CNN():
     model = Sequential()
@@ -140,13 +140,13 @@ def build_simple_CNN():
 ```
 The following table shows a comparison between the performances achieved by the simple CNN and the proposed model:
 
-|  | Accuracy | Precision | Recall | F-Measure |
+|  | Accuracy | Precision | Recall | F1-Score |
 |-|:-:|:-:|:-:|:-:|
 | Simple CNN | 0.68 | 0.70 | 0.68 | 0.64 |
 | Transfer Learning | 0.87 | 0.88 | 0.87 | 0.87 |
 | Transfer Learning + Fine Tuning | 0.93 | 0.93 | 0.93 | 0.93 |
 
-As we can easily see, the use of Tranfer Learning has led to much higher performances than a simple Convolutional Neural Network trained from scratch (*0.68 vs. 0.87 accuracy*). In addition, the fine tuning step has further improved performance significantly, reaching a ***0.93 accuracy*** on the training set.
+As we can easily see, the use of Tranfer Learning has led to much higher performances than a simple Convolutional Neural Network trained from scratch (*0.68 vs. 0.87 accuracy*). In addition, the fine tuning step has further improved performance significantly, reaching a ***0.93 accuracy*** on the test set.
 
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link to the GitHub code: <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">Dog-breed-classification</a></span></p>
