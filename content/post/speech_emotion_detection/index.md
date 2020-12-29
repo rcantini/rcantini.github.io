@@ -3,7 +3,7 @@ title: 'emozioni'
 subtitle: 'How to exploit Convolutional Neural Networks and Transfer Learning for building a computer vision application that can distinguish a Chihuahua from a Pug'
 summary: "In what follows, I'll show how to build a dog breed classifier based on Convolutional Neural Networks, which fozionicuses on two particular breeds: Chihuahua and Pug. In order to cope with the small amount of traning data, the model exploits three main techniques: real time data augmentation, Transfer Learning and fine tuning."
 date: 2020-12-29T00:00:00Z
-draft: false
+draft: true
 math: true
 disable_comments: true
 markup: kramdown
@@ -20,8 +20,6 @@ tags:
 - Keras-Tensorflow
 ---
 
-
-[prova](/prova.wav)
 
 [prova](prova.wav)
 
