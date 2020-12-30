@@ -39,7 +39,7 @@ The problem of these kind of networks is that information cannot be carried effe
 For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed.
 
 
-
+  
 
 
 These networks can learn a meaningful representation of a given image by automating the feature extraction process.
