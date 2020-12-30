@@ -1,9 +1,9 @@
 ---
 title: 'Emotion detection from speech using Bi-directional LSTM networks and attention mechanism in Keras'
-subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*.'
+subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness* and *neutral*'
 summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
 date: 2020-12-29T00:00:00Z
-draft: false
+draft: true
 math: true
 disable_comments: true
 markup: kramdown
@@ -23,9 +23,12 @@ tags:
 This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language.
 The classification system focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and exploits an attention-based Long Short-Term Memory (LSTM) neural network, a state-of-art deep learning model for the analysis of sequential data, widely used in the field of Natural Language Processing (NLP).
 
-## Convolutional Neural Networks
-**Convolutional neural networks** (*CNNs*) are a deep learning model inspired by the organization and functioning of the animal visual cortex.
-Individual neurons are arranged so as to respond to partially overlapping regions that make up the visual field, called *receptive fields*.
+## Long Short-Term Memory Networks
+The main idea behind this kind of deep learning model is simple but powerful and is inspired by the way reasoning occurs in the human brain. In particular, humans don't start thinking from scratch every time, but they use memory in order to interpret better a given information contextualizing it based on past information.
+This kind of persistency, which is absent in traditional feed-forward neural networks like multilayer perceptrons, is realized with **Recurrent Neual Networks**.
+
+These networks can use past information thanks to their loop structure, which allows persistence.
+
 These networks can learn a meaningful representation of a given image by automating the feature extraction process.
 The classical architecture of a CNN consists of a series of particular layers:
 - *Convolutional layer*: given an input image the convolution is carried out using a set of filters, called kernels, which are matrices of learnable weights. Convolution is performed using dot product between the filter and the portion of the image over which it is hovering; the filter is shifted according to a stride parameter and this process is repeated until the the entire image has been covered, generating an output volume composed by a set of convolved feature maps.
