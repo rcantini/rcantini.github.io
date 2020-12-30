@@ -21,7 +21,6 @@ tags:
 ---
 
 This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language.
-
 The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and exploits Long Short-Term Memory (LSTM) Neural Networks enhanced with the attention mechanism, a state-of-art deep learning model for the analysis of sequential data, widely used in the field of Natural Language Processing (NLP).
 
 ## Convolutional Neural Networks
