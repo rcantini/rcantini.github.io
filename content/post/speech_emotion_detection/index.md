@@ -3,7 +3,7 @@ title: 'Emotion detection from speech using Bi-directional LSTM networks and att
 subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness* and *neutral*'
 summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
 date: 2020-12-29T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -25,9 +25,22 @@ The classification system focuses on seven different emotions (*anger*, *boredom
 
 ## Long Short-Term Memory Networks
 The main idea behind this kind of deep learning model is simple but powerful and is inspired by the way reasoning occurs in the human brain. In particular, humans don't start thinking from scratch every time, but they use memory in order to interpret better a given information contextualizing it based on past information.
-This kind of persistency, which is absent in traditional feed-forward neural networks like multilayer perceptrons, is realized with **Recurrent Neual Networks**.
+This kind of persistency, which is absent in traditional feed-forward neural networks like multilayer perceptrons, is realized with **Recurrent Neual Networks** (RNN).
 
-These networks can use past information thanks to their loop structure, which allows persistence.
+These networks are able to use past information thanks to their loop structure, showed below, which allows persistence.
+<img src="rnn.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+Because of the loop, the input at a given time \\(t\\) is composed by the current element of the input sequence \\(x_t\\) and the previous hidden state \\(h_{t-1}\\), which carries information about what the network has seen so far.
+The hidden state update is computed using a \\(tanh\\) non-linear activation function as follows: \\(h_t=tanh(W_{hh} \dot h_{t-1} + W_{xh} \dot x_{t})\\). This hidden state will be given in input to the subsequent timestep \\(t+1\\) jointly with \\(x_{t+1}\\).
+Once updated the hidden state \\(h_{t}\\), the output is compute as: \\(y_{t}= W_{hy} \dot h_{t}\\).
+This recurrent structure can be better seen by unrolling the network through time:
+<img src="unroll.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+
+The problem of these kind of networks is that information cannot be carried effectively if the time sequence is too long, which means that we could lose important connections if the distance between useful information and the instant in which it is needed is very large.
+For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed.
+
+
+
+
 
 These networks can learn a meaningful representation of a given image by automating the feature extraction process.
 The classical architecture of a CNN consists of a series of particular layers:
