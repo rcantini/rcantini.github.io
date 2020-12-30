@@ -1,9 +1,9 @@
 ---
-title: 'emozioni'
-subtitle: 'How to exploit Convolutional Neural Networks and Transfer Learning for building a computer vision application that can distinguish a Chihuahua from a Pug'
-summary: "In what follows, I'll show how to build a dog breed classifier based on Convolutional Neural Networks, which fozionicuses on two particular breeds: Chihuahua and Pug. In order to cope with the small amount of traning data, the model exploits three main techniques: real time data augmentation, Transfer Learning and fine tuning."
+title: 'Emotion detection from speech using Bi-directional LSTM networks and attention mechanism in Keras'
+subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*
+summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
 date: 2020-12-29T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -11,20 +11,18 @@ lastmod: 2020-12-29T00:00:00Z
 authors:
 - admin
 tags:
-- Convolutional Neural Networks
-- Transfer Learning
-- Dog Breed Classification
-- Computer Vision
-- Image Recognition
+- Emotion detection
+- Sentiment Analisysis
+- LSTM
+- Attention
+- Audio analysis
 - Deep Learning
 - Keras-Tensorflow
 ---
 
+This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language.
 
-[prova](prova.wav)
-
-
-In what follows I'll show how to build a computer vision application with Keras and Tensorflow for classifying dog images according to their breed. The presented model focuses on two particular breeds, **Chihuahua** and **Pug**, and relies on Convolutional Neural Networks, a state-of-art deep learning model for the image classification task.
+The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and exploits Long Short-Term Memory (LSTM) Neural Networks enhanced with the attention mechanism, a state-of-art deep learning model for the analysis of sequential data, widely used in the field of Natural Language Processing (NLP).
 
 ## Convolutional Neural Networks
 **Convolutional neural networks** (*CNNs*) are a deep learning model inspired by the organization and functioning of the animal visual cortex.
