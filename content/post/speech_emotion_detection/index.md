@@ -3,7 +3,7 @@ title: 'Emotion detection from speech using Bi-directional LSTM networks and att
 subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness* and *neutral*'
 summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
 date: 2020-12-29T00:00:00Z
-draft: false
+draft: true
 math: true
 disable_comments: true
 markup: kramdown
@@ -47,7 +47,7 @@ $$
 $$
 \tilde{C}_t = tanh(W_c \cdot [h_{t-1}, x_t] + b_i)
 $$
-At this time the cell state can be updated as: \\(C_t =f_t*C_{t-1}+i_t*\tilde{C}_t\\)
+At this time the cell state can be updated as: \\(C_t =f_t*C_{t-1}+i_t*\tilde{C}_t\\).
 - *Forget gate*: determines the final output of the module as a filtered version of the updated cell state:
 $$
 o_{t}= \sigma (W_o \cdot [h_{t-1}, x_t] + b_o)
