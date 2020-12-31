@@ -3,7 +3,7 @@ title: 'Emotion detection from speech using Bi-directional LSTM networks and att
 subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness* and *neutral*'
 summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
 date: 2020-12-29T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -26,28 +26,29 @@ The classification system focuses on seven different emotions (*anger*, *boredom
 ## Long Short-Term Memory Networks
 The main idea behind this kind of deep learning model is simple but powerful and is inspired by the way reasoning occurs in the human brain. In particular, humans don't start thinking from scratch every time, but they use memory in order to interpret better a given information contextualizing it based on past information.
 This kind of persistency, which is absent in traditional feed-forward neural networks, is realized with **Recurrent Neual Networks** (RNN).
-
 These networks are able to use past information thanks to their loop structure, which can be be better represented by unrolling the network through time.
-<img src="unrolled.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+<img src="unrolled.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 Persistency of information is achieved passing the current *hidden state* to the next step of the sequence. So the hidden state at each time step carries information about what the neural network has seen so far, acting like a memory element.
-At the time \\(t\\), the hidden state \\(h_t\\) is computed as the concatenation of the previous hidden state \\(h_{t-1}\\) and the current element of the input sequence \\(x_t\\), which undergoes a non-linear transformation through the *tanh* activation.
+At the time \\(t\\), the hidden state \\(h_t\\) is computed as the concatenation of the previous hidden state \\(h_{t-1}\\) and the current element of the input sequence \\(x_t\\), which undergoes a non-linear transformation through the tanh activation.
 <img src="rnn.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
 
 The problem of these kind of networks is that information cannot be carried effectively if the time sequence is too long, which means that we could lose important connections if the distance between useful information and the instant in which it is needed is very large.
 For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed, whose architecture is showed below.
-<img src="LSTM.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+<img src="LSTM.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 The key element in LSTM networks is the *cell state*, which acts like memory element, undergoing only a few transformations along the entire chain. In particular, the flow of information is regulated by three structures called gates.
-- Forget gate*: determines to what extent the components of the cell state must be maintained, by calculating a score using the sigmoid function.
+- *Forget gate*: determines to what extent the components of the cell state must be maintained, by calculating a score using the sigmoid function.
 $$
-f_{t}= \sigma (W_f \cdot [h_{t-1}, x_t] + b_F)
+f_{t}= \sigma (W_f \cdot [h_{t-1}, x_t] + b_f)
 $$
-- Input gate*: determines what new information to store in the cell state. In particular, a sigmoid layer chooses which state values ​​should be updated, while a tanh layer determines the new candidate values.
+- *Input gate*: determines what new information to store in the cell state. In particular, a sigmoid layer chooses which state values ​​should be updated, while a tanh layer determines the new candidate values.
 $$
 i_{t}= \sigma (W_i \cdot [h_{t-1}, x_t] + b_i)
+$$
+$$
 \tilde{C}_t = tanh(W_c \cdot [h_{t-1}, x_t] + b_i)
 $$
 At this time the cell state can be updated as: \\(C_t =f_t*C_{t-1}+i_t*\tilde{C}_t\\)
-- Forget gate*: determines the final output of the module as a filtered version of the updated cell state:
+- *Forget gate*: determines the final output of the module as a filtered version of the updated cell state:
 $$
 o_{t}= \sigma (W_o \cdot [h_{t-1}, x_t] + b_o)
 h_t = o_t*tanh(C_t)
