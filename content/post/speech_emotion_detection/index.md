@@ -3,7 +3,7 @@ title: 'Emotion detection from speech using Bi-directional LSTM networks and att
 subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness* and *neutral*'
 summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
 date: 2020-12-29T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -25,32 +25,35 @@ The classification system focuses on seven different emotions (*anger*, *boredom
 
 ## Long Short-Term Memory Networks
 The main idea behind this kind of deep learning model is simple but powerful and is inspired by the way reasoning occurs in the human brain. In particular, humans don't start thinking from scratch every time, but they use memory in order to interpret better a given information contextualizing it based on past information.
-This kind of persistency, which is absent in traditional feed-forward neural networks like multilayer perceptrons, is realized with **Recurrent Neual Networks** (RNN).
+This kind of persistency, which is absent in traditional feed-forward neural networks, is realized with **Recurrent Neual Networks** (RNN).
 
-These networks are able to use past information thanks to their loop structure, showed below, which allows persistence.
+These networks are able to use past information thanks to their loop structure, which can be be better represented by unrolling the network through time.
+<img src="unrolled.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+Persistency of information is achieved passing the current *hidden state* to the next step of the sequence. So the hidden state at each time step carries information about what the neural network has seen so far, acting like a memory element.
+At the time \\(t\\), the hidden state \\(h_t\\) is computed as the concatenation of the previous hidden state \\(h_{t-1}\\) and the current element of the input sequence \\(x_t\\), which undergoes a non-linear transformation through the *tanh* activation.
 <img src="rnn.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
-Because of the loop, the input at a given time \\(t\\) is composed by the current element of the input sequence \\(x_t\\) and the previous hidden state \\(h_{t-1}\\), which carries information about what the network has seen so far.
-The hidden state update is computed using a \\(tanh\\) non-linear activation function as follows: \\(h_t=tanh(W_{hh} \dot h_{t-1} + W_{xh} \dot x_{t})\\). This hidden state will be given in input to the subsequent timestep \\(t+1\\) jointly with \\(x_{t+1}\\).
-Once updated the hidden state \\(h_{t}\\), the output is compute as: \\(y_{t}= W_{hy} \dot h_{t}\\).
-This recurrent structure can be better seen by unrolling the network through time:
-<img src="unroll.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
 
 The problem of these kind of networks is that information cannot be carried effectively if the time sequence is too long, which means that we could lose important connections if the distance between useful information and the instant in which it is needed is very large.
-For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed.
+For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed, whose architecture is showed below.
+<img src="LSTM.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+The key element in LSTM networks is the *cell state*, which acts like memory element, undergoing only a few transformations along the entire chain. In particular, the flow of information is regulated by three structures called gates.
+- Forget gate*: determines to what extent the components of the cell state must be maintained, by calculating a score using the sigmoid function.
+$$
+f_{t}= \sigma (W_f \cdot [h_{t-1}, x_t] + b_F)
+$$
+- Input gate*: determines what new information to store in the cell state. In particular, a sigmoid layer chooses which state values ​​should be updated, while a tanh layer determines the new candidate values.
+$$
+i_{t}= \sigma (W_i \cdot [h_{t-1}, x_t] + b_i)
+\tilde{C}_t = tanh(W_c \cdot [h_{t-1}, x_t] + b_i)
+$$
+At this time the cell state can be updated as: \\(C_t =f_t*C_{t-1}+i_t*\tilde{C}_t\\)
+- Forget gate*: determines the final output of the module as a filtered version of the updated cell state:
+$$
+o_{t}= \sigma (W_o \cdot [h_{t-1}, x_t] + b_o)
+h_t = o_t*tanh(C_t)
+$$
 
 
-  
-
-
-These networks can learn a meaningful representation of a given image by automating the feature extraction process.
-The classical architecture of a CNN consists of a series of particular layers:
-- *Convolutional layer*: given an input image the convolution is carried out using a set of filters, called kernels, which are matrices of learnable weights. Convolution is performed using dot product between the filter and the portion of the image over which it is hovering; the filter is shifted according to a stride parameter and this process is repeated until the the entire image has been covered, generating an output volume composed by a set of convolved feature maps.
-The convolution of a \\(3\times 3\\) kernel, with \\(stride=1\\) (one pixel at a time) applied to a single-channel \\(5\times 5\\) image is showed below:
-<img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
-- *Relu layer*: Rectified Linear Unit is the typical activation function of convolutional levels, defined as \\(f(x) = max(0, x)\\).
-This function has many interesting properties, including efficiency, robustness against weight saturation or vanishing gradient, as well as the sparse activation of artificial neurons, which mimics what happens in biological systems, where only few neurons activate simultaneously.
-- *Pooling layer*: the role of this layer is to reduce the spatial size of the output volume from the convolutional layer, extracting rotational and positional invariant features. Dimensionality reduction is carried out using a kernel which moves upon the input matrices, taking the maximum (or the average) of the covered values.
-- *Fully-connected layer*: the output of convolutional and pooling layers can be flattened and feed to a dense layer of fully connected neurons, in order to learn a non-linear combination of the learned features. Finally a softmax classifier can be used for determining a probability value for each class label.
 
 ## Chihuahua vs. Pug
 Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.kaggle.com/c/dog-breed-identification">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
