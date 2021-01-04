@@ -57,38 +57,62 @@ h_t = o_t*tanh(C_t)
 $$
 
 
+## Emotion detection
+Let's now move on how to use LSTM Neural Networks in Keras in order to build our emotion detection application. Our dataset is the <a href="https://www.kaggle.com/piyushagni5/berlin-database-of-emotional-speech-emodb">Berlin Dataset of Emotional Speech (EMO-DB)</a>.
+For its construction 10 actors have been used, who were asked to read 10 portions of different text simulating seven different emotions: anger, boredom, disgust, anxiety, fear,
+happiness, sadness and a neutral version that does not belong to any emotional state. The recordings were made at a frequency of 48kHz, subsampled to 16kHz, inside anechoic chambers provided by the University's Department of Technical Acoustics
+of Berlin which are designed to minimize the distorting effects of noise.
+Classifying these recordings according to the expressed emotion is a quite challenging task, as the input data must be represented in an effective way and the patterns to be learned are quite complex.
 
-## Chihuahua vs. Pug
-Let's now move on how to use Convolutional Neural Networks in Keras in order to build our breed classifier, for distinguish a Chihuahua from a Pug. Our dataset is an extract from <a href="https://www.kaggle.com/c/dog-breed-identification">Dog Breed Identification</a>, and is composed by 152 Chihuahua and 200 Pug images.
-Data are normalized and resized to a fixed shape of \\(350\times 350\\). Now let's look at some example images from our dataset:
-<img src="dogs_example.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-This is a really challenging classification task, as the pattern to be learned are quite complex and the training images are few compared to how many a CNN would need to learn meaningful features. In order to cope with the small amount of traning data, the model exploits three main techniques:
-- Transfer Learning
-- Real time data augmentation
-- Fine tuning
+## Feature extraction
+Features have been extracted from wav format audio files by exploiting **Librosa**, a python package for music and audio analysis. In particular, I used the following 46 features:
+- *Spectral centroid*: indicates where the centre of mass for a sound is located and is calculated as the weighted mean of the sound frequencies.
+- *Spectral contrast*: estimates the energy contrast by comparing the peak energy to the valley energy.
+- *Spectral bandwidth*: is the wavelength interval in which a spectral quantity is not less than half its maximum value.
+- *Spectral rolloff*: represents the frequency below which a specified percentage of the total spectral energy lies.
+- *Zero crossing rate*: is the rate at which the signal changes from positive to negative or back.
+- *Root Mean Square*: describes the average signal amplitude.
+- *Mel frequency cepstral coefficients (MFCCs)*: a small set of features (20 coefficients) which model the characteristics of the human voice, concisely describing the overall shape of the spectral envelope.
+- *MFCC's first order derivatives*: 20 coefficients which capture the ways in which the MFCCs of the audio signal vary over time.
+I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f=16 kHz\\) for audio signals, we will have a number of frames \\(N = ceil(f*d/l) = 157\\)
+Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a \\(3D\\) input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
+In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
 
-## Transfer Learning
-**Transfer Learning** technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way, the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
-I exploited this strategy creating our dog breed classifier as follows:
-- Load the pre-trained model: I used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
-- Freeze VGG16 layers, so as to avoid destroying the information they contain during training.
-- Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier for determining the output probability for each class.
+## Class balancing
+The dataset is composed by 535 audio files, whose emotion distribution is showed below:
+<img src="emo_distr.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
+As we can see, training samples are quite unbalanced, which can cause problems in recognizing less represented emotions, such as disgust or sadness.
+To cope with this issue I used a class balancing strategy called **Synthetic Minority Over-sampling Technique** (SMOTE). it is an oversampling technique, which consists in increasing the number of samples relating to the less represented classes.
+In particular, new synthetic examples are created through interpolation techniques in order to obtain the same number of samples per class. After class balancing, the dataset contains 749 example from which 20 non-synthetic samples per class are selected as our test set.
+Is crucial here to select non-synthetic test samples for measuring fairly the performance of the classification model.
+
+
+## Attention mechanism for emotion detection 
+The use of attention mechanism in neural networks have widely demonstrated success in a wide range of tasks such as question answering, machine translations, natural language understanding and speech recognition.
+The main idea behind the attention mechanism, which mimics human behaviour, is to selectively concentrate on a few relevant things, while ignoring the rest. 
+
 
 The Keras implementation of the model is showed below:
 ```python
-def transfer_learning():
-    vgg_conv = vgg16.VGG16(weights='imagenet', include_top=False, input_shape=(350, 350, 3))
-    for layer in vgg_conv.layers[:]:
-        layer.trainable = False
-    model = Sequential()
-    model.add(vgg_conv)
-    model.add(Flatten())
-    model.add(Dense(1024, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(512, activation='relu'))
-    model.add(Dropout(0.5))
-    model.add(Dense(2, activation='softmax'))
-    model.summary()
+def create_model(units=256):
+    input = keras.Input(shape=(pre_proc.N_FRAMES, pre_proc.N_FEATURES))
+        states, forward_h, _, backward_h, _ = layers.Bidirectional(
+            layers.LSTM(units, return_sequences=True, return_state=True)
+        )(input)
+        last_state = layers.Concatenate()([forward_h, backward_h])
+        tanh = layers.TimeDistributed(layers.Activation("tanh"))(states)
+        scores = layers.TimeDistributed(layers.Dense(1, activation='linear', use_bias=False))(tanh)
+        f_scores = layers.Flatten()(scores)
+        a = layers.Softmax()(f_scores)
+        r = layers.Dot(axes=1)([states, a])
+        vec = layers.Concatenate()([r, last_state])
+    elif MODEL == "BLSTM":
+        vec = layers.Bidirectional(layers.LSTM(units, return_sequences=False))(input)
+    else:
+        raise Exception("Unknown model architecture!")
+    pred = layers.Dense(pre_proc.N_EMOTIONS, activation="softmax")(vec)
+    model = keras.Model(inputs=[input], outputs=[pred])
+    print(str(model.summary()))
     return model
 ```
 
