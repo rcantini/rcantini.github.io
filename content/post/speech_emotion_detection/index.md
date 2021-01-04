@@ -56,7 +56,6 @@ $$
 h_t = o_t*tanh(C_t)
 $$
 
-
 ## Emotion detection
 Let's now move on how to use LSTM Neural Networks in Keras in order to build our emotion detection application. Our dataset is the <a href="https://www.kaggle.com/piyushagni5/berlin-database-of-emotional-speech-emodb">Berlin Dataset of Emotional Speech (EMO-DB)</a>.
 For its construction 10 actors have been used, who were asked to read 10 portions of different text simulating seven different emotions: anger, boredom, disgust, anxiety, fear,
@@ -88,125 +87,85 @@ Is crucial here to select non-synthetic test samples for measuring fairly the pe
 
 
 ## Attention mechanism for emotion detection 
-The use of attention mechanism in neural networks have widely demonstrated success in a wide range of tasks such as question answering, machine translations, natural language understanding and speech recognition.
+The use of **attention mechanism** in neural networks have demonstrated great success in a wide range of tasks such as question answering, machine translations, natural language understanding and speech recognition.
 The main idea behind the attention mechanism, which mimics human behaviour, is to selectively concentrate on a few relevant things, while ignoring the rest. 
+There are many variations of this mechanism (global vs. local, soft vs. hard) but the its main use, for enhancing LSTM models such as encoder-decoder structures (e.g. in machine translation), is to avoid the use of the classical encoder output (*fixed context vector*), which is the last hidden state of the LSTM which carryies the information extracted by the LSTM encoder. 
+So, in the classical structure, all the information is compressed into the context vector, which can act as a bottleneck, while all the intermediate hidden states of the encoder are ignored. This vector is then fed to the subsequent layers, such as LSTM decoder or Dense. 
+As for the subsequent steps we only depend on this kind of summarization given by the encoder, the performances can degrade as the length of the analyzed temporal sequence increases: to cope with this problem attention mechanism is the way! 
+In general, according to this mechanism, every hidden state generated while processing the input sequence is taken into account, generating for each one an attention score (*energy* \\(e\\)) using an *alignment* function \\(a\\). By normalizing these scores with a softmax function we obtain the **attention weights** (\\(\alpha\\)), which
+determine the amount of attention we should pay to each hidden state in order to generate the desired output. For example, in encoder-decoder translation architectures, the attention weight \\(\alpha_{t,t'}\\) gives us a measure of the attention we should pay to the word at the position \\(t'\\) while predicting the \\(t-th\\) word.
+Given the attention weights for the \\(t-th\\) word, we can compute a *dynamic context vector* as a weighted sum of hidden states of the input sequence \\c_t =\sum_{i=1}^{n}\alpha_{t,i}h_i. So the crucial part of the entire mechanism is to determine this attention scores \\(e\\) and the main implementations present today vary according to the specific alignment function they use:
+- *Additive attention* (Bahdanau): \\(e_{i,j}=a(s_{i-1}, h_j)=v_a^Ttanh(W_as_{i-1}+U_ah_j\\), where \\(s_{i-1}\\) is the previous decoder hidden state while translating the \\(i-th\\) word, \\(h_j\\) is the \\(j-th\\) encoder hidden state and \\(W_a)\\, \\(U_a)\\ and \\(v_a)\\ are trainable matrices. We can look at the alignment model \\(a\\) as a feedforward neural network with one hidden layer.
+- *Dot-product attention* (Luong): \\(e_{i,j}=a(s_i, h_j)=s_i^T h_j\\). This model is easier than additive attention and involves no weights to train; furthermore, the dot product can be scaled in order to improve performances avoiding small gradients.
 
+For our emotion detection model I used a **Bahdanau-style global soft attention**. In particular, I adapted the formula to this classification task, where the decoder is absent. The alignment model is like Bahdanau a parametrized feedforward neural network, but here
+we want a weight vector (not a matrix) for detecting the expressed emotion taking into account the encoder hidden states. So, the energies are computed as \\(e_{j}=v_a^Ttanh(U_ah_j\\). A scaling operation is performed for improving weights learnability. The context vector is then computed as the weighted sum of the encoder hidden states with the normalized energies and then concatenated to the last
+encoder hidden state to improve performances. Finally a softmax classifier is used for determining a probability distribution for the expressed emotions.
 
-The Keras implementation of the model is showed below:
+In the following I show the Keras implementation of the proposed model (*Attention_BLSTM*). In order to assess the benefits brought by the attention mechanism, a simplified version of the model without attention (*BLSTM*) is also provided.
 ```python
 def create_model(units=256):
     input = keras.Input(shape=(pre_proc.N_FRAMES, pre_proc.N_FEATURES))
+    if MODEL == "Attention_BLSTM":
         states, forward_h, _, backward_h, _ = layers.Bidirectional(
             layers.LSTM(units, return_sequences=True, return_state=True)
         )(input)
         last_state = layers.Concatenate()([forward_h, backward_h])
-        tanh = layers.TimeDistributed(layers.Activation("tanh"))(states)
-        scores = layers.TimeDistributed(layers.Dense(1, activation='linear', use_bias=False))(tanh)
-        f_scores = layers.Flatten()(scores)
-        a = layers.Softmax()(f_scores)
-        r = layers.Dot(axes=1)([states, a])
-        vec = layers.Concatenate()([r, last_state])
+        hidden = layers.Dense(units, activation="tanh", use_bias=False,
+                              kernel_initializer=keras.initializers.RandomNormal(mean=0., stddev=1.)
+                              )(states)
+        out = layers.Dense(1, activation='linear', use_bias=False,
+                              kernel_initializer=keras.initializers.RandomNormal(mean=0., stddev=1.)
+                              )(hidden)
+        flat = layers.Flatten()(out)
+        energy = layers.Lambda(lambda x:x/np.sqrt(units))(flat)
+        normalize = layers.Softmax()
+        normalize._init_set_name("alpha") ###for weights inspection, more on this later...
+        alpha = normalize(energy)
+        ctx = layers.Dot(axes=1)([states, alpha])
+        context_vector = layers.Concatenate()([ctx, last_state])
     elif MODEL == "BLSTM":
-        vec = layers.Bidirectional(layers.LSTM(units, return_sequences=False))(input)
+        context_vector = layers.Bidirectional(layers.LSTM(units, return_sequences=False))(input)
     else:
         raise Exception("Unknown model architecture!")
-    pred = layers.Dense(pre_proc.N_EMOTIONS, activation="softmax")(vec)
+    pred = layers.Dense(pre_proc.N_EMOTIONS, activation="softmax")(context_vector)
     model = keras.Model(inputs=[input], outputs=[pred])
+    model._init_set_name(MODEL)
     print(str(model.summary()))
     return model
 ```
 
-## Training the model with real time data augmentation
-Now our model is ready for the training step.
-As the amount of images available for training the model is small, we can use an ImageDataGenerator in order to obtain some additional training samples:
-```python
-datagenTrain = ImageDataGenerator(
-    featurewise_center=True,
-    featurewise_std_normalization=True,
-    rotation_range=20,
-    width_shift_range=0.2,
-    height_shift_range=0.2,
-    horizontal_flip=True)
-datagenTrain.fit(xTrain)
-```
-Now we can use our generator while training the model, obtaining real time **data augmentation**:
-```python
-# compile model
-model.compile(loss='categorical_crossentropy', optimizer="adam", metrics=['accuracy'])
-# set callbacks for early stopping
-es = EarlyStopping(monitor='val_loss', mode='min', verbose=1, patience=5)
-best_weights_file = "weights.h5"
-mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=2,
-                     save_best_only=True)
-# train model testing it on each epoch with real time data augmentation
-history = model.fit(datagenTrain.flow(xTrain, y_train_cat, save_to_dir= "data_aug", batch_size=32), validation_data=(xTest, y_test_cat),
-                    batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
-```
-An example of what images our generator produces, using 20° rotation, shift and horizontal flip, is showed below:
-<img src="data_aug.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-The model has been trained using the *categorical crossentropy* loss function and the *Adam* optimizer. Furthermore two callback functions have been used in oder to avoid overfitting: *EarlyStopping*, which monitors the loss on validation set, and *ModelCheckpoint* for storing the best model.
-
-## Fine tuning
-An additional step for further improving performances is **fine tuning**. It consists in re-training the entire model obtained above in order to incrementally adapt the pretrained features to our specific dataset.
-Specifically, fine tuning can be obtained as follows:
-- Load the best model achieved in the previous training step
-- Un-freeze the pretrained layers. I've choosen to make the entire model trainable for a full end-to-end tuning.
-- Compile the model.
-- Train it with a very low learning rate. It's crucial to set a low learing rate as we only want to readapt pretrained features to work with our dataset and therefore large weight updates are not desirable at this stage.
-
-The code is showed below:
-```python
-model.load_weights(best_weights_file) # load the best model saved by ModelCheckpoint
-model.trainable = True
-best_weights_file = "weights_fine_tuned.h5"
-mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=2,
-                     save_best_only=True)
-model.compile(loss='categorical_crossentropy', optimizer=Adam(1e-5), metrics=['accuracy'])
-history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), validation_data=(xTest, y_test_cat),
-                    batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
-```
-
 ## Results
 
-In order to analyze the benefits introduced by the use of Transfer Learning and fine tuning, I compared the model described above with a simple CNN, trained from scratch with data augmentation, whose structure is showed below:
-```python
-def build_simple_CNN():
-    model = Sequential()
-    model.add(Conv2D(filters=32, kernel_size=(3,3),strides=(2,2), padding="valid",
-                     activation="relu", input_shape=(IMG_SIZE,IMG_SIZE,CHANNELS)))
-    model.add(MaxPooling2D(pool_size=(3,3),strides=(2,2)))
-    model.add(BatchNormalization())
-    model.add(Conv2D(filters=64,kernel_size=(3,3),strides=(2,2), padding="valid",
-                     activation="relu"))
-    model.add(Flatten())
-    model.add(Dense(512, activation="relu"))
-    model.add(Dropout(0.3))
-    model.add(Dense(2, activation="softmax"))
-    model.summary()
-    return model
-```
-The following table shows a comparison between the performances achieved by the simple CNN and the proposed model:
+I evaluated the trained models using 20 test samples per emotion. The attention-based BLSTM achieved a 90% accuracy, while its simplified without attention achieved about 75% accuracy.
+The obtained results, showed by the following table, confirm the effectiveness of the proposed attention mechanism.
 
 |  | Accuracy | Precision | Recall | F1-Score |
 |-|-|-|-|-|
-| Simple CNN | 0.68 | 0.70 | 0.68 | 0.64 |
-| Transfer Learning | 0.87 | 0.88 | 0.87 | 0.87 |
-| Transfer Learning + Fine Tuning | 0.93 | 0.93 | 0.93 | 0.93 |
+| BLSTM | 0.75 | 0.75 | 0.75 | 0.74 |
+| Attention-based BLSTM | 0.90 | 0.91 | 0.90 | 0.90 |
 
-As we can easily see, the use of Tranfer Learning has led to much higher performances than a simple Convolutional Neural Network trained from scratch (*0.68 vs. 0.87 accuracy*). In addition, the fine tuning step has further improved performance significantly, reaching a *0.93 accuracy* on the test set.
+As we can easily see, the use of the attention mechanism has led to much higher performances than a classical BSLTM. To better see the performance improvement in recognizing the different emotions, confusion matricesfor both models are provided:
+<img src="cf_ms.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+We can see a good improvement in recognizing every emotion, most of all for what concerns disgust, happiness and neutral classes.
 
-Now let's take a closer look at the output of the model given some test images.
-<p style="text-align: center"><b>Chihuahua</b></p>
-<img src="cs.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-<p style="text-align: center"><b>Pug</b></p>
-<img src="ps.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-Good job! The model is able to correctly classify dog images according to the breed with a high confidence level.
+Just to make it more fun and give you some more concrete examples of the model's performance, we can choose a test file for each emotion and take a look at the system classification.
+- *anger*: [anger](anger.wav) --- detected emotion: **anger** (0.96 confidence)
+- *boredom*: [boredom](boredom.wav) --- detected emotion: **boredom** (0.89 confidence)
+- *disgust*: [disgust](disgust.wav) --- detected emotion: **disgust** (0.94 confidence)
+- *fear*: [fear](fear.wav) --- detected emotion: **fear** (0.96 confidence)
+- *happiness*: [happiness](happiness.wav) --- detected emotion: **happiness** (0.88 confidence)
+- *sadness*: [sadness](sadness.wav) --- detected emotion: **sadness** (0.98 confidence)
+- *neutral*: [neutral](neutral.wav) --- detected emotion: **neutral** (0.90 confidence)
 
-## Special guest
+It's pretty cool! The model classified all of the selected audio files with a high confidence :clap::clap:
 
-Lastly, we can test our breed classifier with external images (this is the funniest part). To do this I took some photos of my girlfriend's Chihuahua, **Emy**.
-Let's see what our model says about this beautiful puppy:
-<img src="emy.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-Great! The model correctly classifies our cute Emy as a Chihuahua :clap::clap:
+## Emotion-based attention of the system
+
+Lastly, an interesting thing we can do is to take a close look at the attention weights, in order to analyze how the system paid attention to the provided audio files while recognizing the different emotions. 
+This kind of interpretability is an awesome property of most attention-based models.
+<img src="visualize_attention.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 80%"/>
+The plot shows the normalized cumulative sum of the attention weights \\(\alpha \\) dividing the audio files into 10 bins (0.5 seconds each). As we can see, according to the different expressed emotion, 
+the system focuses the attention on different parts of the audio, concentrating most on a small group of bins, as for sadness or disgust, or diluting the attention on a larger part of the audio, as for boredom or happiness.
 <hr>
-You can find the full code on GitHub at this <a href="https://github.com/rcantini/Dog-breed-classification" target="_blank">link</a>.
+You can find the full code on GitHub at this <a href="https://github.com/rcantini/speech_emotion_recognition" target="_blank">link</a>.
