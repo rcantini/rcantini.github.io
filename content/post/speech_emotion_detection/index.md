@@ -75,7 +75,7 @@ Features have been extracted from wav format audio files by exploiting **Librosa
 - *MFCC's first order derivatives*: 20 coefficients which capture the ways in which the MFCCs of the audio signal vary over time.
 
 
-I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f\\)=16kHz for audio signals, we will have a number of frames: \\(N = ceil(f\times d/l) = 157\\).
+I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f\\) of 16kHz for audio signals, we will have a number of frames: \\(N = ceil(f\times d/l) = 157\\).
 Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a 3D input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
 In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
 
