@@ -75,8 +75,8 @@ Features have been extracted from wav format audio files by exploiting **Librosa
 - *MFCC's first order derivatives*: 20 coefficients which capture the ways in which the MFCCs of the audio signal vary over time.
 
 
-I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f=16\\)<b>kHz</b> for audio signals, we will have a number of frames: \\(N = ceil(f\times d/l) = 157\\).
-Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a \\(3\\)<b>D</b> input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
+I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f\\)=16kHz for audio signals, we will have a number of frames: \\(N = ceil(f\times d/l) = 157\\).
+Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a 3D input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
 In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
 
 ## Class balancing
@@ -95,7 +95,7 @@ There are many variations of this mechanism (*global* vs. *local*, *soft* vs. *h
 So, in the classical structure, all the information is compressed into the context vector, which can act as a bottleneck, while all the intermediate hidden states of the encoder are ignored. This vector is then fed to the subsequent layers, such as *LSTM decoder* or *Dense*. 
 As for the subsequent steps we only depend on this kind of summarization given by the encoder, the performances can degrade as the length of the analyzed temporal sequence increases: to cope with this problem, attention mechanism is the way!
 
-In general, according to this mechanism, every encoder hidden state, generated while processing the input sequence, is taken into account, calculating for each one of them an attention score (**energy** \\(e\\)) using an **alignment** function \\(a\\). By normalizing these scores with a softmax function, we obtain the **attention weights** (\\(\alpha\\)), which
+In general, according to this mechanism, every encoder hidden state, generated while processing the input sequence, is taken into account, calculating for each one of them an attention score (**energy** \\(e\\)) using an **alignment function** \\(a\\). By normalizing these scores with a softmax function, we obtain the **attention weights** (\\(\alpha\\)), which
 determine the amount of attention we should pay to each hidden state in order to generate the desired output. For example, in encoder-decoder translation architectures, the attention weight \\(\alpha_{t,t'}\\) gives us a measure of the attention we should pay to the word at position \\(t'\\) while predicting the \\(t\\)-th word.
 Given the attention weights for the \\(t \\)-th word, we can compute the <b>dynamic context vector</b> \\(c_t\\) as the weighted sum of the encoder hidden states: \\(c_t =\sum_{i=1}^{n}\alpha_{t,i}h_i\\). So the crucial part of the entire mechanism is to determine the attention scores, and the main implementations present today vary according to the specific alignment function they use:
 - **Additive attention** (***Bahdanau***): \\(e_{i,j}=a(s_{i-1}, h_j)=v_a^Ttanh(W_as_{i-1}+U_ah_j)\\), where \\(s_{i-1}\\) is the previous decoder hidden state, \\(h_j\\) is the \\(j\\)-th encoder hidden state and \\(W_a\\), \\(U_a\\) and \\(v_a\\) are trainable matrices. We can look at the alignment model \\(a\\) as a feedforward neural network with one hidden layer.
