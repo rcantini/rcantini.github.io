@@ -47,7 +47,7 @@ $$
 $$
 \tilde{C}_t = tanh(W_c \cdot [h_{t-1}, x_t] + b_c)
 $$
-At this time the cell state can be updated as: \\(C_t =f_t\times C_{t-1}+i_t \times \tilde{C}_t\\).
+At this time the cell state can be updated as: \\(C_t =f_t\times C_{t-1}+i_t \times \tilde{C}_t\\)
 - *Output gate*: determines the final output of the module as a filtered version of the updated cell state:
 $$
 o_{t}= \sigma (W_o \cdot [h_{t-1}, x_t] + b_o)
@@ -59,12 +59,12 @@ $$
 ## Emotion detection
 Let's now move on how to use LSTM Neural Networks in Keras, in order to build our emotion detection application. Our dataset is the <a href="https://www.kaggle.com/piyushagni5/berlin-database-of-emotional-speech-emodb">Berlin Dataset of Emotional Speech (EMO-DB)</a>.
 For its construction 10 actors have been used, who were asked to read 10 portions of different text, simulating seven different emotions: **anger**, **boredom**, **disgust**, **anxiety**, **fear**,
-**happiness**, **sadness** and a **neutral** version, which does not belong to any emotional state. The recordings were made at a frequency of 48kHz, subsampled to 16kHz, inside anechoic chambers provided by the Department of Technical Acoustics
-of Berlin University, which are designed to minimize the distorting effect of noise.
+**happiness**, **sadness** and a **neutral** version, which does not belong to any emotional state. The recordings were made at a frequency of 48kHz, subsampled to 16kHz, inside anechoic chambers provided by the *Department of Technical Acoustics of Berlin University*, 
+which are designed to minimize the distorting effect of noise.
 Classifying these recordings according to the expressed emotion is a quite challenging task, as the input data must be represented in an effective way and the patterns to be learned are quite complex.
 
 ## Feature extraction
-Features have been extracted from wav format audio files by exploiting **Librosa**, a Python package for music and audio analysis. In particular, I used the following 46 features:
+Features have been extracted from wav format audio files by exploiting **Librosa**, a Python package for music and audio analysis. In particular, I used the following \\(46\\) features:
 - *Spectral centroid*: indicates where the centre of mass for a sound is located and is calculated as the weighted mean of the sound frequencies.
 - *Spectral contrast*: estimates the energy contrast by comparing the peak energy to the valley energy.
 - *Spectral bandwidth*: is the wavelength interval in which a spectral quantity is not less than half its maximum value.
@@ -75,8 +75,8 @@ Features have been extracted from wav format audio files by exploiting **Librosa
 - *MFCC's first order derivatives*: 20 coefficients which capture the ways in which the MFCCs of the audio signal vary over time.
 
 
-I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f=16 kHz\\) for audio signals, we will have a number of frames \\(N = ceil(f*d/l) = 157\\).
-Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a \\(3D\\) input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
+I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f=16\\)** kHz** for audio signals, we will have a number of frames: \\(N = ceil(f*d/l) = 157\\).
+Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a \\(3\\)**D** input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
 In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
 
 ## Class balancing
@@ -97,7 +97,7 @@ As for the subsequent steps we only depend on this kind of summarization given b
 
 In general, according to this mechanism, every encoder hidden state, generated while processing the input sequence, is taken into account, calculating for each one of them an attention score (**energy** \\(e\\)) using an **alignment** function \\(a\\). By normalizing these scores with a softmax function, we obtain the **attention weights** (\\(\alpha\\)), which
 determine the amount of attention we should pay to each hidden state in order to generate the desired output. For example, in encoder-decoder translation architectures, the attention weight \\(\alpha_{t,t'}\\) gives us a measure of the attention we should pay to the word at position \\(t'\\) while predicting the \\(t\\)-th word.
-Given the attention weights for the \\(t\\)-th word, we can compute a **dynamic context vector** as the weighted sum of the encoder hidden states \\(c_t =\sum_{i=1}^{n}\alpha_{t,i}h_i\\). So the crucial part of the entire mechanism is to determine the attention scores \\(e\\) and the main implementations present today vary according to the specific alignment function they use:
+Given the attention weights for the \\(t \\)-th word, we can compute a **dynamic context vector** as the weighted sum of the encoder hidden states \\(c_t =\sum_{i=1}^{n}\alpha_{t,i}h_i\\). So the crucial part of the entire mechanism is to determine the attention scores \\(e\\) and the main implementations present today vary according to the specific alignment function they use:
 - *Additive attention* (Bahdanau): \\(e_{i,j}=a(s_{i-1}, h_j)=v_a^Ttanh(W_as_{i-1}+U_ah_j)\\), where \\(s_{i-1}\\) is the previous decoder hidden state, \\(h_j\\) is the \\(j\\)-th encoder hidden state and \\(W_a\\), \\(U_a\\) and \\(v_a\\) are trainable matrices. We can look at the alignment model \\(a\\) as a feedforward neural network with one hidden layer.
 - *Dot-product attention* (Luong): \\(e_{i,j}=a(s_i, h_j)=s_i^T h_j\\).<br/>This model is easier than additive attention and involves no weights to train; furthermore, the dot product can be scaled in order to improve performances, avoiding small gradients.
 
