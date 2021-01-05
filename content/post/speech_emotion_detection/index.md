@@ -5,7 +5,7 @@ summary: "This post is dedicated to the development of an artificial intelligenc
 date: 2020-12-29T00:00:00Z
 draft: false
 math: true
-disable_comments: true
+disable_comments: false
 markup: kramdown
 lastmod: 2020-12-29T00:00:00Z
 authors:
