@@ -152,14 +152,14 @@ As we can easily see, the use of the attention mechanism has led to much higher 
 <img src="cf_ms.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 We can clearly see a good improvement in recognizing every emotion, most of all for what concerns disgust, happiness and neutral classes.
 
-Just to make it more fun, giving you some more concrete examples of the system behaviour, we can choose a test file for each emotion and take a look at what the system thinks about it. (**Just click to play!**)
-- [anger](anger.wav) --- detected emotion: **anger** (0.96 confidence)
-- [boredom](boredom.wav) --- detected emotion: **boredom** (0.89 confidence)
-- [disgust](disgust.wav) --- detected emotion: **disgust** (0.94 confidence)
-- [fear](fear.wav) --- detected emotion: **fear** (0.96 confidence)
-- [happiness](happiness.wav) --- detected emotion: **happiness** (0.88 confidence)
-- [sadness](sadness.wav) --- detected emotion: **sadness** (0.98 confidence)
-- [neutral](neutral.wav) --- detected emotion: **neutral** (0.90 confidence)
+Just to make it more fun, giving you some more concrete examples of the system behaviour, we can choose a test file for each emotion and take a look at what the system thinks about it. (**Click :speaker: to play the audio!**)
+- [Anger :speaker:](anger.wav) --- detected emotion: **anger** (0.96 confidence)
+- [Boredom :speaker:](boredom.wav) --- detected emotion: **boredom** (0.89 confidence)
+- [Disgust :speaker:](disgust.wav) --- detected emotion: **disgust** (0.94 confidence)
+- [Fear :speaker:](fear.wav) --- detected emotion: **fear** (0.96 confidence)
+- [Happiness :speaker:](happiness.wav) --- detected emotion: **happiness** (0.88 confidence)
+- [Sadness :speaker:](sadness.wav) --- detected emotion: **sadness** (0.98 confidence)
+- [Neutral :speaker:](neutral.wav) --- detected emotion: **neutral** (0.90 confidence)
 
 It's pretty cool! The model classified all of the selected audio files with a high level of confidence :clap::clap:
 
