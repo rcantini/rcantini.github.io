@@ -32,7 +32,7 @@ Persistency of information is achieved passing the current *hidden state* to the
 At the time \\(t\\), the hidden state \\(h_t\\) is computed as the concatenation of the previous hidden state \\(h_{t-1}\\) and the current element of the input sequence \\(x_t\\), which undergoes a non-linear transformation through the tanh activation.
 <img src="rnn.gif" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
-The problem of these kind of networks is that information cannot be carried effectively if the time sequence is too long, which means that we could lose important connections if the distance between useful information and the instant in which it is needed is very large.
+The problem of this kind of networks is that information cannot be carried effectively if the time sequence is too long, which means that we could lose important connections if the distance between useful information and the instant in which it is needed is very large.
 For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed, whose architecture is showed below.
 <img src="LSTM.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 The key element in LSTM networks is the *cell state*, which acts like memory element, undergoing only a few transformations along the entire chain. In particular, the flow of information is regulated by three structures called gates.
