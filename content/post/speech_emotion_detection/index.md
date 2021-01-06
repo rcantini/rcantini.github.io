@@ -81,7 +81,7 @@ In fact, we can look at each file in our dataset as a time sequence of 157 frame
 
 ## Class balancing
 The dataset is composed by 535 audio files, whose emotion distribution is showed below:
-<img src="emo_distr.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
+<img src="emo_distr.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: -10px; width: 80%; height: 80%"/>
 As we can see, training samples are quite unbalanced, which can cause problems in recognizing less represented emotions, such as disgust or sadness.
 To cope with this issue, I used a class balancing strategy called **Synthetic Minority Over-sampling Technique** (SMOTE). It is an oversampling technique, which consists in increasing the number of samples relating to the less represented classes.
 In particular, new synthetic examples are created through interpolation techniques in order to obtain the same number of samples per class. After class balancing, the dataset contains 749 examples, from which 20 non-synthetic samples per class are selected as our test set.
@@ -167,7 +167,7 @@ It's pretty cool! The model classified all of the selected audio files with a hi
 
 Lastly, an interesting thing we can do is to take a close look at the **attention weights** \\(\alpha\\), in order to analyze how the system paid attention to the provided audio files while recognizing the different emotions. 
 This degree of interpretability is an awesome property of most attention-based models.
-<img src="visualize_attention.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 80%"/>
+<img src="visualize_attention.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: -10px; width: 100%; height: 100%"/>
 The plot shows the normalized cumulative sum of the attention weights, dividing the audio files into 10 blocks (*bins*) of 0.5 seconds each. As we can see, according to the different expressed emotion, 
 the system focuses on different parts of the audio. For example, it concentrates most on a small group of bins, for sadness and disgust, and dilutes the attention on a larger part of the audio, for boredom or happiness.
 Furthermore, for anger, disgust and sadness the system pays more attention to the last bins, while for boredom it focuses on the first ones.
