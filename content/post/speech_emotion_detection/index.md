@@ -76,7 +76,7 @@ Features have been extracted from wav format audio files by exploiting **Librosa
 
 
 I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f\\) of 16kHz for audio signals, we will have a number of frames: \\(N = ceil(f\times d/l) = 157\\).
-Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a 3D input datased with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
+Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a 3D input dataset with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
 In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
 
 ## Class balancing
@@ -98,8 +98,9 @@ As for the subsequent steps we only depend on this kind of summarization given b
 In general, according to this mechanism, every encoder hidden state, generated while processing the input sequence, is taken into account, calculating for each one of them an attention score (**energy** \\(e\\)) using an **alignment function** \\(a\\). By normalizing these scores with a softmax function, we obtain the **attention weights** (\\(\alpha\\)), which
 determine the amount of attention we should pay to each hidden state in order to generate the desired output. For example, in encoder-decoder translation architectures, the attention weight \\(\alpha_{t,t'}\\) gives us a measure of the attention we should pay to the word at position \\(t'\\) while predicting the \\(t\\)-th word.
 Given the attention weights for the \\(t \\)-th word, we can compute the <b>dynamic context vector</b> \\(c_t\\) as the weighted sum of the encoder hidden states: \\(c_t =\sum_{i=1}^{n}\alpha_{t,i}h_i\\). So the crucial part of the entire mechanism is to determine the attention scores, and the main implementations present today vary according to the specific alignment function they use:
-- **Additive attention** (***Bahdanau***): \\(e_{i,j}=a(s_{i-1}, h_j)=v_a^Ttanh(W_as_{i-1}+U_ah_j)\\), where \\(s_{i-1}\\) is the previous decoder hidden state, \\(h_j\\) is the \\(j\\)-th encoder hidden state and \\(W_a\\), \\(U_a\\) and \\(v_a\\) are trainable matrices. We can look at the alignment model \\(a\\) as a feedforward neural network with one hidden layer.
-- **Dot-product attention** (***Luong***): \\(e_{i,j}=a(s_i, h_j)=s_i^T h_j\\).<br/>This model is easier than additive attention and involves no weights to train; furthermore, the dot product can be scaled in order to improve performances, avoiding small gradients.
+- **Additive attention** (<em>Bahdanau</em>): \\(e_{i,j}=v_a^Ttanh(W_as_{i-1}+U_ah_j)\\), where \\(s_{i-1}\\) is the previous decoder hidden state, \\(h_j\\) is the \\(j\\)-th encoder hidden state and \\(W_a\\), \\(U_a\\) and \\(v_a\\) are trainable matrices. We can look at the alignment model \\(a\\) as a feedforward neural network with one hidden layer.
+- **Dot-product attention** (<em>Luong</em>): \\(e_{i,j}=s_i^T h_j\\). This model is easier than additive attention and involves no weights to train. Furthermore, the dot product can be scaled in order to improve performances, avoiding small gradients, obtaining the so-called **Scaled dot-product attention**.
+- **Others**: location-based, general or content-based attention.
 
 For our emotion detection model I used a **Bahdanau-style global soft attention**. In particular, I adapted the formula to this classification task, where the decoder is absent. The alignment model is, like in Bahdanau, a parametrized feedforward neural network and the energies are computed as \\(e_{j}=v_a^Ttanh(U_ah_j)\\). A scaling operation is then performed for improving weights learnability. 
 The context vector is then computed as the weighted sum of the encoder hidden states with the normalized energies (<i>attention weights</i>) and then concatenated to the last
