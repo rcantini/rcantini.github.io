@@ -161,7 +161,7 @@ Just to make it more fun, giving you some more concrete examples of the system b
 - [Sadness :speaker:](sadness.wav) --- detected emotion: **sadness** (0.98 confidence)
 - [Neutral :speaker:](neutral.wav) --- detected emotion: **neutral** (0.90 confidence)
 
-It's pretty cool! The model classified all of the selected audio files with a high level of confidence :clap::clap:
+It's pretty cool! The model correctly classified all of the selected audio files with a high level of confidence :clap::clap:
 
 ## Visualizing emotion-based attention
 
@@ -169,7 +169,7 @@ Lastly, an interesting thing we can do is to take a close look at the **attentio
 This degree of interpretability is an awesome property of most attention-based models.
 <img src="visualize_attention.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 The plot shows the normalized cumulative sum of the attention weights, dividing the audio files into 10 blocks (*bins*) of 0.5 seconds each. As we can see, according to the different expressed emotion, 
-the system focuses on different parts of the audio. For example, it concentrates most on a small group of bins, for sadness and disgust, and dilutes the attention on a larger part of the audio, for boredom or happiness.
+the system focuses on different parts of the audio. For example, it concentrates most on a small group of bins for sadness and disgust, while diluting the attention on a larger part of the audio, for boredom or happiness.
 Furthermore, for anger, disgust and sadness the system pays more attention to the last bins, while for boredom it focuses on the first ones.
 <hr>
 You can find the full code on GitHub at this <a href="https://github.com/rcantini/speech_emotion_recognition" target="_blank">link</a>.
