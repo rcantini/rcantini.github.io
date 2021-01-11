@@ -45,7 +45,7 @@ This is a really challenging classification task, as the patterns to be learned 
 - Fine tuning
 
 ## Transfer Learning
-**Transfer Learning** technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way, the abilities of a pre-trained model can be transferred to one another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
+**Transfer Learning** technique consists of exploiting features learned on one problem, for dealing with a new similar problem: this way, the abilities of a pre-trained model can be transferred to another. This technique is very usefull when data are not enough to build a full model from scratch, as in our case.
 I exploited this strategy creating our dog breed classifier as follows:
 - Load the pre-trained model: I used a VGG16 model which has been pre-trained on ImageNet, a +10 million image dataset from 1000 categories.
 - Freeze VGG16 layers, so as to avoid destroying the information they contain during training.
