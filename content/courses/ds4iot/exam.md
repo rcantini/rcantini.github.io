@@ -22,33 +22,24 @@ The practical exam consists of two steps:
  Any topic covered in our lectures can be the subject of a question during the exam
 
 ## Discussion of the project
-### Project types:
 Two types of project are available:
-1) Study, modeling and simulation of a real use-case
+**1) Study, modeling and simulation of a real use-case**
 - Select a topic of interest
 - Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic
 - Modeling and Simulation using iFogSim
-2) Modeling and simulation of an edge-based data mining use-case
+**2) Modeling and simulation of an edge-based data mining use-case**
 - You will be given a scientific paper to study, in which an edge/IoT-based data mining solution is proposed
 - Repeat some of the experiments present in the paper. Try out different data mining algorithms (e.g. implemented in Python) on the dataset used in the paper (we will provide it to you).
 - Modeling and Simulation using iFogSim
 
-### More about iFogSim modeling & simulation:
+### More about iFogSim modeling & simulation
 During this phase, you must pay close attention to the parameter setting phase. You must carefully establish all the parameter of the simulation, including application, hardware and architectural parameters.
 Test different placement policies (cloud only, hybrid/fog, edge only ) selecting the best one
-according to your needs. A comparison of the obtained results is required in terms of:
-- latency
-- network usage
-- energy consumption
+according to your needs. A comparison of the obtained results is required in terms of *latency*, *network usage* and *energy consumption*.
 
 ### Project delivery
 - Write a report to be delivered before the exam, in which you explain all the details of your proposed system, the choices made during the parametr setting phase, your key findings and results.
 - Prepare a presentation that will help you explain your work during the exam.
 - The **deadline** for delivering the project (*report + code*) is **7 days before the exam**.
 
-More info about the project and some ideas about the topic are available [here](pdf/Projects.pdf).
-
-## Topic assignment
-
-| Students               | Topic		  |
-| ---------------------- | ---------------------- |
+More info about the project are available [here](pdf/Projects.pdf).
