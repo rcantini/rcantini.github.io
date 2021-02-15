@@ -34,12 +34,12 @@ Two types of project are available:
 
 ### More about iFogSim modeling & simulation
 During this phase, you must pay close attention to the parameter setting phase. You must carefully establish all the parameter of the simulation, including application, hardware and architectural parameters.
-Test different placement policies (cloud only, hybrid/fog, edge only ) selecting the best one
-according to your needs. A comparison of the obtained results is required in terms of *latency*, *network usage* and *energy consumption*.
+Test different placement policies, in particular ***cloud only***, ***hybrid/fog*** and ***edge only***, selecting the best one according to your needs. 
+A comparison of the obtained results is required in terms of *latency*, *network usage* and *energy consumption*.
 
 ### Project delivery
 - Write a report to be delivered before the exam, in which you explain all the details of your proposed system, the choices made during the parametr setting phase, your key findings and results.
 - Prepare a presentation that will help you explain your work during the exam.
 - The **deadline** for delivering the project (*report + code*) is **7 days before the exam**.
 
-More info about the project are available [here](pdf/Projects.pdf).
+More info about the project are available [here](../pdf/Projects.pdf).
