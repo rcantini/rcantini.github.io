@@ -23,14 +23,16 @@ The practical exam consists of two steps:
 
 ## Discussion of the project
 Two types of project are available:
+
 **1) Study, modeling and simulation of a real use-case**
-- Select a topic of interest
-- Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic
-- Modeling and Simulation using iFogSim
+- Select a topic of interest.
+- Study of the state-of-art solutions (Edge/Fog, Cloud, IoT) related to the selected topic.
+- Modeling and Simulation using iFogSim.
+
 **2) Modeling and simulation of an edge-based data mining use-case**
-- You will be given a scientific paper to study, in which an edge/IoT-based data mining solution is proposed
+- You will be given a scientific paper to study, in which an edge/IoT-based data mining solution is proposed.
 - Repeat some of the experiments present in the paper. Try out different data mining algorithms (e.g. implemented in Python) on the dataset used in the paper (we will provide it to you).
-- Modeling and Simulation using iFogSim
+- Modeling and Simulation using iFogSim.
 
 ### More about iFogSim modeling & simulation
 During this phase, you must pay close attention to the parameter setting phase. You must carefully establish all the parameter of the simulation, including application, hardware and architectural parameters.
