@@ -1,5 +1,5 @@
 ---
-title: Project topics and instructions
+title: Practical exam
 linktitle: Exam
 toc: true
 type: docs
