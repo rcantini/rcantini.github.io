@@ -1,21 +1,20 @@
 ---
-title: 'Emotion detection from speech using Bi-directional LSTM networks and attention mechanism in Keras'
-subtitle: 'How to exploit attention mechanism in LSTM networks for realizing a sentiment analysis application that can distinguish among seven different emotional states: *anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness* and *neutral*'
-summary: "This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language. The classification model focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and is enhanced with the attention mechanism."
-date: 2020-12-29T00:00:00Z
+title: 'Play with BERT! Text classification using Huggingface and Tensorflow'
+subtitle: 'How to fine-tune a BERT classifier for detecting the sentiment of a movie review and the level of toxicity of a comment.
+summary: "In what follows, I'll show how to fine-tune a BERT classifier, using HuggingFace and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on its level of toxicity, expressed by one or more labels among *toxic*, *severe_toxic*, *obscene*, *threat*, *insult* and *identity_hate*."
+date: 2021-03-03T00:00:00Z
 draft: false
 math: true
 disable_comments: true
 markup: kramdown
-lastmod: 2020-12-29T00:00:00Z
+lastmod: 2021-03-03T00:00:00Z
 authors:
 - admin
 tags:
-- Emotion detection
+- Natural Language Processing
 - Sentiment Analisysis
-- LSTM
-- Attention
-- Audio analysis
+- Toxicity Detection
+- BERT
 - Deep Learning
 - Keras-Tensorflow
 ---
