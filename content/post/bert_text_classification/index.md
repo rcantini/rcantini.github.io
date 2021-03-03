@@ -1,9 +1,9 @@
 ---
-title: 'Play with BERT! Text classification using Huggingface and Tensorflow'
+title: 'Play with BERT! Text classification using Hugging Face and Tensorflow'
 subtitle: 'How to fine-tune a BERT classifier for detecting the sentiment of a movie review and the level of toxicity of a comment.'
-summary: "In what follows, I'll show how to fine-tune a BERT classifier, using HuggingFace and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on its level of toxicity, expressed by one or more labels among *toxic*, *severe_toxic*, *obscene*, *threat*, *insult* and *identity_hate*."
+summary: "In what follows, I'll show how to fine-tune a BERT classifier, using Hugging Face and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on its level of toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*."
 date: 2021-03-03T00:00:00Z
-draft: false
+draft: true
 math: true
 disable_comments: true
 markup: kramdown
