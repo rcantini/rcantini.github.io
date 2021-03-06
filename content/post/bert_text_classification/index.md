@@ -29,7 +29,7 @@ It is based on a multi-layer bidirectional Transformer, pre-trained on two unsup
 - *Masked Language Modeling (MLM)*: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
 - *Next Sentence Prediction (NSP)*: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
 
-BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the joinlty considering previous and subsequent tokens.
+BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the input sequence, joinlty considering previous and subsequent tokens.
 In fact, the use of MLM objective enables the representation to fuse the left and right contexts, allowing the pre-training of a deep bidirectional language representation
 model.
 This is a key difference comparing to previous language representation models like *OpenAI GPT*, which uses a unidirectional (left-to-right) language model, or
