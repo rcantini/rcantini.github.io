@@ -19,12 +19,12 @@ tags:
 - Keras-Tensorflow
 ---
 
-In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems.
+In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems:
 - *Sentiment analysis*: detect the sentiment of a movie review, classifying it according to its polarity, i.e. *negative* or *positive*.
 - *Toxicity detection*: classify a comment according to its toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*.
 
 ## What is BERT?
-**Bidirectional Encoder Representations from Transformers (BERT)** is a Natural Language Processing Model proposed by researchers at Google Research in 2018.
+**Bidirectional Encoder Representations from Transformers (BERT)** is a Natural Language Processing Model proposed by Google Research in 2018.
 It is based on a multi-layer bidirectional Transformer, pre-trained on two unsupervised tasks using a large crossdomain corpus:
 - *Masked Language Modeling (MLM)*: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
 - *Next Sentence Prediction (NSP)*: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
@@ -37,7 +37,7 @@ This is a key difference comparing to previous language representation models li
 BERT outperformed many task-specific architectures, advancing the state of the art in a wide range of Natural Language Processing tasks, such as textual entailment,
 text classification and question answering.
 
-For further details, you might want to read the original BERT <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
+For further details, you might want to read the original <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
 
 ## Sentiment analysis
 Let's now move on how to use LSTM Neural Networks in Keras, in order to build our emotion detection application. Our dataset is the <a href="https://www.kaggle.com/piyushagni5/berlin-database-of-emotional-speech-emodb">Berlin Dataset of Emotional Speech (EMO-DB)</a>.
