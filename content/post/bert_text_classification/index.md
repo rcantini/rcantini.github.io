@@ -3,7 +3,7 @@ title: 'Play with BERT! Text classification using Huggingface and Tensorflow'
 subtitle: 'How to fine-tune a BERT classifier for detecting the sentiment of a movie review and the toxicity of a comment.'
 summary: "In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on its toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*."
 date: 2021-03-03T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -19,22 +19,25 @@ tags:
 - Keras-Tensorflow
 ---
 
-This post is dedicated to the development of an artificial intelligence application capable of identifying the emotions expressed through the voice in spoken language.
-The classification system focuses on seven different emotions (*anger*, *boredom*, *disgust*, *fear*, *happiness*, *sadness*, *neutral*) and exploits an attention-based
-Long Short-Term Memory (LSTM) neural network, a state-of-art deep learning model for the analysis of sequential data, widely used in the field of Natural Language Processing (NLP).
-
-
 In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems.
 - *Sentiment analysis*: detect the sentiment of a movie review, classifying it according to its polarity, i.e. *negative* or *positive*.
 - *Toxicity detection*: classify a comment according to its toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*.
 
-## BERT
-\\(h_{t-1}\\)
-<img src="rnn.gif" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+## What is BERT?
+**Bidirectional Encoder Representations from Transformers (BERT)** is a Natural Language Processing Model proposed by researchers at Google Research in 2018.
+It is based on a multi-layer bidirectional Transformer, pre-trained on two unsupervised tasks using a large crossdomain corpus:
+- *Masked Language Modeling (MLM)*: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
+- *Next Sentence Prediction (NSP)*: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
 
-$$
-f_{t}= \sigma (W_f \cdot [h_{t-1}, x_t] + b_f)
-$$
+BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the joinlty considering previous and subsequent tokens.
+In fact, the use of MLM objective enables the representation to fuse the left and right contexts, allowing the pre-training of a deep bidirectional language representation
+model.
+This is a key difference comparing to previous language representation models like *OpenAI GPT*, which uses a unidirectional (left-to-right) language model, or
+*ELMo*, which uses a shallow concatenation of independently trained left-to-right and right-to-left language models.
+BERT outperformed many task-specific architectures, advancing the state of the art in a wide range of Natural Language Processing tasks, such as textual entailment,
+text classification and question answering.
+
+For further details, you might want to read the original BERT <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
 
 ## Sentiment analysis
 Let's now move on how to use LSTM Neural Networks in Keras, in order to build our emotion detection application. Our dataset is the <a href="https://www.kaggle.com/piyushagni5/berlin-database-of-emotional-speech-emodb">Berlin Dataset of Emotional Speech (EMO-DB)</a>.
