@@ -122,24 +122,10 @@ In the following, the results of the 4 training steps of both models are shown:
 
 I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#93a1a1;border-spacing:0;margin:0px auto;}
-.tg td{background-color:#fdf6e3;border-color:#93a1a1;border-style:solid;border-width:1px;color:#002b36;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-c3ow"></th>
-    <th class="tg-c3ow">Accuracy</th>
-    <th class="tg-c3ow">      AUC      </th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
+|  | Accuracy |       AUC       |
+|:-:|:-:|:-:|
+| Sentiment classification | 0.96 | 0.88 |
+| Toxicity classification | 0.94 | 0.98 |
 
 As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
 To better analyize the performance of the trained classifiers, ROC curves for both models are provided:
