@@ -113,6 +113,7 @@ In the following, the results of the 4 training steps of both models are shown:
 - Sentiment analysis, IMDB movie reviews: 
 
 <img src="training_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+
 - Toxicity detection, Wikipedia toxic comments: 
 
 <img src="training_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
@@ -122,10 +123,12 @@ In the following, the results of the 4 training steps of both models are shown:
 I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
 
 <center>
+
 |  | Accuracy | auc |
 |-|-|-|
 | Sentiment class. | 0.96 | 0.88 |
 | Toxicity class. | 0.94 | 0.98 |
+
 </center>
 
 As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
@@ -135,10 +138,15 @@ We can clearly see the high confidence of both models, especially for what conce
 
 Just to make it more fun, I wrote some sentences to further test the performance of both models.
 - Sentiment analysis, IMDB movie reviews: 
+
 <img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
+
 - Toxicity detection, Wikipedia toxic comments: 
+
 <img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
 
-Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). Furthermore, it determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, insults or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
+Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
+
+On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). Furthermore, it determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, insults or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
