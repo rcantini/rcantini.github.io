@@ -122,7 +122,7 @@ In the following, the results of the 4 training epochs of both models are shown:
 
 ## Results
 
-I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
+I evaluated the trained models using \\(1024\\) test samples, achieving the following results:
 
 <div style="width: 55%;margin: auto;">
 
