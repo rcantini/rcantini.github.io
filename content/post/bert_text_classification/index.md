@@ -42,35 +42,74 @@ text classification and question answering.
 For further details, you might want to read the original <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
 
 ## Sentiment analysis
-Let's now move on how to use LSTM Neural Networks in Keras, in order to build our emotion detection application. Our dataset is the <a href="https://www.kaggle.com/piyushagni5/berlin-database-of-emotional-speech-emodb">Berlin Dataset of Emotional Speech (EMO-DB)</a>.
-For its construction 10 actors have been used, who were asked to read 10 portions of different text, simulating seven different emotions: **anger**, **boredom**, **disgust**, **anxiety**, **fear**,
-**happiness**, **sadness** and a **neutral** version, which does not belong to any emotional state. The recordings were made at a frequency of 48kHz, subsampled to 16kHz, inside anechoic chambers provided by the *Department of Technical Acoustics of Berlin University*, 
-which are designed to minimize the distorting effect of noise.
-Classifying these recordings according to the expressed emotion is a quite challenging task, as the input data must be represented in an effective way and the patterns to be learned are quite complex.
+Let's now move on how to fine-tune the BERT model in order to deal with our classification tasks. Text classification can be a quite challenging task, but we can easily achieve amazing results by exploiting the effectiveness of transfer learning form pre-trained language representation models.
+The first use case is related to the classification of movie reviews according to the expressed sentiment, which can be *positive* or *negative*.
+The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contians 50000 movie reviews equally divided by polarity.
+I modeled this binary classification task using a classification layer with a single neuron and a sigmoid activation, which means that the model will output a single sentiment score. This is the probability that the review is positive, 
+thus a value very close to \\(1\\) indicates a very positive sentence and a value near to \\(0\\) a very negative sentence, while a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
 
-## Feature extraction
-Features have been extracted from wav format audio files by exploiting **Librosa**, a Python package for music and audio analysis. In particular, I used the following \\(46\\) features:
-- *Spectral centroid*: indicates where the centre of mass for a sound is located and is calculated as the weighted mean of the sound frequencies.
-- *Spectral contrast*: estimates the energy contrast by comparing the peak energy to the valley energy.
-- *Spectral bandwidth*: is the wavelength interval in which a spectral quantity is not less than half its maximum value.
-- *Spectral rolloff*: represents the frequency below which a specified percentage of the total spectral energy lies.
-- *Zero crossing rate*: is the rate at which the signal changes from positive to negative or back.
-- *Root Mean Square*: describes the average signal amplitude.
-- *Mel frequency cepstral coefficients (MFCCs)*: a small set of features (20 coefficients) which model the characteristics of the human voice, concisely describing the overall shape of the spectral envelope.
-- *MFCC's first order derivatives*: 20 coefficients which capture the ways in which the MFCCs of the audio signal vary over time.
+In the following, I show the Keras code for creating the model.
+
+```python
+def create_model():
+    input_ids = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='input_ids')
+    input_type = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='token_type_ids')
+    input_mask = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='attention_mask')
+    inputs = [input_ids, input_type, input_mask]
+    bert = TFBertModel.from_pretrained(BERT_NAME)
+    bert_outputs = bert(inputs)
+    last_hidden_states = bert_outputs.last_hidden_state
+    avg = layers.GlobalAveragePooling1D()(last_hidden_states)
+    output = layers.Dense(1, activation="sigmoid")(avg)
+    model = keras.Model(inputs=inputs, outputs=output)
+    model.summary()
+    return model
+```
+
+As we can see, the BERT model expects three inputs:
+- *Input ids*: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded sung the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
+ As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
+- *Input masks*: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
+- *Input types*: Contains 0 or 1 indicating which sentence the token is a part of. For asingle-sentence input is a vector of zeros.
+This model returns two outputs which can be expoited for many dowstream tasks:
+- *pooler_output*: it is the output of the BERT pooler, corresponding to the embedded representation of the CLS token further processed by a linear layer and a tanh activation. It can be used as an aggregate representation of the whole sentence. 
+- *last_hidden_state*: 768-dimensional embeddings for each token in the given sentence.
+
+The use of the first output (the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
+> This output is usually not a good summary of the semantic content of the input, you’re often better with averaging or pooling the sequence of hidden-states for the whole input sequence.
+For this reason I preferred to use a Global Average Pooling on the sequence of all hidden states, in order to get a concise representation of the whole sentence.
+
+After the creation of the model, we can fine tune it as follows:
+```python
+def fine_tune(model, X_train, x_val, y_train, y_val):
+    max_epochs = 4
+    batch_size = 32
+    opt = tfa.optimizers.RectifiedAdam(learning_rate=3e-5)
+    loss = keras.losses.BinaryCrossentropy()
+    best_weights_file = "weights.h5"
+    m_ckpt = ModelCheckpoint(best_weights_file, monitor='val_auc', mode='max', verbose=2,
+                             save_weights_only=True, save_best_only=True)
+    model.compile(loss=loss, optimizer=opt, metrics=[keras.metrics.AUC(multi_label=True, curve="ROC"),
+                                                     keras.metrics.BinaryAccuracy()])
+    model.fit(
+        X_train, y_train,
+        validation_data=(x_val, y_val),
+        epochs=max_epochs,
+        batch_size=batch_size,
+        callbacks=[m_ckpt],
+        verbose=2
+    )
+```
+I used a number of epochs equals to 4 as a best practice and a very low learning rate. This last aspect is crucial as we only want to readapt pre-trained features to work with our downstream task, thus high gradients are not desirable at this stage. Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
+I used a binary cross-entropy loss as the prediction of the output class is modeled like a single Bernoulli trial, estimating the probability of a comment to be positive. Moreover I chose the Rectified version of ADAM as the optimizer for the training process.
+
+METTERE I DUE CASI DI STUDIO INSIEME NELLA DESCRIZIONE
 
 
-I used a frame length \\(l=512\\) and imposed a maximum duration of \\(d=5\\) seconds. So, as we have a frequency \\(f\\) of 16kHz for audio signals, we will have a number of frames: \\(N = ceil(f\times d/l) = 157\\).
-Computing the above 46 features for each of the 157 frames and each of the 535 audio files, we will end up with a 3D input dataset with shape \\(535\times 157\times 46\\), which is very suitable to be analyzed with an LSTM model.
-In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
+RectifiedADAM
 
-## Class balancing
-The dataset is composed by 535 audio files, whose emotion distribution is showed below.
+
 <img src="emo_distr.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
-As we can see, training samples are quite unbalanced, which can cause problems in recognizing less represented emotions, such as disgust or sadness.
-To cope with this issue, I used a class balancing strategy called **Synthetic Minority Over-sampling Technique** (SMOTE). It is an oversampling technique, which consists in increasing the number of samples relating to the less represented classes.
-In particular, new synthetic examples are created through interpolation techniques in order to obtain the same number of samples per class. After class balancing, the dataset contains 749 examples, from which 20 non-synthetic samples per class are selected as our test set.
-It is crucial here to select non-synthetic test samples for measuring fairly the performance of our classification model.
 
 
 ## Attention mechanism for emotion detection 
@@ -91,38 +130,6 @@ For our emotion detection model I used a **Bahdanau-style global soft attention*
 The context vector is then computed as the weighted sum of the encoder hidden states with the normalized energies (<i>attention weights</i>) and then concatenated to the last
 encoder hidden state to improve performances. Finally, a softmax classifier is used for determining a probability distribution for the expressed emotions.
 
-In the following, I show the Keras implementation of the proposed model (*Attention_BLSTM*). In order to assess the benefits brought by the attention mechanism, a simplified version of the model without attention (*BLSTM*) is also provided.
-```python
-def create_model(units=256):
-    input = keras.Input(shape=(pre_proc.N_FRAMES, pre_proc.N_FEATURES))
-    if MODEL == "Attention_BLSTM":
-        states, forward_h, _, backward_h, _ = layers.Bidirectional(
-            layers.LSTM(units, return_sequences=True, return_state=True)
-        )(input)
-        last_state = layers.Concatenate()([forward_h, backward_h])
-        hidden = layers.Dense(units, activation="tanh", use_bias=False,
-                              kernel_initializer=keras.initializers.RandomNormal(mean=0., stddev=1.)
-                              )(states)
-        out = layers.Dense(1, activation='linear', use_bias=False,
-                              kernel_initializer=keras.initializers.RandomNormal(mean=0., stddev=1.)
-                              )(hidden)
-        flat = layers.Flatten()(out)
-        energy = layers.Lambda(lambda x:x/np.sqrt(units))(flat)
-        normalize = layers.Softmax()
-        normalize._init_set_name("alpha") ###for visualizing attention, more on this later...
-        alpha = normalize(energy)
-        ctx = layers.Dot(axes=1)([states, alpha])
-        context_vector = layers.Concatenate()([ctx, last_state])
-    elif MODEL == "BLSTM":
-        context_vector = layers.Bidirectional(layers.LSTM(units, return_sequences=False))(input)
-    else:
-        raise Exception("Unknown model architecture!")
-    pred = layers.Dense(pre_proc.N_EMOTIONS, activation="softmax")(context_vector)
-    model = keras.Model(inputs=[input], outputs=[pred])
-    model._init_set_name(MODEL)
-    print(str(model.summary()))
-    return model
-```
 
 ## Results
 
