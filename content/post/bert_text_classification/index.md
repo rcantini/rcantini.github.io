@@ -68,6 +68,7 @@ The only difference between the two models is the number of neurons in the outpu
 For the first case study, `n_out` is equal to 1, as we are coping with a binary classification task that involves the calculation of a single sentiment score. This is the probability that the review is positive, 
 thus a value very close to \\(1\\) indicates a very positive sentence and a value near to \\(0\\) a very negative sentence, while a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
 For the second case study, `n_out` is equal to 6, as we are coping with a multi-label classification with six possible types of toxicity. This means that the model treats each toxicity type as a separate class, computing an independent probability for each one of them through a Bernuolli trial.
+
 As we can see, the BERT model expects three inputs:
 - *Input ids*: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded sung the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
  As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
