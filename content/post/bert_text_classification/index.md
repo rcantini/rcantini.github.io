@@ -41,17 +41,15 @@ text classification and question answering.
 
 For further details, you might want to read the original <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
 
-## Sentiment analysis
+## Fine-tuning
 Let's now move on how to fine-tune the BERT model in order to deal with our classification tasks. Text classification can be a quite challenging task, but we can easily achieve amazing results by exploiting the effectiveness of transfer learning form pre-trained language representation models.
 The first use case is related to the classification of movie reviews according to the expressed sentiment, which can be *positive* or *negative*.
 The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contians 50000 movie reviews equally divided by polarity.
-I modeled this binary classification task using a classification layer with a single neuron and a sigmoid activation, which means that the model will output a single sentiment score. This is the probability that the review is positive, 
-thus a value very close to \\(1\\) indicates a very positive sentence and a value near to \\(0\\) a very negative sentence, while a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
-
-In the following, I show the Keras code for creating the model.
+The second case study is about building a model capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of comments from Wikipedia. This kind of models are useful for helping online discussion become more productive and respectful.
+In the following, I show the Keras code for creating the models.
 
 ```python
-def create_model():
+def create_model(n_out):
     input_ids = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='input_ids')
     input_type = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='token_type_ids')
     input_mask = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='attention_mask')
@@ -60,12 +58,17 @@ def create_model():
     bert_outputs = bert(inputs)
     last_hidden_states = bert_outputs.last_hidden_state
     avg = layers.GlobalAveragePooling1D()(last_hidden_states)
-    output = layers.Dense(1, activation="sigmoid")(avg)
+    output = layers.Dense(n_out, activation="sigmoid")(avg)
     model = keras.Model(inputs=inputs, outputs=output)
     model.summary()
     return model
 ```
+The only difference between the two models is the number of neurons in the output layer, i.e. the number of independent classes, determined by the `n_out` parameter.
+For the first case study, `n_out`=1
 
+
+ I modeled this binary classification task using a classification layer with a single neuron and a sigmoid activation, which means that the model will output a single sentiment score. This is the probability that the review is positive, 
+thus a value very close to \\(1\\) indicates a very positive sentence and a value near to \\(0\\) a very negative sentence, while a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
 As we can see, the BERT model expects three inputs:
 - *Input ids*: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded sung the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
  As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
