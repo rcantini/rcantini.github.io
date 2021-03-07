@@ -111,7 +111,7 @@ I used a binary cross-entropy loss as the prediction of each of the `n_out` outp
 Lastly, I used the area under the Receiver operating characteristic curve, ROC_AUC, and Accuracy as the main metrics for validation and testing.
 
 ## Training
-In the following, the results of the 4 training steps of both models are shown:
+In the following, the results of the 4 training epochs of both models are shown:
 - Sentiment analysis, IMDB movie reviews: 
 
 <img src="training_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
