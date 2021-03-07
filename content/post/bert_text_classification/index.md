@@ -134,7 +134,7 @@ I evaluated the trained models using 1024 test samples per emotion, achieving th
 As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
 To better analyize the performance of the trained classifiers, ROC curves for both models are provided:
 <img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-We can clearly see the high confidence of both models, especially for what concerns the toxiit classifier which achieved a micor-average auc of \\(0.98\\).
+We can clearly see the high confidence of both models, especially for what concerns the toxicity classifier which achieved a micro-average auc of \\(0.98\\).
 
 Just to make it more fun, I wrote some sentences to further test the performance of both models.
 - Sentiment analysis, IMDB movie reviews: 
