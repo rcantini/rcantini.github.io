@@ -129,8 +129,8 @@ I evaluated the trained models using 1024 test samples per emotion, achieving th
 .tg th{background-color:#657b83;border-color:#93a1a1;border-style:solid;border-width:1px;color:#fdf6e3;
   font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px;}}</style>
-<div class="tg-wrap"><table class="tg">
+</style>
+<table class="tg">
 <thead>
   <tr>
     <th class="tg-c3ow"></th>
@@ -157,6 +157,6 @@ Just to make it more fun, I wrote some sentences to further test the performance
 
 Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
 
-On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). Furthermore, it determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, insults or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
+On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). Furthermore, it determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
