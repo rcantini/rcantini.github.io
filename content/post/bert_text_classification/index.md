@@ -46,6 +46,7 @@ Let's now move on how to fine-tune the BERT model in order to deal with our clas
 The first use case is related to the classification of movie reviews according to the expressed sentiment, which can be *positive* or *negative*.
 The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contians 50000 movie reviews equally divided by polarity.
 The second case study is about building a model capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of a large number of comments from Wikipedia. Toxicity detection models are useful for helping online discussion become more productive and respectful.
+
 In the following, I show the Keras code for creating the models.
 
 ```python
