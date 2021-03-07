@@ -73,7 +73,7 @@ As we can see, the BERT model expects three inputs:
 - *Input ids*: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded sung the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
  As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
 - *Input masks*: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
-- *Input types*: Contains 0 or 1 indicating which sentence the token is a part of. For asingle-sentence input is a vector of zeros.
+- *Input types*: Contains 0 or 1 indicating which sentence the token is a part of. For a single-sentence input is a vector of zeros.
 
 Huggingface model returns two outputs which can be expoited for our dowstream tasks:
 - *pooler_output*: it is the output of the BERT pooler, corresponding to the embedded representation of the CLS token further processed by a linear layer and a tanh activation. It can be used as an aggregate representation of the whole sentence. 
