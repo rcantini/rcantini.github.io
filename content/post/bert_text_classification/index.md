@@ -72,12 +72,14 @@ As we can see, the BERT model expects three inputs:
  As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
 - *Input masks*: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
 - *Input types*: Contains 0 or 1 indicating which sentence the token is a part of. For asingle-sentence input is a vector of zeros.
+
 Huggingface model returns two outputs which can be expoited for our dowstream tasks:
 - *pooler_output*: it is the output of the BERT pooler, corresponding to the embedded representation of the CLS token further processed by a linear layer and a tanh activation. It can be used as an aggregate representation of the whole sentence. 
 - *last_hidden_state*: 768-dimensional embeddings for each token in the given sentence.
 
-The use of the first output (the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
+The use of the first output (from the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
 > This output is usually not a good summary of the semantic content of the input, you’re often better with averaging or pooling the sequence of hidden-states for the whole input sequence.
+
 For this reason I preferred to use a Global Average Pooling on the sequence of all hidden states, in order to get a concise representation of the whole sentence.
 
 After the creation of the model, we can fine tune it as follows:
@@ -106,21 +108,25 @@ I used a binary cross-entropy loss as the prediction of each of the `n_out` outp
 *RAdam* is a variant of the Adam optimizer which rectifies the variance/generalization issues apparent in other adaptive learning rate optimizers. The main idea behind this variation is to apply a warm up with a low initial learning rate, turning also off the momentum term for the first few sets of input training batches.
 Lastly, I used the area under the Receiver operating characteristic curve, ROC_AUC, and Accuracy as the main metrics for validation and testing.
 
-# Training
+## Training
 In the following, the results of the 4 training steps of both models are shown:
 - Sentiment analysis, IMDB movie reviews: 
-<img src="training_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
+
+<img src="training_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 - Toxicity detection, Wikipedia toxic comments: 
-<img src="training_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
+
+<img src="training_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
 ## Results
 
 I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
 
+<center>
 |  | Accuracy | auc |
 |-|-|-|
 | Sentiment class. | 0.96 | 0.88 |
 | Toxicity class. | 0.94 | 0.98 |
+</center>
 
 As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
 To better analyize the performance of the trained classifiers, ROC curves for both models are provided:
