@@ -128,8 +128,8 @@ I evaluated the trained models using \\(1024\\) test samples, achieving the foll
 
 |  | Accuracy |       ROC_AUC       |
 |:-:|:-:|:-:|
-| Sentiment classification | 0.96 | 0.88 |
-| Toxicity classification | 0.94 | 0.98 |
+| Sentiment classification | 0.88 | 0.95 |
+| Toxicity classification | 0.98 | 0.94 |
 
 </div>
 
