@@ -19,9 +19,11 @@ tags:
 - Keras-Tensorflow
 ---
 
-In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems:
-- *Sentiment analysis*: detect the sentiment of a movie review, classifying it according to its polarity, i.e. *negative* or *positive*.
-- *Toxicity detection*: classify a comment according to its toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*.
+In what follows, I'll show how to fine-tune a BERT classifier using the Huggingface <a href="https://huggingface.co/transformers/quicktour.html">Transformers library</a> and Keras+Tensorflow.
+
+Two different classification problems are addressed:
+- <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB sentiment analysis</a>: detect the sentiment of a movie review, classifying it according to its polarity, i.e. *negative* or *positive*.
+- <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">Toxic comment classification</a>: determine the toxicity of a Wikipedia comment, predicting a probability for each type of toxicity, i.e. *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*.
 
 ## What is BERT?
 **Bidirectional Encoder Representations from Transformers (BERT)** is a Natural Language Processing Model proposed by Google Research in 2018.
@@ -155,4 +157,4 @@ The plot shows the normalized cumulative sum of the attention weights, dividing 
 the system focuses on different parts of the audio. For example, it concentrates most on a small group of bins for sadness and disgust, while diluting the attention on a larger part of the audio, for boredom or happiness.
 Furthermore, for anger, disgust and sadness the system pays more attention to the last bins, while for boredom it focuses on the first ones.
 <hr>
-You can find the full code on GitHub at this <a href="https://github.com/rcantini/speech_emotion_recognition" target="_blank">link</a>.
+You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
