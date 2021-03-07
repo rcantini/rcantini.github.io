@@ -105,7 +105,7 @@ def fine_tune(model, X_train, x_val, y_train, y_val):
         verbose=2
     )
 ```
-I used a number of epochs equals to 4 following the best practice and a very low learning rate ( \\(3e^{-5}\\) ). This last aspect is crucial as we only want to readapt pre-trained features to work with our downstream task, thus high gradients are not desirable at this stage. Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
+I used a number of epochs equals to 4 following the best practice and a very low learning rate (\\(3e^{-5}\\)). This last aspect is crucial as we only want to readapt pre-trained features to work with our downstream task, thus high gradients are not desirable at this stage. Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
 I used a binary cross-entropy loss as the prediction of each of the `n_out` output classes is modeled like a single Bernoulli trial, estimating the probability through a sigmoid activation. Moreover I chose the Rectified version of ADAM as the optimizer for the training process. 
 *RAdam* is a variant of the Adam optimizer which rectifies the variance/generalization issues apparent in other adaptive learning rate optimizers. The main idea behind this variation is to apply a warm up with a low initial learning rate, turning also off the momentum term for the first few sets of input training batches.
 Lastly, I used the area under the Receiver operating characteristic curve, ROC_AUC, and Accuracy as the main metrics for validation and testing.
