@@ -122,7 +122,7 @@ In the following, the results of the 4 training steps of both models are shown:
 
 I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
 
-<div style="width: 60%;margin: auto;">
+<div style="width: 50%;margin: auto;">
 
 |  | Accuracy |       AUC       |
 |:-:|:-:|:-:|
@@ -139,11 +139,11 @@ We can clearly see the high confidence of both models, especially for what conce
 Just to make it more fun, I wrote some sentences to further test the performance of both models.
 - Sentiment analysis, IMDB movie reviews: 
 
-<img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 100%"/>
+<img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
 - Toxicity detection, Wikipedia toxic comments: 
 
-<img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 100%"/>
+<img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
 Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
 
