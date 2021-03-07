@@ -147,6 +147,6 @@ Just to make it more fun, I wrote some sentences to further test the performance
 
 Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
 
-On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). Furthermore, it determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
+On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). It also determined the right types of toxicity, like obscene, toxic and insult for the first and the third comment, or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
