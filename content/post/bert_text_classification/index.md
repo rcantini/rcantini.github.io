@@ -122,7 +122,7 @@ In the following, the results of the 4 training steps of both models are shown:
 
 I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
 
-<div style="width: 50%;margin: auto;">
+<div style="width: 55%;margin: auto;">
 
 |  | Accuracy |       ROC_AUC       |
 |:-:|:-:|:-:|
