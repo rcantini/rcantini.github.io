@@ -3,7 +3,7 @@ title: 'Play with BERT! Text classification using Huggingface and Tensorflow'
 subtitle: 'How to fine-tune a BERT classifier for detecting the sentiment of a movie review and the toxicity of a comment.'
 summary: "In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on its toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*."
 date: 2021-03-03T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -64,17 +64,15 @@ def create_model(n_out):
     return model
 ```
 The only difference between the two models is the number of neurons in the output layer, i.e. the number of independent classes, determined by the `n_out` parameter.
-For the first case study, `n_out`=1
-
-
- I modeled this binary classification task using a classification layer with a single neuron and a sigmoid activation, which means that the model will output a single sentiment score. This is the probability that the review is positive, 
+For the first case study, `n_out` is equal to 1, as we are coping with a binary classification task that involves the calculation of a single sentiment score. This is the probability that the review is positive, 
 thus a value very close to \\(1\\) indicates a very positive sentence and a value near to \\(0\\) a very negative sentence, while a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
+For the second case study, `n_out` is equal to 6, as we are coping with a multi-label classification with six possible types of toxicity. This means that the model treats each toxicity type as a separate class, computing an independent probability for each one of them through a Bernuolli trial.
 As we can see, the BERT model expects three inputs:
 - *Input ids*: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded sung the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
  As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
 - *Input masks*: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
 - *Input types*: Contains 0 or 1 indicating which sentence the token is a part of. For asingle-sentence input is a vector of zeros.
-This model returns two outputs which can be expoited for many dowstream tasks:
+Huggingface model returns two outputs which can be expoited for our dowstream tasks:
 - *pooler_output*: it is the output of the BERT pooler, corresponding to the embedded representation of the CLS token further processed by a linear layer and a tanh activation. It can be used as an aggregate representation of the whole sentence. 
 - *last_hidden_state*: 768-dimensional embeddings for each token in the given sentence.
 
@@ -103,68 +101,38 @@ def fine_tune(model, X_train, x_val, y_train, y_val):
         verbose=2
     )
 ```
-I used a number of epochs equals to 4 as a best practice and a very low learning rate. This last aspect is crucial as we only want to readapt pre-trained features to work with our downstream task, thus high gradients are not desirable at this stage. Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
-I used a binary cross-entropy loss as the prediction of the output class is modeled like a single Bernoulli trial, estimating the probability of a comment to be positive. Moreover I chose the Rectified version of ADAM as the optimizer for the training process.
+I used a number of epochs equals to 4 following the best practice and a very low learning rate. This last aspect is crucial as we only want to readapt pre-trained features to work with our downstream task, thus high gradients are not desirable at this stage. Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
+I used a binary cross-entropy loss as the prediction of each of the `n_out` output classes is modeled like a single Bernoulli trial, estimating the probability through a sigmoid activation. Moreover I chose the Rectified version of ADAM as the optimizer for the training process. 
+*RAdam* is a variant of the Adam optimizer which rectifies the variance/generalization issues apparent in other adaptive learning rate optimizers. The main idea behind this variation is to apply a warm up with a low initial learning rate, turning also off the momentum term for the first few sets of input training batches.
+Lastly, I used the area under the Receiver operating characteristic curve, ROC_AUC, and Accuracy as the main metrics for validation and testing.
 
-METTERE I DUE CASI DI STUDIO INSIEME NELLA DESCRIZIONE
-
-
-RectifiedADAM
-
-
-<img src="emo_distr.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
-
-
-## Attention mechanism for emotion detection 
-The use of **attention mechanism** in neural networks have demonstrated great success in a wide range of tasks, such as question answering, machine translations, natural language understanding and speech recognition.
-The main idea behind the attention mechanism, which mimics human behaviour, is to selectively concentrate on a few relevant things, while ignoring the rest. 
-There are many variations of this mechanism (*global* vs. *local*, *soft* vs. *hard*) but its main use, for enhancing LSTM models such as encoder-decoder structures (e.g. in machine translation), is to avoid the use of a **fixed context vector** as the only output of the encoder. Specifically, it is the last hidden state of the LSTM, which carries all the information extracted by the LSTM encoder. 
-So, in the classical structure, all the information is compressed into the context vector, which can act as a bottleneck, while all the intermediate hidden states of the encoder are ignored. This vector is then fed to the subsequent layers, such as *LSTM decoder* or *Dense*. 
-As for the subsequent steps we only depend on this kind of summarization given by the encoder, the performances can degrade as the length of the analyzed temporal sequence increases: to cope with this problem, attention mechanism is the way!
-
-In general, according to this mechanism, every encoder hidden state, generated while processing the input sequence, is taken into account, calculating for each one of them an attention score (**energy** \\(e\\)) using an **alignment function** \\(a\\). By normalizing these scores with a softmax function, we obtain the **attention weights** (\\(\alpha\\)), which
-determine the amount of attention we should pay to each hidden state in order to generate the desired output. For example, in encoder-decoder translation architectures, the attention weight \\(\alpha_{t,t'}\\) gives us a measure of the attention we should pay to the word at position \\(t'\\) while predicting the \\(t\\)-th word.
-Given the attention weights for the \\(t \\)-th word, we can compute the <b>dynamic context vector</b> \\(c_t\\) as the weighted sum of the encoder hidden states: \\(c_t =\sum_{i=1}^{n}\alpha_{t,i}h_i\\). So the crucial part of the entire mechanism is to determine the attention scores, and the main implementations present today vary according to the specific alignment function they use:
-- **Additive** or **concat** (*Bahdanau*): \\(e_{i,j}=v_a^Ttanh(W_as_{i-1}+U_ah_j)\\), where \\(s_{i-1}\\) is the previous decoder hidden state, \\(h_j\\) is the \\(j\\)-th encoder hidden state and \\(W_a\\), \\(U_a\\) and \\(v_a\\) are trainable matrices. We can look at the alignment model \\(a\\) as a feedforward neural network with one hidden layer.
-- **Dot-product** (*Luong*): \\(e_{i,j}=s_i^T h_j\\). This model is easier than additive attention and involves no weights to train. Furthermore, the dot product can be scaled in order to improve performances, avoiding small gradients, obtaining the so-called <b>scaled dot-product attention</b>.
-- Other types of attention are **location-based**, **general** and **content-based**.
-
-For our emotion detection model I used a **Bahdanau-style global soft attention**. In particular, I adapted the formula to this classification task, where the decoder is absent. The alignment model is, like in Bahdanau, a parametrized feedforward neural network and the energies are computed as \\(e_{j}=v_a^Ttanh(U_ah_j)\\). A scaling operation is then performed for improving weights learnability. 
-The context vector is then computed as the weighted sum of the encoder hidden states with the normalized energies (<i>attention weights</i>) and then concatenated to the last
-encoder hidden state to improve performances. Finally, a softmax classifier is used for determining a probability distribution for the expressed emotions.
-
+# Training
+In the following, the results of the 4 training steps of both models are shown:
+- Sentiment analysis, IMDB movie reviews: 
+<img src="training_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
+- Toxicity detection, Wikipedia toxic comments: 
+<img src="training_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
 
 ## Results
 
-I evaluated the trained models using 20 test samples per emotion. The attention-based BLSTM achieved a 90% accuracy, while its simplified version which does not use attention achieved about 75% accuracy.
+I evaluated the trained models using 1024 test samples per emotion, achieving the following results:
 
-|  | Accuracy | Precision | Recall | F1-Score |
-|-|-|-|-|-|
-| BLSTM | 0.75 | 0.75 | 0.75 | 0.74 |
-| Attention-based BLSTM | 0.90 | 0.91 | 0.90 | 0.90 |
+|  | Accuracy | auc |
+|-|-|-|
+| Sentiment class. | 0.96 | 0.88 |
+| Toxicity class. | 0.94 | 0.98 |
 
-As we can easily see, the use of the attention mechanism has led to much higher performances than a classical BSLTM. To better see the performance improvement in recognizing the different emotions, confusion matrices for both models are provided:
-<img src="cf_ms.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-We can clearly see a good improvement in recognizing every emotion, most of all for what concerns disgust, happiness and neutral classes.
+As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
+To better analyize the performance of the trained classifiers, ROC curves for both models are provided:
+<img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+We can clearly see the high confidence of both models, especially for what concerns the toxiit classifier which achieved a micor-average auc of \\(0.98\\).
 
-Just to make it more fun, giving you some more concrete examples of the system behaviour, we can choose a test file for each emotion and take a look at what the system thinks about it. (**Click :speaker: to play the audio!**)
-- [Anger :speaker:](anger.wav) --- detected emotion: **anger** (0.96 confidence)
-- [Boredom :speaker:](boredom.wav) --- detected emotion: **boredom** (0.89 confidence)
-- [Disgust :speaker:](disgust.wav) --- detected emotion: **disgust** (0.94 confidence)
-- [Fear :speaker:](fear.wav) --- detected emotion: **fear** (0.96 confidence)
-- [Happiness :speaker:](happiness.wav) --- detected emotion: **happiness** (0.88 confidence)
-- [Sadness :speaker:](sadness.wav) --- detected emotion: **sadness** (0.98 confidence)
-- [Neutral :speaker:](neutral.wav) --- detected emotion: **neutral** (0.90 confidence)
+Just to make it more fun, I wrote some sentences to further test the performance of both models.
+- Sentiment analysis, IMDB movie reviews: 
+<img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
+- Toxicity detection, Wikipedia toxic comments: 
+<img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 95%; height: 95%"/>
 
-It's pretty cool! The model correctly classified all of the selected audio files with a high level of confidence :clap::clap:
-
-## Visualizing emotion-based attention
-
-Lastly, an interesting thing we can do is to take a close look at the **attention weights** \\(\alpha\\), in order to analyze how the system paid attention to the provided audio files while recognizing the different emotions. 
-This degree of interpretability is an awesome property of most attention-based models.
-<img src="visualize_attention.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
-The plot shows the normalized cumulative sum of the attention weights, dividing the audio files into 10 blocks (*bins*) of 0.5 seconds each. As we can see, according to the different expressed emotion, 
-the system focuses on different parts of the audio. For example, it concentrates most on a small group of bins for sadness and disgust, while diluting the attention on a larger part of the audio, for boredom or happiness.
-Furthermore, for anger, disgust and sadness the system pays more attention to the last bins, while for boredom it focuses on the first ones.
+Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). Furthermore, it determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, insults or threat for the second one (Yes, that's a Liam Neeson quote :laughing:).
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
