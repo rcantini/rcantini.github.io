@@ -82,7 +82,7 @@ Huggingface model returns two outputs which can be expoited for dowstream tasks:
 The use of the first output (coming from the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
 > This output is usually not a good summary of the semantic content of the input, you’re often better with averaging or pooling the sequence of hidden-states for the whole input sequence.
 
-For this reason I preferred to use a *Global Average Pooling* on the sequence of all hidden states, in order to get a concise representation of the whole sentence. Another thing that usually works is to directly take the embedded representation of the `CLS` token, before is fed to the BERT pooler.
+For this reason I preferred to use a *Global Average Pooling* on the sequence of all hidden states, in order to get a concise representation of the whole sentence. Another thing that usually works is to directly take the embedded representation of the `CLS` token, before it is fed to the BERT pooler.
 
 After the creation of the model, we can fine-tune it as follows:
 ```python
