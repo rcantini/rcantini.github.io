@@ -65,9 +65,9 @@ def create_model(n_out):
     return model
 ```
 The only difference between the two models is the number of neurons in the output layer, i.e. the number of independent classes, determined by the `n_out` parameter.
-For the first case study, `n_out` is equal to 1, as we are coping with a binary classification task that involves the calculation of a single sentiment score. This is the probability that the review is positive, 
+For the first case study, `n_out` is equal to \\(1\\), as we are coping with a binary classification task that involves the calculation of a single sentiment score. This is the probability that the review is positive, 
 thus a value close to \\(1\\) indicates a very positive sentence, a value near to \\(0\\) a very negative sentence and a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
-For the second case study, `n_out` is equal to 6, as we are coping with a multi-label classification with six possible types of toxicity. This means that the model treats each toxicity type as a separate class, computing an independent probability for each one of them through a Bernuolli trial.
+For the second case study, `n_out` is equal to \\(6\\), as we are coping with a multi-label classification with six possible types of toxicity. This means that the model treats each toxicity type as a separate class, computing an independent probability for each one of them through a Bernuolli trial.
 
 As we can see, the BERT model expects three inputs:
 - **Input ids**: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded using the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
