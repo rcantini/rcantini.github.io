@@ -134,9 +134,9 @@ We can clearly see the high confidence of both models, especially for what conce
 
 Just to make it more fun, I wrote some sentences to further test the performance of both models.
 <p style="text-align: center"><b>Sentiment analysis, IMDB movie reviews</b></p> 
-<img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+<img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 <p style="text-align: center"><b>Toxicity detection, Wikipedia toxic comments</b></p> 
-<img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+<img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 
 Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
 
