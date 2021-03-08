@@ -113,12 +113,9 @@ Lastly, I used the *area under the Receiver operating characteristic curve (ROC 
 
 ## Training epochs
 In the following, the results of the 4 training epochs of both models are shown:
-- Sentiment analysis, IMDB movie reviews: 
-
+<p style="text-align: center"><b>Sentiment analysis, IMDB movie reviews</b></p> 
 <img src="training_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-
-- Toxicity detection, Wikipedia toxic comments: 
-
+<p style="text-align: center"><b>Toxicity detection, Wikipedia toxic comments</b></p> 
 <img src="training_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
 ## Results
