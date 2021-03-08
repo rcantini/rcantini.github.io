@@ -1,7 +1,7 @@
 ---
 title: 'Play with BERT! Text classification using Huggingface and Tensorflow'
 subtitle: 'How to fine-tune a BERT classifier for detecting the sentiment of a movie review and the toxicity of a comment.'
-summary: "In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on its toxicity, expressed by one or more labels among: *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*."
+summary: "In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on different types of toxicity, such as *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*."
 date: 2021-03-03T00:00:00Z
 draft: false
 math: true
@@ -22,16 +22,16 @@ tags:
 In what follows, I'll show how to fine-tune a BERT classifier using the Huggingface <a href="https://huggingface.co/transformers/quicktour.html">Transformers library</a> and Keras+Tensorflow.
 
 Two different classification problems are addressed:
-- <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB sentiment analysis</a>: detect the sentiment of a movie review, classifying it according to its polarity, i.e. *negative* or *positive*.
-- <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">Toxic comment classification</a>: determine the toxicity of a Wikipedia comment, predicting a probability for each type of toxicity, i.e. *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*.
+- <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB sentiment analysis</a>: detect the sentiment of a movie review, classifying it according to its polarity, i.e. **negative** or **positive**.
+- <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">Toxic comment classification</a>: determine the toxicity of a Wikipedia comment, predicting a probability for each type of toxicity, i.e. **toxic**, **severe toxic**, **obscene**, **threat**, **insult** and **identity hate**.
 
 ## What is BERT?
 **Bidirectional Encoder Representations from Transformers (BERT)** is a Natural Language Processing Model proposed by Google Research in 2018.
 It is based on a multi-layer bidirectional Transformer, pre-trained on two unsupervised tasks using a large crossdomain corpus:
-- *Masked Language Modeling (MLM)*: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
-- *Next Sentence Prediction (NSP)*: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
+- **Masked Language Modeling (MLM)**: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
+- **Next Sentence Prediction (NSP)**: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
 
-BERT is *deeply bidirectional*, which means that it can learn the context of a word based on all the information contained in the input sequence, joinlty considering previous and subsequent tokens.
+BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the input sequence, joinlty considering previous and subsequent tokens.
 In fact, the use of MLM objective enables the representation to fuse the left and right contexts, allowing the pre-training of a deep bidirectional language representation
 model.
 This is a key difference comparing to previous language representation models like *OpenAI GPT*, which uses a unidirectional (left-to-right) language model, or
@@ -47,7 +47,7 @@ The first use case is related to the classification of movie reviews according t
 The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contians 50000 movie reviews equally divided by polarity.
 The second case study is about building a model capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of a large number of comments from Wikipedia. Toxicity detection models are useful for helping online discussion become more productive and respectful.
 
-In the following, I show the Keras code for creating the models.
+In the following, I show my Keras code for creating the models.
 
 ```python
 def create_model(n_out):
@@ -66,25 +66,25 @@ def create_model(n_out):
 ```
 The only difference between the two models is the number of neurons in the output layer, i.e. the number of independent classes, determined by the `n_out` parameter.
 For the first case study, `n_out` is equal to 1, as we are coping with a binary classification task that involves the calculation of a single sentiment score. This is the probability that the review is positive, 
-thus a value very close to \\(1\\) indicates a very positive sentence and a value near to \\(0\\) a very negative sentence, while a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
+thus a value close to \\(1\\) indicates a very positive sentence, a value near to \\(0\\) a very negative sentence and a value close to \\(0.5\\) is related to an uncertain situation, or rather a neutral review.
 For the second case study, `n_out` is equal to 6, as we are coping with a multi-label classification with six possible types of toxicity. This means that the model treats each toxicity type as a separate class, computing an independent probability for each one of them through a Bernuolli trial.
 
 As we can see, the BERT model expects three inputs:
-- *Input ids*: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded sung the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
- As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for text pairs inputs in order to differentiate between the two input sentences.
-- *Input masks*: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
-- *Input types*: Contains 0 or 1 indicating which sentence the token is a part of. For a single-sentence input is a vector of zeros.
+- **Input ids**: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded using the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
+ As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for differentiating between the two input sentences in the case of text pairs.
+- **Input mask**: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
+- **Input types**: Contains 0 or 1 indicating which sentence the token is a part of. For a single-sentence input, it is a vector of zeros.
 
-Huggingface model returns two outputs which can be expoited for our dowstream tasks:
-- *pooler_output*: it is the output of the BERT pooler, corresponding to the embedded representation of the CLS token further processed by a linear layer and a tanh activation. It can be used as an aggregate representation of the whole sentence. 
-- *last_hidden_state*: 768-dimensional embeddings for each token in the given sentence.
+Huggingface model returns two outputs which can be expoited for a dowstream task:
+- **pooler_output**: it is the output of the BERT pooler, corresponding to the embedded representation of the `CLS` token further processed by a linear layer and a *tanh* activation. It can be used as an aggregate representation of the whole sentence. 
+- **last_hidden_state**: 768-dimensional embeddings for each token in the given sentence.
 
-The use of the first output (from the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
+The use of the first output (coming from the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
 > This output is usually not a good summary of the semantic content of the input, you’re often better with averaging or pooling the sequence of hidden-states for the whole input sequence.
 
-For this reason I preferred to use a *Global Average Pooling* on the sequence of all hidden states, in order to get a concise representation of the whole sentence.
+For this reason I preferred to use a *Global Average Pooling* on the sequence of all hidden states, in order to get a concise representation of the whole sentence. Another thing that usually works is to directly take the embedded representation of the `CLS` token, before is fed to the BERT pooler.
 
-After the creation of the model, we can fine tune it as follows:
+After the creation of the model, we can fine-tune it as follows:
 ```python
 def fine_tune(model, X_train, x_val, y_train, y_val):
     max_epochs = 4
@@ -105,12 +105,13 @@ def fine_tune(model, X_train, x_val, y_train, y_val):
         verbose=2
     )
 ```
-I used a number of epochs equals to 4 following the best practice and a very low learning rate (\\(3e^{-5}\\)). This last aspect is crucial as we only want to readapt pre-trained features to work with our downstream task, thus high gradients are not desirable at this stage. Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
-I used a binary cross-entropy loss as the prediction of each of the `n_out` output classes is modeled like a single Bernoulli trial, estimating the probability through a sigmoid activation. Moreover I chose the Rectified version of ADAM as the optimizer for the training process. 
-*RAdam* is a variant of the Adam optimizer which rectifies the variance/generalization issues apparent in other adaptive learning rate optimizers. The main idea behind this variation is to apply a warm up with a low initial learning rate, turning also off the momentum term for the first few sets of input training batches.
-Lastly, I used the area under the Receiver operating characteristic curve, ROC_AUC, and Accuracy as the main metrics for validation and testing.
+I trained the model for \\(4\\) epochs using a very low learning rate (\\(3e^{-5}\\)). This last aspect is crucial as we only want to readapt the pre-trained features to work with our downstream task, thus large weight updates are not desirable at this stage. 
+Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
+I used a *binary cross-entropy* loss as the prediction of each of the `n_out` output classes is modeled like a single Bernoulli trial, estimating the probability through a sigmoid activation. Moreover I chose the *Rectified version of ADAM (RAdam)* as the optimizer for the training process. 
+**RAdam** is a variant of the Adam optimizer which rectifies the variance and generalization issues apparent in other adaptive learning rate optimizers. The main idea behind this variation is to apply a warm-up with a low initial learning rate, turning also off the momentum term for the first few sets of input training batches.
+Lastly, I used the *area under the Receiver operating characteristic curve (ROC AUC)*, and *binary accuracy* as the main metrics for validation and testing.
 
-## Training
+## Training epochs
 In the following, the results of the 4 training epochs of both models are shown:
 - Sentiment analysis, IMDB movie reviews: 
 
@@ -124,31 +125,24 @@ In the following, the results of the 4 training epochs of both models are shown:
 
 I evaluated the trained models using \\(1024\\) test samples, achieving the following results:
 
-<div style="width: 55%;margin: auto;">
-
-|  | Accuracy |       ROC_AUC       |
-|:-:|:-:|:-:|
-| Sentiment classification | 0.88 | 0.95 |
-| Toxicity classification | 0.98 | 0.94 |
-
-</div>
+|  | Test BCE loss | Binary accuracy |     ROC AUC     |
+|:-:|:-:|:-:|:-:|
+| Sentiment classification | 0.26 | 0.88 | 0.95 |
+| Toxicity classification | 0.05 | 0.98 | 0.94 |
 
 As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
-To better analyze the performance of the trained classifiers, ROC curves for both models are provided:
+To better analyze the performance of the trained classifiers, *ROC curves* for both models are provided:
 <img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-We can clearly see the high confidence of both models, especially for what concerns the toxicity classifier which achieved a micro-average ROC_AUC of \\(0.98\\).
+We can clearly see the high confidence of both models, especially for what concerns the toxicity classifier which achieved a micro-average ROC AUC of \\(0.98\\).
 
 Just to make it more fun, I wrote some sentences to further test the performance of both models.
-- Sentiment analysis, IMDB movie reviews: 
-
+<p style="text-align: center"><b>Sentiment analysis, IMDB movie reviews</b></p> 
 <img src="pred_sent.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
-
-- Toxicity detection, Wikipedia toxic comments: 
-
+<p style="text-align: center"><b>Toxicity detection, Wikipedia toxic comments</b></p> 
 <img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
 Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
 
-On the other hand, the second model detected correctly the presence of toxicity or its absence (last comment). It also determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, or threat for the second one (yes, that's a Liam Neeson quote :laughing:).
+On the other hand, the second model detected correctly the presence of toxicity in Wikipedia comments or its absence (last comment). It also determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, or threat for the second one (yes, that's a Liam Neeson quote...I couldn't resist! :laughing:).
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
