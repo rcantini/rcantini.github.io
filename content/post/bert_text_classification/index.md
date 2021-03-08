@@ -75,7 +75,7 @@ As we can see, the BERT model expects three inputs:
 - **Input mask**: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
 - **Input types**: Contains 0 or 1 indicating which sentence the token is a part of. For a single-sentence input, it is a vector of zeros.
 
-Huggingface model returns two outputs which can be expoited for a dowstream task:
+Huggingface model returns two outputs which can be expoited for dowstream tasks:
 - **pooler_output**: it is the output of the BERT pooler, corresponding to the embedded representation of the `CLS` token further processed by a linear layer and a *tanh* activation. It can be used as an aggregate representation of the whole sentence. 
 - **last_hidden_state**: 768-dimensional embeddings for each token in the given sentence.
 
