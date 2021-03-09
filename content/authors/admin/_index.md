@@ -21,14 +21,10 @@ organizations:
 bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His research interests include social media and big data analysis, deep learning and natural language processing, opinion mining and sentiment analysis, information spread and influence maximization, IoT and edge/fog computing, distributed knowledge discovery and data mining.
 
 interests:
-  - Social Media Analysis
-  - Opinion Mining
+  - Big Data Analysis
+  - Deep Learning
   - Natural Language Processing
-  - Hashtag Recommendation
-  - Information Spread
-  - Influence Maximization
-  - Topic Detection and Tracking
-  - IoT and Edge/Fog Computing
+  - Social Media Analysis
 
 education:
   courses:
@@ -73,6 +69,11 @@ email: ""
 #- Visitors
 
 ---
-Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019.<br>His research interests include social media and big data analysis, deep learning and natural language processing, opinion mining and sentiment analysis, information spread and influence maximization, IoT and edge/fog computing, distributed knowledge discovery and data mining.
+Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019.<br>His research interests include social media and big data analysis, deep learning, natural language processing, opinion mining, edge/fog computing, distributed knowledge discovery and data mining.
+
+< div style = "float:left; margin - right:1em;" >< img src = "dimes.png" / >
+< div style = "float:left; margin - right:1em;" >< img src = "scalab.png" / >
+
+Scopri di più: https://www.monacodesign.it/html/due-immagini-accanto-usando-html/
 
 He is a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
