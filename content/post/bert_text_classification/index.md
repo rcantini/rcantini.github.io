@@ -45,7 +45,7 @@ For further details, you might want to read the original <a href="https://arxiv.
 Let's now move on how to fine-tune the BERT model in order to deal with our classification tasks. Text classification can be a quite challenging task, but we can easily achieve amazing results by exploiting the effectiveness of transfer learning form pre-trained language representation models.
 The first use case is related to the classification of movie reviews according to the expressed sentiment, which can be *positive* or *negative*.
 The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contians 50000 movie reviews equally divided by polarity.
-The second case study is about building a model capable of detecting different types of of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of a large number of comments from Wikipedia. Toxicity detection models are useful for helping online discussion become more productive and respectful.
+The second case study is about building a model capable of detecting different types of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of a large number of comments from Wikipedia. Toxicity detection models are useful for helping online discussion become more productive and respectful.
 
 In the following, I show my Keras code for creating the models.
 
@@ -127,7 +127,7 @@ I evaluated the trained models using \\(1024\\) test samples, achieving the foll
 | Sentiment classification | 0.26 | 0.88 | 0.95 |
 | Toxicity classification | 0.05 | 0.98 | 0.94 |
 
-As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
+As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large crossdomain corpus. 
 To better analyze the performance of the trained classifiers, *ROC curves* for both models are provided:
 <img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 We can clearly see the high confidence of both models, especially for what concerns the toxicity classifier which achieved a micro-average ROC AUC of \\(0.98\\).
