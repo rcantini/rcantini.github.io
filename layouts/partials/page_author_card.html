@@ -19,8 +19,13 @@
         {{ $avatar_image := $avatar.Fill "270x270 Center" }}
         <img class="avatar mr-3 {{if eq $avatar_shape "square"}}avatar-square{{else}}avatar-circle{{end}}" src="{{ $avatar_image.RelPermalink }}" alt="{{.Title}}">
       {{ end }}
-
-      
+      <div class="media-body">
+        <h5 class="card-title"><a href="{{$profile_url}}">{{.Title}}</a></h5>
+        {{ with .Params.role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
+        {{ with .Params.bio }}<p class="card-text">{{. | markdownify | emojify}}</p>{{end}}
+        {{ partial "social_links" . }}
+      </div>
     </div>
+    <p style="text-align: center"><b>Visitors</b></p><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>s
   {{end}}
 {{end}}{{/* Profile page block */}}
