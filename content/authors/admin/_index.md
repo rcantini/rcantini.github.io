@@ -67,11 +67,9 @@ email: ""
 #user_groups:
 #- Researchers
 #- Visitors
-
+<p style="text-align: center"><b>Visitors</b></p>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
 ---
 Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019.<br>His research interests include social media and big data analysis, deep learning, natural language processing, opinion mining, edge/fog computing, distributed knowledge discovery and data mining.
 
 He is a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
-
-<p style="text-align: center"><b>Visitors</b></p>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
