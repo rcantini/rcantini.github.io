@@ -73,5 +73,4 @@ Riccardo Cantini is a PhD student in Information and Communication Technologies 
 
 He is a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
 
-<a href="https://vigrx.co" style="font-size:8px;">web vigrx</a><br>
-<a href="https://vigrx.co"><img src="http://vigrx.co/count.php?c_style=22&id=1615327154" border="0"></a><br>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
