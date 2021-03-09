@@ -26,6 +26,9 @@ interests:
   - Natural Language Processing
   - Social Media Analysis
 
+Visitors:
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
+
 education:
   courses:
   - course: M.Sc. in Computer Engineering
@@ -73,4 +76,5 @@ Riccardo Cantini is a PhD student in Information and Communication Technologies 
 
 He is a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
 
+<p style="text-align: center"><b>Visitors</b></p>
 <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>
