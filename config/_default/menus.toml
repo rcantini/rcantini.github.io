@@ -40,7 +40,7 @@
 
 [[main]]
   name = "Contact"
-  url = "/home/contact.md"
+  url = "/home/contact"
   weight = 90
 
 [[main]]
