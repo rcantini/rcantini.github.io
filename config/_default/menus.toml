@@ -10,7 +10,7 @@
 
 [[main]]
   name = "Posts"
-  url = "/post/"
+  url = "#post"
   weight = 20
 
 [[main]]
@@ -20,7 +20,7 @@
 
 [[main]]
   name = "Publications"
-  url = "/publication/"
+  url = "#publication"
   weight = 40
 
 [[main]]
@@ -40,7 +40,7 @@
 
 [[main]]
   name = "Contact"
-  url = "/contact/"
+  url = "#contact"
   weight = 90
 
 [[main]]
