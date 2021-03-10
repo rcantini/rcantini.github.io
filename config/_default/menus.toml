@@ -45,7 +45,7 @@
 
 [[main]]
   name = "Visitors"
-  url = "#skills"
+  url = "/visitors/"
   weight = 100
 
 [[main]]
