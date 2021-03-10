@@ -44,6 +44,11 @@
   weight = 90
 
 [[main]]
+  name = "Visitors"
+  url = "https://clustrmaps.com/site/1bgny"
+  weight = 100
+
+[[main]]
   name = "CV"
   url = "files/cv.pdf"
-  weight = 100
+  weight = 110
