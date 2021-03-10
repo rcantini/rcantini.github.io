@@ -9,4 +9,5 @@ title = "Visitors"
 subtitle = ""
 
 +++
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=e7c3c3&w=a&t=tt&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI"></script>
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI&cl=ffffff&w=a"></script>
