@@ -18,13 +18,15 @@ organizations:
   url: "https://www.dimes.unical.it/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His research interests include social media and big data analysis, deep learning and natural language processing, opinion mining and sentiment analysis, information spread and influence maximization, IoT and edge/fog computing, distributed knowledge discovery and data mining.
+bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His current research focuses on social media and big data analysis, deep learning, natural language processing, opinion mining, sentiment analysis, edge/fog computing, distributed knowledge discovery and data mining.
 
 interests:
   - Big Data Analysis
   - Deep Learning
   - Natural Language Processing
   - Social Media Analysis
+  - Opinion Mining
+  - Sentiment Analysis
 
 education:
   courses:
@@ -68,6 +70,6 @@ email: ""
 #- Researchers
 #- Visitors
 ---
-Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019.<br>His research interests include social media and big data analysis, deep learning, natural language processing, opinion mining, edge/fog computing, distributed knowledge discovery and data mining.
+Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019.<br>His current research focuses on Social Media and big data analysis, deep learning, natural language processing, opinion mining, edge/fog computing, distributed knowledge discovery and data mining.
 
 He is a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria, aimed at supporting research, training and development activities in the area of scalable computing systems, distributed systems and Cloud architectures, with a special focus on scalable data analysis.
