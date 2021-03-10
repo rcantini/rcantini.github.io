@@ -1,4 +1,4 @@
-+++
+---
 title = "Contact"
 subtitle = ""
 
@@ -58,4 +58,4 @@ office_hours = ["Office hours: send an email for booking an online meeting on Mi
 #   1: Netlify (requires that the site is hosted by Netlify)
 #   2: formspree.io
 email_form = 0
-+++
+---
