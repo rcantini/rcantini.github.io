@@ -42,5 +42,5 @@ contact_links = [
   #{icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
   #{icon = "envelope", icon_pack = "fas", name = "riccardo.cantini@unical.it", link = "mailto:riccardo.cantini@unical.it"}
   ]
----
++++
 
