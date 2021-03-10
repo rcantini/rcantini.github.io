@@ -1,7 +1,7 @@
 ---
 title: Contact
 ---
-<section id="contact" class="home-section wg-contact" style="padding-bottom: initial;"><div class="container"><div class="row contact-widget"><div class="col-12 col-lg-8"><ul class="fa-ul"><li><i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i><span id="person-email"><a href="mailto:riccardo.cantini@unical.it">riccardo.cantini@unical.it</a></span></li><li><i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i><span id="person-address">Cubo 41C, 5<sup>th</sup> floor, via P. Bucci, Rende (CS), Calabria 87036</span></li><li><i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i><span>Office hours: send an email for booking an online meeting on Microsoft Teams</span></li></ul><div class="d-none"><input id="map-provider" value="2">
+<section id="contact" class="home-section wg-contact" style="padding-bottom: initial;"><div class="container"><div class="row contact-widget"><div class="col-12 col-lg-12"><ul class="fa-ul"><li><i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i><span id="person-email"><a href="mailto:riccardo.cantini@unical.it">riccardo.cantini@unical.it</a></span></li><li><i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i><span id="person-address">Cubo 41C, 5<sup>th</sup> floor, via P. Bucci, Rende (CS), Calabria 87036</span></li><li><i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i><span>Office hours: send an email for booking an online meeting on Microsoft Teams</span></li></ul><div class="d-none"><input id="map-provider" value="2">
 <input id="map-lat" value="39.36560">
 <input id="map-lng" value="16.22539">
 <input id="map-dir" value="Cubo 41C, 5th floor, via P. Bucci, Rende (CS), Calabria 87036">
