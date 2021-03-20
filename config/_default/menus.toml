@@ -45,7 +45,7 @@
 
 [[main]]
   name = "Visitors"
-  url = "/visitors/"
+  url = "https://datastudio.google.com/s/iFJ0H_pp9bw"
   weight = 100
 
 [[main]]
