@@ -41,7 +41,7 @@
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 90
+  weight = 120
 
 [[main]]
   name = "Visitors"
