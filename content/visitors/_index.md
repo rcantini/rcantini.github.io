@@ -1,7 +1,4 @@
 ---
 
 ---
-<div class="universal-wrapper pt-3"><h1>Visitors</h1></div>
-<p style="text-align: center"><b>Click on the map for more detailed statistics!</b></p><br>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=kOSEoUhCIV82hLf1DXhoXmlpwQlUq5xqZH6C_335HOI"></script>
-
+<iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/a6b9abec-5285-48aa-bb17-9143ed102257/page/dvM8B" frameborder="0" style="border:0" allowfullscreen></iframe>
