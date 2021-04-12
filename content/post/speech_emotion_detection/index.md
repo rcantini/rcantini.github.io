@@ -33,7 +33,7 @@ At the time \\(t\\), the hidden state \\(h_t\\) is computed as the concatenation
 <img src="rnn.gif" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 
 The problem of this kind of networks is that information cannot be carried effectively if the time sequence is too long, which means that we could lose important connections if the distance between useful information and the instant in which it is needed is very large.
-For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed, whose architecture is showed below.
+For dealing with long short-term dependencies, **Long Short-Term Memory** networks (LSTM) have been proposed, whose architecture is shown below.
 <img src="LSTM.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 The key element in LSTM networks is the *cell state*, which acts like memory element, undergoing only a few transformations along the entire chain. In particular, the flow of information is regulated by three structures called gates.
 - *Forget gate*: determines to what extent the components of the cell state must be maintained, by calculating a score using the sigmoid function.
@@ -80,7 +80,7 @@ Computing the above 46 features for each of the 157 frames and each of the 535 a
 In fact, we can look at each file in our dataset as a time sequence of 157 frames, each one containing its descriptive features.
 
 ## Class balancing
-The dataset is composed by 535 audio files, whose emotion distribution is showed below.
+The dataset is composed by 535 audio files, whose emotion distribution is shown below.
 <img src="emo_distr.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 As we can see, training samples are quite unbalanced, which can cause problems in recognizing less represented emotions, such as disgust or sadness.
 To cope with this issue, I used a class balancing strategy called **Synthetic Minority Over-sampling Technique** (SMOTE). It is an oversampling technique, which consists in increasing the number of samples relating to the less represented classes.

@@ -28,7 +28,7 @@ Individual neurons are arranged so as to respond to partially overlapping region
 These networks can learn a meaningful representation of a given image by automating the feature extraction process.
 The classical architecture of a CNN consists of a series of particular layers:
 - *Convolutional layer*: given an input image the convolution is carried out using a set of filters, called kernels, which are matrices of learnable weights. Convolution is performed using dot product between the filter and the portion of the image over which it is hovering; the filter is shifted according to a stride parameter and this process is repeated until the the entire image has been covered, generating an output volume composed by a set of convolved feature maps.
-The convolution of a \\(3\times 3\\) kernel, with \\(stride=1\\) (one pixel at a time) applied to a single-channel \\(5\times 5\\) image is showed below:
+The convolution of a \\(3\times 3\\) kernel, with \\(stride=1\\) (one pixel at a time) applied to a single-channel \\(5\times 5\\) image is shown below:
 <img src="conv.gif" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
 - *Relu layer*: Rectified Linear Unit is the typical activation function of convolutional levels, defined as \\(f(x) = max(0, x)\\).
 This function has many interesting properties, including efficiency, robustness against weight saturation or vanishing gradient, as well as the sparse activation of artificial neurons, which mimics what happens in biological systems, where only few neurons activate simultaneously.
@@ -51,7 +51,7 @@ I exploited this strategy creating our dog breed classifier as follows:
 - Freeze VGG16 layers, so as to avoid destroying the information they contain during training.
 - Add a multilayer perceptron on top of them, composed by two trainable fully connected layers, Dropout for preventing overfitting and a softmax classifier for determining the output probability for each class.
 
-The Keras implementation of the model is showed below:
+The Keras implementation of the model is shown below:
 ```python
 def transfer_learning():
     vgg_conv = vgg16.VGG16(weights='imagenet', include_top=False, input_shape=(350, 350, 3))
@@ -95,7 +95,7 @@ mc = ModelCheckpoint(best_weights_file, monitor='val_loss', mode='min', verbose=
 history = model.fit(datagenTrain.flow(xTrain, y_train_cat, save_to_dir= "data_aug", batch_size=32), validation_data=(xTest, y_test_cat),
                     batch_size=32, callbacks= [es, mc], epochs=50, verbose=2)
 ```
-An example of what images our generator produces, using 20° rotation, shift and horizontal flip, is showed below:
+An example of what images our generator produces, using 20° rotation, shift and horizontal flip, is shown below:
 <img src="data_aug.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 The model has been trained using the *categorical crossentropy* loss function and the *Adam* optimizer. Furthermore two callback functions have been used in oder to avoid overfitting: *EarlyStopping*, which monitors the loss on validation set, and *ModelCheckpoint* for storing the best model.
 
@@ -107,7 +107,7 @@ Specifically, fine tuning can be obtained as follows:
 - Compile the model.
 - Train it with a very low learning rate. It's crucial to set a low learing rate as we only want to readapt pretrained features to work with our dataset and therefore large weight updates are not desirable at this stage.
 
-The code is showed below:
+The code is shown below:
 ```python
 model.load_weights(best_weights_file) # load the best model saved by ModelCheckpoint
 model.trainable = True
@@ -121,7 +121,7 @@ history = model.fit(datagenTrain.flow(xTrain, y_train_cat, batch_size=32), valid
 
 ## Results
 
-In order to analyze the benefits introduced by the use of Transfer Learning and fine tuning, I compared the model described above with a simple CNN, trained from scratch with data augmentation, whose structure is showed below:
+In order to analyze the benefits introduced by the use of Transfer Learning and fine tuning, I compared the model described above with a simple CNN, trained from scratch with data augmentation, whose structure is shown below:
 ```python
 def build_simple_CNN():
     model = Sequential()
