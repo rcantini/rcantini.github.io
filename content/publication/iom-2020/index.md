@@ -1,6 +1,6 @@
 ---
 title: "Learning Political Polarization on Social Media Using Neural Networks"
-date: 2020-07-20
+date: 2020-08-20
 publishDate: 2020-03-06
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Paolo Trunfio", "Domenico Talia"]
 publication_types: ["2"]
