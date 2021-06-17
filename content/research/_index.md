@@ -57,10 +57,9 @@ preview_only = false
 My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for extracting valuable information in different application contexts.
 Particular attention is paid to:
 <ul>
-  <li>The use of Deep Learning and Natural Language Processing models for developing Sentiment Analysis and Opinion Mining techniques aimed at analyzing the mood of social media users and their opinion regarding a specific topic/event of interest.</li>
+  <li>The use of Deep Learning and Natural Language Processing models in the context of Topic Modeling, Sentiment Analysis and Opinion Mining, aimed at detecting the main topics of discussion, the mood of social media users and their opinion regarding a specific topic/event of interest.</li>
   <li>Hashtag Recommendation models, for developing systems capable of predicting hashtags for posts that do not have any, in order to enrich the information content of social data involved in different mining processes.</li>
-  <li>Information spread models and Influence maximization techniques, aimed at understanding how information flows within a social network and finding a small set of users that maximize the spread of influence.</li>
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
-  <li>The use of machine learning models for data management optimization in scientific workflows.</li>
+  <li>The use of machine learning models for data management optimization in scientific workflows, aimed at enabling the realization of large-scale parallel systems for big data analysis.</li>
 </ul>
 
