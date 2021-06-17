@@ -1,7 +1,7 @@
 ---
 title: "Learning Political Polarization on Social Media Using Neural Networks"
-date: 2021-05-01
-publishDate: 2021-05-01
+date: 2021-05-06
+publishDate: 2021-05-06
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Paolo Trunfio", "Domenico Talia"]
 publication_types: ["2"]
 abstract: "The growing use of microblogging platforms is generating a huge amount of posts that need effective methods to be classified and searched. In Twitter and other social media platforms, hashtags are exploited by users to facilitate the search, categorization and spread of posts. Choosing the appropriate hashtags for a post is not always easy for users, and therefore posts are often published without hashtags or with hashtags not well defined. To deal with this issue, we propose a new model, called HASHET (HAshtag recommendation
