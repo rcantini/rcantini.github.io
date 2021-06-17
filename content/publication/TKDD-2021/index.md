@@ -1,10 +1,15 @@
 ---
-title: "Learning Political Polarization on Social Media Using Neural Networks"
+title: "Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs"
 date: 2021-05-06
 publishDate: 2021-05-06
-authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Paolo Trunfio", "Domenico Talia"]
+authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Giovanni Bruno", "Paolo Trunfio"]
 publication_types: ["2"]
-abstract: "The growing use of microblogging platforms is generating a huge amount of posts that need effective methods to be classified and searched. In Twitter and other social media platforms, hashtags are exploited by users to facilitate the search, categorization and spread of posts. Choosing the appropriate hashtags for a post is not always easy for users, and therefore posts are often published without hashtags or with hashtags not well defined. To deal with this issue, we propose a new model, called HASHET (HAshtag recommendation
+abstract: "The growing use of microblogging platforms is generating a huge amount of posts that need
+effective methods to be classified and searched. In Twitter and other social media platforms, 
+hashtags are exploited by users to facilitate the search, categorization and spread of posts. 
+Choosing the appropriate hashtags for a post is not always easy for users, and therefore posts 
+are often published without hashtags or with hashtags not well defined. To deal with this issue, 
+we propose a new model, called HASHET (HAshtag recommendation
 using Sentence-to-Hashtag Embedding Translation), aimed at suggesting a relevant set of hashtags
 for a given post. HASHET is based on two independent latent spaces for embedding the text of a post and
 the hashtags it contains. A mapping process based on a multilayer perceptron is then used for learning a
