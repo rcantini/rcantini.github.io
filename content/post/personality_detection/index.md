@@ -443,16 +443,15 @@ plot_roc_auc(y_test, predictions, axes)
 
 <div class="cell markdown" id="W3vxfXH4qtYt">
 
-As a final step, I tested the model with a simple sentence for finding
-out my personality.
+As a final step, I tested the model with a simple sentence in order to find out my personality.
 
 </div>
 
 <div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="-tLGVE4AMy5F" data-outputId="38fa5cc3-c95a-470e-905e-bc55eef3485e">
 
 ``` python
-s1 = "I like studying deep learning, playing football, hanging out with my friends," \
-     "listen to music and visit foreign cities all over the world."
+s1 = "I like studying deep learning, playing football and my guitar, " \
+     "and I love visit foreign cities all over the world."
 sentences = np.asarray([s1])
 enc_sentences = prepare_bert_input(sentences, MAX_SEQ_LEN, BERT_NAME)
 predictions = model.predict(enc_sentences)
@@ -471,11 +470,13 @@ for sentence, pred in zip(sentences, predictions):
 
 <div class="output stream stdout">
 
-    -- comment: I like studying deep learning, playing football, hanging out with my friends,listen to music and visit foreign cities all over the world.
+    -- comment: I like studying deep learning, playing football and my guitar, and I love visit foreign cities all over the world.
     -- personality: ['I', 'N', 'T', 'P']
-    -- scores:[0.18 0.44 0.36 0.79]
+    -- scores:[0.18 0.40 0.36 0.79]
 
 </div>
+That's amazing!! :raised_hands:
+<img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 90%"/>
 
 </div>
 <hr>
