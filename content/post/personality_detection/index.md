@@ -85,7 +85,6 @@ Found GPU at: /device:GPU:0
 
 </div>
 
-
 <div class="cell markdown" id="eFirQBWwaDiU">
 
 ## Model training
