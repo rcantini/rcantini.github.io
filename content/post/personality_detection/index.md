@@ -1,7 +1,7 @@
 ---
 title: 'Personality detection using BERT'
 subtitle: 'How to detect users' personality type according to the Myers–Briggs Type Indicator'
-summary: In this post I show how to fine-tune a BERT classifier in order to detect users' personality type based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI).
+summary: "In this post I show how to fine-tune a BERT classifier in order to detect users' personality type based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI)."
 date: 2021-07-13T18:10:09+02:00
 draft: false
 math: true
