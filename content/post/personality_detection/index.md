@@ -475,9 +475,9 @@ for sentence, pred in zip(sentences, predictions):
     -- scores:[0.18 0.40 0.36 0.79]
 
 </div>
-That's amazing!! :raised_hands:
+That's amazing! :clap::clap::clap::clap:
 
-<img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 90%"/>
+<img src="quote.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 90%"/>
 
 </div>
 <hr>
