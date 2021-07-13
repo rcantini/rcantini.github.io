@@ -477,7 +477,7 @@ for sentence, pred in zip(sentences, predictions):
 </div>
 That's amazing! :clap::clap::clap::clap:
 
-<img src="quote.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 90%"/>
+<img src="quote.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 
 </div>
 <hr>
