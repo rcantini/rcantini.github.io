@@ -32,7 +32,7 @@ The proposed notebook, described in the following, was developed on *Google Cola
 
 <div class="cell markdown" id="J9fxLAysiv-r">
 
-Import necessary libraries
+### Import necessary libraries
 
 </div>
 
@@ -64,7 +64,7 @@ from sklearn.metrics import auc, roc_curve
 
 <div class="cell markdown" id="c0VpikUNIkcY">
 
-Enable GPU processing
+### Enable GPU processing
 </div>
 
 <div class="cell code" data-execution_count="4" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="w8JboDdFJprS" data-outputId="ad6eebfe-3d0f-4224-9396-50730460b409">
