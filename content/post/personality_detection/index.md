@@ -77,12 +77,14 @@ if device_name != '/device:GPU:0':
 print('Found GPU at: {}'.format(device_name))
 ```
 
-</div>
 <div class="output stream stdout">
 
 Found GPU at: /device:GPU:0
 
 </div>
+
+</div>
+
 
 <div class="cell markdown" id="eFirQBWwaDiU">
 
