@@ -1,6 +1,6 @@
 ---
 title: 'Personality detection using BERT'
-subtitle: 'How to detect users' personality type according to the Myers–Briggs Type Indicator'
+subtitle: 'How to detectusers' personality type according to the Myers-Briggs Type indicator'
 summary: With the fast growing of microblog services, several NLP techniques have been developed for learning the representation of microblog posts and recommending pertinent hashtags. In what follows I'll introduce some of the most effective state-of-art approaches in this field.
 date: 2021-07-13T18:10:09+02:00
 draft: false
