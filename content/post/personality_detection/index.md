@@ -1,7 +1,7 @@
 ---
 title: 'Personality detection using BERT'
-subtitle: 'How to detect user personality type according to the Myers–Briggs Type Indicator'
-summary: "In this post I show how to fine-tune a BERT classifier in order to detect users' personality type based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI)."
+subtitle: 'How to understand user personality according to the Myers–Briggs Type Indicator'
+summary: "In this post I show how to fine-tune a BERT classifier in order to understand users' personality based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI)."
 date: 2021-07-13T18:10:09+02:00
 draft: false
 math: true
@@ -18,7 +18,7 @@ tags:
 - Keras-Tensorflow
 ---
 
-In this post I show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to detect users' personality type based on some text they have posted, according to the **Myers–Briggs Type Indicator** (MBTI).
+In this post I show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to understand users' personality based on some text they have posted, according to the **Myers–Briggs Type Indicator** (MBTI).
 
 The proposed notebook, described in the following, was developed on *Google Colab* and is comprised of the following steps:
 - **Data preparation**: MBTI data are loaded, preprocessed and prepared according to the BERT specifications.
