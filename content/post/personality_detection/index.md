@@ -476,6 +476,7 @@ for sentence, pred in zip(sentences, predictions):
 
 </div>
 That's amazing!! :raised_hands:
+
 <img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 90%"/>
 
 </div>
