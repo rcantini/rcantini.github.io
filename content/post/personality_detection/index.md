@@ -478,7 +478,7 @@ for sentence, pred in zip(sentences, predictions):
 
     -- comment: I like studying deep learning, playing football and my guitar, and I love visit foreign cities all over the world.
     -- personality: ['I', 'N', 'T', 'P']
-    -- scores:[0.18 0.40 0.36 0.79]
+    -- scores:[0.18 0.44 0.36 0.79]
 
 </div>
 That's amazing! :clap::clap:
