@@ -1,3 +1,26 @@
+---
+title: 'An overview of current research on hashtag recommendation'
+subtitle: 'How to suggest a consistent set of hashtags for a microblog post'
+summary: With the fast growing of microblog services, several NLP techniques have been developed for learning the representation of microblog posts and recommending pertinent hashtags. In what follows I'll introduce some of the most effective state-of-art approaches in this field.
+date: 2020-07-16T18:10:09+02:00
+draft: false
+math: true
+disable_comments: true
+markup: kramdown
+lastmod: 2020-07-16T18:10:09+02:00
+authors:
+- admin
+tags:
+- Hashtag Recommendation
+- Social Media Analysis
+- Density-Based Clustering
+- Sentence Embedding
+- Neural Networks
+- Topical Co-Attention
+- Matrix Factorization
+- Bayesian Personalized Ranking
+---
+
 <div class="cell markdown" id="CitAaUhuibXB">
 
 # **Personality detection using BERT**
