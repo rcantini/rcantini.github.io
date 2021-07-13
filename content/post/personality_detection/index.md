@@ -1,21 +1,24 @@
 ---
-title: 'Personality detection using BERT'
-subtitle: 'How to detectusers' personality type according to the Myers-Briggs Type indicator'
+title: 'An overview of current research on hashtag recommendation'
+subtitle: 'How to suggest a consistent set of hashtags for a microblog post'
 summary: With the fast growing of microblog services, several NLP techniques have been developed for learning the representation of microblog posts and recommending pertinent hashtags. In what follows I'll introduce some of the most effective state-of-art approaches in this field.
-date: 2021-07-13T18:10:09+02:00
+date: 2020-07-16T18:10:09+02:00
 draft: false
 math: true
 disable_comments: true
 markup: kramdown
-lastmod: 2021-07-13T18:10:09+02:00
+lastmod: 2020-07-16T18:10:09+02:00
 authors:
 - admin
 tags:
-- Natural Language Processing
-- Personality detection
-- BERT
-- Deep Learning
-- Keras-Tensorflow
+- Hashtag Recommendation
+- Social Media Analysis
+- Density-Based Clustering
+- Sentence Embedding
+- Neural Networks
+- Topical Co-Attention
+- Matrix Factorization
+- Bayesian Personalized Ranking
 ---
 
 In this post I show how to fine-tune a BERT classifier using the Huggingface Transformers library and Keras+Tensorflow in order to detect users' personality type based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI).
