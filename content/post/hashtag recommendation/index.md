@@ -1,111 +1,579 @@
----
-title: 'An overview of current research on hashtag recommendation'
-subtitle: 'How to suggest a consistent set of hashtags for a microblog post'
-summary: With the fast growing of microblog services, several NLP techniques have been developed for learning the representation of microblog posts and recommending pertinent hashtags. In what follows I'll introduce some of the most effective state-of-art approaches in this field.
-date: 2020-07-16T18:10:09+02:00
-draft: false
-math: true
-disable_comments: true
-markup: kramdown
-lastmod: 2020-07-16T18:10:09+02:00
-authors:
-- admin
-tags:
-- Hashtag Recommendation
-- Social Media Analysis
-- Density-Based Clustering
-- Sentence Embedding
-- Neural Networks
-- Topical Co-Attention
-- Matrix Factorization
-- Bayesian Personalized Ranking
----
+<div class="cell markdown" id="CitAaUhuibXB">
 
-## Introduction
+# **Personality detection using BERT**
 
-Social media platforms have become part of everyday life, allowing the interconnection of a large number of users. Their intensive use leads to the generation of a huge amount of data, which hides a high exploitable intrinsic value.  One of the most widely used data sources comes from microblogging services such as Twitter, Facebook and Instagram. This type of publication generates a large amount of posts which leads to the need for effective data categorization and search. To address this problem, tweets often include one or more hashtags. However, finding out the correct hashtags is not very easy for users, and tweets are often published without hashtags. This issue, which hinders the quality of search results, led to the rise of different techniques for hashtag recommendation, aimed at suggesting a consistent set of keywords for a given microblog post. In the following sections, four of the most effective state-of-art techniques are described, which follow different approaches such as topic modeling, clustering, topical co-attention and latent factor models like BPR matrix factorization used for personalized hashtag recommendation.
-
-## Generative models: Latent Dirichlet Allocation & Gibbs sampling
-
-[Godin et al.](https://dl.acm.org/doi/abs/10.1145/2487788.2488002) proposed a method for suggesting the top-\\(k\\) hashtags for a given post. They exploited **Latent Dirichlet Allocation** for finding out the underlying topic distribution, used for recommending general hashtags. Latent Dirichlet Allocation is a generative model which assumes that there exists a topic model with \\(T\\) topics underlying the data collection. Each document \\(m\\) has an associated multinomial topic distribution \\( \eta_m \\) over these topics. From this distribution, a topic \\( z \\)  can be determined for each word of the document. Next, a word for a topic \\( z \\)  can be sampled from the topic word distribution \\( \phi_z \\). Both \\( \eta \\)  and \\( \phi \\) are Dirichlet distributions with hyperparameters \\( \alpha \\)  and \\( \beta \\), respectively. For determining the model parameters, the authors used the **Gibbs sampling**, a Monte Carlo Markov Chain (MCMC) algorithm used to rapidly explore the space around a target distribution using repeated sampling. A topic \\( z_i \\) of a word \\( w_i \\), conditioned on the used words \\( \vec{w} \\)  of the model and the topic-word distribution \\( \vec{z_{\neg{i}}} \\), can be predicted as: 
-
-<div class="math">
-\begin{aligned}
-p(z_i = k|\vec{z_{\neg{i}}}, \vec{w}) \propto{} & \frac{n^w_{t,\neg{i}} + \beta_w}{\sum_{w=1}^{V}n^w_{t,\neg{i}} + \beta_w}\\[0.7ex]
-*\hspace{0.22cm} & \frac{n^t_{m,\neg{i}} + \alpha_k}{\sum_{t=1}^{T}n^t_{m,\neg{i}} + \alpha_k}
-\end{aligned}
 </div>
 
-where \\( n^w_t \\) denotes the topic-word count of topic \\( t \\) and word \\( w \\), and \\( n^t_m \\) the tweet-topic distribution. Specifically, they followed four main steps:
-1. They used the Gibbs sampling algorithm for determining the LDA model parameters.
-2. Given a tweet  \\(m\\), they used the topic-word count distribution \\( n^w_t \\) learned during the training phase for determining the topic distribution of \\(m\\) using Gibbs sampling again.
-3. Based on the number \\(k\\) of hashtags to be recommended, they sampled for \\(k\\) times the obtained multinomial topic distribution, getting the number of keywords for each topic \\(t\\), i.e. \\( k_t \\), with \\( \sum_{t=1}^{T}k_t = k \\), where \\( T \\) is the number of topics discovered by LDA. 
-4. The suggested hashtags will be the set of top-\\( k_t\\) words extracted from each topic \\(t\\) in ranked order.
+<div class="cell markdown" id="6NELeva1mgKY">
 
-## Unsupervised models: density-based clustering of tweet embeddings
-[Ben Lachemi et al.](https://www.sciencedirect.com/science/article/pii/S1877050918301030) proposed a hashtag recommendation methodology based on the density-based clustering of the embedded representation of Twitter microblog posts, obtained using a **Word2Vec** model pre-trained on the Google News dataset. The key idea of this kind of representation is to map each word of a corpus of documents into a vector lying in a multidimensional latent space, in order to obtain dense representations of the words, whose distribution reflects their semantic relationships. They used the **DBSCAN** clustering algorithm, which exploits  the concept  of density for extracting clustering structures: it groups together points that are close to each other in high-density regions, marking as outliers points that lie alone in low-density regions. The density is related to the concept of core point, i.e. a point which has at least \\( min_{pts} \\) points in its \\( \epsilon \\)-neighborhood. The authors performed the following steps:
-1. A given tweet is represented as the weighted average of its word embeddings. Given a tweet \\( t \\) composed by \\( n\\) words \\( w_1, w_2, ..., w_{n} \\), for each word \\( w_i\\) the Smooth Inverse Frequency (SIF) is computed as:
-$$
-s_i=\frac{a}{a+p(w_i)}
-$$
-where \\( a \\) is a constant and \\( p(w_i) \\) is the frequency of \\( w_i \\). Then, the latent representation of \\( t \\) is obtained as:
-$$
-v(t) = \frac{1}{n}\sum_{i=1}^{n}s_i\cdot v(w_i)
-$$
-where \\( v(w_i) \\) is the Word2Vec encoded representation of \\( w_i \\).
-2. Latent representations of tweets are clustered according to their semantic similarity using the DBSCAN algorithm and the Manhattan distance metric. The authors set \\( min_{pts} = 1 \\) and estimated \\( \epsilon \\) as the average distance between each point and its nearest neighbor.
-3. For each cluster a point is choosen and elected as centroid. 
-4. For a given tweet \\( t \\), the most similar centroid \\( \hat{c} \\) is found according to the cosine distance: the related cluster \\( \hat{C} \\) will contain tweets semantically related to \\( t \\). The set of hashtags used in the tweets belonging to \\( \hat{C} \\) is computed and ordered by frequency. Finally the top-\\( k \\) hashtags of this set are returned.
- 
-## Neural attention models: topical co-attention networks
-[Li et al.](https://www.sciencedirect.com/science/article/abs/pii/S0925231218314012) used an **attention-based neural network** to learn the representation of a microblog post. The basic idea behind the attention mechanism is to allow the model to focus on the relevant parts of the input sequence as needed. This goal is accomplished by determining a weight for each position that indicates the amount of attention that should be payed to it. Specifically, the authors proposed a novel **Topical Co-Attention Network** (TCAN) that models content attention and topic attention simultaneously and simmetrically: the content representations are used to guide the topic attention and the topic representation is used to guide content attention. The model mainly consists of four parts:
-1. *LSTM-based sequence encoder*: a bidirectional LSTM which sequentially processes the embedded representation of each word of a tweet, generating a condensed vector representation which summarizes the information of the whole sequence. Specifically the forward and backward hidden states of the bidirectional LSTM are concatenated, obtaining \\( h_t = [\overrightarrow{h_t} ;\overleftarrow{h_t}] \\).
-2. *Topic modeling*: topic models are a powerful technique for finding useful structures in a collection of documents. The main assumption is that a document is generated by a mixture of topics, each of which is a distribution over words in the vocabulary. To model the topics of microblogs, the authors used Twitter LDA, which is the state-of-the-art topic model for short texts, based on the main assumption that microblog posts are mono-topic. After topic modeling, the model assigns a topic \\( z \\) to each microblog post \\( s \\). Then the top-\\( m \\) most probable words are extracted and this topical information about \\( s \\) is represented by a sequence of embedding vectors of topical words \\( b_1, b_2,  ..., b_m \\).
-3. *Topical co-attention*: given all the hidden states \\( h_1, h_2,  ..., h_n \\) and the topical word embedding vectors \\( b_1, b_2,  ..., b_m \\) learned from topic modeling, the topical co-attention layer outputs a continuous context vector \\( vec \\) for each microblog post \\( s \\). This vector is obtained as follows:
-	- An affinity matrix \\( E \in \mathcal{R}^{NxM} \\) is computed, with each element determined as:
-	$$
-	e_{tk}=h_t^TW^{hb}b_k
-	$$
-	where \\( W^{hb} \\) is a trainable weight matrix, and \\( e_{tk} \\) is the attention weight between the hidden state \\( h_t \\) and the topical word embedding \\( b_k \\).
-	- For the hidden state of a word \\( h_t \\), the relevant semantics in the global topic information (content-guided topic attention) is given by:
-	$$\tilde{h_t}=\sum_{k=1}^{M}a_k^bb_k$$
-	where \\(a_k^b\\) is the attention weight of \\( b_k \\), given by the softmax:
-	$$a_k^b=\frac{exp(e_{tk})}{\sum_{j=1}^{M}exp(e_{tj})}$$
-	- Similarly, topic-guided content attention is computed as:
-	$$\tilde{b_k}=\sum_{t=1}^{N}a_t^hh_t$$
-	where \\(a_t^h\\) is the attention weight of \\( h_t \\), given by the softmax:
-	$$a_t^h=\frac{exp(e_{tk})}{\sum_{i=1}^{N}exp(e_{ik})}$$
-	- The obtained vectors are further processed using average and max pooling, and concatenated obtaining the final context vector:
-	$$
-	vec = [v_{avg}^{h}; v_{avg}^{b}; v_{max}^{h}; v_{max}^{b}]
-	$$
- 4. *Softmax classifier*: the context vector is fed to a linear layer and then to a softmax classifier which outputs a probability distribution over all candidate hashtags. The authors trained the model using backpropagation, the cross-entropy loss function and the Adaptive Moment Estimation algorithm (ADAM), an adaptive optimization algorithm which compute a different learning rate for each parameter of the network.
+## Set the environment
 
-## Latent factor models: Bayesian Personalized Ranking matrix factorization for personalized hashtag recommendation
-[Li et al.](https://dl.acm.org/doi/10.1145/2932192) proposed a joint probabilistic latent factor model for effectively capturing user implicit feedbacks and exploiting the rich microblog information, which integrates user adoption behaviors, user *microtopics* (i.e. hashtags) content and contextual information. 
-The proposed model, namely **Microtopic Recommendation Model** (MTRM), builds on top of collaborative filtering, content analysis and feature regression, and consists of three main steps:
-1. *Modeling user-microtopic adoptions*: given a user vector \\(v_u\\) and a microtopic vector \\(v_i\\), they computed an affinity score which models user \\(u\\)'s preference to adopt microtopic \\(i\\) as: $$r_{u,i}=v_u^Tv_i+b_u+b_i$$
-where \\(b_u\\) and \\(b_i\\) are user's and item's biases to be learned. Afterwards, they exploited an optimization ranking criterion, specifically the <b>Bayesian Personalized Ranking</b> (BPR), whose goal is to rank items according to user adoption. Let \\(\mathcal{P}\\) denote a set of triplets \\(<u, i, j>\\) derived from the training data where user \\(u\\) adopted hashtag \\(i\\) but not \\(j\\). The BPR criterion minimizes the following function: $$ min_\Theta \sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})}) $$ where \\(\Theta \\) indicates the set of model parameters. Therefore, the above function maximes the difference between used and unused microtopics.
-2. *Modeling user and microtopic content*: the authors incorporated the content into the model by combining user's and microtopic’s posts into a pseudo-document. Afterwards, they modeled the generation of the pseuso-documents through **Latent Dirichlet Allocation**, by assuming that each hidden factor of users and microtopics has a corresponding multinomial word distribution \\(\phi_k\\), and is therefore related to a hidden LDA topic.
-Each user has a distribution \\(\theta_u\\) over the \\(K\\) topics, derived from its hidden factor vector, given by:
-$$\theta_{u,k}=\frac{exp(\kappa v_{u,k})}{\sum_{k^\prime}exp(\kappa v_{u,k^\prime})}$$
-where \\(\kappa\\) is a parameter which controls the transformation. All the words \\(w_u\\) in the pseudo-document representing a user \\(u\\) can be generated as:
-$$p(w_u | \theta_u, \phi)=\prod_{n}\sum_{k=1}^K\Theta_{u,k}\phi_{k,w_{u,n}}$$ Microtopic distribution \\(\Theta_i\\) and the generation related to microtopic \\(i\\) can be derived similarly.
-So, the second term to be added to the BPR optimization function is:
-$$-\left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)$$
-3. *Modeling user and microtopic attributes*: the authors incorporated also additional attibutes (e.g. gender) by exploiting a regression-based latent factorization method, which generates a latent factor vector for each attribute value. The main idea behind this kind of approach is that users or microtopics sharing the same attributes lead to similar vectors in the latent factor space. They modeled user latent factors \\(v_u\\) as:
-$$v_u=G_U^Ta_u + \sigma_u$$
-where \\(G_U\\) is a regression coefficient matrix, \\(a_u\\) is the attribute vector of the user \\(u\\), which specifies a binary value for each attribute, and \\(\sigma_u\\) is the deviation of \\(u\\) from the regression. Microtopic latent factors \\(v_i\\) can be derived similarly.
-
-
-Therefore, the overall objective function, which combines the above mentioned terms, is defined as follows:
-
-<div class="math">
-\begin{aligned}
- min_\Theta &\sum_{\langle u,i,j \rangle in \mathcal{P}}\hspace{0.1cm}ln(1+\mathcal{e}^{-(r_{u,i} - r_{u,j})})\\[0.7ex]
- &-\mu \left( \sum_uln\hspace{0.1cm}p(w_u|\Theta)+\sum_iln\hspace{0.1cm}p(w_i|\Theta) \right)\\[0.7ex]
- &+\lambda R(\Theta)
-\end{aligned}
 </div>
 
-where the first term is the ranking optimization, the second is the log likelihood of generating the textual content and the third is a L2-norm regularization on the model parameters \\(\Theta\\), learned with the **EM Monte Carlo** algorithm, which uses Gibbs sampling and gradient descent in the *E* and *M* steps respectively. Finally, the \\(\mu\\) and \\(\lambda\\) scalars control the contribution of each term on the overall objective function.
+<div class="cell markdown" id="O-_WSnEgl5lK">
+
+Download the required dependencies
+
+</div>
+
+<div class="cell code" id="MocSfJxY9oeT">
+
+``` python
+!pip install -r requirements.txt
+```
+
+</div>
+
+<div class="cell markdown" id="J9fxLAysiv-r">
+
+Import necessary libraries
+
+</div>
+
+<div class="cell code" id="hHd2FsCr_3_Q">
+
+``` python
+import pandas as pd
+from transformers import TFBertModel, BertTokenizer
+seed_value = 29
+import os
+os.environ['PYTHONHASHSEED'] = str(seed_value)
+import random
+random.seed(seed_value)
+import numpy as np
+np.random.seed(seed_value)
+np.set_printoptions(precision=2)
+import tensorflow as tf
+tf.random.set_seed(seed_value)
+import tensorflow_addons as tfa
+import tensorflow.keras as keras
+import tensorflow.keras.layers as layers
+from tensorflow.keras.callbacks import ModelCheckpoint
+import re
+import matplotlib.pyplot as plt
+from sklearn.metrics import auc, roc_curve
+```
+
+</div>
+
+<div class="cell markdown" id="c0VpikUNIkcY">
+
+Enable GPU processing
+
+</div>
+
+<div class="cell code" id="w8JboDdFJprS">
+
+``` python
+device_name = tf.test.gpu_device_name()
+if device_name != '/device:GPU:0':
+  raise SystemError('GPU device not found')
+print('Found GPU at: {}'.format(device_name))
+```
+
+</div>
+
+<div class="cell markdown" id="eFirQBWwaDiU">
+
+## Model training
+
+I modeled personality detection on the **MBTI** dataset as a multilabel
+classification task.
+
+In particular, the model treats each personality axis as a separate
+class, computing an independent probability for each one of them through
+a Bernuolli trial.
+
+The model is based on **BERT** (HuggingFace Transfromers) and exploits
+the effectiveness of transfer learning form pre-trained language
+representation models.
+
+</div>
+
+<div class="cell code" id="iB0anvSEDa-Q">
+
+``` python
+N_AXIS = 4
+MAX_SEQ_LEN = 128
+BERT_NAME = 'bert-base-uncased'
+'''
+EMOTIONAL AXES:
+Introversion (I) – Extroversion (E)
+Intuition (N) – Sensing (S)
+Thinking (T) – Feeling (F)
+Judging (J) – Perceiving (P)
+'''
+axes = ["I-E","N-S","T-F","J-P"]
+classes = {"I":0, "E":1, # axis 1
+           "N":0,"S":1, # axis 2
+           "T":0, "F":1, # axis 3
+           "J":0,"P":1} # axis 4
+```
+
+</div>
+
+<div class="cell markdown" id="kOCrp6AEj6ud">
+
+### Preprocessing
+
+The following operation are performed: text lowercasing, removing text
+in square brackets, links, words containing numbers, emoji and initial
+single quotes.
+
+</div>
+
+<div class="cell code" id="99U8SFjMD-di">
+
+``` python
+def text_preprocessing(text):
+    text = text.lower()
+    text = re.sub('\[.*?\]', '', text)
+    text = re.sub('https?://\S+|www\.\S+', '', text)
+    text = re.sub('<.*?>+', '', text)
+    text = re.sub('\n', '', text)
+    text = re.sub('\w*\d\w*', '', text)
+    text.encode('ascii', 'ignore').decode('ascii')
+    if text.startswith("'"):
+        text = text[1:-1]
+    return text
+```
+
+</div>
+
+<div class="cell markdown" id="S3IidzgPkirL">
+
+Load MBTI data, splitting it into train, val and test skipping the last
+incomplete batch.
+
+</div>
+
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="0X2l712HDfes" data-outputId="8d9974b1-7ee0-4b50-d446-d57c23547df7">
+
+``` python
+train_n=6624
+val_n=1024
+test_n=1024
+data = pd.read_csv("mbti_1.csv")
+data = data.sample(frac=1)
+labels = []
+print(data)
+for personality in data["type"]:
+    pers_vect = []
+    for p in personality:
+        pers_vect.append(classes[p])
+    labels.append(pers_vect)
+sentences = data["posts"].apply(str).apply(lambda x: text_preprocessing(x))
+labels = np.array(labels, dtype="float32")
+train_sentences = sentences[:train_n]
+y_train = labels[:train_n]
+val_sentences = sentences[train_n:train_n+val_n]
+y_val = labels[train_n:train_n+val_n]
+test_sentences = sentences[train_n+val_n:train_n+val_n+test_n]
+y_test = labels[train_n+val_n:train_n+val_n+test_n]
+```
+
+<div class="output stream stdout">
+
+``` 
+      type                                              posts
+4420  INFP  i guess he's just preparing for wwIII, which w...
+7570  ENTJ  'More like whenever we start talking about any...
+2807  INFP  'I have this really strange fear of shiny jewe...
+463   ISTP  'Exactly!   :cheers2:|||Same here! So curious....
+3060  INFJ  'May I pop in?  I've been struggling with perf...
+...    ...                                                ...
+920   INFP  'Those are excellent examples and explanation,...
+864   INTP  'I was thinking the same.|||we do that sometim...
+808   ISTP  'Associate in Professional Flight Technology||...
+6380  INFJ  'I just love this...  https://www.youtube.com/...
+8149  INTJ  'I haven't posted here in a while.  Forgive me...
+
+[8675 rows x 2 columns]
+```
+
+</div>
+
+</div>
+
+<div class="cell markdown" id="B5chRz0LlErU">
+
+Encode sentences following the BERT specifications
+
+</div>
+
+<div class="cell code" id="X5Y63zfXEZdp">
+
+``` python
+def prepare_bert_input(sentences, seq_len, bert_name):
+    tokenizer = BertTokenizer.from_pretrained(bert_name)
+    encodings = tokenizer(sentences.tolist(), truncation=True, padding='max_length',
+                                max_length=seq_len)
+    input = [np.array(encodings["input_ids"]), np.array(encodings["token_type_ids"]),
+               np.array(encodings["attention_mask"])]
+    return input
+```
+
+</div>
+
+<div class="cell code" data-colab="{&quot;height&quot;:66,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;referenced_widgets&quot;:[&quot;89b6f158b4654be2b65f50b05ab71a3e&quot;,&quot;030751c6afd44ba7a4d75b54495bed26&quot;,&quot;82e19cc484064475a1ac8aa6f9db4dd2&quot;,&quot;cdc9103f23ce4e0e82e99b1b34b34206&quot;,&quot;db6561beb818435bb5e49c322fd01cad&quot;,&quot;1cf1c7d6095b40c98a19d9524211990b&quot;,&quot;edb500e5c9a8482aa8b4687bcea15be7&quot;,&quot;cefb289949c24dd7b0b7dac218cbe96d&quot;]}" id="gbDSJnVDG2MQ" data-outputId="f3c9fb90-03cc-424a-9153-0ddf29f19d45">
+
+``` python
+X_train = prepare_bert_input(train_sentences, MAX_SEQ_LEN, BERT_NAME)
+X_val = prepare_bert_input(val_sentences, MAX_SEQ_LEN, BERT_NAME)
+X_test = prepare_bert_input(test_sentences, MAX_SEQ_LEN, BERT_NAME)
+```
+
+<div class="output display_data">
+
+``` json
+{"model_id":"89b6f158b4654be2b65f50b05ab71a3e","version_major":2,"version_minor":0}
+```
+
+</div>
+
+<div class="output stream stdout">
+
+``` 
+
+```
+
+</div>
+
+</div>
+
+<div class="cell markdown" id="w07z0dynn3_Z">
+
+### Model architecture
+
+Encoded input is processed by the BERT model. Then, a Global Average
+Pooling on the sequence of all hidden states is used in order to get a
+concise representation of the whole sentence. Finally the output sigmoid
+layer compute an independent probability for each personality axis.
+
+</div>
+
+<div class="cell code" data-colab="{&quot;height&quot;:866,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;referenced_widgets&quot;:[&quot;32a98acce1724dfcac48ccabba5fb437&quot;,&quot;649e5a239dcd48129c60915309248433&quot;,&quot;dd3b76d619534ead9383d424063e95c8&quot;,&quot;4cbcb95abf9046d8aea17a882c928626&quot;,&quot;1c1d1d03d7104b6faac2bc674202be30&quot;,&quot;36deab58d5b64e31a1b9b60d5c19ffb4&quot;,&quot;0c4abcc8366f4a8eb6b82d351d2429a6&quot;,&quot;7e55bda9c3374c1994f7428e79cbf683&quot;,&quot;127cfb1aebf448f689860f3762ffefd1&quot;,&quot;384d78d33ef249e8be2b0df5bbe4e635&quot;,&quot;9ba0e5b31c8c4148ba1460a5ea8ccbc2&quot;,&quot;7226dda2400849c7bf8ab586cc8848b1&quot;,&quot;09fae8b6729a4e52817b8e27c0793c42&quot;,&quot;ed75fd8d6a2a4427bbc2596993efa3d3&quot;,&quot;6e5274b5f81040549a38acf5d1e53c91&quot;,&quot;95e555bd66504d8e941f52f97672740d&quot;]}" id="0v4H0aixJPaD" data-outputId="a0afe1ad-b13d-4bf7-a822-977b173a4bc0">
+
+``` python
+input_ids = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='input_ids')
+input_type = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='token_type_ids')
+input_mask = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='attention_mask')
+inputs = [input_ids, input_type, input_mask]
+bert = TFBertModel.from_pretrained(BERT_NAME)
+bert_outputs = bert(inputs)
+last_hidden_states = bert_outputs.last_hidden_state
+avg = layers.GlobalAveragePooling1D()(last_hidden_states)
+output = layers.Dense(N_AXIS, activation="sigmoid")(avg)
+model = keras.Model(inputs=inputs, outputs=output)
+model.summary()
+```
+
+<div class="output display_data">
+
+``` json
+{"model_id":"32a98acce1724dfcac48ccabba5fb437","version_major":2,"version_minor":0}
+```
+
+</div>
+
+<div class="output stream stdout">
+
+``` 
+
+```
+
+</div>
+
+<div class="output display_data">
+
+``` json
+{"model_id":"127cfb1aebf448f689860f3762ffefd1","version_major":2,"version_minor":0}
+```
+
+</div>
+
+<div class="output stream stdout">
+
+``` 
+
+```
+
+</div>
+
+<div class="output stream stderr">
+
+    Some layers from the model checkpoint at bert-base-uncased were not used when initializing TFBertModel: ['nsp___cls', 'mlm___cls']
+    - This IS expected if you are initializing TFBertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+    - This IS NOT expected if you are initializing TFBertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+    All the layers of TFBertModel were initialized from the model checkpoint at bert-base-uncased.
+    If your task is similar to the task the model of the checkpoint was trained on, you can already use TFBertModel for predictions without further training.
+
+</div>
+
+<div class="output stream stdout">
+
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:AutoGraph could not transform <bound method Socket.send of <zmq.sugar.socket.Socket object at 0x7f8a7436c0c0>> and will run it as-is.
+    Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+    Cause: module, class, method, function, traceback, frame, or code object was expected, got cython_function_or_method
+    To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+    WARNING: AutoGraph could not transform <bound method Socket.send of <zmq.sugar.socket.Socket object at 0x7f8a7436c0c0>> and will run it as-is.
+    Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+    Cause: module, class, method, function, traceback, frame, or code object was expected, got cython_function_or_method
+    To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+    WARNING:tensorflow:AutoGraph could not transform <function wrap at 0x7f8a8ff97dd0> and will run it as-is.
+    Cause: while/else statement not yet supported
+    To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+    WARNING: AutoGraph could not transform <function wrap at 0x7f8a8ff97dd0> and will run it as-is.
+    Cause: while/else statement not yet supported
+    To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    Model: "model"
+    __________________________________________________________________________________________________
+    Layer (type)                    Output Shape         Param #     Connected to                     
+    ==================================================================================================
+    input_ids (InputLayer)          [(None, 128)]        0                                            
+    __________________________________________________________________________________________________
+    token_type_ids (InputLayer)     [(None, 128)]        0                                            
+    __________________________________________________________________________________________________
+    attention_mask (InputLayer)     [(None, 128)]        0                                            
+    __________________________________________________________________________________________________
+    tf_bert_model (TFBertModel)     TFBaseModelOutputWit 109482240   input_ids[0][0]                  
+                                                                     token_type_ids[0][0]             
+                                                                     attention_mask[0][0]             
+    __________________________________________________________________________________________________
+    global_average_pooling1d (Globa (None, 768)          0           tf_bert_model[0][0]              
+    __________________________________________________________________________________________________
+    dense (Dense)                   (None, 4)            3076        global_average_pooling1d[0][0]   
+    ==================================================================================================
+    Total params: 109,485,316
+    Trainable params: 109,485,316
+    Non-trainable params: 0
+    __________________________________________________________________________________________________
+
+</div>
+
+</div>
+
+<div class="cell markdown" id="WtksP0CQoSd-">
+
+### End-to-end fine-tuning
+
+The model is fully fine-tuned with a small learning rate in order to
+readapt the pre-trained features to work with our downstream task. I
+used a binary cross-entropy loss as the prediction for each personality
+axis is modeled like a single Bernoulli trial, estimating the
+probability through a sigmoid activation. Moreover I chose the Rectified
+version of ADAM (RAdam) as the optimizer for the training process.
+Lastly, I used the area under the Receiver Operating Characteristic
+curve (ROC AUC), and binary accuracy as the main metrics for validation
+and testing.
+
+</div>
+
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="02oKXsn4Jtlq" data-outputId="b7a1e628-04b0-4e2f-9306-6820475ee213">
+
+``` python
+max_epochs = 7
+batch_size = 32
+opt = tfa.optimizers.RectifiedAdam(learning_rate=3e-5)
+loss = keras.losses.BinaryCrossentropy()
+best_weights_file = "weights.h5"
+auc = keras.metrics.AUC(multi_label=True, curve="ROC")
+m_ckpt = ModelCheckpoint(best_weights_file, monitor='val_'+auc.name, mode='max', verbose=2,
+                          save_weights_only=True, save_best_only=True)
+model.compile(loss=loss, optimizer=opt, metrics=[auc, keras.metrics.BinaryAccuracy()])
+model.fit(
+    X_train, y_train,
+    validation_data=(X_val, y_val),
+    epochs=max_epochs,
+    batch_size=batch_size,
+    callbacks=[m_ckpt],
+    verbose=2
+)
+```
+
+<div class="output stream stdout">
+
+    Epoch 1/7
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    WARNING:tensorflow:Gradients do not exist for variables ['tf_bert_model/bert/pooler/dense/kernel:0', 'tf_bert_model/bert/pooler/dense/bias:0'] when minimizing the loss.
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    WARNING:tensorflow:Gradients do not exist for variables ['tf_bert_model/bert/pooler/dense/kernel:0', 'tf_bert_model/bert/pooler/dense/bias:0'] when minimizing the loss.
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    207/207 - 226s - loss: 0.5899 - auc: 0.5325 - binary_accuracy: 0.6766 - val_loss: 0.5608 - val_auc: 0.6397 - val_binary_accuracy: 0.7034
+    
+    Epoch 00001: val_auc improved from -inf to 0.63968, saving model to weights.h5
+    Epoch 2/7
+    207/207 - 192s - loss: 0.5275 - auc: 0.6807 - binary_accuracy: 0.7446 - val_loss: 0.5115 - val_auc: 0.7260 - val_binary_accuracy: 0.7551
+    
+    Epoch 00002: val_auc improved from 0.63968 to 0.72596, saving model to weights.h5
+    Epoch 3/7
+    207/207 - 192s - loss: 0.4856 - auc: 0.7569 - binary_accuracy: 0.7662 - val_loss: 0.4999 - val_auc: 0.7492 - val_binary_accuracy: 0.7607
+    
+    Epoch 00003: val_auc improved from 0.72596 to 0.74920, saving model to weights.h5
+    Epoch 4/7
+    207/207 - 192s - loss: 0.4354 - auc: 0.8146 - binary_accuracy: 0.7960 - val_loss: 0.5079 - val_auc: 0.7448 - val_binary_accuracy: 0.7559
+    
+    Epoch 00004: val_auc did not improve from 0.74920
+    Epoch 5/7
+    207/207 - 192s - loss: 0.3572 - auc: 0.8827 - binary_accuracy: 0.8405 - val_loss: 0.5638 - val_auc: 0.7336 - val_binary_accuracy: 0.7441
+    
+    Epoch 00005: val_auc did not improve from 0.74920
+    Epoch 6/7
+    207/207 - 192s - loss: 0.2476 - auc: 0.9467 - binary_accuracy: 0.8962 - val_loss: 0.7034 - val_auc: 0.7294 - val_binary_accuracy: 0.7490
+    
+    Epoch 00006: val_auc did not improve from 0.74920
+    Epoch 7/7
+    207/207 - 192s - loss: 0.1442 - auc: 0.9825 - binary_accuracy: 0.9436 - val_loss: 0.8970 - val_auc: 0.7172 - val_binary_accuracy: 0.7407
+    
+    Epoch 00007: val_auc did not improve from 0.74920
+
+</div>
+
+<div class="output execute_result" data-execution_count="9">
+
+    <tensorflow.python.keras.callbacks.History at 0x7f8929c7d350>
+
+</div>
+
+</div>
+
+<div class="cell markdown" id="K63gLa1IqMEG">
+
+## Results evaluation
+
+</div>
+
+<div class="cell markdown" id="YKx_ayhiqh4U">
+
+Evaluate the model on the test set.
+
+</div>
+
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="ZxMVRgmtMw_B" data-outputId="fce1b383-89ff-4cb9-e84a-08fe02b9d800">
+
+``` python
+loss = keras.losses.BinaryCrossentropy()
+best_weights_file = "weights.h5"
+model.load_weights(best_weights_file)
+opt = tfa.optimizers.RectifiedAdam(learning_rate=3e-5)
+model.compile(loss=loss, optimizer=opt, metrics=[keras.metrics.AUC(multi_label=True, curve="ROC"),
+                                                  keras.metrics.BinaryAccuracy()])
+predictions = model.predict(X_test)
+model.evaluate(X_test, y_test, batch_size=32)
+```
+
+<div class="output stream stdout">
+
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    WARNING:tensorflow:The parameters `output_attentions`, `output_hidden_states` and `use_cache` cannot be updated when calling a model.They have to be set to True/False in the config object (i.e.: `config=XConfig.from_pretrained('name', output_attentions=True)`).
+    WARNING:tensorflow:The parameter `return_dict` cannot be set in graph mode and will always be set to `True`.
+    32/32 [==============================] - 11s 274ms/step - loss: 0.5174 - auc_2: 0.7249 - binary_accuracy: 0.7500
+
+</div>
+
+<div class="output execute_result" data-execution_count="17">
+
+    [0.5088244080543518, 0.7356589436531067, 0.757080078125]
+
+</div>
+
+</div>
+
+<div class="cell markdown" id="zKQjmtE0qgUS">
+
+Plot ROC AUC for each personality axis.
+
+</div>
+
+<div class="cell code" id="GEqlxpz0MlQO">
+
+``` python
+def plot_roc_auc(y_test, y_score, classes):
+    assert len(classes) > 1, "len classes must be > 1"
+    plt.figure()
+    if len(classes) > 2:  # multi-label
+        # Compute ROC curve and ROC area for each class
+        for i in range(len(classes)):
+            fpr, tpr, _ = roc_curve(y_test[:, i], y_score[:, i])
+            roc_auc = auc(fpr, tpr)
+            plt.plot(fpr, tpr, label='ROC curve of class {0} (area = {1:0.2f})'.format(classes[i], roc_auc))
+        # Compute micro-average ROC curve and ROC area
+        fpr, tpr, _ = roc_curve(y_test.ravel(), y_score.ravel())
+        roc_auc = auc(fpr, tpr)
+        # Plot ROC curve
+        plt.plot(fpr, tpr, label='micro-average ROC curve (area = {0:0.2f})'.format(roc_auc))
+    else:
+        fpr, tpr, _ = roc_curve(y_test, y_score)
+        roc_auc = auc(fpr, tpr)
+        plt.plot(fpr, tpr, label='ROC curve (area = {0:0.2f})'.format(roc_auc))
+    plt.plot([0, 1], [0, 1], 'k--')
+    plt.xlim([0.0, 1.0])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel('False Positive Rate')
+    plt.ylabel('True Positive Rate')
+    plt.title('Receiver operating characteristic')
+    plt.legend(loc="lower right")
+    plt.show()
+```
+
+</div>
+
+<div class="cell code" data-colab="{&quot;height&quot;:295,&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="2ERfcy_2qdle" data-outputId="4a7761ca-cff4-4dde-d18b-7722502ded1d">
+
+``` python
+plot_roc_auc(y_test, predictions, axes)
+```
+
+<div class="output display_data">
+
+![](9076c10e561bd158763aa24ff5c9ca1a84628d38.png)
+
+</div>
+
+</div>
+
+<div class="cell markdown" id="W3vxfXH4qtYt">
+
+As a final step, I tested the model with a simple sentence for finding
+out my personality.
+
+</div>
+
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="-tLGVE4AMy5F" data-outputId="38fa5cc3-c95a-470e-905e-bc55eef3485e">
+
+``` python
+s1 = "I like studying deep learning, playing football, hanging out with my friends," \
+     "listen to music and visit foreign cities all over the world."
+sentences = np.asarray([s1])
+enc_sentences = prepare_bert_input(sentences, MAX_SEQ_LEN, BERT_NAME)
+predictions = model.predict(enc_sentences)
+for sentence, pred in zip(sentences, predictions):
+    pred_axis = []
+    mask = (pred > 0.5).astype(bool)
+    for i in range(len(mask)):
+        if mask[i]:
+            pred_axis.append(axes[i][2])
+        else:
+            pred_axis.append(axes[i][0])
+    print('-- comment: '+sentence.replace("\n", "").strip() +
+          '\n-- personality: '+str(pred_axis) +
+          '\n-- scores:'+str(pred))
+```
+
+<div class="output stream stdout">
+
+    -- comment: I like studying deep learning, playing football, hanging out with my friends,listen to music and visit foreign cities all over the world.
+    -- personality: ['I', 'N', 'T', 'P']
+    -- scores:[0.18 0.44 0.36 0.79]
+
+</div>
+
+</div>
