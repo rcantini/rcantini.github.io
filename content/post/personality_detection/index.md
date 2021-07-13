@@ -18,12 +18,12 @@ tags:
 - Keras-Tensorflow
 ---
 
-In this post I show how to fine-tune a BERT classifier using the Huggingface Transformers library and Keras+Tensorflow in order to detect users' personality type based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI).
+In this post I show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to detect users' personality type based on some text they have posted, according to the **Myers–Briggs Type Indicator** (MBTI).
 
-The proposed notebook, described in the following, was developed on Google Colab and is comprised of the following steps:
+The proposed notebook, described in the following, was developed on *Google Colab* and is comprised of the following steps:
 - **Data preparation**: MBTI data are loaded, preprocessed and prepared according to the BERT specifications.
 - **Fine tuning of the BERT classifier**: a classification layer is stacked on top of the BERT encoder and the entire model is fine-tuned, fully exploiting the GPU support provided by Google Colab, with very low training times.
-- **Performance evaluation**: I evaluated the trained model using ROC_AUC and Accuracy metrics, achieving an AUC of 0.725 and a binary accuracy of 0.750 on the test set.
+- **Performance evaluation**: I evaluated the trained model using *ROC AUC* and *Accuracy* metrics, achieving an AUC of *0.73* and a binary accuracy of *0.75* on the test set.
 <div class="cell markdown" id="6NELeva1mgKY">
 
 ## Set the environment
@@ -259,6 +259,7 @@ model.summary()
 ```
 
 <div class="output stream stdout">
+
     Model: "model"
     __________________________________________________________________________________________________
     Layer (type)                    Output Shape         Param #     Connected to                     
@@ -436,13 +437,7 @@ def plot_roc_auc(y_test, y_score, classes):
 ``` python
 plot_roc_auc(y_test, predictions, axes)
 ```
-<img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
-
-<div class="output display_data">
-
-![](9076c10e561bd158763aa24ff5c9ca1a84628d38.png)
-
-</div>
+<img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%; height: 90%"/>
 
 </div>
 
