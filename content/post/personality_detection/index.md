@@ -32,7 +32,7 @@ The proposed notebook, described in the following, was developed on *Google Cola
 
 <div class="cell markdown" id="J9fxLAysiv-r">
 
-### Import necessary libraries
+***Import necessary libraries***
 
 </div>
 
@@ -64,7 +64,7 @@ from sklearn.metrics import auc, roc_curve
 
 <div class="cell markdown" id="c0VpikUNIkcY">
 
-### Enable GPU processing
+***Enable GPU processing***
 </div>
 
 <div class="cell code" data-execution_count="4" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="w8JboDdFJprS" data-outputId="ad6eebfe-3d0f-4224-9396-50730460b409">
@@ -126,7 +126,7 @@ classes = {"I":0, "E":1, # axis 1
 
 <div class="cell markdown" id="kOCrp6AEj6ud">
 
-### Preprocessing
+***Preprocessing***
 
 The following operation are performed: text lowercasing, removing text
 in square brackets, links, words containing numbers, emoji and initial
@@ -239,7 +239,7 @@ X_test = prepare_bert_input(test_sentences, MAX_SEQ_LEN, BERT_NAME)
 
 <div class="cell markdown" id="w07z0dynn3_Z">
 
-### Model architecture
+***Model architecture***
 
 Encoded input is processed by the BERT model. Then, a Global Average
 Pooling on the sequence of all hidden states is used in order to get a
@@ -295,7 +295,7 @@ model.summary()
 
 <div class="cell markdown" id="WtksP0CQoSd-">
 
-### End-to-end fine-tuning
+***End-to-end fine-tuning***
 
 The model is fully fine-tuned with a small learning rate in order to
 readapt the pre-trained features to work with our downstream task. I
