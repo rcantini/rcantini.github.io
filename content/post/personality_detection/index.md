@@ -65,10 +65,9 @@ from sklearn.metrics import auc, roc_curve
 <div class="cell markdown" id="c0VpikUNIkcY">
 
 Enable GPU processing
-
 </div>
 
-<div class="cell code" id="w8JboDdFJprS">
+<div class="cell code" data-execution_count="4" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="w8JboDdFJprS" data-outputId="ad6eebfe-3d0f-4224-9396-50730460b409">
 
 ``` python
 device_name = tf.test.gpu_device_name()
@@ -79,11 +78,12 @@ print('Found GPU at: {}'.format(device_name))
 
 <div class="output stream stdout">
 
-Found GPU at: /device:GPU:0
+    Found GPU at: /device:GPU:0
 
 </div>
 
 </div>
+
 
 <div class="cell markdown" id="eFirQBWwaDiU">
 
