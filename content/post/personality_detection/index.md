@@ -78,6 +78,11 @@ print('Found GPU at: {}'.format(device_name))
 ```
 
 </div>
+<div class="output stream stdout">
+
+Found GPU at: /device:GPU:0
+
+</div>
 
 <div class="cell markdown" id="eFirQBWwaDiU">
 
