@@ -18,7 +18,7 @@ tags:
 - Keras-Tensorflow
 ---
 
-In what follows I'll show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to understand user personality based on some text they have posted.
+In what follows I'll show how to fine-tune a **BERT** classifier using the *Huggingface Transformers* library and *Keras+Tensorflow* in order to understand user personality based on some text they have posted.
 In particular, user personality is modeled starting from his/her writing style according the **Myers–Briggs Type Indicator (MBTI)**, which distinguishes between 16 distinct personality types across 4 axis:
 - Introversion (I) <--> Extroversion (E)
 - Intuition (N) <--> Sensing (S)
