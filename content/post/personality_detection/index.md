@@ -487,7 +487,7 @@ for sentence, pred in zip(sentences, predictions):
 
 </div>
 
-*** Who is an INTP? ***
+***Who is an INTP?***
 - **I**: Introversion dominant over extroversion: INTPs tend to be quiet and reserved. They generally prefer to interact with a few close friends instead of a large circle of acquaintances.
 - **N**: Intuition dominant over sensation: INTPs tend to be more abstract than concrete. They focus their attention on the big picture of things rather than on the details, and they value future possibilities more than immediate reality.
 - **T**: Rational thinking dominant over sentiment: INTPs tend to give greater value to objective criteria than personal or sentimental preferences. In making a decision, they place more emphasis on logic than on social considerations.
