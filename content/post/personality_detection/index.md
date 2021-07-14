@@ -1,7 +1,7 @@
 ---
 title: 'Personality detection using BERT'
 subtitle: 'How to understand user personality from writing style according to the Myers–Briggs Type Indicator'
-summary: "In this post I show how to exploit BERT, a transformer-based language representation model, in order to understand user personality based on their writing style, according to the Myers–Briggs Type Indicator (MBTI)."
+summary: "In this post I show how to leverage BERT, a transformer-based language representation model, in order to identify the personality type of users based on their writing style and the content of their posts, according to the Myers-Briggs indicator (MBTI)."
 date: 2021-07-13T18:10:09+02:00
 draft: false
 math: true
