@@ -1,7 +1,7 @@
 ---
 title: 'Personality detection using BERT'
 subtitle: 'How to understand user personality according to the Myers–Briggs Type Indicator'
-summary: "In this post I show how to fine-tune a BERT classifier in order to understand users' personality based on some text they have posted, according to the Myers–Briggs Type Indicator (MBTI)."
+summary: "In this post I show how to exploit BERT, a transformer-based language representation model, in order to understand users' personality based on their writing style, according to the Myers–Briggs Type Indicator (MBTI)."
 date: 2021-07-13T18:10:09+02:00
 draft: false
 math: true
@@ -18,7 +18,12 @@ tags:
 - Keras-Tensorflow
 ---
 
-In this post I show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to understand users' personality based on some text they have posted, according to the **Myers–Briggs Type Indicator** (MBTI).
+In what follows I'll show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to understand users' personality based on some text they have posted.
+In particular, user personality is modeled starting from his/her writing style according the **Myers–Briggs Type Indicator (MBTI)**, a personality type system that distinguishes between 16 distinct personality types across 4 axis:
+- Introversion (I) <--> Extroversion (E)
+- Intuition (N) <--> Sensing (S)
+- Thinking (T) <--> Feeling (F)
+- Judging (J) <--> Perceiving (P)
 
 The proposed notebook, described in the following, was developed on *Google Colab* and is comprised of the following steps:
 - **Data preparation**: MBTI data are loaded, preprocessed and prepared according to the BERT specifications.
@@ -481,9 +486,14 @@ for sentence, pred in zip(sentences, predictions):
     -- scores:[0.18 0.44 0.36 0.79]
 
 </div>
-That's amazing! :clap::clap:
 
-<img src="quote.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+*** Who is an INTP? ***
+- **I**: Introversion dominant over extroversion: INTPs tend to be quiet and reserved. They generally prefer to interact with a few close friends instead of a large circle of acquaintances.
+- **N**: Intuition dominant over sensation: INTPs tend to be more abstract than concrete. They focus their attention on the big picture of things rather than on the details, and they value future possibilities more than immediate reality.
+- **T**: Rational thinking dominant over sentiment: INTPs tend to give greater value to objective criteria than personal or sentimental preferences. In making a decision, they place more emphasis on logic than on social considerations.
+- **P**: Perception dominant over judgment: INTPs tend to be reluctant to make decisions too quickly, preferring to leave options open and analyze all possibilities before deciding.
+
+<img src="quote.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
 
 </div>
 <hr>
