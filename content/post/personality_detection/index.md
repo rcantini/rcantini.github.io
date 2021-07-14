@@ -94,7 +94,7 @@ print('Found GPU at: {}'.format(device_name))
 
 ## Model training
 
-I modeled personality detection on the **MBTI** dataset as a multilabel
+I modeled personality detection on the <a href="https://www.kaggle.com/datasnaek/mbti-type">MBTI dataset</a> as a multilabel
 classification task.
 
 In particular, the model treats each personality axis as a separate
