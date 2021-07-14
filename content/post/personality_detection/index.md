@@ -159,7 +159,7 @@ def text_preprocessing(text):
 
 <div class="cell markdown" id="S3IidzgPkirL">
 
-Load MBTI data, splitting it into train, val and test skipping the last
+MBTI dataset is loaded, splitting it into train, val and test skipping the last
 incomplete batch.
 
 </div>
@@ -214,7 +214,7 @@ y_test = labels[train_n+val_n:train_n+val_n+test_n]
 
 <div class="cell markdown" id="B5chRz0LlErU">
 
-Encode sentences following the BERT specifications
+Sentences are encoded following the BERT specifications.
 
 </div>
 
@@ -454,7 +454,7 @@ plot_roc_auc(y_test, predictions, axes)
 
 <div class="cell markdown" id="W3vxfXH4qtYt">
 
-As a final step, I tested the model with a simple sentence in order to find out my personality.
+As a final step, I tested the model by writing a simple sentence, in order to find out my personality.
 
 </div>
 
