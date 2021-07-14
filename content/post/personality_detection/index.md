@@ -159,7 +159,7 @@ def text_preprocessing(text):
 
 <div class="cell markdown" id="S3IidzgPkirL">
 
-MBTI dataset is loaded, splitting it into train, val and test skipping the last
+MBTI dataset is loaded, splitting it into train, val and test, skipping the last
 incomplete batch.
 
 </div>
