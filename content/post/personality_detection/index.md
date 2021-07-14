@@ -101,7 +101,7 @@ In particular, the model treats each personality axis as a separate
 class, computing an independent probability for each one of them through
 a Bernuolli trial.
 
-The model is based on **BERT** (HuggingFace Transfromers) and exploits
+The model is based on **BERT** and exploits
 the effectiveness of transfer learning form pre-trained language
 representation models.
 
