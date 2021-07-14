@@ -1,7 +1,7 @@
 ---
 title: 'Personality detection using BERT'
 subtitle: 'How to understand user personality from writing style according to the Myers–Briggs Type Indicator'
-summary: "In this post I show how to exploit BERT, a transformer-based language representation model, in order to understand users' personality based on their writing style, according to the Myers–Briggs Type Indicator (MBTI)."
+summary: "In this post I show how to exploit BERT, a transformer-based language representation model, in order to understand user personality based on their writing style, according to the Myers–Briggs Type Indicator (MBTI)."
 date: 2021-07-13T18:10:09+02:00
 draft: false
 math: true
@@ -18,7 +18,7 @@ tags:
 - Keras-Tensorflow
 ---
 
-In what follows I'll show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to understand users' personality based on some text they have posted.
+In what follows I'll show how to fine-tune a **BERT** classifier using the Huggingface Transformers library and Keras+Tensorflow in order to understand user personality based on some text they have posted.
 In particular, user personality is modeled starting from his/her writing style according the **Myers–Briggs Type Indicator (MBTI)**, a personality type system that distinguishes between 16 distinct personality types across 4 axis:
 - Introversion (I) <--> Extroversion (E)
 - Intuition (N) <--> Sensing (S)
