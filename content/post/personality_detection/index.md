@@ -25,7 +25,7 @@ In particular, user personality is modeled starting from his/her writing style a
 - Thinking (T) <--> Feeling (F)
 - Judging (J) <--> Perceiving (P)
 
-The proposed notebook, described in the following, was developed on *Google Colab* and is comprised of the following steps:
+The developed notebook, described in the following, was developed on *Google Colab* and is comprised of the following steps:
 - **Data preparation**: MBTI data are loaded, preprocessed and prepared according to the BERT specifications.
 - **Fine tuning of the BERT classifier**: a classification layer is stacked on top of the BERT encoder and the entire model is fine-tuned, fully exploiting the GPU support provided by Google Colab, with very low training times.
 - **Performance evaluation**: I evaluated the trained model using *ROC AUC* and *Accuracy* metrics, achieving an AUC of *0.73* and a binary accuracy of *0.75* on the test set.
