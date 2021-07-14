@@ -454,7 +454,7 @@ plot_roc_auc(y_test, predictions, axes)
 
 <div class="cell markdown" id="W3vxfXH4qtYt">
 
-As a final step, I tested the model by writing a simple sentence, in order to find out my personality.
+As a final step, I tested the model by writing a simple sentence in order to find out my personality.
 
 </div>
 
