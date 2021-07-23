@@ -40,7 +40,7 @@ Test different placement policies, in particular ***cloud only***, ***hybrid/fog
 A comparison of the obtained results is required in terms of *latency*, *network usage* and *energy consumption*.
 
 ### Project delivery
-- Write a report to be delivered before the exam, in which you explain all the details of your proposed system, the choices made during the parametr setting phase, your key findings and results.
+- Write a report to be delivered before the exam, in which you explain all the details of your project, the choices made during the parameter setting phase, your key findings and results.
 - Prepare a presentation that will help you explain your work during the exam.
 - The **deadline** for delivering the project (*report + code*) is **7 days before the exam**.
 
