@@ -60,6 +60,6 @@ Particular attention is paid to:
   <li>The use of Deep Learning and Natural Language Processing models in the context of Topic Modeling, Sentiment Analysis and Opinion Mining, aimed at detecting the main topics of discussion, users' mood and their opinion regarding a specific topic/event of interest.</li>
   <li>Hashtag Recommendation models, for developing systems capable of predicting hashtags for posts that do not have any, in order to enrich the information content of social data involved in different mining processes.</li>
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
-  <li>The use of machine learning models for optimizing the execution of scientific workflows, aimed at enabling the realization of large-scale parallel systems for big data analysis.</li>
+  <li>The use of machine learning models for optimizing the execution of scientific workflows, in order to enable the realization of large-scale parallel systems for big data analysis.</li>
 </ul>
 
