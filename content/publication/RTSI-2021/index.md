@@ -22,7 +22,7 @@ of the product and compare it with a series of reference images
 known to all, such as a man, a chair, a door or a child. The
 experimental evaluation, conducted on Amazon, shows that the
 use of the proposed tool helped people to figure out the real
-dimensions of products, with respect to the case in which only cutout images and textual descriptions are provided. In particular,
+dimensions of products, with respect to the case in which only cut-out images and textual descriptions are provided. In particular,
 according to our experiments, people who used the tool were
 able to understand the real dimensions of a product with 17.5%
 greater accuracy than those who did not use the tool. Focusing
