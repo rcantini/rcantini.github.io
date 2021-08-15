@@ -1,13 +1,13 @@
 ---
-title: 'Play with BERT! Text classification using Huggingface and Tensorflow'
-subtitle: 'How to fine-tune a BERT classifier for detecting the sentiment of a movie review and the toxicity of a comment.'
-summary: "In what follows, I'll show how to fine-tune a BERT classifier, using Huggingface and Keras+Tensorflow, for dealing with two different text classification problems. The first consists in detecting the sentiment (*negative* or *positive*) of a movie review, while the second is related to the classification of a comment based on different types of toxicity, such as *toxic*, *severe toxic*, *obscene*, *threat*, *insult* and *identity hate*."
-date: 2021-03-03T00:00:00Z
+title: 'Let's play with MNIST! Generate digits with Convolutional Variational Autoencoders'
+subtitle: 'How to develop a Flask web application for drawing numbers that uses a CNN-based variational autoencoder trained with Keras + Tensorflow on the MNIST dataset of handwritten digits.'
+summary: ""
+date: 2021-08-15T00:00:00Z
 draft: false
 math: true
 disable_comments: true
 markup: kramdown
-lastmod: 2021-03-03T00:00:00Z
+lastmod: 2021-08-15T00:00:00Z
 authors:
 - admin
 tags:
@@ -146,7 +146,7 @@ On the other hand, the second model detected correctly the presence of toxicity 
 
 In the following the app:
 
-<iframe src="https://play-with-mnist.herokuapp.com/" width="98%" height="710px" style="border:2px solid black;"></iframe>
+<iframe src="https://play-with-mnist.herokuapp.com/" width="100%" height="708px"></iframe>
 
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
