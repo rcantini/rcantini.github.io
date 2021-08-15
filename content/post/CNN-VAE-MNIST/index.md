@@ -146,7 +146,7 @@ On the other hand, the second model detected correctly the presence of toxicity 
 
 In the following the app:
 
-<iframe src="https://play-with-mnist.herokuapp.com/" width="1400px" height="450px" style="border:2px solid black;"></iframe>
+<iframe src="https://play-with-mnist.herokuapp.com/" width="100%" height="725px" style="border:2px solid black;"></iframe>
 
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
