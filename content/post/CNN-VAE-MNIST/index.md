@@ -1,7 +1,7 @@
 ---
-title: 'Let's play with MNIST! Generate digits with Convolutional Variational Autoencoders'
+title: "Let's play with MNIST! Generate digits with Convolutional Variational Autoencoders"
 subtitle: 'How to develop a Flask web application for drawing numbers that uses a CNN-based variational autoencoder trained with Keras + Tensorflow on the MNIST dataset of handwritten digits.'
-summary: ""
+summary: "TO DO"
 date: 2021-08-15T00:00:00Z
 draft: false
 math: true
