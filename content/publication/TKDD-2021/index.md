@@ -3,7 +3,7 @@ title: "Learning sentence-to-hashtags semantic mapping for hashtag recommendatio
 date: 2021-05-06
 publishDate: 2021-05-06
 authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Giovanni Bruno", "Paolo Trunfio"]
-publication_types: ["4"]
+publication_types: ["2"]
 abstract: "The growing use of microblogging platforms is generating a huge amount of posts that need
 effective methods to be classified and searched. In Twitter and other social media platforms, 
 hashtags are exploited by users to facilitate the search, categorization and spread of posts. 

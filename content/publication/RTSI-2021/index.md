@@ -34,8 +34,8 @@ dimensions of the products they want to buy, and consequently
 reduce the likelihood of a return."
 featured: true
 publication: "*6th International Research and Technologies for Society and Industry Innovation for a smart world (IEEE RTSI 2021), September 2021*"
-url_pdf: "https://www.researchgate.net/publication/353670251_A_visual_tool_for_reducing_returns_in_e-commerce_platforms#fullTextFileContent"
-
+url_pdf: "files/papers/journals/CompareDimensions-Ecommerce-ott.pdf"
+#doi=""
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
