@@ -3,7 +3,7 @@ title: "Learning sentence-to-hashtags semantic mapping for hashtag recommendatio
 date: 2021-05-06
 publishDate: 2021-05-06
 authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Giovanni Bruno", "Paolo Trunfio"]
-publication_types: ["2"]
+publication_types: ["4"]
 abstract: "The growing use of microblogging platforms is generating a huge amount of posts that need
 effective methods to be classified and searched. In Twitter and other social media platforms, 
 hashtags are exploited by users to facilitate the search, categorization and spread of posts. 
@@ -25,7 +25,7 @@ models and attention-based supervised models) by achieving up to 15% improvement
 for the hashtag recommendation task and 9% for the topic discovery task."
 featured: true
 publication: "*ACM Transactions on Knowledge Discovery from Data*"
-url_pdf: "HASHET_TKDD_online.pdf"
+url_pdf: "files/papers/journals/HASHET_TKDD_online.pdf"
 doi: "10.1145/3466876"
 
 
