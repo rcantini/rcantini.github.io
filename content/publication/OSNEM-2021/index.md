@@ -3,7 +3,7 @@ title: "A Weighted Artificial Bee Colony Algorithm for Influence Maximization"
 date: 2021-09-08
 publishDate: 2021-09-08
 authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Silvio Mazza", "Domenico Talia", "Paolo Trunfio"]
-publication_types: ["3"]
+publication_types: ["2"]
 abstract: "Social media platforms are increasingly used to convey advertising campaigns for 
 products or services. A key issue is to identify an appropriate set of influencers
 within a social network, investing resources to get them to adopt a product.
@@ -23,7 +23,7 @@ find a more accurate set of users which allows to maximize the spread in almost
 all the considered configurations."
 featured: true
 publication: "*Online Social Networks and Media*"
-url_pdf: "files/papers/journals/WABC_OSNEM_preprint.pdf"
+url_pdf: "files/papers/journals/WABC_OSNEM.pdf"
 #doi: ""
 
 
