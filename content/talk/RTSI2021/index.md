@@ -4,7 +4,7 @@ event: 6th online Forum on Research and Technologies for Society and Industry In
 event_url: https://rtsi2021.ieeesezioneitalia.it/
 location: Napoli, Italy
 summary: 6th online Forum on Research and Technologies for Society and Industry Innovation for a smart world - RTSI 2021
-abstract:"A visual tool for reducing returns in e-commerce platforms"
+abstract: "A visual tool for reducing returns in e-commerce platforms"
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
