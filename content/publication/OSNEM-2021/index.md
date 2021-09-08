@@ -1,5 +1,5 @@
 ---
-title: "Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs"
+title: "A Weighted Artificial Bee Colony Algorithm for Influence Maximization"
 date: 2021-09-08
 publishDate: 2021-09-08
 authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Silvio Mazza", "Domenico Talia", "Paolo Trunfio"]
