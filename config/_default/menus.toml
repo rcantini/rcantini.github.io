@@ -14,14 +14,20 @@
   weight = 20
 
 [[main]]
-  name = "Research"
-  url = "/research/"
+  name = "Publications"
+  url = "#publications"
+  weight = 30
+
+[[main]]
+  name = "Talks"
+  url = "#talks"
   weight = 40
 
 [[main]]
-  name = "Publications"
-  url = "#publications"
-  weight = 40
+  name = "Research"
+  url = "/research/"
+  weight = 50
+
 
 [[main]]
   name = "Teaching"
@@ -39,14 +45,14 @@
   weight = 80
 
 [[main]]
-  name = "Contact"
-  url = "#contact"
-  weight = 100
-
-[[main]]
   name = "Visitors"
   url = "https://datastudio.google.com/s/iFJ0H_pp9bw"
   weight = 90
+
+[[main]]
+  name = "Contact"
+  url = "#contact"
+  weight = 100
 
 [[main]]
   name = "CV"
