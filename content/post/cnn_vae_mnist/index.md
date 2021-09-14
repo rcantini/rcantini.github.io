@@ -1,7 +1,7 @@
 ---
 title: "Let's play with MNIST! Generate digits with Convolutional Variational Autoencoders"
-subtitle: 'How to develop a Flask web application for drawing numbers that uses a CNN-based variational autoencoder trained with Keras + Tensorflow on the MNIST dataset of handwritten digits.'
-summary: "TO DO"
+subtitle: 'How to develop and deploy a web application for drawing numbers that leverages a CNN-based variational autoencoder trained on the MNIST dataset of handwritten digits.'
+summary: "This post is dedicated to the development of a Flask web application capable of drawing digits through the use of a generative model. This model is obtained by training a convolutional variational autoencoder on the MNIST dataset of handwritten digits using Keras+Tensorflow."
 date: 2021-08-15T00:00:00Z
 draft: true
 math: true
@@ -11,12 +11,12 @@ lastmod: 2021-08-15T00:00:00Z
 authors:
 - admin
 tags:
-- Natural Language Processing
-- Sentiment Analisysis
-- Toxicity Detection
-- BERT
+- Computer Vision
+- Generative Models
+- MNIST
 - Deep Learning
 - Keras-Tensorflow
+- Flask
 ---
 
 In what follows, I'll show how to fine-tune a BERT classifier using the Huggingface <a href="https://huggingface.co/transformers/quicktour.html">Transformers library</a> and Keras+Tensorflow.
