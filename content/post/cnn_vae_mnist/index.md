@@ -19,25 +19,56 @@ tags:
 - Flask
 ---
 
-In what follows, I'll show how to fine-tune a BERT classifier using the Huggingface <a href="https://huggingface.co/transformers/quicktour.html">Transformers library</a> and Keras+Tensorflow.
+In this post I'll introduce variational autoencoders, showing how they can be applied to the generation of new synthetic images depicting handwritten digits.
+I'll described how to setup and train a CNN-based variational autoencoder using Keras with Tensorflow backend, embedding this generative model within a Flask web application.
 
-Two different classification problems are addressed:
-- <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB sentiment analysis</a>: detect the sentiment of a movie review, classifying it according to its polarity, i.e. **negative** or **positive**.
-- <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">Toxic comment classification</a>: determine the toxicity of a Wikipedia comment, predicting a probability for each type of toxicity, i.e. **toxic**, **severe toxic**, **obscene**, **threat**, **insult** and **identity hate**.
+## Classical autoencoder
+An **autoencoder** is a particular model that allows to efficiently encode a set of data of interest in an unsupervised manner.
+The purpose of this system is to learn a representation of a given input, called encoding, in order to reduce its dimensionality, often high, as in a sort of compression.
+In particular, an autoencoder consists of a pair of interconnected neural networks, known as *encoder* and *decoder*, which are often multilevel perceptrons or convolutional neural networks (CNNs).
+The encoder receives an input instance and derives a dense representation in a space with a smaller dimensionality, called latent space;
+the decoder, afterwards, is able to reconstruct the original input starting from its compressed version.
+The training phase involves both networks at the same time, as the encoder learns how to significantly map the input instances in the latent space, while the decoder improves its ability to recompose the output starting from the encoded representation in the space of the latent variables, all aiming to minimize the reconstruction error.
+Despite the clear utility of classical autoencoders in tasks like image segmentation, neural inpainting and denoising, they suffer in the context of data generation as the latent space, where the codified vectors lie, is not a continuous space.
+This issue hinders the generative power of these systems as well as the possibility of interpolation, as they can not correctly manage points related to encodings coming from unknown latent space region, which leads to the reconstruction of an unrealistic output.
 
-## What is BERT?
-**Bidirectional Encoder Representations from Transformers (BERT)** is a Natural Language Processing Model proposed by Google Research in 2018.
-It is based on a multi-layer bidirectional Transformer, pre-trained on two unsupervised tasks using a large crossdomain corpus:
-- **Masked Language Modeling (MLM)**: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
-- **Next Sentence Prediction (NSP)**: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
+## Variational autoencoders
+In order to overcome the problems that the GAN and classic autoencoders suffer, a different class of generative models can be used, the so called **Variational Autoencoders** (VAE), based on Bayesian inference.
+These models aim to model the probability distribution underlying the data, in order to obtain new instances by sampling this distribution.
+The main characteristic of a variational autoencoder, which distinguishes it from a standard autoencoder, is the continuity of the space of its latent variables:
+in fact, the purpose of such systems is to represent any latent attribute in probabilistic terms, using a distribution instead of a single point value.
+Given a certain observation \\( x \\), the purpose of these systems is to infer the characteristics of one or more latent variables \\( z \\) that generate \\( x \\); this is equivalent to compute the conditional probability:
 
-BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the input sequence, joinlty considering previous and subsequent tokens.
-In fact, the use of MLM objective enables the representation to fuse the left and right contexts, allowing the pre-training of a deep bidirectional language representation
-model.
-This is a key difference comparing to previous language representation models like *OpenAI GPT*, which uses a unidirectional (left-to-right) language model, or
-*ELMo*, which uses a shallow concatenation of independently trained left-to-right and right-to-left language models.
-BERT outperformed many task-specific architectures, advancing the state of the art in a wide range of Natural Language Processing tasks, such as textual entailment,
-text classification and question answering.
+$$
+p\left( {z|x} \right) = \frac{{p\left( {x|z} \right)p\left( z \right)}}{{p\left( x \right)}}\end{math}
+$$
+
+The probability expressed in Bayesian terms, is however too hard to compute, since the calculation of the evidence, involves a marginalization leading to an intractable distribution:
+
+$$
+p\left( x \right) = \int {p\left( {x|z} \right)p\left( z \right)dz}\end{math}
+$$
+
+To overcome this problem, Variational Inference can be used, since it allows the estimation of this value by approximating the distribution through optimization techniques.
+In particular, the \\( p\left( {z|x} \right) \\) distribution can be approximated with a tractable one, \\( q\left( {z|x} \right) \\), whose parameters are estimated to make the two distributions as similar as possible.
+The dissimilarity between the two distributions is measured by the Kullback-Leibler divergence.
+Starting from this the loss function for a VAE can be derived and written as follows in terms of minimization:
+$$
+\min{{\cal L}\left( {x,\hat x} \right) + \sum\limits_j {KL\left( {{q_j}\left( {z|x} \right)||p\left( z \right)} \right)}}
+$$
+
+where the first term penalizes the reconstruction error, while the second estimates how much the learned distribution is similar to the original one, which is assumed to be approximable with a Gaussian of zero mean and unit variance, for each latent space dimension.
+Intuitively, this formulation forces the encoder to distribute all the encodings around the origin of the latent space, differentiating them according to the salient characteristics of each type of input, a process that leads to the formation of a clustering structure.
+Both terms are necessary:
+- The *reconstruction loss* force the reconstructed images to be as similar as possible to the original one, getting the VAE to discern the characteristics that distinguish each type of image, a process that induces the formation of a cluster for each type.
+- The *KL divergence* works as a regularizer and forces the codings to be sufficiently close to each other, to guarantee the possibility of interpolate encodings lying in different clusters, compacting the clusters within the latent space.
+This formulation leads to the generation of instances whose features are the result of a fuzzy combination of latent features of different types, which can be well interpreted by the decoder.
+
+
+STRUTTURA, REPARAMETRIZZAZIONE, IMPLEMENTAZIONE IN KERAS, APP FLASK
+
+
+
 
 For further details, you might want to read the original <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
 
