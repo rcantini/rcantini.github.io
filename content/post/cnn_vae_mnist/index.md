@@ -3,7 +3,7 @@ title: "Let's play with MNIST! Generate digits with Convolutional Variational Au
 subtitle: 'How to develop and deploy a web application for drawing numbers that leverages a CNN-based variational autoencoder trained on the MNIST dataset of handwritten digits.'
 summary: "This post is dedicated to the development of a Flask web application capable of drawing digits through the use of a generative model. This model is obtained by training a convolutional variational autoencoder on the MNIST dataset of handwritten digits using Keras+Tensorflow."
 date: 2021-08-15T00:00:00Z
-draft: true
+draft: false
 math: true
 disable_comments: true
 markup: kramdown
@@ -20,13 +20,13 @@ tags:
 ---
 
 In this post I'll introduce variational autoencoders, showing how they can be applied to the generation of new synthetic images depicting handwritten digits.
-I'll described how to setup and train a CNN-based variational autoencoder using Keras with Tensorflow backend, embedding this generative model within a Flask web application.
+I'll describe how to setup and train a CNN-based variational autoencoder using Keras with Tensorflow backend, embedding this generative model within a Flask web application.
 
 ## Classical autoencoder
 An **autoencoder** is a particular model that allows to efficiently encode a set of data of interest in an unsupervised manner.
 The purpose of this system is to learn a representation of a given input, called encoding, in order to reduce its dimensionality, often high, as in a sort of compression.
 In particular, an autoencoder consists of a pair of interconnected neural networks, known as *encoder* and *decoder*, which are often multilevel perceptrons or convolutional neural networks (CNNs).
-The encoder receives an input instance and derives a dense representation in a space with a smaller dimensionality, called latent space;
+The encoder receives an input instance and derives a dense representation in a space with a smaller dimensionality, called *latent space*;
 the decoder, afterwards, is able to reconstruct the original input starting from its compressed version.
 The training phase involves both networks at the same time, as the encoder learns how to significantly map the input instances in the latent space, while the decoder improves its ability to recompose the output starting from the encoded representation in the space of the latent variables, all aiming to minimize the reconstruction error.
 Despite the clear utility of classical autoencoders in tasks like image segmentation, neural inpainting and denoising, they suffer in the context of data generation as the latent space, where the codified vectors lie, is not a continuous space.
