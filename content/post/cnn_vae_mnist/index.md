@@ -86,8 +86,6 @@ The reparameterization trick hence provides a double advantage: on the one hand,
 <img src="vae-gaussian.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
 
 
-
-
 ## Model implementation: Keras+Tensorflow
 Let's now move on how to implement a variational autoencoder based on Convolutional neural networks (CNNs) using Keras framework as model-level library and TensorFlow backend. To read more about CNNs, you can check out my blog post about image classification at this <a href="https://riccardo-cantini.netlify.app/post/dogbreedclass/" target="_blank">link</a>.
 </br>The model is composed of two CNNs: 
