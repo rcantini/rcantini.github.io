@@ -141,7 +141,7 @@ In particular you can use it in two ways:
 - Explore the 2D latent space by inserting the coordinates of a random point and see which digit is generated.
 
 Have fun! :laughing::laughing:
-
+</br></br>
 <iframe src="https://play-with-mnist.herokuapp.com/" width="100%" height="708px"></iframe>
 
 <hr>
