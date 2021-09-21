@@ -73,31 +73,41 @@ A variational autoencoder is made up of a pair of neural networks, an encoder an
 What differentiates a VAE from a standard autoencoder is the continuity of the generated latent space, which arises from the probabilistic nature of the encoder that doesn’t map the input into an n-dimensional latent point, but provides the parameters to describe the distribution of the input for each dimension of the latent space.
 Since this distribution is assumed to be normal, the encoder generates two n-dimensional vectors that correspond to the mean and variance of the Gaussian distribution which maps the input instances into the latent space.
 Later, the decoder generates the latent vector by sampling the \\( n \\) distributions individuated by the different *(mean,variance)* pairs, proceeding to the reconstruction of the original input.
-
 This stochastic generation implies that even from the same input, even if mean and variance remain unchanged, the encoding could vary due to the probabilistic nature of sampling. Intuitively, the mean identifies the region of the latent space where the encoding of the input must be located, while the standard deviation expresses the maximum amount of possible variation from this mean.
 This approach makes the decoder able to interpret not only the individual latent points, but more generally all those belonging to their spherical neighborhood, within a given standard deviation radius.
 
 Just like traditional autoencoders, encoder and decoder networks are trained simultaneously through gradient descent and the back-propagation algorithm. However, this process is not directly applicable to train a variational autoencoder, due to the probabilistic nature of the latent vector, which leads to the presence of a stochastic node inside the network, through which it’s not possible to back-propagate the error.
-To overcome this problem, the so-called **reparameterization trick** is used which makes deterministic the stochastic node, extrapolating the randomness and transferring it to a variable that doesn’t contribute to the back-propagation process. In particular, instead of maintaining a stochastic node, whose value is obtained through the sampling of a Gaussian distribution \\( N( \mu, \sigma) \\), a new variable \\( \epsilon \\) is introduced, which follows a standard Normal distribution \\( N(0,1) \\). Afterwards, the the value of the latent vector \\(z \\) is obtained by rescaling \\(\epsilon \sim N(0,1) \\) with the value of \\( \mu \\), \\(\sigma \\) computed by the encoder.
+To overcome this problem, the so-called **reparameterization trick** is used, which makes deterministic the stochastic node, extrapolating the randomness and transferring it to a variable that doesn’t contribute to the back-propagation process. In particular, instead of maintaining a stochastic node, whose value is obtained through the sampling of a Gaussian distribution \\( N( \mu, \sigma) \\), a new variable \\( \epsilon \\) is introduced, which follows a standard Normal distribution \\( N(0,1) \\). Afterwards, the the value of the latent vector \\(z \\) is obtained by rescaling \\(\epsilon \sim N(0,1) \\) with the value of \\( \mu \\), \\(\sigma \\) computed by the encoder.
 
-<img src="rep_trick.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+<img src="rep_trick.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
 
 The reparameterization trick hence provides a double advantage: on the one hand, it’s possible to optimize the distribution parameters by calculating the gradient with backpropagation, used in a given optimization algorithm, and on the other hand it allows sampling from this distribution. To summarize, the overall structure of the VAE discussed so far can be represented as follows:
 
-<img src="vae-gaussian.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+<img src="vae-gaussian.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
 
 
 
 
 ## Model implementation
 Let's now move on how to implement a variational autoencoder based on Convolutional neural networks (CNNs) using Keras framework as model-level library and TensorFlow backend. For more info about CNNs, you can check out my blog post about image classification at this <a href="https://riccardo-cantini.netlify.app/post/dogbreedclass/" target="_blank">link</a>.
+The model is composed of two CNNs: 
+
+- **The encoder** has been realized in order to receive in input the gray scale values of the pixels of the image, and to produce in output the two vectors *mean* and *log-variance*, implemented by using two fully connected layers with two neurons each, in order to obtain a two-dimensional latent space. A further Lambda layer with two neurons was stacked on top of the encoder, which implements the reparameterization trick by reconstructing the latent vector starting from mean and log-variance, according to the following formula: \\( z = \mu + e^{\frac{\log\sigma}{2}} \cdot \epsilon \\), where \\( \epsilon \sim N(0,1) \\).
+
+<img src="encoder.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
+
+- **The decoder** which is fed with the fully connected Lambda layer coming from the encoder’s output, which represents the reparameterized latent vector, and produces in output the reconstructed grey-scale image.
+
+<img src="decoder.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
+
+In the following, the overall structure of the implemented convolutional variational autoencoder is shown:
+
+<img src="CVAE.png" style="display: block; margin-left: auto; margin-right: auto; width: 98%; height: 98%"/>
+
+
+## ....
 I used the well known MNIST dataset of handwitten digits, consisting of a series of \\( 70000 \\) gray-scale images of handwritten digits in \\( 28x28 \\) format, annotated with the represented digit.
-The model is composed of two CNNs
 
-
-
-
-For further details, you might want to read the original <a href="https://arxiv.org/abs/1810.04805">BERT paper</a>.
 
 ## Fine-tuning
 Let's now move on how to fine-tune the BERT model in order to deal with our classification tasks. Text classification can be a quite challenging task, but we can easily achieve amazing results by exploiting the effectiveness of transfer learning form pre-trained language representation models.
