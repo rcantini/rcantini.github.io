@@ -40,13 +40,13 @@ in fact, the purpose of such systems is to represent any latent attribute in pro
 Given a certain observation \\( x \\), the purpose of these systems is to infer the characteristics of one or more latent variables \\( z \\) that generate \\( x \\); this is equivalent to compute the conditional probability:
 
 $$
-p\left( {z|x} \right) = \frac{{p\left( {x|z} \right)p\left( z \right)}}{{p\left( x \right)}}\end{math}
+p\left( {z|x} \right) = \frac{{p\left( {x|z} \right)p\left( z \right)}}{{p\left( x \right)}}
 $$
 
 The probability expressed in Bayesian terms, is however too hard to compute, since the calculation of the evidence, involves a marginalization leading to an intractable distribution:
 
 $$
-p\left( x \right) = \int {p\left( {x|z} \right)p\left( z \right)dz}\end{math}
+p\left( x \right) = \int {p\left( {x|z} \right)p\left( z \right)dz}
 $$
 
 To overcome this problem, Variational Inference can be used, since it allows the estimation of this value by approximating the distribution through optimization techniques.
