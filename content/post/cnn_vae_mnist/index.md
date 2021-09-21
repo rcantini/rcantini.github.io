@@ -23,45 +23,47 @@ In this post I'll introduce variational autoencoders, showing how they can be ap
 I'll describe how to setup and train a CNN-based variational autoencoder using Keras with Tensorflow backend, embedding this generative model within a Flask web application.
 
 ## Classical autoencoder
-An **autoencoder** is a particular model that allows to efficiently encode a set of data of interest in an unsupervised manner.
+An **autoencoder** is a model that allows to efficiently encode a set of data of interest in an unsupervised manner.
 The purpose of this system is to learn a representation of a given input, called encoding, in order to reduce its dimensionality, often high, as in a sort of compression.
 In particular, an autoencoder consists of a pair of interconnected neural networks, known as *encoder* and *decoder*, which are often multilevel perceptrons or convolutional neural networks (CNNs).
 The encoder receives an input instance and derives a dense representation in a space with a smaller dimensionality, called *latent space*;
 the decoder, afterwards, is able to reconstruct the original input starting from its compressed version.
 The training phase involves both networks at the same time, as the encoder learns how to significantly map the input instances in the latent space, while the decoder improves its ability to recompose the output starting from the encoded representation in the space of the latent variables, all aiming to minimize the reconstruction error.
 Despite the clear utility of classical autoencoders in tasks like image segmentation, neural inpainting and denoising, they suffer in the context of data generation as the latent space, where the codified vectors lie, is not a continuous space.
-This issue hinders the generative power of these systems as well as the possibility of interpolation, as they can not correctly manage points related to encodings coming from unknown latent space region, which leads to the reconstruction of an unrealistic output.
+This issue hinders the generative power of these systems as well as the possibility of interpolation, as they cannot correctly manage points related to encodings coming from unknown latent space regions, which leads to the reconstruction of an unrealistic output.
 
 ## Variational autoencoders
-In order to overcome the problems that the GAN and classic autoencoders suffer, a different class of generative models can be used, the so called **Variational Autoencoders** (VAE), based on Bayesian inference.
+In order to overcome the problems of classic autoencoders, a different class of generative models can be used, the so called **Variational Autoencoders** (VAE), based on Bayesian inference.
 These models aim to model the probability distribution underlying the data, in order to obtain new instances by sampling this distribution.
+
+### Statistical formulation through variational inference
 The main characteristic of a variational autoencoder, which distinguishes it from a standard autoencoder, is the continuity of the space of its latent variables:
-in fact, the purpose of such systems is to represent any latent attribute in probabilistic terms, using a distribution instead of a single point value.
-Given a certain observation \\( x \\), the purpose of these systems is to infer the characteristics of one or more latent variables \\( z \\) that generate \\( x \\); this is equivalent to compute the conditional probability:
+in fact, in such systems any latent attribute is represented in probabilistic terms, using a distribution instead of a discrete value.
+Given a certain observation \\( x \\), the VAE tries to infer the characteristics of one or more latent variables \\( z \\) that generate \\( x \\); this is equivalent to compute the conditional probability:
 
 $$
 p\left( {z|x} \right) = \frac{{p\left( {x|z} \right)p\left( z \right)}}{{p\left( x \right)}}
 $$
 
-The probability expressed in Bayesian terms, is however too hard to compute, since the calculation of the evidence, involves a marginalization leading to an intractable distribution:
+The probability expressed in Bayesian terms, is however too hard to compute, since the calculation of the evidence involves a marginalization leading to an intractable distribution:
 
 $$
 p\left( x \right) = \int {p\left( {x|z} \right)p\left( z \right)dz}
 $$
 
-To overcome this problem, Variational Inference can be used, since it allows the estimation of this value by approximating the distribution through optimization techniques.
-In particular, the \\( p\left( {z|x} \right) \\) distribution can be approximated with a tractable one, \\( q\left( {z|x} \right) \\), whose parameters are estimated to make the two distributions as similar as possible.
-The dissimilarity between the two distributions is measured by the Kullback-Leibler divergence.
-Starting from this the loss function for a VAE can be derived and written as follows in terms of minimization:
+To overcome this issue, Variational Inference can be used, which allows the estimation of this value by approximating the \\( p\left( {z|x} \right) \\) with a tractable one, \\( q\left( {z|x} \right) \\), whose parameters are estimated to make the two distributions as similar as possible.
+The dissimilarity between them is measured by the Kullback-Leibler divergence.
+Starting from this, the loss function for a VAE can be derived and written as follows in terms of minimization:
 $$
 \min{{\cal L}\left( {x,\hat x} \right) + \sum\limits_j {KL\left( {{q_j}\left( {z|x} \right)||p\left( z \right)} \right)}}
 $$
 
-where the first term penalizes the reconstruction error, while the second estimates how much the learned distribution is similar to the original one, which is assumed to be approximable with a Gaussian of zero mean and unit variance, for each latent space dimension.
+where the first term represents the reconstruction error, while the second estimates how much the learned distribution is similar to the original one, which is assumed to be approximable with a Gaussian of zero mean and unit variance, for each latent space dimension.
 Intuitively, this formulation forces the encoder to distribute all the encodings around the origin of the latent space, differentiating them according to the salient characteristics of each type of input, a process that leads to the formation of a clustering structure.
-Both terms are necessary:
-- The *reconstruction loss* force the reconstructed images to be as similar as possible to the original one, getting the VAE to discern the characteristics that distinguish each type of image, a process that induces the formation of a cluster for each type.
+In particular:
+- The *reconstruction loss* forces the reconstructed image to be as similar as possible to the original one, getting the VAE to discern the characteristics that distinguish each type of image, a process that induces the formation of a cluster for each type.
 - The *KL divergence* works as a regularizer and forces the codings to be sufficiently close to each other, to guarantee the possibility of interpolate encodings lying in different clusters, compacting the clusters within the latent space.
+
 This formulation leads to the generation of instances whose features are the result of a fuzzy combination of latent features of different types, which can be well interpreted by the decoder.
 
 
