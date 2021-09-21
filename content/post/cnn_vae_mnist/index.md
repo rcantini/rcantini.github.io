@@ -33,7 +33,7 @@ Despite the clear utility of classical autoencoders in tasks like image segmenta
 This issue hinders the generative power of these systems as well as the possibility of interpolation, as they cannot correctly manage points related to encodings coming from unknown latent space regions, which leads to the reconstruction of an unrealistic output.
 
 ## Variational autoencoders
-In order to overcome the problems of classic autoencoders, a different class of generative models can be used, the so called **Variational Autoencoders** (VAE), based on Bayesian inference.
+In order to overcome the problems of classic autoencoders, a different class of generative models can be used, the so called **Variational Autoencoders** (VAEs), based on Bayesian inference.
 These models aim to model the probability distribution underlying the data, in order to obtain new instances by sampling this distribution.
 
 ***Statistical formulation***
@@ -89,7 +89,7 @@ The reparameterization trick hence provides a double advantage: on the one hand,
 
 
 ## Model implementation: Keras+Tensorflow
-Let's now move on how to implement a variational autoencoder based on Convolutional neural networks (CNNs) using Keras framework as model-level library and TensorFlow backend. For more info about CNNs, you can check out my blog post about image classification at this <a href="https://riccardo-cantini.netlify.app/post/dogbreedclass/" target="_blank">link</a>.
+Let's now move on how to implement a variational autoencoder based on Convolutional neural networks (CNNs) using Keras framework as model-level library and TensorFlow backend. To read more about CNNs, you can check out my blog post about image classification at this <a href="https://riccardo-cantini.netlify.app/post/dogbreedclass/" target="_blank">link</a>.
 </br>The model is composed of two CNNs: 
 
 - **The encoder** receives in input the gray scale values of the pixels of the image, and to produce in output the two vectors *mean* and *log-variance*, implemented by using two fully connected layers with two neurons each, in order to obtain a two-dimensional latent space. A further Lambda layer with two neurons was stacked on top of the encoder, which implements the reparameterization trick by reconstructing the latent vector starting from mean and log-variance, according to the following formula: \\( z = \mu + e^{\frac{\log\sigma}{2}} \cdot \epsilon \\), where \\( \epsilon \sim N(0,1) \\).
@@ -106,27 +106,29 @@ In the following, the overall structure of the implemented convolutional variati
 
 
 ## Model training and 2D-latent space analysis
-The model has been trained for 80 epochs, with a batch size of 128 and using the ADAM optimization algorithm, on the well known MNIST dataset of handwitten digits. It consists of a series of \\( 70000 \\) gray-scale images of handwritten digits in \\( 28x28 \\) format, annotated with the represented digit.
+The model has been trained for 80 epochs, with a batch size of 128 and using the ADAM optimization algorithm, on the well known MNIST dataset of handwitten digits. It consists of a series of \\( 70000 \\) gray-scale images of handwritten digits in \\( 28 \times 28 \\) format, annotated with the represented digit.
 Afterwards, some tests were carried out in order to analyze the structure of the latent space and the generative capabilities of the trained model.
 
 ***Distribution of the MNIST handwritten digits in the latent space***
+
 The following plot shows the distribution in the latent space of the encodings corresponding to the MNIST digits.
 
-<img src="vae_mean.png" style="display: block; margin-left: auto; margin-right: auto; width: 61%; height: 61%"/>
+<img src="vae_mean.png" style="display: block; margin-left: auto; margin-right: auto; width: 80%; height: 80%"/>
 
-We can clearly see the tendency of the model, provided by the minimization of the reconstruction loss, to cluster the encodings according to the digit they represent, which leads to the formation of 10 clusters. Moreover, these groups are very close to each other, which is due to the minimization of the Kullback-Leibler divergence. This regularizing effect allows interpolation between different classes, as well as the sampling from the latent space for the generation of new images representing handwritten digits.
+We can clearly see the tendency of the model, provided by the minimization of the reconstruction loss, to cluster the encodings according to the digit they represent, which leads to the formation of \\( 10 \\) clusters. Moreover, these groups are very close to each other, which is due to the minimization of the Kullback-Leibler divergence. This regularizing effect allows interpolation between different classes, as well as the sampling from the latent space for the generation of new images representing handwritten digits.
 
 ***Sampling and visualization of the generated digits***
-In order to observe more closely the generative capability of the model in terms of continuity and smoothness, the latent space has been sampled at regular intervals in order to visualize the generated images as the two components of the bi-dimensional latent space change:
 
-<img src="digits_over_latent.png" style="display: block; margin-left: auto; margin-right: auto; width: 61%; height: 61%"/>
+In order to observe more closely the generative capability of the model in terms of continuity and smoothness, the latent space was sampled at regular intervals, visualizing the generated images as the latent coordinates change:
+
+<img src="digits_over_latent.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%; height: 75%"/>
 
 It is easy to observe how the continuity of the latent space allows the generation of realistic digits through random sampling, as well as the smooth interpolation between the various classes of digits. In fact, as you move within the latent space, the depicted digit softly changes, gradually turning into another passing through a series of realistic representations generated by a mix of latent features that the decoder can interpret well.
 
 
 ## Model deployment: Flask+Heroku
 Let's finally move on how to develop and deploy a web application that embeds the deep learning model trained above.
-In order to build the app I used **Flask**, a framework that enables the creation of web applications in a very easy way. Then the application was deployed on **Heroku**, a platform as a service that enables developers to build, run, and operate applications entirely in the cloud.
+In order to build the app I used **Flask**, a framework that enables the rapid creation of web applications. Then I deployed it on **Heroku**, a platform as a service that enables developers to build, run, and operate applications entirely in the cloud.
 The structure of our Flask project, will be as follows:
 - *CVAE.py* and *app.py*: these files implements the creation and training of the VAE and the Flask-based interaction between the user and the model through the web application.
 - *ProcFile*: it is a process file that is required for all Heroku applications. It specifies the commands that are executed by the app on startup.
@@ -134,10 +136,13 @@ The structure of our Flask project, will be as follows:
 - *templates* and *static*: these are two folders that contain the html pages and additional global files respectively.
 
 ***Let's play with MNIST!***
-I embedded the developed web app in this post so that you can try it directly here! :smiley:
+I embedded the developed web app in this post so that you can try it directly here!
+
 In particular you can use it in two ways:
-- Choose a digit to be drawn by the VAE.
+- Choose a digit (i.e. a number from \\( 0 \\) to \\( 9 \\)) to be drawn by the VAE.
 - Explore the 2D latent space by inserting the coordinates of a random point and see which digit is generated.
+
+Have fun! :laughing::laughing:
 
 <iframe src="https://play-with-mnist.herokuapp.com/" width="100%" height="708px"></iframe>
 
