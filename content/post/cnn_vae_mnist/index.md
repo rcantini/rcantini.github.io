@@ -36,7 +36,7 @@ This issue hinders the generative power of these systems as well as the possibil
 In order to overcome the problems of classic autoencoders, a different class of generative models can be used, the so called **Variational Autoencoders** (VAE), based on Bayesian inference.
 These models aim to model the probability distribution underlying the data, in order to obtain new instances by sampling this distribution.
 
-### Statistical formulation through variational inference
+### *Statistical formulation through variational inference*
 The main characteristic of a variational autoencoder, which distinguishes it from a standard autoencoder, is the continuity of the space of its latent variables:
 in fact, in such systems any latent attribute is represented in probabilistic terms, using a distribution instead of a discrete value.
 Given a certain observation \\( x \\), the VAE tries to infer the characteristics of one or more latent variables \\( z \\) that generate \\( x \\); this is equivalent to compute the conditional probability:
