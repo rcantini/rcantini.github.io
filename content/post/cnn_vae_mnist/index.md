@@ -134,6 +134,7 @@ The structure of our Flask project, will be as follows:
 - *templates* and *static*: these are two folders that contain the html pages and additional global files respectively.
 
 ***Let's play with MNIST!***
+
 I embedded the developed web app in this post so that you can try it directly here!
 
 In particular you can use it in two ways:
@@ -145,4 +146,4 @@ Have fun! :laughing::laughing:
 <iframe src="https://play-with-mnist.herokuapp.com/" width="100%" height="708px"></iframe>
 
 <hr>
-You can find the full code, comprised of the VAE and the Flask application, on GitHub at this <a href="https://github.com/rcantini/CNN-VAE-MNIST" target="_blank">link</a>, while the web application is available <a href="https://play-with-mnist.herokuapp.com/" target="_blank">here</a>.
+You can find the full code, comprised of the VAE and the Flask application, on GitHub at this <a href="https://github.com/rcantini/CNN-VAE-MNIST" target="_blank">link</a>, while the web application is available on Heroku <a href="https://play-with-mnist.herokuapp.com/" target="_blank">here</a>.
