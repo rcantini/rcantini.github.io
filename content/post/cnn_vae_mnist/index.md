@@ -102,7 +102,7 @@ Let's now move on how to implement a variational autoencoder based on Convolutio
 
 In the following, the overall structure of the implemented convolutional variational autoencoder is shown:
 
-<img src="CVAE.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%; height: 60%"/>
+<img src="CVAE.png" style="display: block; margin-left: auto; margin-right: auto; width: 65%; height: 65%"/>
 
 
 ## ....
