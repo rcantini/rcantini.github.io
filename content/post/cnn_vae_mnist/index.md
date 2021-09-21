@@ -25,7 +25,7 @@ I'll describe how to setup and train a CNN-based variational autoencoder using K
 ## Classical autoencoder
 An **autoencoder** is a model that allows to efficiently encode a set of data of interest in an unsupervised manner.
 The purpose of this system is to learn a representation of a given input, called encoding, in order to reduce its dimensionality, often high, as in a sort of compression.
-In particular, an autoencoder consists of a pair of interconnected neural networks, known as *encoder* and *decoder*, which are often multilevel perceptrons or convolutional neural networks (CNNs).
+In particular, an autoencoder consists of a pair of interconnected neural networks, known as **encoder** and **decoder**, which are often *multilevel perceptrons* (MLPs) or *convolutional neural networks* (CNNs).
 The encoder receives an input instance and derives a dense representation in a space with a smaller dimensionality, called *latent space*;
 the decoder, afterwards, is able to reconstruct the original input starting from its compressed version.
 The training phase involves both networks at the same time, as the encoder learns how to significantly map the input instances in the latent space, while the decoder improves its ability to recompose the output starting from the encoded representation in the space of the latent variables, all aiming to minimize the reconstruction error.
@@ -36,7 +36,7 @@ This issue hinders the generative power of these systems as well as the possibil
 In order to overcome the problems of classic autoencoders, a different class of generative models can be used, the so called **Variational Autoencoders** (VAE), based on Bayesian inference.
 These models aim to model the probability distribution underlying the data, in order to obtain new instances by sampling this distribution.
 
-***Statistical formulation through variational inference***
+***Statistical formulation***
 
 The main characteristic of a variational autoencoder, which distinguishes it from a standard autoencoder, is the continuity of the space of its latent variables:
 in fact, in such systems any latent attribute is represented in probabilistic terms, using a distribution instead of a discrete value.
@@ -52,8 +52,8 @@ $$
 p\left( x \right) = \int {p\left( {x|z} \right)p\left( z \right)dz}
 $$
 
-To overcome this issue, Variational Inference can be used, which allows the estimation of this value by approximating the \\( p\left( {z|x} \right) \\) with a tractable one, \\( q\left( {z|x} \right) \\), whose parameters are estimated to make the two distributions as similar as possible.
-The dissimilarity between them is measured by the Kullback-Leibler divergence.
+To overcome this issue, **Variational Inference** can be used, which allows the estimation of this value by approximating the \\( p\left( {z|x} \right) \\) with a tractable one, \\( q\left( {z|x} \right) \\), whose parameters are estimated to make the two distributions as similar as possible.
+The dissimilarity between them is measured by the *Kullback-Leibler divergence*.
 Starting from this, the loss function for a VAE can be derived and written as follows in terms of minimization:
 $$
 \min{{\cal L}\left( {x,\hat x} \right) + \sum\limits_j {KL\left( {{q_j}\left( {z|x} \right)||p\left( z \right)} \right)}}
@@ -62,13 +62,37 @@ $$
 where the first term represents the reconstruction error, while the second estimates how much the learned distribution is similar to the original one, which is assumed to be approximable with a Gaussian of zero mean and unit variance, for each latent space dimension.
 Intuitively, this formulation forces the encoder to distribute all the encodings around the origin of the latent space, differentiating them according to the salient characteristics of each type of input, a process that leads to the formation of a clustering structure.
 In particular:
-- The *reconstruction loss* forces the reconstructed image to be as similar as possible to the original one, getting the VAE to discern the characteristics that distinguish each type of image, a process that induces the formation of a cluster for each type.
-- The *KL divergence* works as a regularizer and forces the codings to be sufficiently close to each other, to guarantee the possibility of interpolate encodings lying in different clusters, compacting the clusters within the latent space.
+- The **reconstruction loss** forces the reconstructed image to be as similar as possible to the original one, getting the VAE to discern the characteristics that distinguish each type of image, a process that induces the formation of a cluster for each type.
+- The **KL divergence** works as a regularizer and forces the codings to be sufficiently close to each other, to guarantee the possibility of interpolate encodings lying in different clusters, compacting the clusters within the latent space.
 
 This formulation leads to the generation of instances whose features are the result of a fuzzy combination of latent features of different types, which can be well interpreted by the decoder.
 
+***Structure of a VAE***
 
-STRUTTURA, REPARAMETRIZZAZIONE, IMPLEMENTAZIONE IN KERAS, APP FLASK
+A variational autoencoder is made up of a pair of neural networks, an encoder and a decoder, usually realized using a *convolutional neural network* (CNN) or *multilevel perceptron* (MLP).
+What differentiates a VAE from a standard autoencoder is the continuity of the generated latent space, which arises from the probabilistic nature of the encoder that doesn’t map the input into an n-dimensional latent point, but provides the parameters to describe the distribution of the input for each dimension of the latent space.
+Since this distribution is assumed to be normal, the encoder generates two n-dimensional vectors that correspond to the mean and variance of the Gaussian distribution which maps the input instances into the latent space.
+Later, the decoder generates the latent vector by sampling the \\( n \\) distributions individuated by the different *(mean,variance)* pairs, proceeding to the reconstruction of the original input.
+
+This stochastic generation implies that even from the same input, even if mean and variance remain unchanged, the encoding could vary due to the probabilistic nature of sampling. Intuitively, the mean identifies the region of the latent space where the encoding of the input must be located, while the standard deviation expresses the maximum amount of possible variation from this mean.
+This approach makes the decoder able to interpret not only the individual latent points, but more generally all those belonging to their spherical neighborhood, within a given standard deviation radius.
+
+Just like traditional autoencoders, encoder and decoder networks are trained simultaneously through gradient descent and the back-propagation algorithm. However, this process is not directly applicable to train a variational autoencoder, due to the probabilistic nature of the latent vector, which leads to the presence of a stochastic node inside the network, through which it’s not possible to back-propagate the error.
+To overcome this problem, the so-called **reparameterization trick** is used which makes deterministic the stochastic node, extrapolating the randomness and transferring it to a variable that doesn’t contribute to the back-propagation process. In particular, instead of maintaining a stochastic node, whose value is obtained through the sampling of a Gaussian distribution \\( N( \mu, \sigma) \\), a new variable \\( \epsilon \\) is introduced, which follows a standard Normal distribution \\( N(0,1) \\). Afterwards, the the value of the latent vector \\(z \\) is obtained by rescaling \\(\epsilon \sim N(0,1) \\) with the value of \\( \mu \\), \\(\sigma \\) computed by the encoder.
+
+<img src="rep_trick.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+
+The reparameterization trick hence provides a double advantage: on the one hand, it’s possible to optimize the distribution parameters by calculating the gradient with backpropagation, used in a given optimization algorithm, and on the other hand it allows sampling from this distribution. To summarize, the overall structure of the VAE discussed so far can be represented as follows:
+
+<img src="vae-gaussian.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
+
+
+
+
+## Model implementation
+Let's now move on how to implement a variational autoencoder based on Convolutional neural networks (CNNs) using Keras framework as model-level library and TensorFlow backend. For more info about CNNs, you can check out my blog post about image classification at this <a href="https://riccardo-cantini.netlify.app/post/dogbreedclass/" target="_blank">link</a>.
+I used the well known MNIST dataset of handwitten digits, consisting of a series of \\( 70000 \\) gray-scale images of handwritten digits in \\( 28x28 \\) format, annotated with the represented digit.
+The model is composed of two CNNs
 
 
 
