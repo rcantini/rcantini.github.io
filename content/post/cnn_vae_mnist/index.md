@@ -107,7 +107,7 @@ In the following, the overall structure of the implemented convolutional variati
 The model was trained for 80 epochs, with a batch size of 128 and using the ADAM optimization algorithm, on the well known MNIST dataset of handwitten digits. It consists of a series of \\( 70000 \\) gray-scale images of handwritten digits in \\( 28 \times 28 \\) format, labeled with the represented digit.
 Afterwards, some tests were carried out in order to analyze the structure of the latent space and the generative capabilities of the trained model.
 
-***Distribution of the MNIST handwritten digits in the latent space***
+***Distribution of MNIST digits in the latent space***
 
 The following plot shows the distribution in the latent space of the encodings corresponding to the MNIST digits.
 
