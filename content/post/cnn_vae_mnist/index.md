@@ -90,11 +90,11 @@ The reparameterization trick hence provides a double advantage: on the one hand,
 Let's now move on how to implement a variational autoencoder based on Convolutional neural networks (CNNs) using Keras framework as model-level library and TensorFlow backend. To read more about CNNs, you can check out my blog post about image classification at this <a href="https://riccardo-cantini.netlify.app/post/dogbreedclass/" target="_blank">link</a>.
 </br>The model is composed of two CNNs: 
 
-- The **encoder** receives in input the gray scale value of the different pixels that compose the image, and produces in output two vectors, *mean* and *log-variance*. These vector was implemented by using two fully connected layers with two neurons each, in order to obtain a two-dimensional latent space. A further Lambda layer with two neurons was stacked on top of the encoder, which implements the reparameterization trick by reconstructing the latent vector \\( z \\) starting from mean and log-variance, according to the following formula: \\( z = \mu + e^{\frac{\log\sigma}{2}} \cdot \epsilon \\), where \\( \epsilon \sim N(0,1) \\).
+- The **encoder** receives in input the gray-scale value of the different pixels that compose the image, and produces in output two vectors, *mean* and *log-variance*. These vector was implemented by using two fully connected layers with two neurons each, in order to obtain a two-dimensional latent space. A further Lambda layer with two neurons was stacked on top of the encoder, which implements the reparameterization trick by reconstructing the latent vector \\( z \\) starting from mean and log-variance, according to the following formula: \\( z = \mu + e^{\frac{\log\sigma}{2}} \cdot \epsilon \\), where \\( \epsilon \sim N(0,1) \\).
 
 <img src="encoder.png" style="display: block; margin-left: auto; margin-right: auto; width: 75%; height: 75%"/>
 
-- The **decoder** takes as input the fully connected Lambda layer coming from the encoder’s output, which represents the reparameterized latent vector, and produces in output the reconstructed grey-scale image.
+- The **decoder** takes as input the fully connected Lambda layer coming from the encoder’s output, which represents the reparameterized latent vector, and produces in output the reconstructed gray-scale image.
 
 <img src="decoder.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
 
