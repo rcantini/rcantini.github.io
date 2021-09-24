@@ -23,7 +23,7 @@ find a more accurate set of users which allows to maximize the spread in almost
 all the considered configurations."
 featured: true
 publication: "*Online Social Networks and Media*"
-url_pdf: "files/papers/journals/ONLINE_WABC_OSNEM.pdf"
+url_pdf: "files/papers/journals/WABC_OSNEM.pdf"
 doi: "10.1016/j.osnem.2021.100167"
 
 
