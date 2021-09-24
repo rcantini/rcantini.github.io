@@ -24,7 +24,7 @@ all the considered configurations."
 featured: true
 publication: "*Online Social Networks and Media*"
 url_pdf: "files/papers/journals/WABC_OSNEM.pdf"
-#doi: ""
+doi: "10.1016/j.osnem.2021.100167"
 
 
 # Featured image
