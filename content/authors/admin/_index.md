@@ -18,13 +18,12 @@ organizations:
   url: "https://www.dimes.unical.it/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His current research focuses on *social media and big data analysis*, *deep learning*, *natural language processing*, *sentiment analysis*, *edge/fog computing*, *parallel and distributed data analysis*.
+bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria, since 2019. His current research focuses on *social media and big data analysis*, *machine and deep learning*, *natural language processing*, *sentiment analysis*, *edge/fog computing*, *parallel and distributed data analysis*.
 
 interests:
-  - Deep Learning and Natural Language Processing
-  - Social Media and Big Data Analysis
-  - Parallel and Distributed Data Analysis
-  - Edge, Fog and Cloud Computing
+  - Deep Learning and NLP
+  - Social Big Data Analysis
+  - Parallel & Distributed Data Analysis
 
 education:
   courses:
@@ -68,5 +67,5 @@ email: ""
 #- Researchers
 #- Visitors
 ---
-Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering of the University of Calabria, since 2019. Currently he is teaching assistant for [Distributed Systems and Cloud/Edge Computing for the Internet of Things](../../courses/ds4iot/), master's degree course in Computer Engineering for the IoT. He is also a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria since 2018. He was co-supervisor of several Computer Engineering theses, mainly in the field of *social media and big data analysis*, *machine learning* and *deep learning*. 
+Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering of the University of Calabria, since 2019. Currently he is contract professor of [Distributed Systems and Cloud/Edge Computing for the Internet of Things](../../courses/ds4iot/), master's degree course in Computer Engineering for the IoT. He is also a member of the <a href="http://scalab.dimes.unical.it/">Scalable Computing and Cloud Laboratory (SCALab)</a> at the University of Calabria since 2018. He was co-supervisor of several Computer Engineering theses, mainly in the field of *social media and big data analysis*, *machine learning* and *deep learning*. 
 <br><br>His research interests include *social media and big data analysis*, *deep learning*, *natural language processing*, *sentiment analysis*, *edge/fog computing*, *parallel and distributed data analysis*.
