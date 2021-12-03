@@ -46,5 +46,6 @@ menu:
 
 
 ## News
-- **[27/07/2020]** The course page is online!
-- **[21/10/2020]** The course will be delivered online using the Microsoft Teams platform channel "***Lectures by Ing. Riccardo Cantini***"
+- **[27/09/2020]** The course page is online!
+- **[11/10/2020]** The course will be delivered online using the Microsoft Teams platform channel "***Lectures by Ing. Riccardo Cantini***"
+- **[10/10/2021]** The course will be delivered online using the Microsoft Teams platform channel "***Lectures by Ing. Riccardo Cantini***". You can find slides, additional lectures, code snippets and other didactic material in the *File* section of the channel.  
