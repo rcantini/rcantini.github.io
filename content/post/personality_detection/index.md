@@ -133,7 +133,7 @@ classes = {"I":0, "E":1, # axis 1
 
 ***Preprocessing***
 
-The following operation are performed: text lowercasing, removing text
+The following operations are performed: text lowercasing, removing text
 in square brackets, links, words containing numbers, emoji and initial
 single quotes.
 
@@ -159,8 +159,8 @@ def text_preprocessing(text):
 
 <div class="cell markdown" id="S3IidzgPkirL">
 
-MBTI dataset is loaded, splitting it into train, val and test, skipping the last
-incomplete batch.
+MBTI dataset is loaded and partitioned into train, val and test set; the last
+incomplete batch is skipped.
 
 </div>
 
