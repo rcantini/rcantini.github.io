@@ -29,7 +29,7 @@ support provided by the developer community."
 featured: true
 publication: "*Journal of Big Data, 2022*"
 url_pdf: "files/papers/journals/Big_Data_Analysis_Survey_2022.pdf"
-#doi: ".../..."
+doi: "10.1186/s40537-021-00555-2"
 
 
 # Featured image
