@@ -24,7 +24,7 @@ diffusion (community of developers and users) and the main advantages and
 disadvantages of using them to implement Big Data analysis applications. The
 final goal of this work is to help designers and developers in identifying and
 selecting the best/appropriate programming solution based on their skills,
-hardware availability, application domains and purposes, and also considering the
+hardware availability, application domains and purposes, and also considering the 
 support provided by the developer community."
 featured: true
 publication: "*Journal of Big Data, 2022*"
