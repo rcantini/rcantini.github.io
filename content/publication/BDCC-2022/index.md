@@ -1,12 +1,12 @@
 ---
 title: "Analyzing Political Polarization on Social Media by Deleting Bot Spamming"
-date: 2021-05-05
-publishDate: 2021-05-05
-authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Alessio Orsino", "Domenico Talia", "Paolo Trunfio"]
+date: 2022-01-04
+publishDate: 2022-01-04
+authors: ["Riccardo Cantini", "Fabrizio Marozzo", "Domenico Talia", "Paolo Trunfio"]
 publication_types: ["2"]
-abstract: "Workflows are largely used to orchestrate complex sets of operations required to handle and process huge amounts of data. Parallel processing is often vital to reduce execution time when complex data-intensive workflows must be run efficiently, and at the same time, in-memory processing can bring important benefits to accelerate execution. However, optimization techniques are necessary to fully exploit in-memory processing, avoiding performance drops due to memory saturation events. This paper proposed a novel solution, called the Intelligent In-memory Workflow Manager (IIWM), for optimizing the in-memory execution of data-intensive workflows on parallel machines. IIWM is based on two complementary strategies: (1) a machine learning strategy for predicting the memory occupancy and execution time of workflow tasks; (2) a scheduling strategy that allocates tasks to a computing node, taking into account the (predicted) memory occupancy and execution time of each task and the memory available on that node. The effectiveness of the machine learning-based predictor and the scheduling strategy were demonstrated experimentally using as a testbed, Spark, a high-performance Big Data processing framework that exploits in-memory computing to speed up the execution of large-scale applications. In particular, two synthetic workflows were prepared for testing the robustness of the IIWM in scenarios characterized by a high level of parallelism and a limited amount of memory reserved for execution. Furthermore, a real data analysis workflow was used as a case study, for better assessing the benefits of the proposed approach. Thanks to high accuracy in predicting resources used at runtime, the IIWM was able to avoid disk writes caused by memory saturation, outperforming a traditional strategy in which only dependencies among tasks are taken into account. Specifically, the IIWM achieved up to a 31% and a 40% reduction of makespan and a performance improvement up to 1.45× and 1.66× on the synthetic workflows and the real case study, respectively."
+abstract: "Social media platforms are part of everyday life, allowing the interconnection of people around the world in large discussion groups relating to every topic, including important social or political issues. Therefore, social media have become a valuable source of information-rich data, commonly referred to as Social Big Data, effectively exploitable to study the behavior of people, their opinions, moods, interests and activities. However, these powerful communication platforms can be also used to manipulate conversation, polluting online content and altering the popularity of users, through spamming activities and misinformation spreading. Recent studies have shown the use on social media of automatic entities, defined as social bots, that appear as legitimate users by imitating human behavior aimed at influencing discussions of any kind, including political issues. In this paper we present a new methodology, namely TIMBRE (Time-aware opInion Mining via Bot REmoval), aimed at discovering the polarity of social media users during election campaigns characterized by the rivalry of political factions. This methodology is temporally aware and relies on a keyword-based classification of posts and users. Moreover, it recognizes and filters out data produced by social media bots, which aim to alter public opinion about political candidates, thus avoiding heavily biased information. The proposed methodology has been applied to a case study that analyzes the polarization of a large number of Twitter users during the 2016 US presidential election. The achieved results show the benefits brought by both removing bots and taking into account temporal aspects in the forecasting process, revealing the high accuracy and effectiveness of the proposed approach. Finally, we investigated how the presence of social bots may affect political discussion by studying the 2016 US presidential election. Specifically, we analyzed the main differences between human and artificial political support, estimating also the influence of social bots on legitimate users."
 featured: true
-publication: "*Future Internet, vol. 13, no. 5: 121, 2021*"
+publication: "*Big Data and Cognitive Computing, vol.6, no. 1: 3, 2022*"
 url_pdf: "files/papers/journals/BDCC-bots.pdf"
 doi: "10.3390/bdcc6010003"
 
@@ -19,6 +19,6 @@ image:
   preview_only: false
 
 
-tags: ["workflow", "data-intensive", "in-memory", "machine learning", "Apache Spark", "scheduling"]
+tags: ["social bots", "political polarization", "influence spread", "social media analysis"]
 
 ---
