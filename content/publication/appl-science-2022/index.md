@@ -31,6 +31,6 @@ image:
   preview_only: false
 
 
-tags: ["big data", "social media analysis"]
+tags: ["Big Data", "Social Media Analysis"]
 
 ---
