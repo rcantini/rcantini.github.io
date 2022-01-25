@@ -12,15 +12,15 @@ people, understand the behavior of user groups during global events, monitor pub
 important events, identify the main topics in a public discussion, or detect the most frequent routes
 followed by social media users. As an example of the countless works in the state-of-the-art on social
 media analysis, this paper presents three significant applications in the field of opinion and pattern
-mining from social media data: (i) an automatic application for discovering user mobility patterns,
-(ii) a novel application for estimating the political polarization of public opinion, and (iii) an application
+mining from social media data: *(i)* an automatic application for discovering user mobility patterns,
+*(ii)* a novel application for estimating the political polarization of public opinion, and *(iii)* an application
 for discovering interesting social media discussion topics through a hashtag recommendation
 system. Such applications clearly highlight the abundance and wealth of useful information in many
 application contexts of human life that can be extracted from social media posts."
 featured: true
 publication: "*Applied Sciences, vol.12, no. 3, 2022*"
-#url_pdf: "files/papers/journals/BDCC-bots.pdf"
-#doi: "10.3390/bdcc6010003"
+#url_pdf: "files/papers/journals/xxx.pdf"
+#doi: "xxx/xxx"
 
 
 # Featured image
