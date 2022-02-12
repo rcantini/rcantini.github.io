@@ -53,7 +53,8 @@ focal_point = "Center"
 preview_only = false
 
 +++
-
+<div style="text-align: justify">
+<h2> Research topics</h2>
 My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for extracting valuable information in different application contexts.
 Particular attention is paid to:
 <ul>
@@ -62,4 +63,18 @@ Particular attention is paid to:
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
   <li>The use of machine learning models for optimizing the execution of scientific workflows, in order to enable the realization of large-scale parallel systems for big data analysis.</li>
 </ul>
+<div style="text-align: justify">
+<br>
+<div style="text-align: justify">
+<h1>Participation in research projects</h1>
+<ul>
+  <li>“eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem”, funded by the European High-Performance Computing Joint Undertaking</li>
+  <li> "ASPIDE - exAScale ProgramIng models for extreme Data procEssing" funded by the European Union’s Horizon 2020 Research and Innovation Programme</li>
+  <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
+  <li>"Smart Macingo", funded under the Calabria Regional Operational Program 2014-2020</li>
+</ul>
+<div style="text-align: justify">
+– 
+– 
+– 
 
