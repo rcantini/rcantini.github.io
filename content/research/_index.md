@@ -4,7 +4,7 @@ headless = true  # This file represents a page section.
 #active = true  # Activate this widget? true/false
 weight = 25 # Order that this section will appear in.
 
-title = "Research Topics"
+title = ""
 subtitle = ""
 
 
@@ -54,7 +54,7 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-<h2> Research topics</h2>
+<h2><b>Research topics</b></h2>
 My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for extracting valuable information in different application contexts.
 Particular attention is paid to:
 <ul>
@@ -66,7 +66,7 @@ Particular attention is paid to:
 <div style="text-align: justify">
 <br>
 <div style="text-align: justify">
-<h1>Participation in research projects</h1>
+<h2><b>Participation in research projects</b></h2>
 <ul>
   <li>“eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem”, funded by the European High-Performance Computing Joint Undertaking</li>
   <li> "ASPIDE - exAScale ProgramIng models for extreme Data procEssing" funded by the European Union’s Horizon 2020 Research and Innovation Programme</li>
@@ -74,7 +74,5 @@ Particular attention is paid to:
   <li>"Smart Macingo", funded under the Calabria Regional Operational Program 2014-2020</li>
 </ul>
 <div style="text-align: justify">
-– 
-– 
-– 
+
 
