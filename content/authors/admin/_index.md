@@ -67,8 +67,8 @@ email: ""
 #- Researchers
 #- Visitors
 ---
-Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria.
-He received a Master's degree in Computer Engineering from the University of Calabria in 2019 and is a member of the Scalable Computing and Cloud Laboratory <a href="http://scalab.dimes.unical.it/"> (SCALab)</a> since 2018.
-Since 2019 he is a contract professor at the DIMES Department and between 2021 and 2022 he was a visiting researcher at the Barcelona Supercomputing Center <a href="https://www.bsc.es/"> (BSC-CNS)</a>. 
-He was co-supervisor of several Computer Engineering theses, mainly in the field of *social media and big data analysis*, *machine learning* and *deep learning*. 
-<br><br>His research interests include *social media and big data analysis*, *machine and deep learning*, *natural language processing*, *sentiment analysis*, *edge/fog computing*, *parallel and distributed data analysis*.
+Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering <a href="https://www.dimes.unical.it/">(DIMES)</a> of the University of Calabria.
+He received a Master's degree in Computer Engineering from the University of Calabria in 2019 and is a member of the Scalable Computing and Cloud Laboratory <a href="http://scalab.dimes.unical.it/">(SCALab)</a> since 2018.
+Since 2019 he is a contract professor at the DIMES Department and between 2021 and 2022 he was a visiting researcher at the Barcelona Supercomputing Center <a href="https://www.bsc.es/">(BSC-CNS)</a>. 
+<br><br>He was co-supervisor of several Computer Engineering theses, mainly in the field of *social media and big data analysis*, *machine learning* and *deep learning*. 
+<br><br>His research interests include:<br> *social media and big data analysis*, *machine and deep learning*, *natural language processing*, *sentiment analysis*, *edge/fog computing*, *parallel and distributed data analysis*.
