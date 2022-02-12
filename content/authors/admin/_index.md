@@ -18,7 +18,7 @@ organizations:
   url: "https://www.dimes.unical.it/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria. His current research focuses on *social media and big data analysis and opinion mining*, *machine and deep learning*, *natural language processing*, *sentiment analysis*, *edge and fog computing*, *parallel and distributed data analysis*.
+bio: Riccardo Cantini is a PhD student in Information and Communication Technologies at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES) of the University of Calabria. His current research focuses on *social media and big data analysis*, *machine and deep learning*, *sentiment analysis and opinion mining*, *natural language processing*, *edge and fog computing*, *parallel and distributed data analysis*.
 
 interests:
   - Machine and Deep Learning
