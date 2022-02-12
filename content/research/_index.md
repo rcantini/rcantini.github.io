@@ -4,7 +4,7 @@ headless = true  # This file represents a page section.
 #active = true  # Activate this widget? true/false
 weight = 25 # Order that this section will appear in.
 
-title = "Research"
+title = ""
 subtitle = ""
 
 
@@ -61,16 +61,15 @@ Particular attention is paid to:
   <li>The use of Deep Learning and Natural Language Processing models in the context of Topic Modeling, Sentiment Analysis and Opinion Mining, aimed at detecting the main topics of discussion, users' mood and their opinion regarding a specific topic/event of interest.</li>
   <li>Hashtag Recommendation models, for developing systems capable of predicting hashtags for posts that do not have any, in order to enrich the information content of social data involved in different mining processes.</li>
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
-  <li>The use of machine learning models for optimizing the execution of scientific workflows, in order to enable the realization of large-scale parallel systems for big data analysis.</li>
+  <li>The use of machine learning models for the optimization of scientific workflows, aimed at enabling the efficient execution of large-scale parallel applications for big data analysis.</li>
 </ul>
 </div>
 <br>
 <div style="text-align: justify">
 <h2><b>Participation in research projects</b></h2>
 <ul>
-  <li>“eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem”, funded by the European High-Performance Computing Joint Undertaking</li>
-  <li> "ASPIDE - exAScale ProgramIng models for extreme Data procEssing" funded by the European Union’s Horizon 2020 Research and Innovation Programme</li>
-  <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
-  <li>"Smart Macingo", funded under the Calabria Regional Operational Program 2014-2020</li>
+  <li><em>“eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem”</em>, funded by the European High-Performance Computing Joint Undertaking<br>Research activity: use of machine learning techniques for the optimization of data intensive scientific workflows. Particular attention is paid to the study and the implementation of hyperparameter optimization models, aimed at enabling the efficient execution of distributed and scalable algorithms in HPC environments.</li>
+  <li> "ASPIDE - exAScale ProgramIng models for extreme Data procEssing", funded by the European Union’s Horizon 2020 Research and Innovation Programme<br>Research activity: development of in-memory techniques for the efficient execution of data intensive applications on Exascale architectures. The research is aimed in particular at defining and implementing a scheduling strategy for assigning application tasks to computing nodes, taking into account availability of data and resources.</li>
+  <li>"Smart Macingo", funded under the Calabria Regional Operational Program 2014-2020.<br>Research activity: definition and implementation of data mining techniques aimed at estimating the price of transport services.</li>
 </ul>
 </div>
