@@ -4,7 +4,7 @@ headless = true  # This file represents a page section.
 #active = true  # Activate this widget? true/false
 weight = 25 # Order that this section will appear in.
 
-title = ""
+title = "Research"
 subtitle = ""
 
 
@@ -74,7 +74,3 @@ Particular attention is paid to:
   <li>"Smart Macingo", funded under the Calabria Regional Operational Program 2014-2020</li>
 </ul>
 </div>
--
--
--
-
