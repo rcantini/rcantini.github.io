@@ -58,7 +58,7 @@ preview_only = false
 My research mainly focuses on the development of innovative algorithms and methodologies for the analysis of Big Data, especially those coming from the main social media, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for extracting valuable information in different application contexts.
 Particular attention is paid to:
 <ul>
-  <li>Advanced machine and deep learning models, especially in the field of natural language processing</li>
+  <li>Advanced machine and deep learning models and architectures, especially in the field of natural language processing</li>
   <li>Sentiment analysis and opinion mining techniques, aimed at detecting the emotional state and opinion of social users regarding a specific topic/event of interest</li>
   <li>Hashtag Recommendation and topic modeling</li>
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions</li>
