@@ -73,4 +73,14 @@ Particular attention is paid to:
   <li><b>"ASPIDE: exAScale ProgramIng models for extreme Data procEssing"</b>, funded by the European Union’s Horizon 2020 Research and Innovation Programme.<br><ul><li><b>Research activity</b>: development of in-memory techniques for the efficient execution of data intensive applications on Exascale architectures. The research is aimed in particular at defining and implementing a scheduling strategy for assigning application tasks to computing nodes, taking into account availability of data and resources.</li></ul></li>
   <li><b>"Smart Macingo"</b>, funded under the Calabria Regional Operational Program 2014-2020.<br><ul><li><b>Research activity</b>: definition and implementation of data mining techniques aimed at estimating the price of transport services.</li></ul></li>
 </ul>
+<br>
+<br>
+<table style="width:100%;border:1px solid black">
+  <tr>
+    <th style="border:1px solid black"><a href="https://scholar.google.com/citations?hl=it&user=JQdSJdgAAAAJ">Google Scholar</a></th>
+    <th style="border:1px solid black"><a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></th>
+    <th style="border:1px solid black"><a href="https://dblp.org/pid/261/8279.html">DBLP</a></th>
+    <th style="border:1px solid black"><a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></th>
+  </tr>
+</table>
 </div>
