@@ -75,11 +75,14 @@ Particular attention is paid to:
 </ul>
 <br>
 <br>
-<table style="width:100%;border:1px solid black">
+<table>
   <tr>
     <th style="border:1px solid black"><a href="https://scholar.google.com/citations?hl=it&user=JQdSJdgAAAAJ">Google Scholar</a></th>
+<th>&nbsp;&nbsp;&nbsp;</th>
     <th style="border:1px solid black"><a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></th>
+<th>&nbsp;&nbsp;&nbsp;</th>
     <th style="border:1px solid black"><a href="https://dblp.org/pid/261/8279.html">DBLP</a></th>
+<th>&nbsp;&nbsp;&nbsp;</th>
     <th style="border:1px solid black"><a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></th>
   </tr>
 </table>
