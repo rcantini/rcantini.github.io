@@ -63,7 +63,7 @@ Particular attention is paid to:
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
   <li>The use of machine learning models for optimizing the execution of scientific workflows, in order to enable the realization of large-scale parallel systems for big data analysis.</li>
 </ul>
-<div style="text-align: justify">
+</div>
 <br>
 <div style="text-align: justify">
 <h2><b>Participation in research projects</b></h2>
@@ -73,6 +73,8 @@ Particular attention is paid to:
   <li>Techniques for integrating the classical centralized Cloud Computing architectures with the most recent IoT and Edge/Fog Computing solutions, which focus on manage data close to their source, allowing context-awareness, latency reduction and bandwidth saving.</li>
   <li>"Smart Macingo", funded under the Calabria Regional Operational Program 2014-2020</li>
 </ul>
-<div style="text-align: justify">
-
+</div>
+-
+-
+-
 
