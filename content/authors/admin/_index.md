@@ -69,12 +69,29 @@ Since 2019 he has been a contract professor at the DIMES Department and between 
 He was co-supervisor of several Computer Engineering theses, mainly in the field of <i>social media and big data analysis</i>, <i>machine learning</i> and <i>deep learning</i>. 
 <br><br>His research interests include <i>social media and big data analysis</i>, <i>machine and deep learning</i>, <i>sentiment analysis and opinion mining</i>, <i>natural language processing</i>, <i>edge and fog computing</i>, <i>parallel and distributed data analysis</i>.
 </div>
-<div class="col-md-5">
-<h3>Links</h3>
-<ul>
-  <li> <a href="https://scholar.google.com/citations?hl=it&amp;user=JQdSJdgAAAAJ">Google Scholar</a></li>
-  <li> <a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></li>
-  <li> <a href="https://dblp.org/pid/261/8279.html">DBLP</a></li>
-  <li> <a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></div></li>
-</ul>
+<div class="row">
+	<div class="col-md-7">
+	<h3>Education</h3>
+	<ul class="ul-edu fa-ul">
+		<li><i class="fa-li fas fa-graduation-cap"></i>
+			<div class="description">
+			<p class="course">M.Sc. in Computer Engineering, 2019</p>
+			<p class="institution">University of Calabria</p>
+		</div></li>
+		<li><i class="fa-li fas fa-graduation-cap"></i>
+			<div class="description">
+			<p class="course">B.Sc. in Computer Engineering, 2016</p>
+			<p class="institution">University of Calabria</p>
+		</div></li>
+	</ul>
+	</div>
+	<div class="col-md-5">
+	<h3>Links</h3>
+	<ul>
+  		<li> <a href="https://scholar.google.com/citations?hl=it&amp;user=JQdSJdgAAAAJ">Google Scholar</a></li>
+  		<li> <a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></li>
+  		<li> <a href="https://dblp.org/pid/261/8279.html">DBLP</a></li>
+  		<li> <a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></div></li>
+	</ul>
+	</div>
 </div>
