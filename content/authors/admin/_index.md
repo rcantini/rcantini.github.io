@@ -69,7 +69,7 @@ Since 2019 he has been a contract professor at the DIMES Department and between 
 He was co-supervisor of several Computer Engineering theses, mainly in the field of <i>social media and big data analysis</i>, <i>machine learning</i> and <i>deep learning</i>. 
 <br><br>His research interests include <i>social media and big data analysis</i>, <i>machine and deep learning</i>, <i>sentiment analysis and opinion mining</i>, <i>natural language processing</i>, <i>edge and fog computing</i>, <i>parallel and distributed data analysis</i>.
 </div>
-<div class="col-md-5>"
+<div class="col-md-5">
 <h3>Links</h3>
 <ul>
   <li> <a href="https://scholar.google.com/citations?hl=it&amp;user=JQdSJdgAAAAJ">Google Scholar</a></li>
