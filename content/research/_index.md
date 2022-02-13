@@ -69,18 +69,8 @@ Particular attention is paid to:
 <div style="text-align: justify">
 <h2><b>Participation in research projects</b></h2>
 <ul>
-  <li><b>“eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem”</b>, funded by the European High-Performance Computing Joint Undertaking.<br><ul><li><b>Research activity</b>: use of machine learning techniques for the optimization of data intensive scientific workflows. Particular attention is paid to the study and the implementation of hyperparameter optimization models, aimed at enabling the efficient execution of distributed and scalable algorithms in HPC environments.</li></ul></li>
-  <li><b>"ASPIDE: exAScale ProgramIng models for extreme Data procEssing"</b>, funded by the European Union’s Horizon 2020 Research and Innovation Programme.<br><ul><li><b>Research activity</b>: development of in-memory techniques for the efficient execution of data intensive applications on Exascale architectures. The research is aimed in particular at defining and implementing a scheduling strategy for assigning application tasks to computing nodes, taking into account availability of data and resources.</li></ul></li>
-  <li><b>"Smart Macingo"</b>, funded under the Calabria Regional Operational Program 2014-2020.<br><ul><li><b>Research activity</b>: definition and implementation of data mining techniques aimed at estimating the price of transport services.</li></ul></li>
+  <li><b>“eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem”</b>, funded by the European High-Performance Computing Joint Undertaking.<br><b>Research activity</b>: use of machine learning techniques for the optimization of data intensive scientific workflows. Particular attention is paid to the study and the implementation of hyperparameter optimization models, aimed at enabling the efficient execution of distributed and scalable algorithms in HPC environments.</li>
+  <li><b>"ASPIDE: exAScale ProgramIng models for extreme Data procEssing"</b>, funded by the European Union’s Horizon 2020 Research and Innovation Programme.<br><b>Research activity</b>: development of in-memory techniques for the efficient execution of data intensive applications on Exascale architectures. The research is aimed in particular at defining and implementing a scheduling strategy for assigning application tasks to computing nodes, taking into account availability of data and resources.</li>
+  <li><b>"Smart Macingo"</b>, funded under the Calabria Regional Operational Program 2014-2020.<br><b>Research activity</b>: definition and implementation of data mining techniques aimed at estimating the price of transport services.</li>
 </ul>
-</div>
-<br>
-<div style="text-align:center">
-<a href="https://scholar.google.com/citations?hl=it&amp;user=JQdSJdgAAAAJ">Google Scholar</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://dblp.org/pid/261/8279.html">DBLP</a>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></div>
 </div>
