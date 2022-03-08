@@ -6,7 +6,7 @@ summary: The practical part of this course is aimed at discussing the main conce
 weight: 1
 
 # Page metadata.
-title: DS4IoT - Practicals
+title: Distributed Systems and Cloud/Edge Computing for the Internet of Things - Practicals
 date: "2020-07-27T00:00:00Z"
 lastmod: "2020-07-27T00:00:00Z"
 draft: false  # Is this a draft? true/false
