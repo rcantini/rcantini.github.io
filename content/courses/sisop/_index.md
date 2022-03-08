@@ -33,7 +33,7 @@ Le esercitazioni del corso di **Sistemi Operativi** sono volte a discutere i pri
 
 1.	Introduzione a **Thread** e applicazioni **multi thread**
 2.	Principali approcci per la **sincronizzazione** e l'**accesso ai dati condivisi**
-3.	Esempi avanzatii di programmazione concorrente in Java in cui si utilizzano **Semafori** e **Monitor**	
+3.	Esempi avanzati di programmazione concorrente in Java in cui si utilizzano **Semafori** e **Monitor**	
 
 ## News
 - **[08/03/2022]** Il corso verrà erogato in modalità mista, affiancando alla didattica in presenza le lezioni in d.a.d. svolte tramite Microsoft Teams, all'interno del canale dedicato alle esercitazioni "***Esercitazioni (Cantini, Orsino)***". Il materiale didattico relativo alle esercitazioni svolte (slide, codice, registrazioni, ecc.) è consultabile all'interno della sezione *File* del canale.
