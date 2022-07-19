@@ -14,7 +14,7 @@ Finally, we combined sentiment analysis and text mining techniques to discover t
 thus modeling political support of social media users from an emotional viewpoint."
 featured: true
 publication: "*Social Network Analysis and Mining*"
-url_pdf: "files/papers/journals/SNAM_USA_2020.pdf"
+url_pdf: "https://rdcu.be/cRWwa"
 doi: "10.1007/s13278-022-00913-9"
 
 
