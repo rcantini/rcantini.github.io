@@ -26,7 +26,7 @@ The classification system focuses on seven different emotions (*anger*, *boredom
 ## Long Short-Term Memory Networks
 The main idea behind this kind of deep learning model is simple but powerful and is inspired by the way reasoning occurs in the human brain. In particular, humans don't start thinking from scratch every time, but they use memory in order to interpret better a given information, contextualizing it based on past information.
 This kind of persistency, which is absent in traditional feed-forward neural networks, is realized by **Recurrent Neural Networks** (RNN).
-These networks are able to use past information thanks to their loop structure, which can be be better represented by unrolling the network through time.
+These networks are able to use past information thanks to their loop structure, which can be better represented by unrolling the network through time.
 <img src="unrolled.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 Persistency of information is achieved passing the current *hidden state* to the next step of the sequence. So, at each time step, the hidden state carries information about what the neural network has seen so far, acting like a memory element.
 At the time \\(t\\), the hidden state \\(h_t\\) is computed as the concatenation of the previous hidden state \\(h_{t-1}\\) and the current element of the input sequence \\(x_t\\), which undergoes a non-linear transformation through the tanh activation.
