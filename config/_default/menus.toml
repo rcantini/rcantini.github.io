@@ -30,30 +30,35 @@
 
 [[main]]
   name = "Hands-on"
-  url = "/post/"
+  url = "/hands-on/"
   weight = 60
+
+[[main]]
+  name = "News"
+  url = "/news/"
+  weight = 70
 
 [[lectures]]
   name = "Lectures"
   url = "/courses/ds4iot/lectures/"
-  weight = 70
+  weight = 80
 
 [[exam]]
   name = "Exam"
   url = "/courses/ds4iot/exam/"
-  weight = 80
+  weight = 90
 
 [[main]]
   name = "Visitors"
   url = "https://datastudio.google.com/s/iFJ0H_pp9bw"
-  weight = 90
+  weight = 100
 
 [[main]]
   name = "Contact"
   url = "#contact"
-  weight = 100
+  weight = 110
 
 [[main]]
   name = "CV"
   url = "files/Europass_CV___english_version.pdf"
-  weight = 110
+  weight = 120
