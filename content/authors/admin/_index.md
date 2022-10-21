@@ -37,12 +37,6 @@ social:
 - icon: researchgate
   icon_pack: ai
   link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
-- icon: instagram
-  icon_pack: fab
-  link: 'https://www.instagram.com/riccardo_cantini'
-- icon: telegram
-  icon_pack: fab
-  link: "https://t.me/Ric_cant"
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
