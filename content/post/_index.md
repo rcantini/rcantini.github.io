@@ -1,5 +1,5 @@
 ---
-title: Hands-on deep learning in Python
+title: Posts
 
 # View.
 #   1 = List
