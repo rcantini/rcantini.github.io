@@ -30,7 +30,7 @@
 
 [[main]]
   name = "Hands-on"
-  url = "/hands-on/"
+  url = "/post/"
   weight = 60
 
 [[main]]
