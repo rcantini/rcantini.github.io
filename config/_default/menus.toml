@@ -57,8 +57,3 @@
   name = "Contact"
   url = "#contact"
   weight = 110
-
-[[main]]
-  name = "CV"
-  url = "files/Europass_CV___english_version.pdf"
-  weight = 120
