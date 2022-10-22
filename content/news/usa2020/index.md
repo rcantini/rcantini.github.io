@@ -41,6 +41,6 @@ Grazie alla georeferenziazione dei tweet, è stato possibile formulare prevision
 
 <hr>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?103993" target="_blank">Portale UNICAL - Notizie</a></span></p>
+&quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www2.unical.it/portale/portaltemplates/view/view.cfm?103993" target="_blank">Portale UNICAL - Notizie</a></span></p>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif"><i>IOM-NN</i> (articolo su IEEE Access): <a href="https://ieeexplore.ieee.org/document/9026882" target="_blank">Learning political polarization on social media using neural networks</a></span></p>

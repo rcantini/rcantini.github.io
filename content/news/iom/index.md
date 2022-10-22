@@ -48,6 +48,6 @@ La ricerca è stata pubblicata su IEEE Access. Insieme al professor Domenico Tal
 <img src="iom_res.png" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: 70%"/>
 <hr>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
-&quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www.unical.it/portale/portaltemplates/view/view.cfm?100297&fbclid=IwAR1WC13GLzbYeVz3B4Cem93M6xjtfM-10VTEYm3tvYeiAYZieEQbKkd2qQ0" target="_blank">Portale UNICAL - Notizie</a></span></p>
+&quot;Open Sans&quot;,sans-serif">Link all'articolo originale: <a href="https://www2.unical.it/portale/portaltemplates/view/view.cfm?100297&fbclid=IwAR1WC13GLzbYeVz3B4Cem93M6xjtfM-10VTEYm3tvYeiAYZieEQbKkd2qQ0" target="_blank">Portale UNICAL - Notizie</a></span></p>
 <p><span style="font-size:14.0pt;line-height:90%;font-family:
 &quot;Open Sans&quot;,sans-serif">Link alla pubblicazione: <a href="https://ieeexplore.ieee.org/document/9026882" target="_blank">Learning political polarization on social media using neural networks</a></span></p>
