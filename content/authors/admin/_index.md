@@ -37,10 +37,12 @@ social:
 - icon: researchgate
   icon_pack: ai
   link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
+- icon: orcid
+  icon_pack: ai
+  link: 
 - icon: cv
   icon_pack: ai
   link: files/Europass_CV___english_version.pdf
-
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
