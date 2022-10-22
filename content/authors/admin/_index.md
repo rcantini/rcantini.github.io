@@ -28,9 +28,6 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:riccardo.cantini@unical.it'
-- icon: github
-  icon_pack: fab
-  link: 'https://github.com/rcantini'
 - icon: google-scholar
   icon_pack: ai
   link: 'https://scholar.google.com/citations?user=JQdSJdgAAAAJ&hl=it'
@@ -40,6 +37,9 @@ social:
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0003-3053-6132
+- icon: github
+  icon_pack: fab
+  link: 'https://github.com/rcantini'
 - icon: cv
   icon_pack: ai
   link: files/Europass_CV___english_version.pdf
