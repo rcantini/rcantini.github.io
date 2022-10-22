@@ -39,7 +39,7 @@ social:
   link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
 - icon: cv
   icon_pack: ai
-  link: files/cv.pdf
+  link: files/Europass_CV___english_version.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
