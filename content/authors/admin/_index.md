@@ -39,7 +39,7 @@ social:
   link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
 - icon: orcid
   icon_pack: ai
-  link: 
+  link: https://orcid.org/0000-0003-3053-6132
 - icon: cv
   icon_pack: ai
   link: files/Europass_CV___english_version.pdf
