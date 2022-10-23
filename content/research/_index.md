@@ -70,6 +70,6 @@ detection and tracking, the combination of polarization techniques and informati
 <ul>
   <li><b>"eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem"</b>, funded by the European High-Performance Computing Joint Undertaking. The aim of the research is the use of machine learning techniques for enabling the efficient execution of data-intensive workflows in HPC environments.</li>
   <li><b>"ASPIDE: exAScale ProgramIng models for extreme Data procEssing"</b>, funded by the European Union’s Horizon 2020 Research and Innovation Programme. The aim of the research is the development of in-memory techniques for the efficient execution of data-intensive applications on Exascale architectures.</li>
-  <li><b>"Smart Macingo"</b>, funded under the Calabria Regional Operational Program 2014-2020. The aim of the research is the definition and implementation of data mining techniques aimed at estimating the price of transport services.</li>
+  <li><b>"Smart Macingo"</b>, funded under the Calabria Regional Operational Program 2014-2020. The aim of the research is the definition and implementation of data mining techniques for estimating the price of transport services.</li>
 </ul>
 </div>
