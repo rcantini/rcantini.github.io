@@ -1,3 +1,6 @@
+<div class="article-header">
+  <img src="/img/news_header.png" class="article-banner" style="height:auto;width:100%;min-width:510px;max-width:80%;vertical-align:middle;" alt="">
+</div>
 ---
 title: Latest
 
@@ -12,6 +15,3 @@ header:
   caption: ""
   image: ""
 ---
-<div class="article-header">
-  <img src="/img/news_header.png" class="article-banner" style="height:auto;width:100%;min-width:510px;max-width:80%;vertical-align:middle;" alt="">
-</div>
