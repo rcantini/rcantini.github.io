@@ -11,5 +11,4 @@ view: 2
 header:
   caption: ""
   image: "news_header.png"
-  style: "height:auto;width:100%;min-width:510px;max-width:80%;vertical-align:middle;"
 ---
