@@ -1,8 +1,7 @@
 ---
 # Course title, summary, and position.
 linktitle: Distributed Systems and Cloud/Edge Computing for the Internet of Things
-summary: ss
-
+summary:
 weight: 1
 
 # Page metadata.
