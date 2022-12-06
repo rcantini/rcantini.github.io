@@ -1,8 +1,7 @@
 ---
 # Course title, summary, and position.
-linktitle: Sistemi Operativi - Practicals
-
-summary: Le esercitazioni del corso di Sistemi Operativi sono volte a discutere i principali costrutti per la modellazione e l'implementazione di applicazioni multi-thread, approfondendo problematiche riguardanti la sincronizzazione e l'accesso a variabili condivise. Vengono inoltre presentati diversi esempi di programmazione concorrente che fanno uso dei meccanismi di concorrenza di Java, in particolare Semafori e Monitor.
+linktitle: Sistemi Operativi
+summary:
 
 weight: 2
 
