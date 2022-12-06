@@ -1,6 +1,6 @@
 ---
 # Course title, summary, and position.
-linktitle: - Sistemi Operativi
+linktitle: • Sistemi Operativi
 summary:
 
 weight: 2
