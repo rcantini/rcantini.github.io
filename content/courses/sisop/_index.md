@@ -1,12 +1,12 @@
 ---
 # Course title, summary, and position.
-linktitle: Sistemi Operativi
+linktitle: - Sistemi Operativi
 summary:
 
 weight: 2
 
 # Page metadata.
-title: Sistemi Operativi - Practicals
+title: Sistemi Operativi
 date: "2020-07-27T00:00:00Z"
 lastmod: "2020-07-27T00:00:00Z"
 draft: false  # Is this a draft? true/false
