@@ -1,6 +1,6 @@
 ---
 # Course title, summary, and position.
-linktitle: Distributed Systems and Cloud/Edge Computing for the Internet of Things
+linktitle: •  Distributed Systems and Cloud/Edge Computing for the Internet of Things
 summary:
 weight: 1
 
