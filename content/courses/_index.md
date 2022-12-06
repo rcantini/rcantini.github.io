@@ -3,6 +3,7 @@ title: Teaching
 layout: docs  # Do not modify.
 
 # Optional header image (relative to `static/img/` folder).
+view: 2
 header:
   caption: ""
   image: ""
