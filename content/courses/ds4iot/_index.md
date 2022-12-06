@@ -5,7 +5,7 @@ summary:
 weight: 1
 
 # Page metadata.
-title: Distributed Systems and Cloud/Edge Computing for the Internet of Things - Practicals
+title: Distributed Systems and Cloud/Edge Computing for the Internet of Things
 date: "2020-07-27T00:00:00Z"
 lastmod: "2020-07-27T00:00:00Z"
 draft: false  # Is this a draft? true/false
@@ -22,7 +22,7 @@ menu:
   
 ---
 
-## This course *...in a nutshell*
+## Course summary
 
  The practical part of the **Distributed Systems and Cloud/Edge Computing for the Internet of Things** course is aimed at discussing the main concepts behind Edge and Fog computing in relation to Cloud and Internet of Things architectures, with a special focus on the main tools and frameworks for modeling, simulating and implementing large-scale context-aware applications.
 
