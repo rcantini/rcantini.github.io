@@ -1,13 +1,14 @@
 ---
-title: IEEE RTSI 2021
-event: 6th online Forum on Research and Technologies for Society and Industry Innovation for a smart world
-event_url: https://rtsi2021.ieeesezioneitalia.it/
-location: Napoli, Italy
-summary: 6th online Forum on Research and Technologies for Society and Industry Innovation for a smart world
+title: EAI PerSoM 2022
+event: EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media
+event_url: https://persom.eai-conferences.org/2022/
+location: Messina, Italy
+summary: EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media
+
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2021-09-09T11:15:00Z"
+date: "2022-11-17"
 #date_end: "2020-02-18T12:00:00Z"
 all_day: false
 
@@ -25,7 +26,7 @@ image:
 
 url_code: ""
 url_pdf: ""
-url_slides: "files/slides/RTSI2021.pdf"
+url_slides: "files/slides/PERSOM2022.pdf"
 url_video: ""
 
 # Markdown Slides (optional).
