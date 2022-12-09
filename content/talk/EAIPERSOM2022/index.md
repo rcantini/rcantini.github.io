@@ -8,7 +8,7 @@ summary: EAI International Conference on Pervasive knowledge and collective inte
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2022-11-17"
+date: "2022-11-17T15:00:00Z"
 #date_end: "2020-02-18T12:00:00Z"
 all_day: false
 
