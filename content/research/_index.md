@@ -58,12 +58,13 @@ preview_only = false
 My research mainly focuses on the analysis of Big Data, especially those coming from the main social
 media platforms, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for
 extracting valuable information about users’ dynamics, behavior, and opinion. In particular, the scope of
-my research is twofold: one the one hand to develop and evaluate innovative methodologies and algorithms for the analysis of Big Social Data;
-on the other hand to design and implement novel strategies and techniques to enable their efficient and effective execution in distributed and high-performance environments.
+my research is twofold: one the one hand to develop innovative methodologies and algorithms for the analysis of Big Social Data;
+on the other hand to design and implement novel techniques to enable their efficient execution in high-performance distributed environments.
 <br>
 I produced several interesting results in both research directions mentioned above, in a wide range of
 application domains, including: political event analysis, opinion mining, polarization and emotion analysis, topic
-detection and tracking, and hashtag recommendation. I also investigated how polarization analysis techniques can be combined with information diffusion and influence maximization models, how to effectively learn from poorly supervised datasets, and how to use machine learning for optimizing the execution of data-intensive applications.
+detection and tracking, and hashtag recommendation. I also investigated how polarization analysis techniques can be combined with information diffusion and influence maximization models, 
+how to effectively learn from poorly supervised datasets, and how to use machine learning for optimizing the execution of data-intensive applications.
 <br>
 <div style="text-align: justify">
 <h2><b>Participation in research projects</b></h2>
