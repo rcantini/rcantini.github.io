@@ -56,14 +56,14 @@ preview_only = false
 <div style="text-align: justify">
 <h2><b>Research topics</b></h2>
 My research mainly focuses on the analysis of Big Data, especially those coming from the main social
-media, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for
+media platforms, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for
 extracting valuable information about users’ dynamics, behavior, and opinion. In particular, the scope of
 my research is twofold: one the one hand to develop and evaluate innovative methodologies and algorithms for the analysis of Big Social Data;
-on the other hand to design and implement novel strategies and techniques to enable their efficient and effective execution in distributed environments and high-performance infrastructures.
+on the other hand to design and implement novel strategies and techniques to enable their efficient and effective execution in distributed and high-performance environments.
 <br>
 I produced several interesting results in both research directions mentioned above, in a wide range of
-application domains including: the analysis of political events, opinion mining, polarization and emotion analysis, topic
-detection and tracking, the combination of polarization techniques and information diffusion and influence maximization models, hashtag recommendation, and the use of machine learning for optimizing the execution of data-intensive applications.
+application domains, including: political event analysis, opinion mining, polarization and emotion analysis, topic
+detection and tracking, and hashtag recommendation. I also investigated how polarization analysis techniques can be combined with information diffusion and influence maximization models, how to effectively learn from poorly supervised datasets, and how to use machine learning for optimizing the execution of data-intensive applications.
 <br>
 <div style="text-align: justify">
 <h2><b>Participation in research projects</b></h2>
