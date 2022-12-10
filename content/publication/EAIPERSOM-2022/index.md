@@ -1,5 +1,5 @@
 ---
-title: "opic Detection and Tracking in Social Media Platforms"
+title: "Topic Detection and Tracking in Social Media Platforms"
 date: 2022-10-12
 publishDate: 2022-10-12
 authors: ["Riccardo Cantini", "Fabrizio Marozzo"]
