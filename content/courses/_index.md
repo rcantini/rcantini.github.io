@@ -1,7 +1,7 @@
 ---
 title: ""
 ---
-## Courses
+### **Courses**
 - [Distributed Systems and Cloud/Edge Computing for the Internet of Things](course_pages/ds4iot)
 - [Operating systems](course_pages/sisop)
 

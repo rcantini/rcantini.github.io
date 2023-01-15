@@ -54,7 +54,7 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-<h2><b>Research topics</b></h2>
+### **Research topics**
 My research mainly focuses on the analysis of Big Data, especially those coming from the main social
 media platforms, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for
 extracting valuable information about users’ dynamics, behavior, and opinion. In particular, the scope of
@@ -67,6 +67,7 @@ detection and tracking, and hashtag recommendation. I also investigated how pola
 how to effectively learn from poorly supervised datasets, and how to use machine learning for optimizing the execution of data-intensive applications.
 <br>
 <div style="text-align: justify">
+<br>
 <h2><b>Participation in research projects</b></h2>
 <ul>
   <li><b>"eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem"</b>, funded by the European High-Performance Computing Joint Undertaking. The aim of the research is the use of machine learning techniques for enabling the efficient execution of data-intensive workflows in HPC environments.</li>
