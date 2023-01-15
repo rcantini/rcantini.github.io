@@ -1,2 +1,2 @@
 per inserire i corsi nel formato standard,
-spostare qui i corsi da static/course_pages
+spostare qui i corsi da course_pages
