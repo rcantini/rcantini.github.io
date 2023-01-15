@@ -5,8 +5,8 @@ title: Teaching
 <br>
 
 ### **Courses**
-- [DS4IOT](course_pages/ds4iot)
-- [SISOP](course_pages/sisop)
+- [Distributed Systems and Cloud/Edge Computing for the Internet of Things](course_pages/ds4iot)
+- [Operative systems](course_pages/sisop)
 
 <br>
 
