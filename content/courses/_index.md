@@ -2,11 +2,11 @@
 title: Teaching
 ---
 
-##Courses
+## Courses
 - DS4IOT
 - SISOP
 
-##Thesis supervision
+## Thesis supervision
 I was co-supervisor of many graduating students in Computer Engineering. The main topics of supervised theses
 were social media and big data analysis, machine learning, deep learning, natural language
 processing, sentiment analysis, edge/fog computing, parallel and distributed data analysis.
