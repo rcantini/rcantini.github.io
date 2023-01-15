@@ -67,7 +67,6 @@ detection and tracking, and hashtag recommendation. I also investigated how pola
 how to effectively learn from poorly supervised datasets, and how to use machine learning for optimizing the execution of data-intensive applications.
 <br>
 <div style="text-align: justify">
-<br>
 <h3><b>Participation in research projects</b></h3>
 <ul>
   <li><b>"eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem"</b>, funded by the European High-Performance Computing Joint Undertaking. The aim of the research is the use of machine learning techniques for enabling the efficient execution of data-intensive workflows in HPC environments.</li>
