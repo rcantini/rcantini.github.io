@@ -1,0 +1,2 @@
+per inserire i corsi nel formato standard,
+scompattare l'archivio (una cartella per corso)
