@@ -24,7 +24,8 @@ menu:
 
 ## Course summary
 
- The practical part of the **Distributed Systems and Cloud/Edge Computing for the Internet of Things** course is aimed at discussing the main concepts behind Edge and Fog computing in relation to Cloud and Internet of Things architectures, with a special focus on the main tools and frameworks for modeling, simulating and implementing large-scale context-aware applications.
+ The practical part of the [Distributed Systems and Cloud/Edge Computing for the Internet of Things](https://www.unical.it/storage/cds/7419/activities/83787/)
+ course is aimed at discussing the main concepts behind Edge and Fog computing in relation to Cloud and Internet of Things architectures, with a special focus on the main tools and frameworks for modeling, simulating and implementing large-scale context-aware applications.
 
 
 ## Course program
