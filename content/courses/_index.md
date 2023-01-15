@@ -1,12 +1,6 @@
 ---
 title: Teaching
-layout: none  # Do not modify.
 
-# Optional header image (relative to `static/img/` folder).
-header:
-  caption: ""
-  image: ""
----
 
 I was co-supervisor of many graduating students in Computer Engineering. The main topics of supervised theses
 were social media and big data analysis, machine learning, deep learning, natural language
