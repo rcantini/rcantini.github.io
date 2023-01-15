@@ -5,8 +5,8 @@ title: Teaching
 <br>
 
 ### **Courses**
-- [DS4IOT](/course_pages/ds4iot)
-- [SISOP](/course_pages/sisop)
+- [DS4IOT](/../course_pages/ds4iot)
+- [SISOP](/../../course_pages/sisop)
 
 <br>
 
