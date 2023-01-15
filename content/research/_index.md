@@ -54,7 +54,7 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-### **Research topics**
+<h3><b>Research topics</b></h3>
 My research mainly focuses on the analysis of Big Data, especially those coming from the main social
 media platforms, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for
 extracting valuable information about users’ dynamics, behavior, and opinion. In particular, the scope of
