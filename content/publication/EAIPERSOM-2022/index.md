@@ -23,7 +23,7 @@ well the main topics underlying social media conversation as well
 as the relationships among them and their evolution through time."
 featured: true
 publication: "*EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media, November 2022*"
-#url_pdf: "files/papers/journals/HASHET_TKDD_online.pdf"
+url_pdf: "files/papers/journals/EAI_PerSoM22_TDT.pdf"
 #doi: "10.1145/3466876"
 
 
