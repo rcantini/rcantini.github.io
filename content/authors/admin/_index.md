@@ -54,7 +54,7 @@ email: ""
 ---
 <div style="text-align: justify">
 Riccardo Cantini is a research fellow at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019, and obtained his Ph.D. in Information and Communication Technologies in 2023, awarded with the <i>Doctor Europaeus</i> label. His Ph.D. thesis work focused on the analysis of politically-polarized Big Social Data, with the aim of outlining a detailed profile of social users, investigating their interests, opinions, and feelings, and shaping their perception of real-world facts and events, thus providing an effective data-driven approach to a thorough understanding of political phenomena.
-In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>), and between 2021 and 2022 he worked as visiting researcher at the Barcelona Supercomputing Center (<a href="https://www.bsc.es/">BSC-CNS</a>). Since 2019, he has been contract professor at the DIMES Department. 
+In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>), and between 2021 and 2022 he worked as visiting researcher at the Barcelona Supercomputing Center (<a href="https://www.bsc.es/">BSC-CNS</a>). Since 2019 he has been contract professor at the DIMES Department. 
 <br>His research interests include <i>social media and big data analysis</i>, <i>machine learning and deep learning</i>, <i>sentiment analysis and opinion mining</i>, <i>natural language processing</i>, <i>edge and fog computing</i>, and <i>high performance data analytics</i>.
 </div>
 <div class="row">
