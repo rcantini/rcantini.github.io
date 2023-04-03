@@ -129,7 +129,7 @@ Let's finally move on how to develop web application that embeds the deep learni
 In order to build the app I used **Flask**, a framework that enables the rapid creation of web applications.
 The structure of our Flask project is as follows:
 - *CVAE.py* and *app.py*: these files implements the creation and training of the VAE and the Flask-based interaction between the user and the model through the web application.
-- *ProcFile*: it is a process file that is required for all Heroku applications. It specifies the commands that are executed by the app on startup.
+- *ProcFile*: it is a process file that specifies the commands that are executed by the app on startup.
 - *requirements.txt*: it specifies all the dependencies needed by the application.
 - *templates* and *static*: these are two folders that contain the html pages and additional global files respectively.
 
