@@ -133,17 +133,5 @@ The structure of our Flask project is as follows:
 - *requirements.txt*: it specifies all the dependencies needed by the application.
 - *templates* and *static*: these are two folders that contain the html pages and additional global files respectively.
 
-***Let's play with MNIST!***
-
-I embedded the developed web app in this blog post so that you can try it directly here!
-
-In particular you can use it in two ways:
-- Choose a digit (i.e. a number from \\( 0 \\) to \\( 9 \\)) to be drawn by the VAE.
-- Explore the 2D latent space by inserting the coordinates of a random point and looking at which digit is generated.
-
-Have fun! :laughing::laughing:
-
-<iframe src="https://play-with-mnist.herokuapp.com/" width="100%" height="708px"></iframe>
-
 <hr>
 You can find the full code on GitHub at this <a href="https://github.com/rcantini/CNN-VAE-MNIST" target="_blank">link</a>, which includes the VAE implementation in Keras+Tensorflow and the Flask application, while the web application is available <a href="https://play-with-mnist.herokuapp.com/" target="_blank">here</a> on Heroku.
