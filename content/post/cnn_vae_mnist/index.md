@@ -132,4 +132,5 @@ The structure of our Flask project is as follows:
 - *ProcFile*: it is a process file that is required for all Heroku applications. It specifies the commands that are executed by the app on startup.
 - *requirements.txt*: it specifies all the dependencies needed by the application.
 - *templates* and *static*: these are two folders that contain the html pages and additional global files respectively.
+
 You can find the full code on GitHub at this <a href="https://github.com/rcantini/CNN-VAE-MNIST" target="_blank">link</a>, which includes the VAE implementation in Keras+Tensorflow and the Flask application.
