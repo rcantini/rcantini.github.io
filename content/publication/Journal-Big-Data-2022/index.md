@@ -28,7 +28,7 @@ hardware availability, application domains and purposes, and also considering th
 support provided by the developer community."
 featured: true
 publication: "*Journal of Big Data, vol.9, no. 4, 2022*"
-url_pdf: "files/papers/journals/Big_Data_Analysis_Survey_2022.pdf"
+# url_pdf: "files/papers/journals/Big_Data_Analysis_Survey_2022.pdf"
 doi: "10.1186/s40537-021-00555-2"
 
 

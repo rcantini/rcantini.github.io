@@ -25,7 +25,7 @@ models and attention-based supervised models) by achieving up to 15% improvement
 for the hashtag recommendation task and 9% for the topic discovery task."
 featured: true
 publication: "*ACM Transactions on Knowledge Discovery from Data*"
-url_pdf: "files/papers/journals/HASHET_TKDD_online.pdf"
+# url_pdf: "files/papers/journals/HASHET_TKDD_online.pdf"
 doi: "10.1145/3466876"
 
 

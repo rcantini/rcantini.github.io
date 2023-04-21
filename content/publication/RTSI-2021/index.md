@@ -34,7 +34,7 @@ dimensions of the products they want to buy, and consequently
 reduce the likelihood of a return."
 featured: true
 publication: "*6th International Research and Technologies for Society and Industry Innovation for a smart world (IEEE RTSI 2021), September 2021*"
-url_pdf: "files/papers/confs/CompareDimensions-Ecommerce-ott.pdf"
+# url_pdf: "files/papers/confs/CompareDimensions-Ecommerce-ott.pdf"
 doi: "10.1109/RTSI50628.2021.9597230"
 
 # Featured image
