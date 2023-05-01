@@ -22,7 +22,7 @@ the identified chains, confirming the ability of our methodology to represent
 well the main topics underlying social media conversation as well
 as the relationships among them and their evolution through time."
 featured: true
-publication: "*EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media, November 2022*"
+publication: "*EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media, November 2023*"
 # url_pdf: "files/papers/confs/EAI_PerSoM22_TDT.pdf"
 doi: "10.1007/978-3-031-31469-8_3"
 
