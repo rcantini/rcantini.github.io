@@ -24,7 +24,7 @@ approach has been compared to the most relevant techniques used in the literatur
 models and attention-based supervised models) by achieving up to 15% improvement in F-score
 for the hashtag recommendation task and 9% for the topic discovery task."
 featured: true
-publication: "*ACM Transactions on Knowledge Discovery from Data*, vol. 16, no. 2, pp. 1–26, Sep. 2021."
+publication: "*ACM Transactions on Knowledge Discovery from Data*, vol. 16, no. 2, pp. 1–26, Sep. 2021"
 # url_pdf: "files/papers/journals/HASHET_TKDD_online.pdf"
 doi: "10.1145/3466876"
 

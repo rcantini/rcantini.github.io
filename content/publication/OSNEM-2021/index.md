@@ -22,7 +22,7 @@ to DIRIE, which exploits a more complex algorithm, WABC was able to
 find a more accurate set of users which allows to maximize the spread in almost
 all the considered configurations."
 featured: true
-publication: "*Online Social Networks and Media*, vol. 26, p. 100 167, 2021."
+publication: "*Online Social Networks and Media*, vol. 26, p. 100 167, 2021"
 # url_pdf: "files/papers/journals/WABC_OSNEM.pdf"
 doi: "10.1016/j.osnem.2021.100167"
 

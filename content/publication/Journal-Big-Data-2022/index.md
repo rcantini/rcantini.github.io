@@ -27,7 +27,7 @@ selecting the best/appropriate programming solution based on their skills,
 hardware availability, application domains and purposes, and also considering the 
 support provided by the developer community."
 featured: true
-publication: "*Journal of Big Data*, vol.9, no. 1, pp. 1-50, 2022."
+publication: "*Journal of Big Data*, vol.9, no. 1, pp. 1-50, 2022"
 # url_pdf: "files/papers/journals/Big_Data_Analysis_Survey_2022.pdf"
 doi: "10.1186/s40537-021-00555-2"
 
