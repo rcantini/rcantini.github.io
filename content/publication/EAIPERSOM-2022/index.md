@@ -1,7 +1,7 @@
 ---
 title: "Topic Detection and Tracking in Social Media Platforms"
 date: 2022-10-12
-publishDate: 2022-10-12
+publishDate: 2023-04-28
 authors: ["Riccardo Cantini", "Fabrizio Marozzo"]
 publication_types: ["1"]
 abstract: "The large amount of information available on the Web can
@@ -24,7 +24,7 @@ as the relationships among them and their evolution through time."
 featured: true
 publication: "*EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media, November 2022*"
 # url_pdf: "files/papers/confs/EAI_PerSoM22_TDT.pdf"
-#doi: "10.1145/3466876"
+doi: "10.1007/978-3-031-31469-8_3"
 
 
 # Featured image
