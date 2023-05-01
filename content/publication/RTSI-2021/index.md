@@ -33,7 +33,7 @@ CompareDimensions could help customers to understand the real
 dimensions of the products they want to buy, and consequently
 reduce the likelihood of a return."
 featured: true
-publication: "*6th International Research and Technologies for Society and Industry Innovation for a smart world (IEEE RTSI 2021), September 2021*"
+publication: "*6th International Research and Technologies for Society and Industry Innovation for a smart world (IEEE RTSI 2021)*, September 2021, IEEE, 2021, pp. 474–479."
 # url_pdf: "files/papers/confs/CompareDimensions-Ecommerce-ott.pdf"
 doi: "10.1109/RTSI50628.2021.9597230"
 
