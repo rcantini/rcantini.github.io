@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: PhD student in Information and Communication Technologies
+role: Research fellow
 
 # Organizations/Affiliations
 organizations:
