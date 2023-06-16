@@ -61,6 +61,12 @@ In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://s
 	<div class="col-md-7">
 	<h3>Education</h3>
 	<ul class="ul-edu fa-ul">
+    <li><i class="fa-li fas fa-graduation-cap"></i>
+			<div class="description">
+			<p class="course">Ph.D. in Information and Communication Technologies, 2023</p>
+			<p class="institution">University of Calabria</p>
+			</div>
+		</li>
 		<li><i class="fa-li fas fa-graduation-cap"></i>
 			<div class="description">
 			<p class="course">M.Sc. in Computer Engineering, 2019</p>
