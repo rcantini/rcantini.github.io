@@ -2,9 +2,12 @@
 title: ""
 ---
 ### **Courses**
-- [Distributed Systems and Cloud/Edge Computing for the Internet of Things](course_pages/ds4iot)
-- [Operating systems](course_pages/sisop)
-
+- [Distributed Systems and Cloud/Edge Computing for the Internet of Things](https://www.unical.it/storage/cds/7419/activities/83787/)
+-- Academic years: 2021-2022, 2022-2023
+-- blablabla
+- [Sistemi Operativi](https://www.unical.it/storage/cds/7179/activities/100549/)
+-- Academic years: 2019-2020, 2020-2021, 2021-2022
+-- blablabla
 <br>
 
 ### **Thesis supervision**
