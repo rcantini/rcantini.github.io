@@ -58,7 +58,7 @@ preview_only = false
 My research focuses on analyzing big data from major social platforms to extract diverse information about users and shape their perception of facts and events, thus providing a data-driven approach for a deeper understanding of real-world phenomena. Key applications include identifying discussion topics in online conversations, estimating the political polarization of social users, and exploring the connection between polarization and emotions expressed in social posts.
 To this aim, advanced machine and deep learning models and techniques are leveraged, with a focus on the use of Large Language Models.
 Moreover, my research explores how to efficiently learn from scarce data and limited computational resources. Several solutions are currently investigated, including the use of meta-learning, semi-supervised models based on curriculum learning, edge AI techniques for energy-aware computing, and the use of machine learning to optimize the execution of data-intensive applications on parallel and distributed architectures.
-Additionally, my research deals with aspects like the dynamicity of online conversation and the impact of misinformation in user discussions, through the design of topic-oriented misinformation detection techniques and time-adaptive models that can effectively adapt to rapidly changing real-time environments.
+Additionally, my research deals with the dynamicity of online conversation and the impact of misinformation in user discussions, through the design of topic-oriented misinformation detection techniques and time-adaptive models that can effectively handle real-time changing environments.
 <br>
 <div style="text-align: justify">
 <h3><b>Participation in research projects</b></h3>
