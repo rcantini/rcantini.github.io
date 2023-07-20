@@ -55,16 +55,10 @@ preview_only = false
 +++
 <div style="text-align: justify">
 <h3><b>Research topics</b></h3>
-My research mainly focuses on the analysis of Big Data, especially those coming from the main social
-media platforms, which provide a massive amount of opinion-rich multi-modal data effectively exploitable for
-extracting valuable information about users’ dynamics, behavior, and opinion. In particular, the scope of
-my research is twofold: one the one hand to develop innovative methodologies and algorithms for the analysis of Big Social Data;
-on the other hand to design and implement novel techniques to enable their efficient execution in high-performance distributed environments.
-<br>
-I produced several interesting results in both research directions mentioned above, in a wide range of
-application domains, including: political event analysis, opinion mining, polarization and emotion analysis, topic
-detection and tracking, and hashtag recommendation. I also investigated how polarization analysis techniques can be combined with information diffusion and influence maximization models, 
-how to effectively learn from poorly supervised datasets, and how to use machine learning for optimizing the execution of data-intensive applications.
+My research focuses on analyzing big data from major social platforms to extract diverse information about users and shape their perceptions of facts and events, thus providing a data-driven approach for a deeper understanding of real-world phenomena. Key applications include identifying discussion topics in online conversations, estimating the political polarization of social users, and exploring the connection between polarization and emotions expressed in social posts.
+To this aim, advanced machine and deep learning techniques are utilized, with a focus on Large Language Models.
+Moreover, my research explores how to efficiently learn from scarce data and limited computational resources. Several solutions are currently investigated, including the use of meta-learning techniques, semi-supervised models based on curriculum learning, edge AI techniques for energy-aware computing, and the use of machine learning for optimizing the execution of data-intensive applications on parallel and distributed architectures.
+Additionally, my research deals with aspects like the dynamicity of online conversation and the impact of misinformation in user discussions, through the design of topic-oriented misinformation detection techniques and time-adaptive models that can effectively adapt to rapidly changing real-time environments.
 <br>
 <div style="text-align: justify">
 <h3><b>Participation in research projects</b></h3>
