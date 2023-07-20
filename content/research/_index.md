@@ -63,8 +63,8 @@ Additionally, my research deals with aspects like the dynamicity of online conve
 <div style="text-align: justify">
 <h3><b>Participation in research projects</b></h3>
 <ul>
-  <li>"<i>eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</i>", funded by the European High-Performance Computing Joint Undertaking.</li>
-  <li>"<i><b>ASPIDE: exAScale ProgramIng models for extreme Data procEssing</b></i>", funded by the European Union’s Horizon 2020 Research and Innovation Programme.</li>
+  <li>"<b>eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</b>", funded by the European High-Performance Computing Joint Undertaking.</li>
+  <li>"<b>ASPIDE: exAScale ProgramIng models for extreme Data procEssing</b>", funded by the European Union’s Horizon 2020 Research and Innovation Programme.</li>
   <li>"<b>Smart Macingo</b>", funded under the Calabria Regional Operational Program 2014-2020.</li>
 </ul>
 </div>
