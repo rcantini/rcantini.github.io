@@ -38,11 +38,6 @@
   url = "/post/"
   weight = 60
 
-[[main]]
-  name = "News"
-  url = "/news/"
-  weight = 70
-
 [[lectures]]
   name = "Lectures"
   url = "/courses/ds4iot/lectures/"
