@@ -63,8 +63,8 @@ Additionally, my research deals with aspects like the dynamicity of online conve
 <div style="text-align: justify">
 <h3><b>Participation in research projects</b></h3>
 <ul>
-  <li><b>"eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem"</b>, funded by the European High-Performance Computing Joint Undertaking. The aim of the research is the use of machine learning techniques for enabling the efficient execution of data-intensive workflows in HPC environments.</li>
-  <li><b>"ASPIDE: exAScale ProgramIng models for extreme Data procEssing"</b>, funded by the European Union’s Horizon 2020 Research and Innovation Programme. The aim of the research is the development of in-memory techniques for the efficient execution of data-intensive applications on Exascale architectures.</li>
-  <li><b>"Smart Macingo"</b>, funded under the Calabria Regional Operational Program 2014-2020. The aim of the research is the definition and implementation of data mining techniques for estimating the price of transport services.</li>
+  <li>"<i>eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</i>", funded by the European High-Performance Computing Joint Undertaking.</li>
+  <li><i>"ASPIDE: exAScale ProgramIng models for extreme Data procEssing"</i>, funded by the European Union’s Horizon 2020 Research and Innovation Programme.</li>
+  <li><i>"Smart Macingo"</i>, funded under the Calabria Regional Operational Program 2014-2020.</li>
 </ul>
 </div>
