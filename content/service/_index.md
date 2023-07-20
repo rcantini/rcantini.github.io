@@ -56,7 +56,7 @@ preview_only = false
 <div style="text-align: justify">
 <h3><b>Program Committees</b></h3>
 <ul>
-  <li><b>International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
+  <li>International Conference on Advanced Data Mining and Applications (<b>ADMA'23</b>)</li>
 </ul>
 </div>
 
