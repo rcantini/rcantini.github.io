@@ -12,4 +12,4 @@ title: ""
 
 ### **Thesis supervision**
 I was co-supervisor of many graduating students in Computer Engineering. The main topics of supervised theses
-include social media and big data analysis, machine and deep learning, natural language processing, sentiment analysis, opinion mining, edge computing, high-performance data analytics, curriculum learning, semi-supervised learning, topic detection and tracking, and hashtag recommendation.
+include social media and big data analysis, machine and deep learning, natural language processing, sentiment analysis, opinion mining, edge computing, curriculum learning, semi-supervised learning, topic detection and tracking, and hashtag recommendation.
