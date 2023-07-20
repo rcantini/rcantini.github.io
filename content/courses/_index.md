@@ -3,7 +3,7 @@ title: ""
 ---
 ### **Courses**
 - [Sistemi Operativi](https://www.unical.it/storage/cds/7179/activities/100549/)
-    - The practicals discuss the principles of concurrent programming, synchronization, and access to shared data in multi-threaded applications, introducing the use of the concurrency programming tools provided by Java through programming examples.
+    - The practicals discuss the principles of concurrent programming, synchronization, and access to shared data in multi-threaded applications, introducing the tools provided by Java through programming examples.
     - Academic years: 2021-2022, 2022-2023
 - [Distributed Systems and Cloud/Edge Computing for the Internet of Things](https://www.unical.it/storage/cds/7419/activities/83787/)
     - The practicals discuss the main concepts behind Edge and Cloud computing, introducing the available tools and frameworks for modeling, simulating, and implementing interoperable context-aware IoT applications.
