@@ -57,6 +57,6 @@ preview_only = false
 
 I am a member of the Program Committee for the *International Conference on Advanced Data Mining and Applications* (**ADMA'23**).
 
-I have also served as a reviewer in several international journals and conferences, including ACM Computing Surveys, Transactions on Cloud Computing, Transactions on Parallel and Distributed Systems, Future Generation Computer Systems, IEEE Access, Computer, Social Network Analysis and Mining, the International Conference on Advanced Data Mining and Applications, the International European Conference on Parallel and Distributed Computing, the IEEE International Conference on Machine Learning and Applications, and the IEEE International Conference on Big Data.
+I have also served as a reviewer for several international journals and conferences, including ACM Computing Surveys, Transactions on Cloud Computing, Transactions on Parallel and Distributed Systems, Future Generation Computer Systems, IEEE Access, Computer, Social Network Analysis and Mining, the International Conference on Advanced Data Mining and Applications, the International European Conference on Parallel and Distributed Computing, the IEEE International Conference on Machine Learning and Applications, and the IEEE International Conference on Big Data.
 </div>
 
