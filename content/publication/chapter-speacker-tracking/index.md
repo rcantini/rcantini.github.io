@@ -1,7 +1,7 @@
 ---
 title: "Evaluating the performance of a multimodal speaker tracking system at the edge-to-cloud continuum"
-date: 2023-04-18
-publishDate: 2023-04-18
+date: 2023-06-12
+publishDate: 2023-06-12
 authors: ["Alessio Orsino", "Riccardo Cantini", "Fabrizio Marozzo"]
 publication_types: ["6"]
 abstract: "The edge-to-cloud compute continuum has become increasingly popular

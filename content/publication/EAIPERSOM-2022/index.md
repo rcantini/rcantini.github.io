@@ -1,7 +1,7 @@
 ---
 title: "Topic Detection and Tracking in Social Media Platforms"
-date: 2023-04-28
-publishDate: 2023-04-28
+date: 2022-10-22
+publishDate: 2022-10-22
 authors: ["Riccardo Cantini", "Fabrizio Marozzo"]
 publication_types: ["1"]
 abstract: "The large amount of information available on the Web can
