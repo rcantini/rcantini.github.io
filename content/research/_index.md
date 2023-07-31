@@ -4,7 +4,7 @@ headless = true  # This file represents a page section.
 #active = true  # Activate this widget? true/false
 weight = 25 # Order that this section will appear in.
 
-title = ""
+title = "Research"
 subtitle = ""
 
 
@@ -54,7 +54,7 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-<h3><b>Research topics</b></h3>
+<h3><b>Main topics</b></h3>
 My research focuses on analyzing big data from major social platforms to extract diverse information about users and shape their perception of facts and events, thus providing a data-driven approach for a deeper understanding of real-world phenomena. Key applications include identifying discussion topics in online conversations, estimating the political polarization of social users, and exploring the connection between polarization and emotions expressed in social posts.
 To this aim, advanced machine and deep learning models and techniques are leveraged, with a focus on the use of Large Language Models.
 Moreover, my research explores how to efficiently learn from scarce data and limited computational resources. Several solutions are currently investigated, including the use of meta-learning, semi-supervised models based on curriculum learning, edge AI techniques for energy-aware computing, and the use of machine learning to optimize the execution of data-intensive applications on parallel and distributed architectures.
