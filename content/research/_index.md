@@ -63,8 +63,9 @@ Furthermore, the research activity focuses on how to effectively learn from limi
 <div style="text-align: justify">
 <h3><b>Participation in research projects</b></h3>
 <ul>
+  <li>"<b>FAIR: Future Artificial Intelligence Research</b>", funded by the European Union's NextGenerationEU program.</li>
   <li>"<b>eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</b>", funded by the European High-Performance Computing Joint Undertaking.</li>
-  <li>"<b>ASPIDE: exAScale ProgramIng models for extreme Data procEssing</b>", funded by the European Union’s Horizon 2020 Research and Innovation Programme.</li>
+  <li>"<b>ASPIDE: exAScale ProgramIng models for extreme Data procEssing</b>", funded by the European Union’s Horizon 2020 Research and Innovation Program.</li>
   <li>"<b>Smart Macingo</b>", funded under the Calabria Regional Operational Program 2014-2020.</li>
 </ul>
 </div>
