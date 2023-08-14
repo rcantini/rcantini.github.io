@@ -25,7 +25,7 @@ importance of leveraging social media platforms as valuable sources of informati
 but at the same time how essential it is to identify and mitigate the impact of false
 information in online communities."
 featured: true
-publication: "*26th International Conference on Discovery Science (DS2023)*, October 2023, to appear."
+publication: "*26th International Conference on Discovery Science (DS2023)*, October 2023, to appear"
 # url_pdf: "files/papers/confs/EAI_PerSoM22_TDT.pdf"
 # doi: "xx.yy/zz"
 
