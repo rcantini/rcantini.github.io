@@ -3,8 +3,6 @@ title: "Teaching"
 ---
 <h3 id="courses"><strong>Courses</strong></h3>
 
-<div>
-
 <a href="https://www.unical.it/storage/cds/7179/activities/100549/" target="_blank">Sistemi Operativi</a><br>
 The practicals discuss the principles of concurrent programming, synchronization, and access to shared data in multi-threaded applications.
 <ul>
@@ -18,8 +16,6 @@ The practicals discuss the main concepts behind Edge and Cloud computing, introd
 <li>Academic years: 2021 - 2022, 2020 - 2021, 2019-2020</li>
 </ul>
 <br>
-
-</div>
 
 <h3 id="courses"><strong>Thesis supervision</strong></h3>
 I was co-supervisor of many graduating students in Computer Engineering. The main topics of supervised theses
