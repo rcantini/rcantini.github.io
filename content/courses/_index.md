@@ -11,7 +11,7 @@ The practicals discuss the principles of concurrent programming, synchronization
 </ul>
 </p>
 
-<p style="margin-bottom: 0px; text-align: justify"
+<p style="margin-bottom: 0px; text-align: justify">
 <a href="https://www.unical.it/storage/cds/7419/activities/83787/" target="_blank">Distributed Systems and Cloud/Edge Computing for the Internet of Things</a><br>
 The practicals discuss the main concepts behind Edge and Cloud computing, introducing the available tools and frameworks for modeling, simulating, and implementing interoperable IoT applications.
 <ul>
