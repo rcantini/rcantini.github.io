@@ -10,5 +10,5 @@ body_font = "Roboto"
 nav_font = "Roboto"
 mono_font = "Roboto Mono"
 
-font_size = "5"
-font_size_small = "5"
+font_size = "5px"
+font_size_small = "5px"
