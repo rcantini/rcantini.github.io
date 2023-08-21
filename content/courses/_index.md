@@ -1,7 +1,7 @@
 ---
 title: "Teaching"
 ---
-### **Courses**
+<h3 id="courses"><strong>Courses</strong></h3>
 
 <div>
 
@@ -21,6 +21,6 @@ The practicals discuss the main concepts behind Edge and Cloud computing, introd
 
 </div>
 
-### **Thesis supervision**
+<h3 id="courses"><strong>Thesis supervision</strong></h3>
 I was co-supervisor of many graduating students in Computer Engineering. The main topics of supervised theses
 include social media and big data analysis, machine and deep learning, natural language processing, opinion mining, topic detection and tracking, semi-supervised learning, edge computing, and hashtag recommendation.
