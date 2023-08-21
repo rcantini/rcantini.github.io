@@ -9,7 +9,7 @@ The practicals discuss the principles of concurrent programming, synchronization
 <li>Academic years: 2022 - 2023, 2021-2022</li>
 </ul>
 <br>
-<a href="https://www.unical.it/storage/cds/7419/activities/83787/" target="_blank" rel="noopener">Distributed Systems and Cloud/Edge Computing for the Internet of Things</a>
+<a href="https://www.unical.it/storage/cds/7419/activities/83787/" target="_blank">Distributed Systems and Cloud/Edge Computing for the Internet of Things</a>
 The practicals discuss the main concepts behind Edge and Cloud computing, introducing the available tools and frameworks for modeling, simulating, and implementing interoperable IoT applications.
 <ul>
 <li>Academic years: 2021 - 2022, 2020 - 2021, 2019-2020</li>
