@@ -16,10 +16,10 @@ header:
 <p id="counter"></p>
 
 <script>
-	window.document.onload = function(){
-        alert("ciao");
+$(window).on('load', function() {
+    alert("ciao");
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
 	counter.textContent = pubs.length;
-	}
+})
 </script>
