@@ -14,8 +14,11 @@ header:
 ---
 
 <p id="counter"></p>
+
+<script>
 document.onload(function(){
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
 	counter.textContent = pubs.length;
 	})
+</script>
