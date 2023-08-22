@@ -12,10 +12,6 @@ header:
   caption: ""
   image: ""
 ---
-<div>
-<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-<p id="counter">Total: </p>
-</div>
 
 <script language="javascript">
 	document.body.onload = function(){
@@ -24,3 +20,7 @@ header:
 	counter.textContent = "Total:"+pubs.length;
 	}
 </script>
+
+<div>
+<i class="far fa-file-alt pub-icon" aria-hidden="true"><p id="counter">Total: </p>
+</i></div>
