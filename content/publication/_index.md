@@ -16,9 +16,10 @@ header:
 <p id="counter"></p>
 
 <script>
-document.getElementsByClassName("row").onload(function(){
+	var row = document.getElementsByClassName("row").toArray()[0];
+        row.onload = function(){
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
 	counter.textContent = pubs.length;
-	})
+	}
 </script>
