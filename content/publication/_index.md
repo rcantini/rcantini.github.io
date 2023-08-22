@@ -14,14 +14,13 @@ header:
 ---
 <div>
 <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-Total: <p id="counter"></p>
+<p id="counter">Total: </p>
 </div>
 
 <script language="javascript">
-	document.body.onchange = function(){
-        alert("ciao");
+	document.body.onload = function(){
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
-	counter.textContent = pubs.length;
+	counter.textContent = "Total:"+pubs.length;
 	}
 </script>
