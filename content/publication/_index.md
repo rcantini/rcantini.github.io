@@ -15,11 +15,11 @@ header:
 
 <p id="counter"></p>
 
-<script>
-$(window).on('load', function() {
-    alert("ciao");
+<script language="javascript">
+	document.body.onload = function(){
+        alert("ciao");
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
 	counter.textContent = pubs.length;
-})
+	}
 </script>
