@@ -16,8 +16,7 @@ header:
 <p id="counter"></p>
 
 <script>
-	var row = Array.from(document.getElementsByClassName("row"))[0];
-        row.onload = function(){
+	window.document.onload = function(){
         alert("ciao");
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
