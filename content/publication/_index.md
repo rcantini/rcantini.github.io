@@ -12,8 +12,10 @@ header:
   caption: ""
   image: ""
 ---
-
-<p id="counter"></p>
+<div>
+<i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+Total: <p id="counter"></p>
+</div>
 
 <script language="javascript">
 	document.body.onchange = function(){
