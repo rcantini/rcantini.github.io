@@ -16,7 +16,7 @@ header:
 <p id="counter"></p>
 
 <script language="javascript">
-	document.body.onload = function(){
+	document.body.onchange = function(){
         alert("ciao");
 	var counter = document.getElementById("counter");
 	var pubs = document.getElementsByClassName("pub-list-item");
