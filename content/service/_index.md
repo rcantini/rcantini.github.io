@@ -71,10 +71,10 @@ preview_only = false
 <li>Transactions on Cloud Computing</li>
 <li>Transactions on Parallel and Distributed Systems</li>
 <li>Future Generation Computer Systems</li>
+<li>Social Network Analysis and Mining</li>
 <li>IEEE Access</li>
 <li>Computer</li>
-<li>Social Network Analysis and Mining</li>
-<li>Future Generation Computer Systems</li>
+
 </ul>
 <h4>Conferences</h4>
 <ul>
