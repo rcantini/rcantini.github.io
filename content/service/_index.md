@@ -54,18 +54,18 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-<h3><b>Editorial board</b></h3>
+<h3>Editorial board</h3>
 <ul>
 <li>Review Editor of Frontiers in Big Data - Data Mining and Management section</li>
 </ul>
 
-<h3><b>Organization</b></h3>
+<h3>Organization</h3>
 <ul>
 <li>Program Committee Member of the 19th International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
 </ul>
 
 <h3>Refereeing</h3>
-<h4>Journals</h4>
+<h4><i>Journals<\i></h4>
 <ul>
 <li>ACM Computing Surveys</li>
 <li>Transactions on Cloud Computing</li>
@@ -76,7 +76,7 @@ preview_only = false
 <li>Computer</li>
 
 </ul>
-<h4>Conferences</h4>
+<h4><i>Conferences<\i></h4>
 <ul>
 <li>International Conference on Advanced Data Mining and Applications (ADMA)</li>
 <li>International European Conference on Parallel and Distributed Computing (Euro-Par)</li>
