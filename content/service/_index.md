@@ -65,7 +65,7 @@ preview_only = false
 </ul>
 
 <h3>Refereeing</h3>
-<h4><i>Journals</h4>
+<h4>Journals</h4>
 <ul>
 <li>ACM Computing Surveys</li>
 <li>Transactions on Cloud Computing</li>
@@ -76,7 +76,7 @@ preview_only = false
 <li>Computer</li>
 
 </ul>
-<h4><i>Conferences</h4>
+<h4>Conferences</h4>
 <ul>
 <li>International Conference on Advanced Data Mining and Applications (ADMA)</li>
 <li>International European Conference on Parallel and Distributed Computing (Euro-Par)</li>
