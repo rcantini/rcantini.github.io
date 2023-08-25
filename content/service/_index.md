@@ -54,9 +54,35 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
+<h3><b>Editorial board</b></h3>
+<ul>
+<li>Review editor of Frontiers in Big Data, Data Mining and Management section</li>
+</ul>
 
-I am a member of the Program Committee for the *International Conference on Advanced Data Mining and Applications* (**ADMA'23**).
+<h3><b>Organization</b></h3>
+<ul>
+<li>Program Committee of the 19th International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
+</ul>
 
-I have also served as a reviewer for several international journals and conferences, including ACM Computing Surveys, Transactions on Cloud Computing, Transactions on Parallel and Distributed Systems, Future Generation Computer Systems, IEEE Access, Computer, Social Network Analysis and Mining, the International Conference on Advanced Data Mining and Applications, the International European Conference on Parallel and Distributed Computing, the IEEE International Conference on Machine Learning and Applications, and the IEEE International Conference on Big Data.
+<h3><b>Refereeing</b></h3>
+<h4>Journals</h4>
+<ul>
+<li>ACM Computing Surveys</li>
+<li>Transactions on Cloud Computing</li>
+<li>Transactions on Parallel and Distributed Systems</li>
+<li>Future Generation Computer Systems</li>
+<li>IEEE Access</li>
+<li>Computer</li>
+<li>Social Network Analysis and Mining</li>
+<li>Future Generation Computer Systems</li>
+</ul>
+<h4>Conferences</h4>
+<ul>
+<li>International Conference on Advanced Data Mining and Applications (ADMA)</li>
+<li>International European Conference on Parallel and Distributed Computing (Euro-Par)</li>
+<li>IEEE International Conference on Machine Learning and Applications (IEEE ICMLA)</li>
+<li>IEEE International Conference on Big Data (IEEE BigData)</li>
+</ul>
+
 </div>
 
