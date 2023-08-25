@@ -56,12 +56,12 @@ preview_only = false
 <div style="text-align: justify">
 <h3><b>Editorial board</b></h3>
 <ul>
-<li>Review editor of Frontiers in Big Data - Data Mining and Management section</li>
+<li>Review Editor of Frontiers in Big Data - Data Mining and Management section</li>
 </ul>
 
 <h3><b>Organization</b></h3>
 <ul>
-<li>Program Committee of the 19th International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
+<li>Program Committee Member of the 19th International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
 </ul>
 
 <h3><b>Refereeing</b></h3>
