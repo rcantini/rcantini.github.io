@@ -64,7 +64,7 @@ preview_only = false
 <li>Program Committee Member of the 19th International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
 </ul>
 
-<h3><b>Refereeing</b></h3>
+<h3>Refereeing</h3>
 <h4>Journals</h4>
 <ul>
 <li>ACM Computing Surveys</li>
