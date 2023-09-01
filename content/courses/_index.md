@@ -5,7 +5,7 @@ title: "Teaching"
 
 <p style="margin-bottom: 0px; text-align: justify">
 <a href="https://www.unical.it/storage/cds/18746/activities/119062/" target="_blank">High Performance Computing</a><br>
-This course covers the fundamental principles and practical aspects of high-performance computing, with a focus on HPC systems and key concepts and practices in parallel programming through the shared-memory and message-passing paradigms.
+This course covers the fundamental principles and practical aspects of high-performance computing, including HPC systems and the key concepts and practices of parallel programming, with a focus on the shared-memory and message-passing paradigms.
 <ul>
 <li>Academic years: 2023 - 2024</li>
 </ul>
