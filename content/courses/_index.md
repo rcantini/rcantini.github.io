@@ -15,7 +15,7 @@ This course covers the fundamental principles and practical aspects of high-perf
 <a href="https://www.unical.it/storage/cds/7179/activities/100549/" target="_blank">Sistemi Operativi</a><br>
 This course discusses the principles of concurrent programming, synchronization, and access to shared data in multi-threaded applications.
 <ul>
-<li>Academic years: 2022 - 2023, 2021-2022</li>
+<li>Academic years: 2023 - 2024, 2022 - 2023, 2021-2022</li>
 </ul>
 </p>
 
