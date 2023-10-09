@@ -25,7 +25,7 @@ image:
 
 url_code: ""
 url_pdf: ""
-url_slides: "files/slides/DS23slides.pdf"
+url_slides: "files/slides/DS23_slides.pdf"
 url_video: ""
 
 # Markdown Slides (optional).
