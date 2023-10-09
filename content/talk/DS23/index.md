@@ -1,5 +1,5 @@
 ---
-title: DS23
+title: DS 2023
 event: 26th international conference on Discovery Science
 event_url: https://ds2023.inesctec.pt/
 location: Porto, Portugal
