@@ -26,8 +26,7 @@ but at the same time how essential it is to identify and mitigate the impact of 
 information in online communities."
 featured: true
 publication: "*26th International Conference on Discovery Science (DS2023)*, Lecture Notes in Computer Science, vol 14276, October 2023"
-# url_pdf: "files/papers/confs/EAI_PerSoM22_TDT.pdf"
-# doi: "10.1007/978-3-031-45275-8_9"
+doi: "10.1007/978-3-031-45275-8_9"
 
 
 # Featured image
