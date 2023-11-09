@@ -57,6 +57,7 @@ preview_only = false
 <h3>Editorial board</h3>
 <ul>
 <li>Review Editor of Frontiers in Big Data - Data Mining and Management section</li>
+<li>Review Editor of Frontiers in High Performance Computing</li>
 </ul>
 
 <h3>Organization</h3>
