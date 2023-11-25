@@ -22,7 +22,7 @@ relies on cloud computing."
 featured: true
 publication: "*Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications*, 2023, to appear"
 # url_pdf: "files/papers/..."
-# doi: "xx.yy/zz"
+doi: "10.1007/978-3-031-42194-5_9"
 
 
 # Featured image
