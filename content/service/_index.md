@@ -69,6 +69,7 @@ preview_only = false
 <h4>Journals</h4>
 <ul>
 <li>ACM Computing Surveys</li>
+<li>IEEE Transactions on Neural Networks and Learning Systems</li>
 <li>Transactions on Cloud Computing</li>
 <li>Transactions on Parallel and Distributed Systems</li>
 <li>Future Generation Computer Systems</li>
