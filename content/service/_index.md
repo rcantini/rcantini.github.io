@@ -72,6 +72,7 @@ preview_only = false
 <li>IEEE Transactions on Neural Networks and Learning Systems</li>
 <li>Transactions on Cloud Computing</li>
 <li>Transactions on Parallel and Distributed Systems</li>
+<li>Journal of Big Data</li>
 <li>Future Generation Computer Systems</li>
 <li>Social Network Analysis and Mining</li>
 <li>IEEE Access</li>
