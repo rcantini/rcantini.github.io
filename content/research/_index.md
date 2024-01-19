@@ -55,10 +55,10 @@ preview_only = false
 +++
 <div style="text-align: justify">
 <h3><b>Main topics</b></h3>
-The research activity of Riccardo Cantini focuses on Big Data analysis, with particular attention to data generated on major social media platforms. The main objective is to extract a wide range of information about users in order to shape their perception of real-world facts and events, thus providing a data-driven approach for a deeper understanding of socio-political phenomena.
+The research activity of Riccardo Cantini focuses on Deep Learning and Big Data analysis, with particular attention to data generated on major social media platforms. The main objective is to extract a wide range of information about users in order to shape their perception of real-world facts and events, thus providing a data-driven approach for a deeper understanding of socio-political phenomena.
 In this context, cutting-edge machine learning and deep learning models and techniques are employed, with a specific emphasis on the use of Large Language Models, along with frameworks for parallel and distributed computing. Key applications include identifying discussion topics in online conversations, estimating the political polarization of social users, and exploring the connection between their polarization and the emotions expressed in their published content.
 Another aspect addressed is the dynamism of social media conversations and the impact of misinformation on user discussions. To this end, topic-oriented techniques are developed for detecting misinformation in social media content, as well as time-adaptive models capable of effectively handling continuously evolving real-time scenarios.
-Furthermore, the research activity focuses on how to effectively learn from limited amounts of data and with scarce computing resources. Several solutions are investigated, including techniques for efficient fine-tuning, models based on curriculum learning and meta-learning, edge AI techniques for energy-aware computing, and the use of machine learning to optimize the execution of data-intensive applications on parallel and distributed architectures.
+Furthermore, the research activity focuses on energy-aware AI, investigating how to effectively learn from limited amounts of data and with scarce computing resources. Several solutions are explored, delving into efficient fine-tuning methodologies and advanced edge AI techniques.
 <br>
 <div style="text-align: justify">
 <h3><b>Participation in research projects</b></h3>
