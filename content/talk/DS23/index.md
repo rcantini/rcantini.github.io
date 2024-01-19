@@ -7,7 +7,7 @@ summary: 26th international conference on Discovery Science (DS23)
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2023-10-09T11:15:00Z"
+date: "2023-10-09T10:30:00Z"
 #date_end: "2020-02-18T12:00:00Z"
 all_day: false
 
