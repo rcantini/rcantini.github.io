@@ -20,8 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: Riccardo Cantini is a researcher at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His current research focuses on *social media and big data analysis*, *machine and deep learning*, *sentiment analysis and opinion mining*, *natural language processing and large languiage models*, *sustainable AI*, and *high-performance data analytics*.
 
-His current research focuses on social media and big data analysis, machine and deep learning, natural language processing and Large Language Models, sustainable AI, and high-performance data analytics.
-
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
