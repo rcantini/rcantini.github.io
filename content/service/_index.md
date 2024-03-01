@@ -4,7 +4,7 @@ headless = true  # This file represents a page section.
 #active = true  # Activate this widget? true/false
 weight = 30 # Order that this section will appear in.
 
-title = "Service"
+title = "Professional Services"
 subtitle = ""
 
 
@@ -54,40 +54,40 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-<h3>Editorial board</h3>
-<ul>
-<li>Review Editor of Frontiers in Big Data - Data Mining and Management section</li>
-<li>Review Editor of Frontiers in High Performance Computing</li>
-</ul>
+<h3>Participation in Journal Editorial Boards</h3>
+        <ul>
+            <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>.</li>
+            <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
+            <li>Review Editor of <em>Frontiers in High-Performance Computing</em>.</li>
+        </ul>
 
-<h3>Organization</h3>
-<ul>
-<li>Program Committee Member of ADMA 2023 (International Conference on Advanced Data Mining and Applications)</li>    
-<li>Program Committee Member of DS 2024 (International Conference on Discovery Science)</li>
-<li>Program Committee Member of ADMA 2024 (International Conference on Advanced Data Mining and Applications)</li>
-</ul>
+        <h3>Participation in Conference Program Committees</h3>
+        <ul>
+            <li>ADMA, <em>Advanced Data Mining and Applications</em> 2023, 2024 (Core rank: B).</li>
+            <li>DS2024, <em>Discovery Science</em> 2024 (Core rank: B).</li>
+            <li>ICLR, <em>International Conference on Learning Representations</em> 2024 (Core rank: A<sup>*</sup>), workshop on <em>Large Language Model Agents</em>.</li>
+        </ul>
 
-<h3>Refereeing</h3>
-<h4>Journals</h4>
-<ul>
-<li>ACM Computing Surveys</li>
-<li>IEEE Transactions on Neural Networks and Learning Systems</li>
-<li>Transactions on Cloud Computing</li>
-<li>Transactions on Parallel and Distributed Systems</li>
-<li>Journal of Big Data</li>
-<li>Future Generation Computer Systems</li>
-<li>Social Network Analysis and Mining</li>
-<li>IEEE Access</li>
-<li>Computer</li>
+        <h3>Reviewing Activity</h3>
+        <ul>
+            <li>Riccardo Cantini served as a reviewer for several international journals, including:
+                <em>ACM Computing Surveys</em>,
+                <em>Transactions on Cloud Computing</em>,
+                <em>Transactions on Parallel and Distributed Systems</em>,
+                <em>Future Generation Computer Systems</em>,
+                <em>Journal of Big Data</em>,
+                <em>IEEE Access</em>,
+                <em>Computer</em>, and
+                <em>Social Network Analysis and Mining</em>.
+            </li>
 
-</ul>
-<h4>Conferences</h4>
-<ul>
-<li>International Conference on Advanced Data Mining and Applications (ADMA)</li>
-<li>International European Conference on Parallel and Distributed Computing (Euro-Par)</li>
-<li>IEEE International Conference on Machine Learning and Applications (IEEE ICMLA)</li>
-<li>IEEE International Conference on Big Data (IEEE BigData)</li>
-</ul>
-
+            <li>Riccardo Cantini served as a reviewer for several international conferences, including:
+                <em>International Conference on Advanced Data Mining and Applications</em> (ADMA),
+                <em>International Conference on Learning Representations</em> (ICLR): 2024,
+                <em>International European Conference on Parallel and Distributed Computing</em> (EuroPar),
+                <em>IEEE International Conference on Machine Learning and Applications</em> (ICMLA), and
+                <em>IEEE International Conference on Big Data</em> (IEEE BigData).
+            </li>
+        </ul>
 </div>
 
