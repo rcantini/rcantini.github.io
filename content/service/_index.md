@@ -68,7 +68,7 @@ preview_only = false
         </ul>
         <h3>Reviewing Activity</h3>
         <ul>
-            <li>Riccardo Cantini served as a reviewer for several international journals, including:
+            <li>I served as a reviewer for several international journals, including:
                 <em>ACM Computing Surveys</em>,
                 <em>Transactions on Cloud Computing</em>,
                 <em>Transactions on Parallel and Distributed Systems</em>,
@@ -78,7 +78,7 @@ preview_only = false
                 <em>Computer</em>, and
                 <em>Social Network Analysis and Mining</em>.
             </li>
-            <li>Riccardo Cantini served as a reviewer for several international conferences, including:
+            <li>I served as a reviewer for several international conferences, including:
                 <em>International Conference on Advanced Data Mining and Applications</em> (ADMA),
                 <em>International Conference on Learning Representations</em> (ICLR): 2024,
                 <em>International European Conference on Parallel and Distributed Computing</em> (EuroPar),
