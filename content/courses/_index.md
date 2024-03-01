@@ -2,7 +2,7 @@
 title: "Teaching"
 ---
 <h3 id="courses"><strong>Courses</strong></h3>
-<p>Riccardo Cantini has been a teaching assistant for the following courses:</p>
+<p>I have been teaching assistant for the following courses:</p>
   <ul>
     <li><strong><a href="https://www.unical.it/storage/cds/18746/activities/119062/" target="_blank">High Performance Computing</a></strong>. Master's Degree in Computer Engineering, DIMES, University of Calabria, Rende (CS).</li>
     <p>Topics Covered: main principles and practical aspects related to high-performance computing, with a focus on GPU computing in CUDA, and the MPI (Message Passing Interface) paradigm, encompassing both shared and distributed memory implementations.
