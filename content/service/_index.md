@@ -56,7 +56,7 @@ preview_only = false
 <div style="text-align: justify">
 <h3>Participation in Journal Editorial Boards</h3>
         <ul>
-            <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>. <a href="https://www.mdpi.com/journal/BDCC/special_issues/1XP11D36SD" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal">Link</a></li>
+            <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>. <a href="https://www.mdpi.com/journal/BDCC/special_issues/1XP11D36SD" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm">Link</a></li>
             <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
             <li>Review Editor of <em>Frontiers in High-Performance Computing</em>.</li>
         </ul>
