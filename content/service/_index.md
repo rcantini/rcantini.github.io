@@ -63,7 +63,7 @@ preview_only = false
         <h3>Participation in Conference Program Committees</h3>
         <ul>
             <li>ADMA, <em>Advanced Data Mining and Applications</em> 2023, 2024 (Core rank: B).</li>
-            <li>DS2024, <em>Discovery Science</em> 2024 (Core rank: B).</li>
+            <li>DS, <em>Discovery Science</em> 2024 (Core rank: B).</li>
             <li>ICLR, <em>International Conference on Learning Representations</em> 2024 (Core rank: A<sup>*</sup>), workshop on <em>Large Language Model Agents</em>.</li>
         </ul>
         <h3>Reviewing Activity</h3>

@@ -5,8 +5,7 @@ title: "Teaching"
 
 <p style="margin-bottom: 0px; text-align: justify">
 <a href="https://www.unical.it/storage/cds/18746/activities/119062/" target="_blank">High Performance Computing</a><br>
-This course covers the fundamental principles and practical aspects related to high-performance computing, with a focus on GPU-computing
-in CUDA, and the MPI (Message Passing Interface) paradigm, with both shared and distributed memory implementations.
+This course covers the fundamental principles and practical aspects related to high-performance computing, with a focus on GPU computing in CUDA, and the MPI (Message Passing Interface) paradigm, encompassing both shared and distributed memory implementations.
 <ul>
 <li>Academic years: 2023 - 2024</li>
 </ul>
@@ -14,7 +13,7 @@ in CUDA, and the MPI (Message Passing Interface) paradigm, with both shared and 
 
 <p style="margin-bottom: 0px; text-align: justify">
 <a href="https://www.unical.it/storage/cds/7179/activities/100549/" target="_blank">Sistemi Operativi</a><br>
-This course discusses the principles of concurrent programming, synchronization, and access to shared data in multi-threaded applications.
+This course discusses the main constructs for modeling and implementing multi-threaded applications, issues related to synchronization and access to shared variables, and concurrency mechanisms in Java, particularly Semaphores and Monitors.
 <ul>
 <li>Academic years: 2023 - 2024, 2022 - 2023, 2021-2022</li>
 </ul>
@@ -22,7 +21,7 @@ This course discusses the principles of concurrent programming, synchronization,
 
 <p style="margin-bottom: 0px; text-align: justify">
 <a href="https://www.unical.it/storage/cds/7419/activities/83787/" target="_blank">Distributed Systems and Cloud/Edge Computing for the Internet of Things</a><br>
-This course discusses the main concepts behind Edge and Cloud computing, introducing the available tools and frameworks for modeling, simulating, and implementing interoperable IoT applications.
+This course discusses the fundamental concepts of Edge Computing in relation to Cloud architectures and the Internet of Things, with a focus on major tools and frameworks for modeling, simulating, and implementing large-scale interoperable IoT applications.
 <ul>
 <li>Academic years: 2021 - 2022, 2020 - 2021, 2019-2020</li>
 </ul>
