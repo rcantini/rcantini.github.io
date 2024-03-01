@@ -62,7 +62,9 @@ preview_only = false
 
 <h3>Organization</h3>
 <ul>
-<li>Program Committee Member of the 19th International Conference on Advanced Data Mining and Applications (ADMA'23)</li>
+<li>Program Committee Member of ADMA 2023 (International Conference on Advanced Data Mining and Applications)</li>    
+<li>Program Committee Member of DS 2024 (International Conference on Discovery Science)</li>
+<li>Program Committee Member of ADMA 2024 (International Conference on Advanced Data Mining and Applications)</li>
 </ul>
 
 <h3>Refereeing</h3>
