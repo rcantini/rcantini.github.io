@@ -60,14 +60,12 @@ preview_only = false
             <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
             <li>Review Editor of <em>Frontiers in High-Performance Computing</em>.</li>
         </ul>
-
         <h3>Participation in Conference Program Committees</h3>
         <ul>
             <li>ADMA, <em>Advanced Data Mining and Applications</em> 2023, 2024 (Core rank: B).</li>
             <li>DS2024, <em>Discovery Science</em> 2024 (Core rank: B).</li>
             <li>ICLR, <em>International Conference on Learning Representations</em> 2024 (Core rank: A<sup>*</sup>), workshop on <em>Large Language Model Agents</em>.</li>
         </ul>
-
         <h3>Reviewing Activity</h3>
         <ul>
             <li>Riccardo Cantini served as a reviewer for several international journals, including:
@@ -80,7 +78,6 @@ preview_only = false
                 <em>Computer</em>, and
                 <em>Social Network Analysis and Mining</em>.
             </li>
-
             <li>Riccardo Cantini served as a reviewer for several international conferences, including:
                 <em>International Conference on Advanced Data Mining and Applications</em> (ADMA),
                 <em>International Conference on Learning Representations</em> (ICLR): 2024,
