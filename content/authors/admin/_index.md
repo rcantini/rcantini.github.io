@@ -42,7 +42,7 @@ social:
   link: 'https://github.com/rcantini'
 - icon: cv
   icon_pack: ai
-  link: files/CV_academic___ita.pdf
+  link: files/CV_academic_en.pdf
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ""
 
