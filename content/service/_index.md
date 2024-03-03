@@ -66,19 +66,20 @@ preview_only = false
             <li><em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
             <li><em>International Conference on Learning Representations</em> (ICLR) 2024 (Core rank: A<sup>*</sup>), workshop on <em>Large Language Model Agents</em>.</li>
         </ul>
-        <h3>Reviewing Activity</h3>
+        <h3>Reviewer Activity</h3>
         <ul>
-            <li>I served as a reviewer for several international journals, including:
+            <li>International journals:
                 <em>ACM Computing Surveys</em>,
-                <em>Transactions on Cloud Computing</em>,
-                <em>Transactions on Parallel and Distributed Systems</em>,
+                <em>IEEE Transactions on Neural Networks and Learning Systems</em>,
+                <em>IEEE Transactions on Cloud Computing</em>,
+                <em>IEEE Transactions on Parallel and Distributed Systems</em>,
                 <em>Future Generation Computer Systems</em>,
                 <em>Journal of Big Data</em>,
                 <em>IEEE Access</em>,
                 <em>Computer</em>, and
                 <em>Social Network Analysis and Mining</em>.
             </li>
-            <li>I served as a reviewer for several international conferences, including:
+            <li>International conferences:
                 <em>International Conference on Advanced Data Mining and Applications</em> (ADMA),
                 <em>International Conference on Learning Representations</em> (ICLR): 2024,
                 <em>International European Conference on Parallel and Distributed Computing</em> (EuroPar),
