@@ -31,10 +31,10 @@ It is based on a multi-layer bidirectional Transformer, pre-trained on two unsup
 - **Masked Language Modeling (MLM)**: 15% of the words in each sequence are replaced with a `[MASK]` token. The model then attempts to predict the masked words, based on the context provided by the non-masked ones.
 - **Next Sentence Prediction (NSP)**: the model receives pairs of sentences as input and learns to predict if the second sentence is the subsequent sentence in the original document.
 
-BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the input sequence, joinlty considering previous and subsequent tokens.
+BERT is **deeply bidirectional**, which means that it can learn the context of a word based on all the information contained in the input sequence, jointly considering previous and subsequent tokens.
 In fact, the use of MLM objective enables the representation to fuse the left and right contexts, allowing the pre-training of a deep bidirectional language representation
 model.
-This is a key difference comparing to previous language representation models like *OpenAI GPT*, which uses a unidirectional (left-to-right) language model, or
+This is a key difference compared to previous language representation models like *OpenAI GPT*, which uses a unidirectional (left-to-right) language model, or
 *ELMo*, which uses a shallow concatenation of independently trained left-to-right and right-to-left language models.
 BERT outperformed many task-specific architectures, advancing the state of the art in a wide range of Natural Language Processing tasks, such as textual entailment,
 text classification and question answering.
@@ -44,8 +44,8 @@ For further details, you might want to read the original <a href="https://arxiv.
 ## Fine-tuning
 Let's now move on how to fine-tune the BERT model in order to deal with our classification tasks. Text classification can be a quite challenging task, but we can easily achieve amazing results by exploiting the effectiveness of transfer learning form pre-trained language representation models.
 The first use case is related to the classification of movie reviews according to the expressed sentiment, which can be *positive* or *negative*.
-The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contians 50000 movie reviews equally divided by polarity.
-The second case study is about building a model capable of detecting different types of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of a large number of comments from Wikipedia. Toxicity detection models are useful for helping online discussion become more productive and respectful.
+The used data come from the <a href="https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews">IMDB dataset</a>, which contains 50000 movie reviews equally divided by polarity.
+The second case study is about building a model capable of detecting different types of toxicity like threats, obscenity, insults, and identity-based hate. The used <a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data">dataset</a> is comprised of a large number of comments from Wikipedia. Toxicity detection models are useful for helping online discussions become more productive and respectful.
 
 In the following, I show my Keras code for creating the models.
 
@@ -72,17 +72,14 @@ For the second case study, `n_out` is equal to \\(6\\), as we are coping with a 
 As we can see, the BERT model expects three inputs:
 - **Input ids**: BERT input sequence unambiguously represents both single text and text pairs. Sentences are encoded using the WordPiece tokenizer, which recursively splits the input tokens until a word in the BERT vocabulary is detected, or the token is reduced to a single char.
  As first token, BERT uses the `CLS` special token, whose embedded representation can be used for classification purposes. Moreover, at the end of each sentence, a `SEP` token is used, which is exploited for differentiating between the two input sentences in the case of text pairs.
-- **Input mask**: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the the input ids is not padding.
+- **Input mask**: Allows the model to cleanly differentiate between the content and the padding. The mask has the same shape as the input ids, and contains 1 anywhere the input ids are not padding.
 - **Input types**: Contains 0 or 1 indicating which sentence the token is a part of. For a single-sentence input, it is a vector of zeros.
 
-Huggingface model returns two outputs which can be expoited for dowstream tasks:
+The huggingface model returns two outputs that can be exploited for downstream tasks:
 - **pooler_output**: it is the output of the BERT pooler, corresponding to the embedded representation of the `CLS` token further processed by a linear layer and a *tanh* activation. It can be used as an aggregate representation of the whole sentence. 
 - **last_hidden_state**: 768-dimensional embeddings for each token in the given sentence.
 
-The use of the first output (coming from the pooler) is usually not a good idea, as stated in the Hugginface Transformer documentation:
-> This output is usually not a good summary of the semantic content of the input, you’re often better with averaging or pooling the sequence of hidden-states for the whole input sequence.
-
-For this reason I preferred to use a *Global Average Pooling* on the sequence of all hidden states, in order to get a concise representation of the whole sentence. Another thing that usually works is to directly take the embedded representation of the `CLS` token, before it is fed to the BERT pooler.
+In this example, I used a *Global Average Pooling* on the sequence of all hidden states, to get a concise representation of the whole sentence. Other options are using the *pooler output* or directly taking the embedded representation of the `CLS` token before it is fed to the BERT pooler.
 
 After the creation of the model, we can fine-tune it as follows:
 ```python
@@ -107,7 +104,7 @@ def fine_tune(model, X_train, x_val, y_train, y_val):
 ```
 I trained the model for \\(4\\) epochs using a very low learning rate (\\(3e^{-5}\\)). This last aspect is crucial as we only want to readapt the pre-trained features to work with our downstream task, thus large weight updates are not desirable at this stage. 
 Furthermore, we are training a very large model with a relatively small amount of data and a low learning rate is a good choice for minimizing the risk of overfitting.
-I used a *binary cross-entropy* loss as the prediction of each of the `n_out` output classes is modeled like a single Bernoulli trial, estimating the probability through a sigmoid activation. Moreover I chose the *Rectified version of ADAM (RAdam)* as the optimizer for the training process. 
+I used a *binary cross-entropy* loss as the prediction of each of the `n_out` output classes is modeled like a single Bernoulli trial, estimating the probability through a sigmoid activation. Moreover, I chose the *Rectified version of ADAM (RAdam)* as the optimizer for the training process. 
 **RAdam** is a variant of the Adam optimizer which rectifies the variance and generalization issues apparent in other adaptive learning rate optimizers. The main idea behind this variation is to apply a warm-up with a low initial learning rate, turning also off the momentum term for the first few sets of input training batches.
 Lastly, I used the *area under the Receiver operating characteristic curve (ROC AUC)*, and *binary accuracy* as the main metrics for validation and testing.
 
@@ -127,7 +124,7 @@ I evaluated the trained models using \\(1024\\) test samples, achieving the foll
 | Sentiment classification | 0.26 | 0.88 | 0.95 |
 | Toxicity classification | 0.05 | 0.98 | 0.94 |
 
-As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large crossdomain corpus. 
+As we can see, the easy use of a fine-tuned BERT classifier led us to achieve very promising results, confirming the effectiveness of transfer learning from language representation models pre-trained on a large cross-domain corpus. 
 To better analyze the performance of the trained classifiers, *ROC curves* for both models are provided:
 <img src="roc_auc.png" style="display: block; margin-left: auto; margin-right: auto; width: 100%; height: 100%"/>
 We can clearly see the high confidence of both models, especially for what concerns the toxicity classifier which achieved a micro-average ROC AUC of \\(0.98\\).
