@@ -15,6 +15,10 @@ links:
   url: https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook
   icon_pack: fa
   icon: shopping-cart
+- name: Amazon
+  url: https://www.amazon.it/Programming-Applications-Scalable-Tools-Frameworks/dp/1800615043
+  icon_pack: fab
+  icon: amazon
 
 
 # Featured image
