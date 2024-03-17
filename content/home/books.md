@@ -82,7 +82,7 @@ Programming Big Data Applications
 				<span>Riccardo Cantini</span>, <span>Alessio Orsino</span>
 			</div>
 		</div>
-		<div class="stream-meta article-metadata">
+		<div class="stream-meta article-metadata" style="margin-bottom: 15px;">
 			<div><span>University of Calabria</span></div>
 		</div>
 	<div class="btn-links">
