@@ -68,7 +68,7 @@ subtitle = ""
 +++
 <div class="row">
                 <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right">
-                    <img src="assets/img/book-cover.png" class="img-fluid" alt="">
+                    <img src="static/img/book-cover.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
                     <h3>Programming Big Data Applications</h3>
@@ -82,16 +82,12 @@ subtitle = ""
                     <p></p>
                     <p><small>*University of Calabria, Italy</small>
                     </p>
-
-
                     <div class="alert alert-success" role="alert">
                         <p>Complementing the text, the book includes downloadable lecture slides (in both PDF and PowerPoint formats)
                             tailored to meet the needs of university students, educators, and professionals alike.</p>
                         <p><a target="_blank" alt="Download slides (Powerpoint) of the book Programming Big Data Applications" title="Download slides (Powerpoint) of the book Programming Big Data Applications" href="https://www.worldscientific.com/doi/suppl/10.1142/q0444/suppl_file/q0444-sm.zip"><b>Programming Big Data: Lecture Slides (Powerpoint) </b> (67 MB)</a></p>
                         <p><a target="_blank" alt="Download slides (pdf) of the book Programming Big Data Applications" title="Download slides (pdf) of the book Programming Big Data Applications" href="https://www.worldscientific.com/doi/suppl/10.1142/q0444/suppl_file/q0444-sm_pdf.zip"><b>Programming Big Data: Lecture Slides (PDF) </b> (25 MB)</a></p>
-
                         <hr>
-
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <a class="btn btn-success btn-block btn-lg" alt="Buy now the book Programming Big Data Applications" title="Buy now the book Programming Big Data Applications" href="https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook">
@@ -102,7 +98,6 @@ subtitle = ""
                     </div>
                 </div>
                 <div class="col-lg-12 pt-4 pt-lg-0 content aos-init" data-aos="fade-left">
-
                     <h5 class="mt-3"><b>How to cite the book</b></h5>
                     <div class="box" style="font-size: 0.8em">
                         <small>
