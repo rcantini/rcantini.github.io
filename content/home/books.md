@@ -66,26 +66,12 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-<div class="media stream-item">
-	<div class="mr-3">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
-	</div>
-	<div class="media-body">
-		<h3 class="article-title mb-0 mt-0"><a href="/publication/journal-big-data-2024-blest-ml/">Block size estimation for data partitioning in HPC applications using machine learning techniques</a>
-		</h3>
-		<div class="article-style">The extensive use of HPC infrastructures and frameworks for running data-intensive applications has led to a growing interest in data partitioning techniques and strategies. In …
-		</div>
-		<div class="stream-meta article-metadata">
-			<div><span>Domenico Talia</span>, <span>Paolo Trunfio</span>,
+<div class="media-body"><h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
+Programming Big Data Applications
+<h5><b>Scalable Tools and Frameworks for Your Needs</b></h5></a></h3><div class="stream-meta article-metadata"><div><span>Domenico Talia</span>, <span>Paolo Trunfio</span>,
 <span>Fabrizio Marozzo</span>, <span>Loris Belcastro</span>,
-<span>Riccardo Cantini</span>, <span>Alessio Orsino</span>
-			</div>
-		</div>
-		<div class="btn-links"><button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename="/publication/journal-big-data-2024-blest-ml/cite.bib">
+<span>Riccardo Cantini</span>, <span>Alessio Orsino</span></div></div>
+<div class="stream-meta article-metadata"><div><span>University of Calabria</span></div></div><div class="btn-links"><button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename="/publication/journal-big-data-2024-blest-ml/cite.bib">
 Cite</button>
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/https://doi.org/10.1186/s40537-023-00862-w" target="_blank" rel="noopener">DOI</a>
-<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/rcantini/BLEST-ML" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i>Project</a>
-		</div>
-	</div>
-</div>
+<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://github.com/rcantini/BLEST-ML" target="_blank" rel="noopener"><i class="fab fa-github mr-1"></i>Project</a></div></div>
