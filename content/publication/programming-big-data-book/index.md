@@ -11,6 +11,10 @@ doi: "10.1142/q0444"
 url_project: https://bigdataprogramming.github.io/
 # Custom links:
 links:
+- name: Website
+  url: https://bigdataprogramming.github.io/
+  icon_pack: fa
+  icon: globe
 - name: Buy
   url: https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook
   icon_pack: fa
