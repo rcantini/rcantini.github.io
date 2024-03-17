@@ -16,7 +16,12 @@ featured: true
 publication: "*Social Network Analysis and Mining*, vol. 12, no. 1, p. 83, 2022"
 # url_pdf: "https://rdcu.be/cRWwa"
 doi: "10.1007/s13278-022-00913-9"
-
+# Custom links:
+links:
+- name: Dataset
+  url: https://github.com/SCAlabUnical/USA2020
+  icon_pack: fab
+  icon: github
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
