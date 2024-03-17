@@ -27,6 +27,12 @@ featured: true
 publication: "*ACM Transactions on Knowledge Discovery from Data*, vol. 16, no. 2, pp. 1–26, Sep. 2021"
 # url_pdf: "files/papers/journals/HASHET_TKDD_online.pdf"
 doi: "10.1145/3466876"
+# Custom links:
+links:
+- name: Project
+  url: https://github.com/rcantini/HASHET
+  icon_pack: fab
+  icon: github
 
 
 # Featured image
