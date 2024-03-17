@@ -66,18 +66,56 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-<div style="text-align: justify">
-<h3><b>Main topics</b></h3>
-Riccardo Cantini's research activities are centered around Deep Learning and Big Data analysis, with a specific focus on data generated on major social media platforms. The primary objective is to extract a wide range of information about users to outline their perception of real-world facts and events, providing a data-driven approach for an in-depth understanding of socio-political phenomena.
-In this context, cutting-edge machine learning and deep learning models and techniques are employed, with a particular emphasis on the use of Large Language Models, along with frameworks for parallel and distributed computing. Key applications include identifying discussion topics in online conversations, estimating the political polarization of social media users, and exploring the connection between user polarization and emotions expressed in posted content. Another aspect addressed is the dynamism of online conversations and the impact of false information on user discussions. To this end, topic-oriented techniques for false information detection in social content are developed, as well as time-adaptive models capable of effectively handling dynamically evolving scenarios.
-The research activities also focus on sustainable artificial intelligence, with a focus on ensuring an efficient, fair, and trustworthy use of Large Language Models. In this context, techniques for efficient fine-tuning, energy-aware models, bias elicitation techniques, and advanced retrieval-augmented generation systems are currently explored, as well as the use of curriculum learning and knowledge distillation for learning effectively from limited amounts of data and scarce computing resources.
-<br>
-<div style="text-align: justify">
-<h3><b>Participation in research projects</b></h3>
-<ul>
-  <li>"<b>FAIR: Future Artificial Intelligence Research</b>", funded by the European Union's NextGenerationEU program.</li>
-  <li>"<b>eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</b>", funded by the European High-Performance Computing Joint Undertaking.</li>
-  <li>"<b>ASPIDE: exAScale ProgramIng models for extreme Data procEssing</b>", funded by the European Union’s Horizon 2020 Research and Innovation Program.</li>
-  <li>"<b>Smart Macingo</b>", funded under the Calabria Regional Operational Program 2014-2020.</li>
-</ul>
-</div>
+<div class="row">
+                <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right">
+                    <img src="assets/img/book-cover.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
+                    <h3>Programming Big Data Applications</h3>
+                    <h5><b>Scalable Tools and Frameworks for Your Needs</b></h5>
+                    <p class="fst-italic">
+                        <a href="https://doi.org/10.1142/q0444" target="_blank">https://doi.org/10.1142/q0444</a> | May
+                        2024</p>
+                    <p class="fst-italic"> Pages: 232</p>
+                    <p class="fst-italic"> By (author): Domenico Talia*, Paolo Trunfio*, Fabrizio Marozzo*,
+                        Loris Belcastro*, Riccardo Cantini*, and Alessio Orsino*</p>
+                    <p></p>
+                    <p><small>*University of Calabria, Italy</small>
+                    </p>
+
+
+                    <div class="alert alert-success" role="alert">
+                        <p>Complementing the text, the book includes downloadable lecture slides (in both PDF and PowerPoint formats)
+                            tailored to meet the needs of university students, educators, and professionals alike.</p>
+                        <p><a target="_blank" alt="Download slides (Powerpoint) of the book Programming Big Data Applications" title="Download slides (Powerpoint) of the book Programming Big Data Applications" href="https://www.worldscientific.com/doi/suppl/10.1142/q0444/suppl_file/q0444-sm.zip"><b>Programming Big Data: Lecture Slides (Powerpoint) </b> (67 MB)</a></p>
+                        <p><a target="_blank" alt="Download slides (pdf) of the book Programming Big Data Applications" title="Download slides (pdf) of the book Programming Big Data Applications" href="https://www.worldscientific.com/doi/suppl/10.1142/q0444/suppl_file/q0444-sm_pdf.zip"><b>Programming Big Data: Lecture Slides (PDF) </b> (25 MB)</a></p>
+
+                        <hr>
+
+                        <div class="row">
+                            <div class="col-lg-12 text-center">
+                                <a class="btn btn-success btn-block btn-lg" alt="Buy now the book Programming Big Data Applications" title="Buy now the book Programming Big Data Applications" href="https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook">
+                                    <span class="btn-label"><i class="bx bx-cart-add"></i></span>
+                                    BUY IT NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 pt-4 pt-lg-0 content aos-init" data-aos="fade-left">
+
+                    <h5 class="mt-3"><b>How to cite the book</b></h5>
+                    <div class="box" style="font-size: 0.8em">
+                        <small>
+                        <div class="code-toolbar"><pre class="language-shell" tabindex="0"><code class="line-numbers language-shell">@book{doi:10.1142/q0444,
+    author = {Talia, Domenico and Trunfio, Paolo and Marozzo, Fabrizio and Belcastro, Loris and Cantini, Riccardo and Orsino, Alessio},
+    title = {Programming Big Data Applications},
+    publisher = {WORLD SCIENTIFIC (EUROPE)},
+    year = {2024},
+    doi = {10.1142/q0444},
+    URL = {https://www.worldscientific.com/doi/abs/10.1142/q0444},
+    eprint = {https://www.worldscientific.com/doi/pdf/10.1142/q0444}
+}</code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>Copy</span></button></div></div></div>
+                        </small>
+                    </div>
+                </div>
+            </div>
