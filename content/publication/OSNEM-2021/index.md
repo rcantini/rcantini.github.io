@@ -25,7 +25,12 @@ featured: true
 publication: "*Online Social Networks and Media*, vol. 26, p. 100 167, 2021"
 # url_pdf: "files/papers/journals/WABC_OSNEM.pdf"
 doi: "10.1016/j.osnem.2021.100167"
-
+# Custom links:
+links:
+- name: Project
+  url: https://github.com/SCAlabUnical/WABC
+  icon_pack: fab
+  icon: github
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
