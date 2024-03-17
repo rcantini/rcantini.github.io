@@ -87,7 +87,6 @@ Programming Big Data Applications
 		</div>
 	<div class="btn-links">
 		<button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal" data-filename="/publication/programming-big-data-book/cite.bib">Cite</button>
-		<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://doi.org/10.1142/q0444" target="_blank" rel="noopener">DOI</a>
 		<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://bigdataprogramming.github.io/" target="_blank" rel="noopener"><i class="fa fa-globe mr-1"></i>Website</a>
 		<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook" target="_blank" rel="noopener"><i class="fa fa-shopping-cart mr-1"></i>Buy</a>
 		<a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="https://www.amazon.it/Programming-Applications-Scalable-Tools-Frameworks/dp/1800615043" target="_blank" rel="noopener"><i class="fab fa-amazon mr-1"></i>Amazon</a></div>	
