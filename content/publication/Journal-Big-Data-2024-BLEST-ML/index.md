@@ -8,8 +8,8 @@ abstract: "The extensive use of HPC infrastructures and frameworks for running d
 featured: true
 publication: "*Journal of Big Data*, vol.11, no. 1, pp. 1-23, 2024"
 # url_pdf: "..."
-doi: "https://doi.org/10.1186/s40537-023-00862-w"
 url_project: "https://github.com/rcantini/BLEST-ML"
+doi: "https://doi.org/10.1186/s40537-023-00862-w"
 
 
 # Featured image
