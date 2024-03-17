@@ -73,11 +73,13 @@ subtitle = ""
                 <div class="col-lg-8">
                     <h3>Programming Big Data Applications</h3>
                     <h5><b>Scalable Tools and Frameworks for Your Needs</b></h5>
-		    <a href="https://doi.org/10.1142/q0444" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm">Link</a></li>
-                    <p class="fst-italic"> By (author): Domenico Talia, Paolo Trunfio, Fabrizio Marozzo,
-                        Loris Belcastro, Riccardo Cantini, and Alessio Orsino</p>
-                    <p></p>
-                    <p><small>University of Calabria, Italy</small>
-                    </p>
+                    <div class="stream-meta article-metadata"><div>
+<span>Domenico Talia</span>, <span>Paolo Trunfio</span>,
+<span>Fabrizio Marozzo</span>, <span>Loris Belcastro</span>,
+<span>Riccardo Cantini</span>, <span>Alessio Orsino</span>
+</span>
+
+</div></div>
+<a href="https://doi.org/10.1142/q0444" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm">Link</a></li>
                 </div>
             </div>
