@@ -68,7 +68,7 @@ subtitle = ""
 +++
 <div class="row">
                 <div class="col-lg-4 aos-init aos-animate" data-aos="fade-right">
-                    <img src="static/img/book-cover.png" class="img-fluid" alt="">
+                    <img src="img/book-cover.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
                     <h3>Programming Big Data Applications</h3>
