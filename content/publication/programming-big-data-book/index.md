@@ -13,7 +13,7 @@ doi: "10.1142/q0444"
 links:
 - name: Buy
   url: https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook
-  icon_pack: fab
+  icon_pack: fa
   icon: fa-shopping-cart
 
 
