@@ -1,5 +1,5 @@
 ---
-title: "Block size estimation for data partitioning in HPC applications using machine learning techniques"
+title: "Detecting mental disorder on social media: a ChatGPT-augmented explainable approach"
 date: 2024-03-17
 publishDate: 2024-01-30
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Domenico Talia", "Paolo Trunfio"]
@@ -14,7 +14,7 @@ for interpretable depression detection, our methodology can contribute to the de
 socially responsible digital platforms, fostering early intervention and support for mental health 
 challenges under the guidance of qualified healthcare professionals."
 featured: true
-publication: "*	arXiv:2401.17477*, 2024"
+publication: "*arXiv:2401.17477*, 2024"
 # url_pdf: "..."
 doi: "https://doi.org/10.48550/arXiv.2401.17477"
 # Custom links:
