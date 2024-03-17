@@ -9,6 +9,17 @@ featured: true
 publication: "*Big Data and Cognitive Computing*, vol.6, no. 1, 2022"
 # url_pdf: "files/papers/journals/BDCC-bots.pdf"
 doi: "10.3390/bdcc6010003"
+# Custom links:
+links:
+- name: Selected as Cover Story
+  url: https://www.mdpi.com/2504-2289/6/1
+  icon_pack: fa
+  icon: award
+- name: Editor's choice
+  url: https://www2.unical.it/portale/portaltemplates/view/view.cfm?103993
+  icon_pack: fa
+  icon: award
+
 
 
 # Featured image
