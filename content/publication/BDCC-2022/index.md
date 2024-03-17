@@ -11,7 +11,7 @@ publication: "*Big Data and Cognitive Computing*, vol.6, no. 1, 2022"
 doi: "10.3390/bdcc6010003"
 # Custom links:
 links:
-- name: Selected as Cover Story
+- name: Cover Story
   url: https://www.mdpi.com/2504-2289/6/1
   icon_pack: fa
   icon: award
