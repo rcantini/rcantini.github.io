@@ -25,6 +25,7 @@ featured: true
 publication: "*EAI International Conference on Pervasive knowledge and collective intelligence on Web and Social Media*, November 2022. Springer Nature, 2023, pp. 41–56"
 # url_pdf: "files/papers/confs/EAI_PerSoM22_TDT.pdf"
 doi: "10.1007/978-3-031-31469-8_3"
+url_slides: "files/slides/RTSI2021.pdf"
 
 
 # Featured image
