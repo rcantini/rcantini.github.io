@@ -11,10 +11,10 @@ doi: "10.1142/q0444"
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
 links:
-- name: Follow
-  url: https://twitter.com
+- name: Buy
+  url: https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook
   icon_pack: fab
-  icon: twitter
+  icon: fa-shopping-cart
 
 
 # Featured image
