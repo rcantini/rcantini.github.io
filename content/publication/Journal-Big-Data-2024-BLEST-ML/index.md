@@ -23,5 +23,5 @@ image:
   preview_only: false
 
 
-tags: ["Machine learning", "Big Data analysis", "Data partitioning", High performance computing]
+tags: ["Machine learning", "Big Data analysis", "Data partitioning", "High performance computing"]
 ---
