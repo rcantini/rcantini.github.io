@@ -8,8 +8,8 @@ abstract: "In the age of the Internet of Things and social media platforms, huge
 featured: true
 publication: "*World Scientific*, 2023, ISBN: 978-1-80061-504-5"
 doi: "10.1142/q0444"
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
+url_project: https://bigdataprogramming.github.io/
+# Custom links:
 links:
 - name: Buy
   url: https://www.worldscientific.com/worldscibooks/10.1142/q0444#t=aboutBook
