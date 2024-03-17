@@ -16,7 +16,7 @@ links:
   icon_pack: fa
   icon: award
 - name: Editor's choice
-  url: https://www2.unical.it/portale/portaltemplates/view/view.cfm?103993
+  url: https://www.mdpi.com/journal/BDCC/editors_choice?listby=date&page_no=3&page_count=50
   icon_pack: fa
   icon: award
 
