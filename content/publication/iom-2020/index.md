@@ -15,10 +15,6 @@ links:
   url: https://github.com/rcantini/IOM-NN
   icon_pack: fab
   icon: github
-- name: News
-  url: https://www2.unical.it/portale/portaltemplates/view/view.cfm?103993
-  icon_pack: fa
-  icon: newspaper
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 

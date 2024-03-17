@@ -22,7 +22,7 @@ links:
   icon_pack: fab
   icon: github
 - name: News
-  url: https://www2.unical.it/portale/portaltemplates/view/view.cfm?103993
+  url: https://scalab.dimes.unical.it/usa-2020/
   icon_pack: fa
   icon: newspaper
 
