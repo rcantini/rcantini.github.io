@@ -67,7 +67,7 @@ The research activities also focus on sustainable artificial intelligence, with 
 			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
 	</div>
 	<div class="media-body">
-		<h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
+		<h3 class="article-title mb-0 mt-0"><a href="https://fondazione-fair.it/" target="_blank">
 FAIR: Future Artificial Intelligence Research</a></h3>
 		<div class="stream-meta article-metadata">
 			<div>
@@ -81,7 +81,7 @@ FAIR: Future Artificial Intelligence Research</a></h3>
 			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
 	</div>
 	<div class="media-body">
-		<h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
+		<h3 class="article-title mb-0 mt-0"><a href="https://eflows4hpc.eu/" target="_blank">
 eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</a></h3>
 		<div class="stream-meta article-metadata">
 			<div>
@@ -95,21 +95,7 @@ eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC eco
 			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
 	</div>
 	<div class="media-body">
-		<h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
-ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h3>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European Union’s Horizon 2020 Research and Innovation Program</span>
-			</div>
-		</div>
-</div>
-<div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px;">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
-	</div>
-	<div class="media-body">
-		<h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
+		<h3 class="article-title mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
 ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h3>
 		<div class="stream-meta article-metadata">
 			<div>
