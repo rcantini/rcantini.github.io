@@ -69,7 +69,7 @@ subtitle = ""
 <div class="media stream-item">
 	<div class="mr-3" style="margin-top:5px;">
 		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
+			<img src="img/book-cover.png" alt="book-cover"></a>
 	</div>
 	<div class="media-body">
 		<h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
