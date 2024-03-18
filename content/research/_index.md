@@ -59,7 +59,7 @@ Riccardo Cantini's research activities are centered around Deep Learning and Big
 In this context, cutting-edge machine learning and deep learning models and techniques are employed, with a particular emphasis on the use of Large Language Models, along with frameworks for parallel and distributed computing. Key applications include identifying discussion topics in online conversations, estimating the political polarization of social media users, and exploring the connection between user polarization and emotions expressed in posted content. Another aspect addressed is the dynamism of online conversations and the impact of false information on user discussions. To this end, topic-oriented techniques for false information detection in social content are developed, as well as time-adaptive models capable of effectively handling dynamically evolving scenarios.
 The research activities also focus on sustainable artificial intelligence, with a focus on ensuring an efficient, fair, and trustworthy use of Large Language Models. In this context, techniques for efficient fine-tuning, energy-aware models, bias elicitation techniques, and advanced retrieval-augmented generation systems are currently explored, as well as the use of curriculum learning and knowledge distillation for learning effectively from limited amounts of data and scarce computing resources.
 <br>
-<div style="text-align: justify">
+<div style="text-align: justify" class="universal-wrapper">
 <h3><b>Participation in research projects</b></h3>
 <div class="media stream-item">
 	<div class="mr-3" style="margin-top:5px;">
@@ -74,6 +74,7 @@ FAIR: Future Artificial Intelligence Research</a></h3>
 				<span>Funded by the European Union's NextGenerationEU program</span>
 			</div>
 		</div>
+	</div>
 </div>
 <div class="media stream-item">
 	<div class="mr-3" style="margin-top:5px;">
@@ -88,6 +89,7 @@ eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC eco
 				<span>Funded by the European High-Performance Computing Joint Undertaking</span>
 			</div>
 		</div>
+	</div>
 </div>
 <div class="media stream-item">
 	<div class="mr-3" style="margin-top:5px;">
@@ -102,4 +104,5 @@ ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h3>
 				<span>Funded by the European Union’s Horizon 2020 Research and Innovation Program</span>
 			</div>
 		</div>
+	</div>
 </div>
