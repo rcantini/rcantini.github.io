@@ -66,7 +66,7 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-<div class="media stream-item" style="margin-bottom: 5px;">
+<div class="media stream-item" style="margin-bottom: 10px;">
 	<div class="mr-3">
 		<a href="https://doi.org/10.1142/q0444" target="_blank">
 			<img src="img/book-cover.png" alt="Block size estimation for data partitioning in HPC applications using machine learning techniques"></a>
