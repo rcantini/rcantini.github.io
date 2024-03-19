@@ -92,9 +92,9 @@ eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC eco
 	</div>
 </div>
 <div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px; margin-bottom:0px;">
+	<div class="mr-3" style="margin-top:5px;">
 		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px;"></a>
+			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px; margin-bottom:0px;"></a>
 	</div>
 	<div class="media-body">
 		<h5 class="mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
