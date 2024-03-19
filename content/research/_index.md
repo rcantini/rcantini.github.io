@@ -92,7 +92,7 @@ eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC eco
 	</div>
 </div>
 <div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px;">
+	<div class="mr-3" style="margin-top:5px; margin-bottom:0px;">
 		<a href="https://doi.org/10.1142/q0444" target="_blank">
 			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px;"></a>
 	</div>
