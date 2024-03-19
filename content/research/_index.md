@@ -82,7 +82,7 @@ FAIR: Future Artificial Intelligence Research</a></h5>
 			<img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo" style="margin-top: 0px;"></a>
 	</div>
 	<div class="media-body">
-		<h5 class="article-title mb-0 mt-0"><a href="https://eflows4hpc.eu/" target="_blank">
+		<h5 class="mb-0 mt-0"><a href="https://eflows4hpc.eu/" target="_blank">
 eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</a></h5>
 		<div class="stream-meta article-metadata">
 			<div>
@@ -97,7 +97,7 @@ eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC eco
 			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px;"></a>
 	</div>
 	<div class="media-body">
-		<h5 class="article-title mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
+		<h5 class="mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
 ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h5>
 		<div class="stream-meta article-metadata">
 			<div>
