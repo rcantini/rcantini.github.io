@@ -67,7 +67,7 @@ The research activities also focus on sustainable artificial intelligence, with 
 			<img src="logos/FAIR_logo.png" alt="FAIR_LOGO" style="margin-top: 0px;"></a>
 	</div>
 	<div class="media-body">
-		<h5 class="article-title mb-0 mt-0"><a href="https://fondazione-fair.it/" target="_blank">
+		<h5 class="mb-0 mt-0"><a href="https://fondazione-fair.it/" target="_blank">
 FAIR: Future Artificial Intelligence Research</a></h5>
 		<div class="stream-meta article-metadata">
 			<div>
