@@ -163,7 +163,7 @@ Just to make it more fun, giving you some more concrete examples of the system b
 
 It's pretty cool! The model correctly classified all of the selected audio files with a high level of confidence :clap::clap:
 
-## Visualizing emotion-based attention
+## Visualizing attention :eyes:
 
 Lastly, an interesting thing we can do is to take a close look at the **attention weights** \\(\alpha\\), in order to analyze how the system paid attention to the provided audio files while recognizing the different emotions. 
 This degree of interpretability is an awesome property of most attention-based models.
