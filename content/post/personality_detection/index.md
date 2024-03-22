@@ -225,8 +225,9 @@ def prepare_bert_input(sentences, seq_len, bert_name):
     tokenizer = BertTokenizer.from_pretrained(bert_name)
     encodings = tokenizer(sentences.tolist(), truncation=True, padding='max_length',
                                 max_length=seq_len)
-    input = [np.array(encodings["input_ids"]), np.array(encodings["token_type_ids"]),
-               np.array(encodings["attention_mask"])]
+    input = [np.array(encodings["input_ids"]),
+             np.array(encodings["attention_mask"]),
+             np.array(encodings["token_type_ids"])]
     return input
 ```
 
@@ -257,9 +258,9 @@ layer compute an independent probability for each personality axis.
 
 ``` python
 input_ids = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='input_ids')
-input_type = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='token_type_ids')
 input_mask = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='attention_mask')
-inputs = [input_ids, input_type, input_mask]
+input_type = layers.Input(shape=(MAX_SEQ_LEN,), dtype=tf.int32, name='token_type_ids')
+inputs = [input_ids, input_mask, input_type]
 bert = TFBertModel.from_pretrained(BERT_NAME)
 bert_outputs = bert(inputs)
 last_hidden_states = bert_outputs.last_hidden_state
@@ -277,13 +278,13 @@ model.summary()
     ==================================================================================================
     input_ids (InputLayer)          [(None, 128)]        0                                            
     __________________________________________________________________________________________________
-    token_type_ids (InputLayer)     [(None, 128)]        0                                            
-    __________________________________________________________________________________________________
     attention_mask (InputLayer)     [(None, 128)]        0                                            
     __________________________________________________________________________________________________
+    token_type_ids (InputLayer)     [(None, 128)]        0                                            
+    __________________________________________________________________________________________________
     tf_bert_model (TFBertModel)     TFBaseModelOutputWit 109482240   input_ids[0][0]                  
-                                                                     token_type_ids[0][0]             
                                                                      attention_mask[0][0]             
+                                                                     token_type_ids[0][0]             
     __________________________________________________________________________________________________
     global_average_pooling1d (Globa (None, 768)          0           tf_bert_model[0][0]              
     __________________________________________________________________________________________________
