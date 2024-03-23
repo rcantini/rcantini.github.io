@@ -1,7 +1,7 @@
 ---
 title: "Let's play with MNIST! Generate digits with Convolutional Variational Autoencoders"
 subtitle: 'How to develop a web application for drawing numbers that leverages a CNN-based variational autoencoder trained on the MNIST dataset of handwritten digits.'
-summary: "This post is dedicated to the development of a Flask web application capable of drawing digits through the use of a generative model. This model is obtained by training a convolutional variational autoencoder on the MNIST dataset of handwritten digits using Keras+Tensorflow."
+summary: "This post shows how to build an unsupervised deep learning model for digit generation, which leverages a convolutional variational autoencoder trained on the MNIST dataset of handwritten digits using Keras+Tensorflow."
 date: 2021-08-15T00:00:00Z
 draft: false
 math: true
