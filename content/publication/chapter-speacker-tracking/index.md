@@ -20,7 +20,7 @@ Our findings reveal that edge-cloud integration improves application performance
 terms of network usage and latency, compared to a centralized solution that solely
 relies on cloud computing."
 featured: true
-publication: "*Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications*, 2023, pp. 155-166"
+publication: "*Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications*, pp. 155-166, 2023"
 # url_pdf: "files/papers/..."
 doi: "10.1007/978-3-031-42194-5_9"
 
