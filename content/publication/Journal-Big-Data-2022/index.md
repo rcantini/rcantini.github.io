@@ -1,7 +1,7 @@
 ---
 title: "Programming Big Data Analysis: Principles and Solutions"
-date: 2021-12-23
-publishDate: 2021-12-23
+date: 2022-06-01
+publishDate: 2022-06-01
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Alessio Orsino", "Domenico Talia", "Paolo Trunfio"]
 publication_types: ["2"]
 abstract: "In the age of the Internet of Things and social media platforms, huge amounts of
