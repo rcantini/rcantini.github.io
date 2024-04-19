@@ -20,7 +20,7 @@ compared to a conventional cloud-based solution. Our findings show how the joint
 use of the compute continuum and deep learning can enable the development of a
 green-aware solution that fosters sustainable and efficient agricultural practices."
 featured: true
-publication: "*Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications*, 2023, pp. 141-153"
+publication: "*Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications*, pp. 141-153, 2023"
 # url_pdf: "files/papers/..."
 doi: "10.1007/978-3-031-42194-5_8"
 
