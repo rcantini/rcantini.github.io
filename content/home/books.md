@@ -71,7 +71,7 @@ subtitle = ""
 		<a href="https://doi.org/10.1142/q0444" target="_blank">
 			<img src="img/book-cover.png" alt="book-cover"></a>
 	</div>
-	<div class="media-body">
+	<div class="media-body" style="margin-top:2px">
 		<h3 class="article-title mb-0 mt-0"><a href="https://doi.org/10.1142/q0444" target="_blank">
 Programming Big Data Applications
 		<h5><b>Scalable Tools and Frameworks for Your Needs</b></h5></a></h3>
