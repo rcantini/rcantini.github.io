@@ -86,7 +86,7 @@ Riccardo Cantini is a researcher (RTDA) at the Department of Computer Science, M
       <li> <a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></li>
   		<li> <a href="https://scholar.google.com/citations?hl=it&amp;user=JQdSJdgAAAAJ">Google Scholar</a></li>
       <li> <a href="https://www.webofscience.com/wos/author/record/GOE-4893-2022">Web of Science</a></li>
-  		<li> <a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></div></li>
+  		<li> <a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></li>
       <li> <a href="https://dblp.org/pid/261/8279.html">DBLP</a></li>
 	</ul>
 	</div>
