@@ -28,12 +28,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:riccardo.cantini@unical.it'
-- icon: google-scholar
-  icon_pack: ai
-  link: 'https://scholar.google.com/citations?user=JQdSJdgAAAAJ&hl=it'
-- icon: researchgate
-  icon_pack: ai
-  link: 'https://www.researchgate.net/profile/Riccardo_Cantini'
+- icon: linkedin
+  icon_pack: fab
+  link: 'https://www.linkedin.com/in/riccardo-cantini-52b84a285'
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0003-3053-6132
