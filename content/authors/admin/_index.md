@@ -31,6 +31,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: 'https://www.linkedin.com/in/riccardo-cantini-52b84a285'
+- icon: google-scholar
+  icon_pack: ai
+  link: 'https://scholar.google.com/citations?user=JQdSJdgAAAAJ&hl=it'
 - icon: orcid
   icon_pack: ai
   link: https://orcid.org/0000-0003-3053-6132
@@ -80,10 +83,11 @@ Riccardo Cantini is a researcher (RTDA) at the Department of Computer Science, M
 	<div class="col-md-5">
 	<h3>Links</h3>
 	<ul>
+      <li> <a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></li>
   		<li> <a href="https://scholar.google.com/citations?hl=it&amp;user=JQdSJdgAAAAJ">Google Scholar</a></li>
-  		<li> <a href="https://www.scopus.com/authid/detail.uri?authorId=57215871062">Scopus</a></li>
-  		<li> <a href="https://dblp.org/pid/261/8279.html">DBLP</a></li>
+      <li> <a href="https://www.webofscience.com/wos/author/record/GOE-4893-2022">Web of Science</a></li>
   		<li> <a href="https://www.researchgate.net/profile/Riccardo-Cantini">ResarchGate</a></div></li>
+      <li> <a href="https://dblp.org/pid/261/8279.html">DBLP</a></li>
 	</ul>
 	</div>
 </div>
