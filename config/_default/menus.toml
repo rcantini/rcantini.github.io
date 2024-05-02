@@ -59,6 +59,6 @@
   weight = 110
 
 [[main]]
-  name = "Contact"
+  name = "CV"
   url = "files/CV_academic_en.pdf"
   weight = 120
