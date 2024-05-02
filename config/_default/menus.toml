@@ -57,3 +57,8 @@
   name = "Contact"
   url = "#contact"
   weight = 110
+
+[[main]]
+  name = "Contact"
+  url = "files/CV_academic_en.pdf"
+  weight = 110
