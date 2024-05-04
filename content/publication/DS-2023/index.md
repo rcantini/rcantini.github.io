@@ -25,7 +25,7 @@ importance of leveraging social media platforms as valuable sources of informati
 but at the same time how essential it is to identify and mitigate the impact of false
 information in online communities."
 featured: true
-publication: "*26th International Conference on Discovery Science (DS2023)*, Lecture Notes in Computer Science, vol 14276, October 2023"
+publication: "*26th International Conference on Discovery Science (DS2023)*, Lecture Notes in Computer Science, vol 14276, October 2023, pp. 126-140"
 doi: "10.1007/978-3-031-45275-8_9"
 url_slides: "files/slides/DS23_slides.pdf"
 
