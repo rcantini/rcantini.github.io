@@ -9,7 +9,7 @@ Experimental results show that our XAI-driven distillation method allows the tea
 featured: true
 publication: "*Journal of Big Data*, 2024, to appear"
 # url_pdf: "..."
-# doi: "https://doi.org/10.1186/s40537-023-00862-w"
+doi: "https://doi.org/10.1186/s40537-024-00928-3"
 # Custom links:
 # links:
 # - name: Project
