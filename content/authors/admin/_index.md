@@ -51,7 +51,7 @@ email: ""
 ---
 <div style="text-align: justify">
 Riccardo Cantini is an assistant professor (RTDA) at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019, and obtained his European Ph.D. in Information and Communication Technologies in 2023. In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>), and between 2021 and 2022 he worked as visiting researcher at the Barcelona Supercomputing Center (<a href="https://www.bsc.es/">BSC-CNS</a>). Since 2019 he has been contract professor at the DIMES Department. 
-<br>His research interests include <i>social media and Big Data analysis</i>, <i>opinion mining</i>, <i>Natural Language Processing and Large Language Models</i>, and <i>green and sustainable AI</i>.
+<br>His research interests include <i>social media and Big Data analysis</i>, <i>opinion mining</i>, <i>Natural Language Processing and Large Language Models</i>, and <i>sustainable AI</i>.
 </div>
 <div class="row">
 	<div class="col-md-7">
