@@ -57,7 +57,7 @@ preview_only = false
 <h3><b>Main Topics</b></h3>
 Riccardo Cantini's research focuses on Natural Language Processing and Big Data analysis,  with a focus on data generated from major social media platforms. His work addresses several challenges, including reliability and dynamicity, to provide an effective data-driven approach for an in-depth understanding of socio-political phenomena. In this context, cutting-edge machine and deep learning models are leveraged, with a particular emphasis on the use of Large Language Models, alongside frameworks for parallel and distributed computing.
 
-The research activities also focus on sustainable artificial intelligence, with a focus on ensuring an efficient, fair, and trustworthy use of Large Language Models. In this context, techniques for efficient fine-tuning, energy-aware models, bias elicitation techniques, and advanced retrieval-augmented generation systems are currently being explored, as well as the use of curriculum learning, meta-learning, and knowledge distillation, to learn effectively from limited amounts of data and scarce computing resources.
+The research activities also focus on sustainable Artificial Intelligence, with a focus on ensuring an efficient, fair, and trustworthy use of Large Language Models. In this context, techniques for efficient fine-tuning, energy-aware models, bias elicitation techniques, and advanced retrieval-augmented generation systems are currently being explored, as well as the use of curriculum learning, meta-learning, and knowledge distillation, to learn effectively from limited amounts of data and scarce computing resources.
 <br><br>
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
