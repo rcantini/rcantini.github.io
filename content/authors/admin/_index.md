@@ -10,7 +10,7 @@ authors:
 superuser: true
 
 # Role/position
-role: Researcher (RTDA)
+role: Assistant Professor (RTDA)
 
 # Organizations/Affiliations
 organizations:
