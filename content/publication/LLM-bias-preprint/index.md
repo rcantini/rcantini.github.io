@@ -24,5 +24,5 @@ image:
   focal_point: ""
   preview_only: false
 
-tags: ["Large Language Models", "Bias", "Stereotype", "Jailbreak", "Adversarial Robustness", Sustainable Artificial Intelligence"]
+tags: ["Large Language Models", "Bias", "Fairness", "Stereotype", "Jailbreak", "Adversarial Robustness", "Sustainable AI", "Ethical AI"]
 ---
