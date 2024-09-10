@@ -2,7 +2,7 @@
 title: "Are Large Language Models Really Bias-Free? Jailbreak Prompts for Assessing Adversarial Robustness to Bias Elicitation"
 date: 2024-07-11
 publishDate: 2024-07-11
-authors: ["Riccardo Cantini", "Alessio Orsino", "Domenico Talia"]
+authors: ["Riccardo Cantini", "Giada Cosenza", "Alessio Orsino", "Domenico Talia"]
 publication_types: ["3"]
 abstract: " Large Language Models (LLMs) have revolutionized artificial intelligence, 
 demonstrating remarkable computational power and linguistic capabilities. 
