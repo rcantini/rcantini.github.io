@@ -6,7 +6,6 @@ date: 2020-12-29T00:00:00Z
 draft: false
 math: true
 disable_comments: true
-markup: kramdown
 lastmod: 2020-12-29T00:00:00Z
 authors:
 - admin
