@@ -10,7 +10,7 @@ subtitle = ""
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "research"
+  page_type = "post"
   
   
   # Choose how many pages you would like to offset by
