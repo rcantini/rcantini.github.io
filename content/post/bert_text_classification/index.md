@@ -6,7 +6,6 @@ date: 2021-03-03T00:00:00Z
 draft: false
 math: true
 disable_comments: true
-markup: kramdown
 lastmod: 2021-03-03T00:00:00Z
 authors:
 - admin

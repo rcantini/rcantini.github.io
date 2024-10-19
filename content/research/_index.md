@@ -1,16 +1,11 @@
 +++
-widget = "research"  # The name of the widget that you created.
-headless = true  # This file represents a page section.
-#active = true  # Activate this widget? true/false
-weight = 25 # Order that this section will appear in.
-
 title = "Research"
 subtitle = ""
 
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "research"
+  page_type = "post"
   
   
   # Choose how many pages you would like to offset by

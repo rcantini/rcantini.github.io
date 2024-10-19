@@ -2,7 +2,7 @@
 title: "Are Large Language Models Really Bias-Free? Jailbreak Prompts for Assessing Adversarial Robustness to Bias Elicitation"
 date: 2024-07-11
 publishDate: 2024-07-11
-authors: ["Riccardo Cantini", "Alessio Orsino", "Domenico Talia"]
+authors: ["Riccardo Cantini", "Giada Cosenza", "Alessio Orsino", "Domenico Talia"]
 publication_types: ["3"]
 abstract: " Large Language Models (LLMs) have revolutionized artificial intelligence, 
 demonstrating remarkable computational power and linguistic capabilities. 
@@ -17,6 +17,12 @@ featured: true
 publication: "*arXiv:2407.08441*, 2024"
 # url_pdf: "..."
 doi: "https://doi.org/10.48550/arXiv.2407.08441"
+# Custom links:
+links:
+- name: Project
+  url: https://github.com/rcantini/LLM-Bias-Jailbreak
+  icon_pack: fab
+  icon: github
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
