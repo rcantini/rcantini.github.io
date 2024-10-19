@@ -23,7 +23,7 @@ I'll describe how to setup and train a CNN-based variational autoencoder using K
 
 ## Classical autoencoder
 An **autoencoder** is a model that allows to efficiently encode a set of data of interest in an unsupervised manner.
-The purpose of this system is to learn a representation of a given input, called encoding, in order to reduce its dimensionality, often high, as in a sort of compression.
+The purpose of this system is to learn a representation of a given input, called *encoding* or *embedding*, in order to reduce its dimensionality, often high, as in a sort of compression.
 In particular, an autoencoder consists of a pair of interconnected neural networks, known as **encoder** and **decoder**, which are often *multilevel perceptrons* (MLPs) or *convolutional neural networks* (CNNs).
 The encoder receives an input instance and derives a dense representation in a space with a smaller dimensionality, called *latent space*;
 the decoder, afterwards, is able to reconstruct the original input starting from its compressed version.
