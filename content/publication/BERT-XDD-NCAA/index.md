@@ -1,7 +1,7 @@
 ---
 title: "Detecting mental disorder on social media: a ChatGPT-augmented explainable approach"
-date: 2024-09-24
-publishDate: 2024-09-24
+date: 2024-09-30
+publishDate: 2024-09-30
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Domenico Talia", "Paolo Trunfio"]
 publication_types: ["2"]
 abstract: "In the digital era, the prevalence of depressive symptoms expressed on social media has raised serious concerns, necessitating advanced methodologies for timely detection.
