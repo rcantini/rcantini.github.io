@@ -14,7 +14,7 @@ for interpretable depression detection, our methodology can contribute to the de
 socially responsible digital platforms, fostering early intervention and support for mental health 
 challenges under the guidance of qualified healthcare professionals."
 featured: true
-publication: "*Neural Computing and Applications*, 2024 (to appear)"
+publication: "*arXiv:2401.17477*, 2024"
 # url_pdf: "..."
 doi: "https://doi.org/10.48550/arXiv.2401.17477"
 # Custom links:
