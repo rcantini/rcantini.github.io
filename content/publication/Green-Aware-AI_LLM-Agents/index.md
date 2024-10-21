@@ -16,8 +16,8 @@ machinery is highly challenging, making it difficult to develop and assess the e
 models. Additionally, classical methods for anomaly generation, such as stochastic and adversarial approaches,
 may be difficult to apply given the intricate patterns and time dependency of these data. To address this gap, our
 work leverages Large Language Models (LLMs) and agentic workflows to generate realistic anomaly scenarios
-from agricultural data. Using a rule-based approach that combines prompt engineering techniques with a multi-
-agent system, we create synthetic anomalies that can later be used to evaluate anomaly detection models. These
+from agricultural data. Using a rule-based approach that combines prompt engineering techniques with a multi-agent
+system, we create synthetic anomalies that can later be used to evaluate anomaly detection models. These
 models would then enable the timely identification of potential machinery failures, reducing maintenance costs,
 minimizing downtime, and significantly lowering the environmental impact by preventing inefficiencies such as
 increased fuel consumption from faulty equipment, reducing the need for replacement parts, and conserving
