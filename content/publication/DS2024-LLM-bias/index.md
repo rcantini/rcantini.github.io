@@ -4,7 +4,7 @@ date: 2024-08-12
 publishDate: 2024-08-12
 authors: ["Riccardo Cantini", "Giada Cosenza", "Alessio Orsino", "Domenico Talia"]
 publication_types: ["1"]
-abstract: " Large Language Models (LLMs) have revolutionized artificial intelligence, 
+abstract: "Large Language Models (LLMs) have revolutionized artificial intelligence, 
 demonstrating remarkable computational power and linguistic capabilities. 
 However, these models are inherently prone to various biases stemming from their training data. 
 These include selection, linguistic, and confirmation biases, along with common stereotypes 
