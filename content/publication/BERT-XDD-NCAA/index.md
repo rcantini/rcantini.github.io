@@ -1,9 +1,9 @@
 ---
 title: "Detecting mental disorder on social media: a ChatGPT-augmented explainable approach"
-date: 2024-03-17
-publishDate: 2024-01-30
+date: 2024-09-24
+publishDate: 2024-09-24
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Domenico Talia", "Paolo Trunfio"]
-publication_types: ["3"]
+publication_types: ["2"]
 abstract: "In the digital era, the prevalence of depressive symptoms expressed on social media has raised serious concerns, necessitating advanced methodologies for timely detection.
 This paper addresses the challenge of interpretable depression detection by proposing a novel methodology that effectively combines Large Language Models (LLMs) with eXplainable Artificial Intelligence (XAI) and conversational agents like ChatGPT.
 In our methodology, explanations are achieved by integrating BERTweet, a Twitter-specific variant of BERT, 
@@ -14,9 +14,9 @@ for interpretable depression detection, our methodology can contribute to the de
 socially responsible digital platforms, fostering early intervention and support for mental health 
 challenges under the guidance of qualified healthcare professionals."
 featured: true
-publication: "*Neural Computing and Applications*, 2024 (to appear)"
+publication: "*arXiv:2401.17477*, 2024"
 # url_pdf: "..."
-doi: "https://doi.org/10.48550/arXiv.2401.17477"
+# doi: "https://doi.org/..."
 # Custom links:
 links:
 - name: Project
