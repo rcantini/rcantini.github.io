@@ -51,17 +51,14 @@ preview_only = false
 <div style="text-align: justify">
 <h3>Organization of Scientific Events</h3>
         <ul>
-            <li>Organizer and Program Chair of the <em>Green-Aware AI</em> workshop at the AIxIA 2024 <em>conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper"></i>FAIR News...</a>
-
+            <li>Organizer and Program Chair of the <em>Green-Aware AI</em> workshop at the AIxIA 2024 <em>conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe"></i> Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper"></i> FAIR News</a>
 </li></ul>
 
 <h3>Organization of Special Issues</h3>
         <ul>
             <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>. <a href="https://www.mdpi.com/journal/BDCC/special_issues/1XP11D36SD" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fas fa-link mr-1"></i>Link</a>
 </li></ul>
-            <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
-            <li>Review Editor of <em>Frontiers in High-Performance Computing</em>.</li>
-        </ul>
+
 <h3>Participation in Journal Editorial Boards</h3>
         <ul>
             <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
