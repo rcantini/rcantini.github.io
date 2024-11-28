@@ -61,26 +61,8 @@ preview_only = false
             <li><em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
             <li><em>International Conference on Learning Representations</em> (ICLR) 2024 (Core rank: A<sup>*</sup>), workshop on <em>Large Language Model Agents</em>.</li>
         </ul>
-        <h3>Reviewer Activity</h3>
-        <ul>
-            <li>International journals:
-                <em>ACM Computing Surveys</em>,
-                <em>IEEE Transactions on Neural Networks and Learning Systems</em>,
-                <em>IEEE Transactions on Cloud Computing</em>,
-                <em>IEEE Transactions on Parallel and Distributed Systems</em>,
-                <em>Future Generation Computer Systems</em>,
-                <em>Journal of Big Data</em>,
-                <em>IEEE Access</em>,
-                <em>Computer</em>, and
-                <em>Social Network Analysis and Mining</em>.
-            </li>
-            <li>International conferences:
-                <em>International Conference on Advanced Data Mining and Applications</em> (ADMA),
-                <em>International Conference on Learning Representations</em> (ICLR): 2024,
-                <em>International European Conference on Parallel and Distributed Computing</em> (EuroPar),
-                <em>IEEE International Conference on Machine Learning and Applications</em> (ICMLA), and
-                <em>IEEE International Conference on Big Data</em> (IEEE BigData).
-            </li>
-        </ul>
-</div>
+
+----
+
+I has also served as <strong>reviewer</strong> for over several internation journal and conferences, including *IEEE Transactions on Neural Networks and Learning Systems*, *ACM Computing Surveys*, *IEEE Transactions on Parallel and Distributed Systems*, *Journal of Big Data*, *Future Generation Computer Systems*, *International Conference on Learning Representations (ICLR)*, *International Conference on Advanced Data Mining and Applications (ADMA)*, and *IEEE International Conference on Big Data (IEEE BigData)*.
 
