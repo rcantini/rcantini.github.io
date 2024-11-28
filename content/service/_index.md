@@ -51,7 +51,7 @@ preview_only = false
 <div style="text-align: justify">
 <h3>Organization of Scientific Events</h3>
         <ul>
-            <li>Organizer and Program Chair of the <em>Green-Aware AI</em> workshop at the AIxIA 2024 <em>conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a>foundation. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa globe"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa newspaper"></i>Website</a>
+            <li>Organizer and Program Chair of the <em>Green-Aware AI</em> workshop at the AIxIA 2024 <em>conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa-globe"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa-newspaper"></i>FAIR News</a>
 
 </li></ul>
 
