@@ -7,12 +7,12 @@ summary: 1st Workshop on Green-Aware Artificial Intelligence (AIxIA’24)
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2024-11-26T10:00:00Z"
+date: "2024-11-26T10:30:00Z"
 #date_end: "2024-09-24T16:00:00Z"
 all_day: false
 
 # Schedule page publish date (NOT talk date).
-publishDate: "2024-11-26T10:00:00Z"
+publishDate: "2024-11-26T10:30:00Z"
 
 authors: []
 
