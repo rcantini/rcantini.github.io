@@ -1,53 +1,6 @@
-+++
-title = "Distributed Big Social Data Analysis"
-subtitle = ""
+<div class="universal-wrapper">
+<h1>Distributed Big Social Data Analysis</h1>
 
-
-[content]
-  # Page type to display. E.g. post, talk, or publication.
-  page_type = "publication"
-  
-  
-  # Choose how many pages you would like to offset by
-  offset = 0
-
-  # Page order. Descending (desc) or ascending (asc) date.
-  order = "desc"
-
-  # Filter posts by a taxonomy term.
-  [content.filters]
-    tag = ""
-    category = ""
-    publication_type = ""
-    exclude_featured = false
-
-[design]
-  # Choose how many columns the section has. Valid values: 1 or 2.
-  columns = "1"
-
-
-[background]
-  # Background color.
-  color = "navy"
-  
-  # Background gradient.
-  gradient_start = "#4bb4e3"
-  gradient_end = "#2b94c3"
-  
-  # Background image.
-  image = "background.jpg"  # Name of image in `static/img/`.
-  image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
-
-  # Text color (true=light or false=dark).
-  text_color_light = true
-
-[image]
-placement = 1.0
-caption = "Photo by [Academic](https://sourcethemes.com/academic/)"
-focal_point = "Center"
-preview_only = false
-
-+++
 <div style="text-align: justify">
 Riccardo Cantini’s research in big social data analysis explores how detailed user information from social media can be leveraged to uncover users’ perceptions of real-world events, offering data-driven insights into socio-political phenomena. His work addresses critical issues including reliability, language barriers, and dynamicity, while also tackling the challenges related to resource-intensive computation.
 
@@ -56,4 +9,5 @@ Cantini’s research in this field is primarily centered on politically polarize
 
 <h3>Big Data Frameworks and ML-based Optimizations</h3>
 This research addresses the computational challenges posed by the high volume and velocity of big social data by focusing on the efficient execution of data-intensive applications in high-performance distributed environments. A primary contribution is a detailed evaluation of scalable tools and paradigms[5], culminating in a published book on big data programming[20]. This book serves as a practical guide for developers, aiding in the selection of optimal solutions based on application requirements and available resources. To optimize parallel and distributed applications, Cantini’s research introduces novel techniques for workflow task scheduling and data partitioning. For task scheduling, the IIWM (Intelligent In-memory Workflow Manager)[11] was proposed, balancing task parallelism and memory usage to minimize data spilling and improve application throughput. By leveraging machine learning to predict task memory needs and execution times, IIWM applies a heuristic bin-packing solution to generate effective schedules. Experiments conducted with Apache Spark demonstrate significant improvements in workflow performance compared to traditional approaches. In the area of data partitioning, a novel machine learning-based methodology was developed, named BLEST-ML (BLock size ESTimation through Machine Learning)[4]. This approach effectively estimates optimal data block sizes for hybrid partitioning, optimizing the execution of data-parallel applications on large-scale infrastructures with minimal resource and domain knowledge requirements. Evaluations using the dislib library of PyCOMPSs, conducted in diverse environments—including the MareNostrum 4 supercomputer at the Barcelona Supercomputing Center (BSC)—reveal substantial performance gains and reductions in execution time.
+</div>
 </div>
