@@ -49,6 +49,14 @@ preview_only = false
 
 +++
 <div style="text-align: left">
+Riccardo Cantini’s research spans two distinct areas: deep learning, focusing on large language models (LLMs) and sustainable artificial intelligence, and distributed big social data analysis, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+
+<h3><b>Deep Learning and Large Language Models</b></h3>
+
+<h3><b>Distributed Big Social Data Analysis</b></h3>
+</div>
+<br>
+<div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
 <div class="media stream-item" style="margin-top: 40px;">
 	<div class="mr-3">
