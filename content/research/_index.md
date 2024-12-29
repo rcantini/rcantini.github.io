@@ -49,7 +49,50 @@ preview_only = false
 
 +++
 <div style="text-align: left">
-Riccardo Cantini’s research spans two distinct areas: deep learning, focusing on large language models (LLMs) and sustainable artificial intelligence, and distributed big social data analysis, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+<h3><b>Participation in Research Projects</b></h3>
+<div class="media stream-item" style="margin-top: 40px;">
+	<div class="mr-3">
+		<a href="https://doi.org/10.1142/q0444" target="_blank">
+			<img src="logos/FAIR_logo.png" alt="FAIR_LOGO" style="margin-top: 0px;"></a>
+	</div>
+	<div class="media-body">
+		<h5 class="mb-0 mt-0"><a href="https://fondazione-fair.it/" target="_blank">
+FAIR: Future Artificial Intelligence Research</a></h5>
+		<div class="stream-meta article-metadata">
+			<div>
+				<span>Funded by the European Union's NextGenerationEU program</span>
+			</div>
+		</div>
+	</div>
 </div>
-
-
+<div class="media stream-item">
+	<div class="mr-3" style="margin-top:5px;">
+		<a href="https://doi.org/10.1142/q0444" target="_blank">
+			<img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo" style="margin-top: 0px;"></a>
+	</div>
+	<div class="media-body">
+		<h5 class="mb-0 mt-0"><a href="https://eflows4hpc.eu/" target="_blank">
+eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</a></h5>
+		<div class="stream-meta article-metadata">
+			<div>
+				<span>Funded by the European High-Performance Computing Joint Undertaking</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="media stream-item">
+	<div class="mr-3" style="margin-top:5px;">
+		<a href="https://doi.org/10.1142/q0444" target="_blank">
+			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px; margin-bottom:0px;"></a>
+	</div>
+	<div class="media-body">
+		<h5 class="mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
+ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h5>
+		<div class="stream-meta article-metadata">
+			<div>
+				<span>Funded by the European Union’s Horizon 2020 Research and Innovation Program</span>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
