@@ -1,5 +1,5 @@
 +++
-title = "Research"
+title = "Deep Learning and Large Language Models"
 subtitle = ""
 
 
@@ -49,10 +49,6 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-lll
-Riccardo Cantini’s research spans two distinct areas: deep learning, focusing on large language models (LLMs) and sustainable artificial intelligence, and distributed big social data analysis, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
-
-<h3><b>Deep Learning and Large Language Models</b></h3>
 Riccardo Cantini’s research in deep learning explores the potential of Transformer-based large language models (LLMs), such as BERT and GPT, showcasing their versatility across diverse domains. Sustainability is a central theme in this research area, emphasizing green awareness and promoting the efficient, fair, and trustworthy use of LLMs.
 
 <h3>LLM Applications</h3>
@@ -63,58 +59,4 @@ In this context, techniques for efficient fine-tuning are combined with curricul
 
 <h3><b>Distributed Big Social Data Analysis</b></h3>
 Riccardo Cantini’s research in big social data analysis explores how detailed user information from social media can be leveraged to uncover users’ perceptions of real-world events, offering data-driven insights into socio-political phenomena. His work addresses critical issues including reliability, language barriers, and dynamicity, while also tackling the challenges related to resource-intensive computation.
-
-<h3>Political Polarization in Big Social Data</h3>
-Cantini’s research in this field is primarily centered on politically polarized big social data, mainly those generated during election campaigns and referenda. A primary focus is determining the political leanings of social media users by analyzing the intricate dynamics of the multifaceted online political discourse. Key contributions include IOM-NN (Iterative Opinion Mining using Neural Networks) [12], a semi-supervised methodology that employs feed-forward neural networks to estimate the political polarization of social users during political events. This tool offers an accurate, fast, and cost-effective alternative to traditional opinion polls, also capturing sentiments on sensitive topics that users might avoid addressing openly. This methodology was further developed to analyze the relationship between user polarization and sentiment toward political candidates, modeling political support across a broad spectrum of emotions. Topic modeling enhances this process, providing a richer representation of online conversations and enabling a comprehensive workflow for analyzing polarized data[7]. Cantini’s research also addressed challenges related to the influence of social bots on legitimate users and temporal dynamics in voting predictions. Specifically a novel methodology was introduced, termed TIMBRE (Time-aware Opinion Mining via Bot Removal)[6], which estimates political polarization amidst temporal fluctuations and bot malicious activity, achieving a reliable estimate of user polarization. Furthermore, the integration of information diffusion and influence maximization with polarization analysis is explored through WABC (Weighted Artificial Bee Colony) [10], a bio-inspired algorithm designed to identify the key influencers in a politically polarized social network and uncover the primary information diffusion strategies employed by each faction during the political campaign.
-
-<h3>Big Data Frameworks and ML-based Optimizations</h3>
-This research addresses the computational challenges posed by the high volume and velocity of big social data by focusing on the efficient execution of data-intensive applications in high-performance distributed environments. A primary contribution is a detailed evaluation of scalable tools and paradigms[5], culminating in a published book on big data programming[20]. This book serves as a practical guide for developers, aiding in the selection of optimal solutions based on application requirements and available resources. To optimize parallel and distributed applications, Cantini’s research introduces novel techniques for workflow task scheduling and data partitioning. For task scheduling, the IIWM (Intelligent In-memory Workflow Manager)[11] was proposed, balancing task parallelism and memory usage to minimize data spilling and improve application throughput. By leveraging machine learning to predict task memory needs and execution times, IIWM applies a heuristic bin-packing solution to generate effective schedules. Experiments conducted with Apache Spark demonstrate significant improvements in workflow performance compared to traditional approaches. In the area of data partitioning, a novel machine learning-based methodology was developed, named BLEST-ML (BLock size ESTimation through Machine Learning)[4]. This approach effectively estimates optimal data block sizes for hybrid partitioning, optimizing the execution of data-parallel applications on large-scale infrastructures with minimal resource and domain knowledge requirements. Evaluations using the dislib library of PyCOMPSs, conducted in diverse environments—including the MareNostrum 4 supercomputer at the Barcelona Supercomputing Center (BSC)—reveal substantial performance gains and reductions in execution time.
-
-<br><br>
-<div style="text-align: left">
-<h3><b>Participation in Research Projects</b></h3>
-<div class="media stream-item" style="margin-top: 40px;">
-	<div class="mr-3">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/FAIR_logo.png" alt="FAIR_LOGO" style="margin-top: 0px;"></a>
-	</div>
-	<div class="media-body">
-		<h5 class="mb-0 mt-0"><a href="https://fondazione-fair.it/" target="_blank">
-FAIR: Future Artificial Intelligence Research</a></h5>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European Union's NextGenerationEU program</span>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px;">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo" style="margin-top: 0px;"></a>
-	</div>
-	<div class="media-body">
-		<h5 class="mb-0 mt-0"><a href="https://eflows4hpc.eu/" target="_blank">
-eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</a></h5>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European High-Performance Computing Joint Undertaking</span>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px;">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px; margin-bottom:0px;"></a>
-	</div>
-	<div class="media-body">
-		<h5 class="mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
-ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h5>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European Union’s Horizon 2020 Research and Innovation Program</span>
-			</div>
-		</div>
-	</div>
 </div>
