@@ -58,9 +58,8 @@ Riccardo Cantini’s research spans two distinct areas: deep learning, focusing 
     <li><strong><a href="distributed_big_social_data/">Distributed Big Social Data Analysis</a></strong></li>
     <p>Riccardo Cantini’s research in big social data analysis explores how detailed user information from social media can be leveraged to uncover users’ perceptions of real-world events, offering data-driven insights into socio-political phenomena. His work addresses critical issues including reliability, language barriers, and dynamicity, while also tackling the challenges related to resource-intensive computation.</p>
 </ul>
-
 </div>
-<br>
+
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
 <div class="media stream-item" style="margin-top: 40px;">
