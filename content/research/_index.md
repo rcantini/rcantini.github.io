@@ -5,7 +5,7 @@ subtitle = ""
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
-  page_type = "post"
+  page_type = "publication"
   
   
   # Choose how many pages you would like to offset by
@@ -49,6 +49,7 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
+lll
 Riccardo Cantini’s research spans two distinct areas: deep learning, focusing on large language models (LLMs) and sustainable artificial intelligence, and distributed big social data analysis, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
 
 <h3><b>Deep Learning and Large Language Models</b></h3>
