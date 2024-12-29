@@ -1,11 +1,11 @@
 +++
 title = "Deep Learning and Large Language Models"
 subtitle = ""
-hidden: true
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
+  hidden: true
   
   
   # Choose how many pages you would like to offset by
