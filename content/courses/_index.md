@@ -17,4 +17,5 @@ title: "Teaching"
 
 ----
 
-  <p>I has also served as <strong>thesis advisor</strong> for over 30 graduating students at DIMES, University of Calabria, overseeing both bachelor and master theses. The main topics of the supervised theses include social media and big data analysis, machine learning, deep learning, natural language processing, and high-performance data analytics.</p>
+  <p>I has also served as <strong>thesis advisor</strong> for over 40 graduating students at DIMES, University of Calabria, overseeing both bachelor and master theses. The main topics of the supervised theses include
+machine and deep learning, natural language processing, large language models, sustainable artificial intelligence, and big data analysis.</p>
