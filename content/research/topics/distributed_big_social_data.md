@@ -1,7 +1,9 @@
 +++
 title = "Distributed Big Social Data Analysis"
-
-
+hidden: true
+[content]
+  # Page type to display. E.g. post, talk, or publication.
+  page_type = "post"
 +++
 <div style="text-align: justify">
 Riccardo Cantini’s research in big social data analysis explores how detailed user information from social media can be leveraged to uncover users’ perceptions of real-world events, offering data-driven insights into socio-political phenomena. His work addresses critical issues including reliability, language barriers, and dynamicity, while also tackling the challenges related to resource-intensive computation.

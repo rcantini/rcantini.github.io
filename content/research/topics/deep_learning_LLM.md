@@ -1,7 +1,7 @@
 +++
 title = "Deep Learning and Large Language Models"
 subtitle = ""
-
+hidden: true
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
