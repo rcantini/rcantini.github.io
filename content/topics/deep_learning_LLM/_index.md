@@ -1,6 +1,5 @@
 +++
 title = "Deep Learning and Large Language Models"
-hidden = true
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
