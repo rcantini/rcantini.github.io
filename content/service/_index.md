@@ -68,12 +68,15 @@ preview_only = false
 <h3>Organization of Scientific Events</h3>
         <ul>
             <li>
-            Organizer of the 2nd FAIR Spoke workshop, Spoke 9 – Green-Aware AI, Rende 24-25 March 2025.
+            Organizer of the 2nd FAIR Spoke workshop, <em>Spoke 9 – Green-Aware AI</em>, Rende 24-25 March 2025.
             </li>
-            <li>Organizer of the <em>Green-Aware AI</em> workshop at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bolzano 25-28 November, 2024. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
+            <li>Organizer of the <em>1st Green-Aware AI</em> workshop at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bolzano 25-28 November, 2024. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
             </li>
         </ul>
 
-----
-
-I has also served as <strong>reviewer</strong> for over several internation journal and conferences, including *IEEE Transactions on Neural Networks and Learning Systems*, *ACM Computing Surveys*, *IEEE Transactions on Big Data*, *IEEE Transactions on Parallel and Distributed Systems*, *IEEE Transactions on Cloud Computing*, *Journal of Big Data*, *Future Generation Computer Systems*, *IEEE Access*, *Computer*, *Social Network Analysis and Mining*, *International Conference on Learning Representations (ICLR)*, *International Conference on Advanced Data Mining and Applications (ADMA)*, *IEEE International Conference on Big Data (IEEE BigData)*, *International European Conference on Parallel and Distributed Computing (EuroPar)*, *IEEE International Conference on Machine Learning and Applications (ICMLA)*, *International Conference on Discovery Science (DS)*, and *IEEE International Conference on Bioinformatics and Biomedicine*.
+<h3>Reviewer Activity</h3>
+        <ul>
+<li>International journals include: *IEEE Transactions on Neural Networks and Learning Systems*, *ACM Computing Surveys*, *IEEE Transactions on Big Data*, *IEEE Transactions on Parallel and Distributed Systems*, *IEEE Transactions on Cloud Computing*, *Journal of Big Data*, *Future Generation Computer Systems*, *IEEE Access*, *Computer*, and *Social Network Analysis and Mining*.
+</li>
+<li>International conferences include: *International Conference on Learning Representations (ICLR)*, *International Conference on Advanced Data Mining and Applications (ADMA)*, *IEEE International Conference on Big Data (IEEE BigData)*, *International European Conference on Parallel and Distributed Computing (EuroPar)*, *IEEE International Conference on Machine Learning and Applications (ICMLA)*, *International Conference on Discovery Science (DS)*, and *IEEE International Conference on Bioinformatics and Biomedicine*.
+</li>
