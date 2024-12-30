@@ -1,9 +1,10 @@
 +++
 title = "Distributed Big Social Data Analysis"
+hidden = true
+
 [content]
   # Page type to display. E.g. post, talk, or publication.
   page_type = "post"
-  hidden = true
 
 +++
 <div style="text-align: justify">
