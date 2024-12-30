@@ -1,6 +1,6 @@
 +++
 title = "Distributed Big Social Data Analysis"
-hidden = true
+draft = true
 
 [content]
   # Page type to display. E.g. post, talk, or publication.

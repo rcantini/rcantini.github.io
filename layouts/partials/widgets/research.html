@@ -1,7 +1,7 @@
 {{ $ := .root }}
 {{ $page := .page }}
 
-{{ if not $page.Params.hidden }}
+<!-- Experience widget -->
 <div class="row">
   <div class="col-12 col-lg-4 section-heading">
     <h1>{{ with $page.Title }}{{ . | markdownify }}{{ end }}</h1>
@@ -9,6 +9,5 @@
   </div>
   <div class="col-12 col-lg-8">
     {{ with $page.Content }}{{ . }}{{ end }}
-  </div>
-</div>
-{{ end }}
+  <div>
+<div>
