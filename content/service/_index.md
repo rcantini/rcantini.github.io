@@ -76,8 +76,8 @@ preview_only = false
 
 <h3>Reviewer Activity</h3>
         <ul>
-<li>International journals include: *IEEE Transactions on Neural Networks and Learning Systems*, *ACM Computing Surveys*, *IEEE Transactions on Big Data*, *IEEE Transactions on Parallel and Distributed Systems*, *IEEE Transactions on Cloud Computing*, *Journal of Big Data*, *Future Generation Computer Systems*, *IEEE Access*, *Computer*, and *Social Network Analysis and Mining*.
+<li>International journals include: <i>IEEE Transactions on Neural Networks and Learning Systems</i>, <i>ACM Computing Surveys</i>, <i>IEEE Transactions on Big Data</i>, <i>IEEE Transactions on Parallel and Distributed Systems</i>, <i>IEEE Transactions on Cloud Computing</i>, <i>Journal of Big Data</i>, <i>Future Generation Computer Systems</i>, <i>IEEE Access</i>, <i>Computer</i>, and <i>Social Network Analysis and Mining</i>.
 </li>
-<li>International conferences include: *International Conference on Learning Representations (ICLR)*, *International Conference on Advanced Data Mining and Applications (ADMA)*, *IEEE International Conference on Big Data (IEEE BigData)*, *International European Conference on Parallel and Distributed Computing (EuroPar)*, *IEEE International Conference on Machine Learning and Applications (ICMLA)*, *International Conference on Discovery Science (DS)*, and *IEEE International Conference on Bioinformatics and Biomedicine*.
+<li>International conferences include: <i>International Conference on Learning Representations (ICLR)</i>, <i>International Conference on Advanced Data Mining and Applications (ADMA)</i>, <i>IEEE International Conference on Big Data (IEEE BigData)</i>, <i>International European Conference on Parallel and Distributed Computing (EuroPar)</i>, <i>IEEE International Conference on Machine Learning and Applications (ICMLA)</i>, <i>International Conference on Discovery Science (DS)</i>, and <i>IEEE International Conference on Bioinformatics and Biomedicine</i>.
 </li>
 </ul>
