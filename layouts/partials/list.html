@@ -1,0 +1,3 @@
+{{ range where .Pages "Params.hidden" "!=" true }}
+  {{ .Render "summary" }}
+{{ end }}
