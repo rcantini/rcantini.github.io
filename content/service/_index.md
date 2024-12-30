@@ -49,29 +49,31 @@ preview_only = false
 
 +++
 <div style="text-align: justify">
-<h3>Organization of Scientific Events</h3>
-        <ul>
-            <li>Organizer and Program Chair of the <em>Green-Aware AI</em> workshop at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
-</li></ul>
 
-<h3>Organization of Special Issues</h3>
+<h3>Editorial Board</h3>
         <ul>
             <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>. <a href="https://www.mdpi.com/journal/BDCC/special_issues/1XP11D36SD" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fas fa-link mr-1"></i>Link</a>
-</li></ul>
-
-<h3>Participation in Journal Editorial Boards</h3>
-        <ul>
+            </li>
             <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
             <li>Review Editor of <em>Frontiers in High-Performance Computing</em>.</li>
         </ul>
-        <h3>Participation in Conference Program Committees</h3>
+<h3>Program Committee</h3>
         <ul>
-            <li><em>Advanced Data Mining and Applications</em> (ADMA) 2023, 2024 (Core rank: B).</li>
-            <li><em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
-            <li><em>International Conference on Learning Representations</em> (ICLR) 2024 (Core rank: A<sup>*</sup>), workshop on <em>Large Language Model Agents</em>.</li>
+            <li>Program Chair of the <em>1st AIxIA Workshop on Green-Aware Artificial Intelligence (Green-Aware AI 2024)</em> workshop, co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>, Bolzano 25-28 November, 2024.
+            </li>
+            <li>PC member of <em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
+            <li>PC member of <em> Advanced Data Mining and Applications</em> (ADMA) 2023, 2024 (Core rank: B).</li>
+        </ul>
+
+<h3>Organization of Scientific Events</h3>
+        <ul>
+            <li>
+            Organizer of the 2nd FAIR Spoke workshop, Spoke 9– Green-Aware AI, Rende 24-25 March 2025.
+            </li>
+            <li>Organizer of the <em>Green-Aware AI</em> workshop at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
+            </li>
         </ul>
 
 ----
 
-I has also served as <strong>reviewer</strong> for over several internation journal and conferences, including *IEEE Transactions on Neural Networks and Learning Systems*, *ACM Computing Surveys*, *IEEE Transactions on Parallel and Distributed Systems*, *Journal of Big Data*, *Future Generation Computer Systems*, *International Conference on Learning Representations (ICLR)*, *International Conference on Advanced Data Mining and Applications (ADMA)*, and *IEEE International Conference on Big Data (IEEE BigData)*.
-
+I has also served as <strong>reviewer</strong> for over several internation journal and conferences, including *IEEE Transactions on Neural Networks and Learning Systems*, *ACM Computing Surveys*, *IEEE Transactions on Big Data*, *IEEE Transactions on Parallel and Distributed Systems*, *IEEE Transactions on Cloud Computing*, *Journal of Big Data*, *Future Generation Computer Systems*, *IEEE Access*, *Computer*, *Social Network Analysis and Mining*, *International Conference on Learning Representations (ICLR)*, *International Conference on Advanced Data Mining and Applications (ADMA)*, *IEEE International Conference on Big Data (IEEE BigData)*, *International European Conference on Parallel and Distributed Computing (EuroPar)*, *IEEE International Conference on Machine Learning and Applications (ICMLA)*, *International Conference on Discovery Science (DS)*, and *IEEE International Conference on Bioinformatics and Biomedicine*.
