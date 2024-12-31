@@ -25,5 +25,5 @@ image:
   preview_only: false
 
 
-tags: ["Social media", "Events detection", "Natural disasters", "Crisis computing", "Catastrophic events", "Natural Language Processing", "Disaster management"]
+tags: ["Social media", "Events detection", "Natural disasters", "Crisis computing", "Catastrophic events", "Natural Language Processing", "Disaster management", "AI-generated Reports"]
 ---
