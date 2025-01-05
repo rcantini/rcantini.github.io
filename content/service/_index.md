@@ -59,7 +59,7 @@ preview_only = false
         </ul>
 <h3>Program Committee</h3>
         <ul>
-            <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence (Green-Aware AI 2024)</em>, co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>.
+            <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence</em>, co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>.
             </li>
             <li>PC member of <em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
             <li>PC member of <em> Advanced Data Mining and Applications</em> (ADMA) 2023, 2024 (Core rank: B).</li>
