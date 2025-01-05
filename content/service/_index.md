@@ -59,7 +59,7 @@ preview_only = false
         </ul>
 <h3>Program Committee</h3>
         <ul>
-            <li>Program Chair of the <em>1st AIxIA Workshop on Green-Aware Artificial Intelligence (Green-Aware AI 2024)</em> workshop, co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>.
+            <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence (Green-Aware AI 2024)</em>, co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>.
             </li>
             <li>PC member of <em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
             <li>PC member of <em> Advanced Data Mining and Applications</em> (ADMA) 2023, 2024 (Core rank: B).</li>
@@ -70,7 +70,7 @@ preview_only = false
             <li>
             Organizer of the 2nd FAIR Spoke workshop, <em>Spoke 9 – Green-Aware AI</em>, Rende 24-25 March 2025.
             </li>
-            <li>Organizer of the <em>1st Green-Aware AI</em> workshop at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bolzano 25-28 November, 2024. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
+            <li>Organizer of the <em>1st Workshop on Green-Aware Artificial Intelligence</em> at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bolzano 25-28 November, 2024. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
             </li>
         </ul>
 
