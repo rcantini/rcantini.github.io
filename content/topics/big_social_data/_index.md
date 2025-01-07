@@ -1,5 +1,5 @@
 +++
-title = "Distributed Big Social Data Analysis"
+title = "Big Social Data Analysis"
 
 [content]
   # Page type to display. E.g. post, talk, or publication.
