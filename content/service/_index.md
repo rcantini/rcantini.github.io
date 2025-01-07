@@ -62,6 +62,9 @@ preview_only = false
             <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence</em>, co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>.
             </li>
             <li>PC member of <em>Discovery Science</em> (DS) 2024 (Core rank: B).</li>
+
+    <li>PC member of the <em>workshop on Large Language Model Agents</em> at the <em>International Conference on Learning Representations</em> (ICLR) 2024 (Core rank: A<sup>*</sup>).</li>
+
             <li>PC member of <em> Advanced Data Mining and Applications</em> (ADMA) 2023, 2024 (Core rank: B).</li>
         </ul>
 
