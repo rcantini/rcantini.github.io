@@ -49,11 +49,11 @@ preview_only = false
 
 +++
 <div style="text-align: left">
-Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, focusing on large language models (LLMs) and sustainable artificial intelligence, and <em>big social data analysis</em>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, focusing on Large Language Models (LLMs) and sustainable artificial intelligence, and <em>big social data analysis</em>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
 
 <ul>
     <li><strong><a href="/topics/deep_learning_llm/">Deep Learning and Large Language Models</a></strong></li>
-    <p>Riccardo Cantini’s research in deep learning explores the potential of Transformer-based large language models (LLMs), such as BERT and GPT, showcasing their versatility across diverse domains. Sustainability is a central theme in this research area, emphasizing green awareness and promoting the efficient, fair, and trustworthy use of LLMs.
+    <p>Riccardo Cantini’s research in deep learning explores the potential of Transformer-based LLMs, such as BERT and GPT, showcasing their versatility across diverse domains. Sustainability is a central theme in this research area, emphasizing green awareness and promoting the efficient, fair, and trustworthy use of LLMs.
 </p>
     <li><strong><a href="/topics/big_social_data/">Big Social Data Analysis</a></strong></li>
     <p>Riccardo Cantini’s research in big social data analysis explores how detailed user information from social media can be leveraged to uncover users’ perceptions of real-world events, offering data-driven insights into socio-political phenomena. His work addresses critical issues including reliability, language barriers, and dynamicity, while also tackling the challenges related to resource-intensive computation.</p>
