@@ -1,7 +1,7 @@
 ---
 title: "Unmasking Deception: A Topic-Oriented Multimodal Approach to Uncover False Information on Social Media"
-date: 2024-09-24
-publishDate: 2024-09-24
+date: 2025-16-01
+publishDate: 2025-16-01
 authors: ["Riccardo Cantini", "Cristian Cosentino", "Irene Kilanioti", "Fabrizio Marozzo", "Domenico Talia"]
 publication_types: ["2"]
 abstract: "In the digital landscape, social media has emerged as a prevalent channel for
@@ -23,9 +23,9 @@ news. Overall, the proposed methodology can enable effective strategies
 to counter the spread of false information, thereby fostering trust and confidence
 in the information shared on social media platforms."
 featured: true
-publication: "*Machine Learning*, 2024 (to appear)"
+publication: "*Machine Learning*, vol. 114, no. 1, 2025"
 # url_pdf: "..."
-# doi: "10.1145/3466876"
+doi: "10.1007/s10994-024-06727-4"
 # Custom links:
 links:
 - name: Project
