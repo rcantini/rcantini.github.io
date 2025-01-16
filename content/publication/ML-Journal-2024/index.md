@@ -1,7 +1,7 @@
 ---
 title: "Unmasking Deception: A Topic-Oriented Multimodal Approach to Uncover False Information on Social Media"
-date: 2025-16-01
-publishDate: 2025-16-01
+date: 2025-01-16
+publishDate: 2025-01-16
 authors: ["Riccardo Cantini", "Cristian Cosentino", "Irene Kilanioti", "Fabrizio Marozzo", "Domenico Talia"]
 publication_types: ["2"]
 abstract: "In the digital landscape, social media has emerged as a prevalent channel for
