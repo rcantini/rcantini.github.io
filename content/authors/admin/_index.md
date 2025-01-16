@@ -18,7 +18,7 @@ organizations:
   url: "https://www.dimes.unical.it/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Riccardo Cantini is an assistant professor at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His current research focuses on *deep learning*, , with a focus on on large language models (LLMs) and sustainable AI, and *big social data analysis*, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+bio: Riccardo Cantini is an assistant professor at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His current research focuses on *deep learning*, , with a focus on Large Language Models and sustainable AI, and *big social data analysis*, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -50,7 +50,7 @@ email: ""
 #- Visitors
 ---
 <div style="text-align: justify">
-Riccardo Cantini is an assistant professor (RTDA) at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019, and obtained his European Ph.D. in Information and Communication Technologies in 2023. In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>), and between 2021 and 2022 he was a visiting researcher at the Barcelona Supercomputing Center (<a href="https://www.bsc.es/">BSC-CNS</a>).<br>His research interests include <i>deep learning</i>, with a focus on on large language models (LLMs) and sustainable AI, and <i>big social data analysis</i>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.</div>
+Riccardo Cantini is an assistant professor (RTDA) at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019, and obtained his European Ph.D. in Information and Communication Technologies in 2023. In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>), and between 2021 and 2022 he was a visiting researcher at the Barcelona Supercomputing Center (<a href="https://www.bsc.es/">BSC-CNS</a>).<br>His research interests include <i>deep learning</i>, with a focus on Large Language Models and sustainable AI, and <i>big social data analysis</i>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.</div>
 <div class="row">
 	<div class="col-md-7">
 	<h3>Education</h3>
