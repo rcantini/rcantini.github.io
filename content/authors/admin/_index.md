@@ -18,7 +18,7 @@ organizations:
   url: "https://www.dimes.unical.it/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Riccardo Cantini is an assistant professor at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His current research focuses on *deep learning*, , with a focus on Large Language Models and sustainable AI, and *big social data analysis*, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+bio: Riccardo Cantini is an assistant professor at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His current research focuses on *deep learning*, with a focus on Large Language Models and sustainable AI, and *big social data analysis*, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
