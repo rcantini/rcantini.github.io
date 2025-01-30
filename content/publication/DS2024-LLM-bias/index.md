@@ -14,7 +14,7 @@ analyzing the impact on their fairness and reliability.
 We also investigate how known prompt engineering techniques can be exploited to effectively reveal 
 hidden biases of LLMs, testing their adversarial robustness against jailbreak prompts specially crafted for bias elicitation. Extensive experiments are conducted using the most widespread LLMs at different scales, confirming that LLMs can still be manipulated to produce biased or inappropriate responses, despite their advanced capabilities and sophisticated alignment processes. Our findings underscore the importance of enhancing mitigation techniques to address these safety issues, toward a more  sustainable and inclusive artificial intelligence."
 featured: true
-publication: "*27th International Conference on Discovery Science (DS2024)*, October 2024 (to appear)"
+publication: "*27th International Conference on Discovery Science (DS2024)*, Lecture Notes in Computer Science, vol 15243, January 2025, pp. 52-68."
 # url_pdf: "..."
 doi: "https://doi.org/10.1007/978-3-031-78977-9_4"
 # Custom links:
