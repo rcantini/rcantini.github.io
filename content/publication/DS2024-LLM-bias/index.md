@@ -1,7 +1,7 @@
 ---
 title: "Are Large Language Models Really Bias-Free? Jailbreak Prompts for Assessing Adversarial Robustness to Bias Elicitation"
-date: 2024-08-12
-publishDate: 2024-08-12
+date: 2025-01-28
+publishDate: 2025-01-28
 authors: ["Riccardo Cantini", "Giada Cosenza", "Alessio Orsino", "Domenico Talia"]
 publication_types: ["1"]
 abstract: "Large Language Models (LLMs) have revolutionized artificial intelligence, 
@@ -16,7 +16,7 @@ hidden biases of LLMs, testing their adversarial robustness against jailbreak pr
 featured: true
 publication: "*27th International Conference on Discovery Science (DS2024)*, October 2024 (to appear)"
 # url_pdf: "..."
-# doi: "https://doi.org/10.48550/arXiv.2407.08441"
+doi: "https://doi.org/10.1007/978-3-031-78977-9_4"
 # Custom links:
 links:
 - name: Project
