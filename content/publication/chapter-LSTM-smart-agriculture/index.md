@@ -22,7 +22,7 @@ green-aware solution that fosters sustainable and efficient agricultural practic
 featured: true
 publication: "*Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications*, pp. 141-153, 2023"
 # url_pdf: "files/papers/..."
-doi: "https://ceur-ws.org/Vol-3934/paper5.pdf"
+doi: "10.1007/978-3-031-42194-5_8"
 
 
 # Featured image
