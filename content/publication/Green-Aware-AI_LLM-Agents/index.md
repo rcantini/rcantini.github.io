@@ -23,9 +23,9 @@ minimizing downtime, and significantly lowering the environmental impact by prev
 increased fuel consumption from faulty equipment, reducing the need for replacement parts, and conserving
 energy and resources used in repairs."
 featured: true
-publication: "*1st Workshop on Green-Aware Artificial Intelligence, 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)*, November 2024 (to appear)"
+publication: "*1st Workshop on Green-Aware Artificial Intelligence, 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)*, November 2024"
 # url_pdf: "..."
-# doi: "https://doi.org/10.48550/arXiv.2407.08441"
+doi: "https://ceur-ws.org/Vol-3934/paper5.pdf"
 # Custom links:
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
