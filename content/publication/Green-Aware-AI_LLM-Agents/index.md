@@ -25,7 +25,7 @@ energy and resources used in repairs."
 featured: true
 publication: "*1st Workshop on Green-Aware Artificial Intelligence, 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)*, November 2024"
 # url_pdf: "..."
-doi: "https://ceur-ws.org/Vol-3934/paper5.pdf"
+url_pdf: "https://ceur-ws.org/Vol-3934/paper5.pdf"
 # Custom links:
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
