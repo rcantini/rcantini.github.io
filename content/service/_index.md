@@ -71,7 +71,7 @@ preview_only = false
 
 <h3>Organization of Scientific Events</h3>
         <ul>
-            <li>Organizer of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025) at the <em>28th European Conference on Artificial Intelligence (ECAI 2025)/em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bologna  25-26 October 2025. <a href="https://green-aware2025.web.app" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a>
+            <li>Organizer of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025) at the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025), with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bologna  25-26 October 2025. <a href="https://green-aware2025.web.app" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a>
             </li>
             <li>
             Organizer of the <em>2nd FAIR Spoke Workshop, Spoke 9 – Green-Aware AI</em>, Rende 24-25 March 2025.
