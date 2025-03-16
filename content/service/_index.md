@@ -76,7 +76,7 @@ preview_only = false
             <li>
             Organizer of the <em>2nd FAIR Spoke Workshop, Spoke 9 – Green-Aware AI</em>, Rende 24-25 March 2025.
             </li>
-            <li>Organizer of the <em>1st Workshop on Green-Aware Artificial Intelligence</em>  (Green-Aware AI 2025) at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bolzano 25-28 November, 2024. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
+            <li>Organizer of the <em>1st Workshop on Green-Aware Artificial Intelligence</em>  (Green-Aware AI 2024) at the <em>AIxIA 2024 conference</em>, with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bolzano 25-28 November, 2024. <a href="https://sites.google.com/view/greenawareai" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/green-aware-artificial-intelligence-methods-and-solutions-to-improve-ai-sustainability/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
             </li>
         </ul>
 
