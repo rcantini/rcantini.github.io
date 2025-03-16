@@ -59,9 +59,9 @@ preview_only = false
         </ul>
 <h3>Program Committee</h3>
         <ul>
-            <li>Program Chair of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence (ECAI 2025, Core rank: A)</em>.
+            <li>Program Chair of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
             </li>
-            <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2024), co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA 2024)</em>.
+            <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2024), co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence</em> (AIxIA 2024).
             </li>
             <li>PC member of the <em>World Conference on Explainable Artificial Intelligence</em> (XAI) 2025.</li>
             <li>PC member of the <em>International Conference on Discovery Science</em> (DS) 2024 (Core rank: B).</li>
