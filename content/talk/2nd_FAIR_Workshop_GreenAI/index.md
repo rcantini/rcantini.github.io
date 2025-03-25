@@ -1,9 +1,9 @@
 ---
 title: FAIR Spoke 9 Workshop
-event: 2nd Future Artificial Intelligence Research (FAIR) Workshop on Green-Aware Artificial Intelligence
+event: 2nd Future Artificial Intelligence Research (FAIR) Workshop on Green-Aware AI
 event_url: https://fondazione-fair.it/evento/workshop-fair-2025-spoke-9/
 location: Rende, Italy
-summary: 2nd Future Artificial Intelligence Research (FAIR) Workshop on Green-Aware Artificial Intelligence
+summary: 2nd Future Artificial Intelligence Research (FAIR) Workshop on Green-Aware AI
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
