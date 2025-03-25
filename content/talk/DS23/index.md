@@ -1,9 +1,9 @@
 ---
-title: DS 2023
-event: 26th international conference on Discovery Science
+title: Discovery Science 2023
+event: 26th International Conference on Discovery Science
 event_url: https://ds2023.inesctec.pt/
 location: Porto, Portugal
-summary: 26th international conference on Discovery Science (DS23)
+summary: 26th International Conference on Discovery Science (DS23)
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
