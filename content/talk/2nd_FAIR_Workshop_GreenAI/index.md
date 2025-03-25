@@ -7,7 +7,7 @@ summary: 2nd Future Artificial Intelligence Research (FAIR) Workshop on Green-Aw
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: "2025-03-25T16:30:00Z"
+date: "2025-03-24T09:00:00Z"
 #date_end: "2024-09-24T16:00:00Z"
 all_day: false
 
