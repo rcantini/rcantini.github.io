@@ -46,7 +46,6 @@ $$
 $$
 tanh(W_c \cdot [h_{t-1}, x_t] + b_c)
 $$
-
 At this time the cell state can be updated as: \\(C_t =f_t\times C_{t-1}+i_t \times \tilde{C}_t\\)
 - *Output gate*: determines the final output of the module as a filtered version of the updated cell state:
 $$
