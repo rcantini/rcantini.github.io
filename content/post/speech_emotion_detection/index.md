@@ -43,7 +43,6 @@ $$
 $$
 i_{t}= \sigma (W_i \cdot [h_{t-1}, x_t] + b_i)
 $$
-
 $$
 tanh(W_c \cdot [h_{t-1}, x_t] + b_c)
 $$
