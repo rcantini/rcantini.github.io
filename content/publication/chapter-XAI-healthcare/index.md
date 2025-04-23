@@ -1,5 +1,5 @@
 ---
-title: "Shedding light inside the black box: Techniques for explainable artificial intelligence in healthcare"
+title: "Shedding Light Inside the Black Box: Techniques for Explainable Artificial Intelligence in Healthcare"
 date: 2025-03-22
 publishDate: 2025-03-22
 authors: ["Loris Belcastro", "Riccardo Cantini", "Fabrizio Marozzo", "Domenico Talia", "Paolo Trunfio"]
