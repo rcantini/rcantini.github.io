@@ -11,7 +11,7 @@ modeling, OLAP, performance management, and the use of BI tools for analysis and
     <br>&#9642; <i>Main Teacher</i>, 28 hours of lessons. A.Y. 2025-2026, 2024-2025, 2023-2024.</p>
     <li><strong><a href="https://www.unical.it/storage/cds/33547/activities/149915/" target="_blank">High Performance Computing</a></strong>. Master's Degree in Computer Engineering, DIMES, University of Calabria, Rende (CS).</li>
     <p>Topics Covered: main principles and practical aspects related to high-performance computing, with a focus on GPU computing in CUDA, and the MPI (Message Passing Interface) paradigm, encompassing both shared and distributed memory implementations.
-    <br>&#9642; <i>Teaching Assistant</i>, 16 hours of lessons. A.Y. 2025-2026, 2024-2025, 2023-2024.</p>
+    <br>&#9642; <i>Teaching Assistantt</i>, 16 hours of lessons. A.Y. 2025-2026, 2024-2025, 2023-2024.</p>
     <li><strong><a href="https://www.unical.it/storage/cds/32349/activities/149787/" target="_blank">Operating Systems</a></strong>. Bachelor's Degree in Computer Engineering, DIMES, University of Calabria, Rende (CS).</li>
     <p>Topics Covered: main constructs for modeling and implementing multi-threaded applications, issues related to synchronization and access to shared variables, and concurrency mechanisms in Java, particularly Semaphores and Monitors.
     <br>&#9642; <i>Teaching Assistant</i>, 27 hours of lessons. A.Y. 2025-2026, 2024-2025, 2023-2024, 2022-2023, 2021-2022.</p>
