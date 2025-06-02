@@ -22,5 +22,4 @@ modeling, OLAP, performance management, and the use of BI tools for analysis and
 
 ----
 
-  <p>I has also served as <strong>thesis advisor</strong> for over 40 graduating students at DIMES, University of Calabria, overseeing both bachelor and master theses. The main topics of the supervised theses include
-machine and deep learning, natural language processing, large language models, sustainable artificial intelligence, and big data analysis.</p>
+  <p>I has also served as <strong>Thesis Advisor</strong> for over 40 graduating students at DIMES, University of Calabria, overseeing both bachelor and master theses. The main topics of the supervised theses include machine and deep learning, NLP, large language models, agentic AI, sustainable AI, and big data analysis. Additionally, he has acted as an <strong>Academic Tutor</strong> for internship programs in companies, guiding students through their practical training experiences.</p>
