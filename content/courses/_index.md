@@ -2,7 +2,6 @@
 title: "Teaching"
 ---
 <h3 id="courses"><strong>Courses</strong></h3>
-<p>I have been teaching assistant for the following courses:</p>
   <ul>
     <li><strong><a href="https://www.unical.it/storage/cds/29747/activities/140108/" target="_blank">Business Intelligence</a></strong>. Master's Degree in Data Science for Business Analytics, DESF, University of Calabria, Rende (CS).</li>
     <p>Topics Covered: design and implementation of decision support systems for strategic, tactical, and
