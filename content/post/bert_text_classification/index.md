@@ -134,8 +134,6 @@ Just to make it more fun, I wrote some sentences to further test the performance
 <p style="text-align: center"><b>Toxicity detection, Wikipedia toxic comments</b></p> 
 <img src="pred_tox.png" style="display: block; margin-left: auto; margin-right: auto; width: 90%; height: 90%"/>
 
-Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, even in the presence of sarcasm (look at the last review). 
-
-On the other hand, the second model detected correctly the presence of toxicity in Wikipedia comments or its absence (last comment). It also determined the right types of toxicity, like obscene, toxic and insult for the first and the third comments, or threat for the second one (yes, that's a Liam Neeson quote...I couldn't resist! :laughing:).
+Good job! :clap::clap: The first model correctly classified the polarity of all movie reviews, while the second model detected the presence of toxicity in the provided comments. Notably, it also determined the right type of toxicity, like obscene, toxic and insult for the first and the third comments, or threat for the second one (yes, that's a Liam Neeson quote...I couldn't resist! :laughing:).
 <hr>
 You can find the full code and results on GitHub at this <a href="https://github.com/rcantini/BERT_text_classification" target="_blank">link</a>.
