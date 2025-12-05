@@ -52,14 +52,16 @@ preview_only = false
 
 <h3>Editorial Board</h3>
         <ul>
+            <li>Associate Editor of <em>Journal of Big Data</em>, Springer (SJR rank: Q1).</li>
+            <li>Editorial Board Member of <em>Discover Artificial Intelligence</em>, Springer (SJR rank: Q1).</li>
             <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>. <a href="https://www.mdpi.com/journal/BDCC/special_issues/1XP11D36SD" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fas fa-link mr-1"></i>Link</a>
             </li>
-            <li>Review Editor of <em>Frontiers in Big Data</em>, Data Mining and Management section.</li>
-            <li>Review Editor of <em>Frontiers in High-Performance Computing</em>.</li>
         </ul>
 <h3>Program Committee</h3>
         <ul>
             <li>Program Chair of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
+            </li>
+            <li>PC member of the <em>3rd Workshop on Fairness and Bias in AI</em> (AEQUITAS 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
             </li>
             <li>PC member of the <em>2nd Workshop on Hypermedia Multi-Agent Systems</em> (HyperAgents 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
             </li>
