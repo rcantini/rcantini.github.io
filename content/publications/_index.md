@@ -87,6 +87,19 @@ preview_only = false
 <h3>Conferences</h3>
 <ol start="17">
   <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.</li>
+    <button onclick="showBibtex('bib1')">Cite</button>
+
+    <pre id="bib1" style="display:none;">
+@inproceedings{cantini2025neural,
+  title={Neural topic modeling in social media by clustering latent hashtag representations},
+  author={Cantini, R. and Cosentino, C. and Marozzo, F. and Talia, D. and Trunfio, P.},
+  booktitle={ECAI},
+  year={2025}
+}
+    </pre>
+  </li>
+
+
 
   <li>R. Cantini, G. Cosenza, A. Orsino, and D. Talia, “Are large language models really bias-free? jailbreak prompts for assessing adversarial robustness to bias elicitation,” in <i>Discovery Science</i>, 2024.</li>
 
@@ -103,7 +116,7 @@ preview_only = false
 
 <h3>Workshops</h3>
 <ol start="24">
-  <li>R. Cantini, N. Gabriele, A. Orsino, and T. Domenico, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.</li>
+  <li>R. Cantini, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.</li>
 
   <li>R. Cantini, N. Gabriele, and A. Orsino, “A parameter-efficient approach to distilling large language models via meta-learning,” in <i>ADBIS</i>, 2025.</li>
 
