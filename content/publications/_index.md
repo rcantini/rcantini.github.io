@@ -87,19 +87,11 @@ preview_only = false
 <h3>Conferences</h3>
 <ol start="17">
   <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.
-    <button onclick="showBibtex('bib1')">Cite</button>
-
-    <pre id="bib1" style="display:none;">
-@inproceedings{cantini2025neural,
-  title={Neural topic modeling in social media by clustering latent hashtag representations},
-  author={Cantini, R. and Cosentino, C. and Marozzo, F. and Talia, D. and Trunfio, P.},
-  booktitle={ECAI},
-  year={2025}
-}
-    </pre>
+    <button class="cite-btn"
+      data-bib="@inproceedings{cantini2025neural, title={Neural topic modeling in social media by clustering latent hashtag representations}, author={Cantini, R. and Cosentino, C. and Marozzo, F. and Talia, D. and Trunfio, P.}, booktitle={ECAI}, year={2025} }">
+      Cite
+    </button>
   </li>
-
-
 
   <li>R. Cantini, G. Cosenza, A. Orsino, and D. Talia, “Are large language models really bias-free? jailbreak prompts for assessing adversarial robustness to bias elicitation,” in <i>Discovery Science</i>, 2024.</li>
 
@@ -146,37 +138,28 @@ preview_only = false
 
 
 <!-- Modal -->
-<div id="bibModal" style="
-  display:none;
-  position:fixed;
-  top:0; left:0; width:100%; height:100%;
-  background:rgba(0,0,0,0.5);
-">
-  <div style="
-    background:white;
-    max-width:600px;
-    margin:10% auto;
-    padding:20px;
-    border-radius:10px;
-    position:relative;
-  ">
-    <button onclick="closeModal()" style="
-      position:absolute; top:10px; right:10px;
-    ">✕</button>
-
+<div id="bibModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.5);">
+  <div style="background:white; max-width:700px; margin:10% auto; padding:20px; border-radius:10px; position:relative;">
+    <button onclick="closeBib()" style="position:absolute; top:10px; right:10px;">✕</button>
     <h3>BibTeX</h3>
-    <pre id="modalBibtex" style="white-space:pre-wrap;"></pre>
+    <pre id="bibContent" style="white-space:pre-wrap;"></pre>
   </div>
 </div>
 
 <script>
-function showBibtex(id) {
-  const bib = document.getElementById(id).textContent;
-  document.getElementById('modalBibtex').textContent = bib;
-  document.getElementById('bibModal').style.display = 'block';
+function showBibFromButton(btn) {
+  const bib = btn.getAttribute('data-bib');
+  const modal = document.getElementById('bibModal');
+  const content = document.getElementById('bibContent');
+
+  if (!bib || !modal || !content) return;
+
+  content.textContent = bib;
+  modal.style.display = 'block';
 }
 
-function closeModal() {
-  document.getElementById('bibModal').style.display = 'none';
+function closeBib() {
+  const modal = document.getElementById('bibModal');
+  if (modal) modal.style.display = 'none';
 }
 </script>
