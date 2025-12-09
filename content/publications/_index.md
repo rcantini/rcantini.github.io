@@ -87,7 +87,7 @@ preview_only = false
 <h3>Conferences</h3>
 <ol start="17">
   <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.
-    <button class="cite-btn"
+    <button onclick="showBibFromButton(this)"
       data-bib="@inproceedings{cantini2025neural, title={Neural topic modeling in social media by clustering latent hashtag representations}, author={Cantini, R. and Cosentino, C. and Marozzo, F. and Talia, D. and Trunfio, P.}, booktitle={ECAI}, year={2025} }">
       Cite
     </button>
