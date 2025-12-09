@@ -395,7 +395,7 @@ title={Topic Detection and Tracking in Social Media Platforms},
 booktitle={Pervasive Knowledge and Collective Intelligence on Web and Social Media},
 year={2023},
 publisher={Springer Nature},
-pages="41--56",
+pages={41--56},
 doi={10.1007/978-3-031-31469-8_3}
 }">
       Cite
