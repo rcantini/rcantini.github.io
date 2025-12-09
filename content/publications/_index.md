@@ -66,86 +66,523 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Dynamic hashtag recommendation in social media with trend shift detection and adaptation,” <i>Transactions on Computational Social Systems</i>, 2025.</li>
+  <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Dynamic hashtag recommendation in social media with trend shift detection and adaptation,” <i>Transactions on Computational Social Systems</i>, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{hadapts,
+  title={Dynamic hashtag recommendation in social media with trend shift detection and adaptation},
+  author={Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio and Talia, Domenico and Trunfio, Paolo},
+  journal={Transactions on Computational Social Systems},
+  year={2025}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, A. Orsino, M. Ruggiero, and D. Talia, “Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with llm-as-a-judge,” <i>Machine Learning</i>, vol. 114, no. 11, p. 249, 2025.</li>
+  <li>R. Cantini, A. Orsino, M. Ruggiero, and D. Talia, “Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with llm-as-a-judge,” <i>Machine Learning</i>, vol. 114, no. 11, p. 249, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{clear_bias,
+  title={Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with llm-as-a-judge},
+  author={Cantini, Riccardo and Orsino, Alessio and Ruggiero, Massimo and Talia, Domenico},
+  journal={Machine Learning},
+  volume={114},
+  number={11},
+  pages={249},
+  year={2025},
+  publisher={Springer}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Detecting mental disorder on social media: A chatgpt-augmented explainable approach,” <i>Online Social Networks and Media</i>, vol. 48, p. 100321, 2025.</li>
+  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Detecting mental disorder on social media: A chatgpt-augmented explainable approach,” <i>Online Social Networks and Media</i>, vol. 48, p. 100321, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{depression_det,
+  title={Detecting mental disorder on social media: a ChatGPT-augmented explainable approach},
+  author={Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+  journal={Online Social Networks and Media},
+  volume={48},
+  pages={100321},
+  year={2025},
+  publisher={Elsevier}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Harnessing prompt-based large language models for disaster monitoring and automated reporting from social media feedback,” <i>Online Social Networks and Media</i>, vol. 45, p. 100295, 2025.</li>
+  <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Harnessing prompt-based large language models for disaster monitoring and automated reporting from social media feedback,” <i>Online Social Networks and Media</i>, vol. 45, p. 100295, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@Article{llms-disaster-monitoring-2024,
+      AUTHOR = {Cantini, Riccardo and Cosentino, Cristian and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+      TITLE = {Harnessing Prompt-based Large Language Models for Disaster Monitoring and Automated Reporting from Social Media Feedback},
+      YEAR = {2025},
+      JOURNAL = {Online Social Networks and Media},
+      VOLUME = {45},
+      PAGES = {100295}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “Unmasking deception: A topic-oriented multimodal approach to uncover false information on social media,” <i>Machine Learning</i>, vol. 114, no. 1, p. 13, 2025.</li>
+  <li>R. Cantini, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “Unmasking deception: A topic-oriented multimodal approach to uncover false information on social media,” <i>Machine Learning</i>, vol. 114, no. 1, p. 13, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{ML2024,
+  title={Unmasking deception: a topic-oriented multimodal approach to uncover false information on social media},
+  author={Cantini, Riccardo and Cosentino, Cristian and Kilanioti, Irene and Marozzo, Fabrizio and Talia, Domenico},
+  journal={Machine Learning},
+  volume={114},
+  number={1},
+  pages={13},
+  year={2025},
+  publisher={Springer}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, A. Orsino, and D. Talia, “Xai-driven knowledge distillation of large language models for efficient deployment on low-resource devices,” <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.</li>
+  <li>R. Cantini, A. Orsino, and D. Talia, “Xai-driven knowledge distillation of large language models for efficient deployment on low-resource devices,” <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{DiXtill,
+  title={Xai-driven knowledge distillation of large language models for efficient deployment on low-resource devices},
+  author={Cantini, Riccardo and Orsino, Alessio and Talia, Domenico},
+  journal={Journal of Big Data},
+  volume={11},
+  number={1},
+  year={2024},
+  doi={10.1186/s40537-024-00928-3},
+  publisher={Springer},
+  year={2024}
+}">
+      Cite
+    </button>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, et al., “Block size estimation for data partitioning in hpc applications using machine learning techniques,” <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.</li>
+</li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Programming big data analysis: Principles and solutions,” <i>Journal of Big Data</i>, vol. 9, no. 1, 2022.</li>
+  <li>R. Cantini, F. Marozzo, A. Orsino, et al., “Block size estimation for data partitioning in hpc applications using machine learning techniques,” <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{BLEST_ML,
+  title={Block size estimation for data partitioning in HPC applications using machine learning techniques},
+  author={Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio and Talia, Domenico and Trunfio, Paolo and Badia, Rosa M and Ejarque, Jorge and V{\'a}zquez-Novoa, Fernando},
+  journal={Journal of Big Data},
+  volume={11},
+  number={1},
+  year={2024},
+  publisher={Springer},
+  DOI= {https://doi.org/10.1186/s40537-023-00862-w}
+}
+">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Analyzing political polarization on social media by deleting bot spamming,” <i>Big Data and Cognitive Computing</i>, vol. 6, no. 1, 2022.</li>
+  <li>L. Belcastro, R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Programming big data analysis: Principles and solutions,” <i>Journal of Big Data</i>, vol. 9, no. 1, 2022.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{SURVEY,
+  title={Programming big data analysis: principles and solutions},
+  author={Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio and Talia, Domenico and Trunfio, Paolo},
+  journal={Journal of Big Data},
+  volume={9},
+  number={1},
+  year={2022},
+  publisher={Springer Nature},
+  doi={10.1186/s40537-021-00555-2}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>L. Belcastro, F. Branda, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Analyzing voter behavior on social media during the 2020 us presidential election campaign,” <i>Social Network Analysis and Mining</i>, vol. 12, no. 1, 2022.</li>
+  <li>R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Analyzing political polarization on social media by deleting bot spamming,” <i>Big Data and Cognitive Computing</i>, vol. 6, no. 1, 2022.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{TIMBRE,
+AUTHOR = {Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+TITLE = {Analyzing Political Polarization on Social Media by Deleting Bot Spamming},
+JOURNAL = {Big Data and Cognitive Computing},
+VOLUME = {6},
+YEAR = {2022},
+NUMBER = {1},
+DOI = {10.3390/bdcc6010003},
+publisher={MDPI}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>L. Belcastro, R. Cantini, and F. Marozzo, “Knowledge discovery from large amounts of social media data,” <i>Applied Sciences</i>, vol. 12, no. 3, 2022.</li>
+  <li>L. Belcastro, F. Branda, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Analyzing voter behavior on social media during the 2020 us presidential election campaign,” <i>Social Network Analysis and Mining</i>, vol. 12, no. 1, 2022.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{USA2020,
+  title={Analyzing voter behavior on social media during the 2020 US presidential election campaign},
+  author={Belcastro, Loris and Branda, Francesco and Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+  journal={Social Network Analysis and Mining},
+  volume={12},
+  number={1},
+  year={2022},
+  publisher={Springer},
+  doi={10.1007/s13278-022-00913-9}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, F. Marozzo, G. Bruno, and P. Trunfio, “Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs,” <i>ACM TKDD</i>, vol. 16, no. 2, 2021.</li>
+  <li>L. Belcastro, R. Cantini, and F. Marozzo, “Knowledge discovery from large amounts of social media data,” <i>Applied Sciences</i>, vol. 12, no. 3, 2022.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{APPL,
+AUTHOR = {Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio},
+TITLE = {Knowledge Discovery from Large Amounts of Social Media Data},
+JOURNAL = {Applied Sciences},
+VOLUME = {12},
+YEAR = {2022},
+NUMBER = {3},
+publisher={MDPI},
+DOI = {10.3390/app12031209}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, F. Marozzo, S. Mazza, D. Talia, and P. Trunfio, “A weighted artificial bee colony algorithm for influence maximization,” <i>Online Social Networks and Media</i>, vol. 26, p. 100167, 2021.</li>
+  <li>R. Cantini, F. Marozzo, G. Bruno, and P. Trunfio, “Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs,” <i>ACM TKDD</i>, vol. 16, no. 2, 2021.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{HASHET,
+  title={Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs},
+  author={Cantini, Riccardo and Marozzo, Fabrizio and Bruno, Giovanni and Trunfio, Paolo},
+  journal={ACM Transactions on Knowledge Discovery from Data (TKDD)},
+  volume={16},
+  number={2},
+  year={2021},
+  issue_date = {April 2022},
+  publisher = {Association for Computing Machinery (ACM)},
+  address = {New York, NY, USA},
+  doi = {10.1145/3466876},
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Exploiting machine learning for improving in-memory execution of data-intensive workflows on parallel machines,” <i>Future Internet</i>, vol. 13, no. 5, 2021.</li>
+  <li>R. Cantini, F. Marozzo, S. Mazza, D. Talia, and P. Trunfio, “A weighted artificial bee colony algorithm for influence maximization,” <i>Online Social Networks and Media</i>, vol. 26, p. 100167, 2021.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{WABC,
+  title={A weighted artificial bee colony algorithm for influence maximization},
+  author={Cantini, Riccardo and Marozzo, Fabrizio and Mazza, Silvio and Talia, Domenico and Trunfio, Paolo},
+  journal={Online Social Networks and Media},
+  volume={26},
+  pages={100167},
+  year={2021},
+  publisher={Elsevier},
+  doi={10.1016/j.osnem.2021.100167}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Learning political polarization on social media using neural networks,” <i>IEEE Access</i>, vol. 8, 2020.</li>
+  <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Exploiting machine learning for improving in-memory execution of data-intensive workflows on parallel machines,” <i>Future Internet</i>, vol. 13, no. 5, 2021.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{IIWM,
+  AUTHOR = {Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio and Talia, Domenico and Trunfio, Paolo},
+TITLE = {Exploiting Machine Learning for Improving In-Memory Execution of Data-Intensive Workflows on Parallel Machines},
+JOURNAL = {Future Internet},
+VOLUME = {13},
+YEAR = {2021},
+NUMBER = {5},
+DOI = {10.3390/fi13050121},
+publisher={MDPI}
+}">
+      Cite
+    </button>
+</li>
+
+  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Learning political polarization on social media using neural networks,” <i>IEEE Access</i>, vol. 8, 2020.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{IOM-NN,
+  title={Learning political polarization on social media using neural networks},
+  author={Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+  journal={IEEE Access},
+  volume={8},
+  pages={47177--47187},
+  year={2020},
+  publisher={IEEE},
+  doi={10.1109/ACCESS.2020.2978950}
+}">
+      Cite
+    </button>
+</li>
 </ol>
 
 <h3>Conferences</h3>
 <ol start="17">
   <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.
-    <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
-      data-bib="@inproceedings{cantini2025neural, title={Neural topic modeling in social media by clustering latent hashtag representations}, author={Cantini, R. and Cosentino, C. and Marozzo, F. and Talia, D. and Trunfio, P.}, booktitle={ECAI}, year={2025} }">
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@incollection{ntm_hec,
+  title={Neural Topic Modeling in Social Media by Clustering Latent Hashtag Representations},
+  author={Cantini, Riccardo and Cosentino, Cristian and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+  booktitle={ECAI 2025},
+  pages={146--153},
+  year={2025},
+  publisher={IOS Press}
+}">
       Cite
     </button>
   </li>
 
-  <li>R. Cantini, G. Cosenza, A. Orsino, and D. Talia, “Are large language models really bias-free? jailbreak prompts for assessing adversarial robustness to bias elicitation,” in <i>Discovery Science</i>, 2024.</li>
+  <li>R. Cantini, G. Cosenza, A. Orsino, and D. Talia, “Are large language models really bias-free? jailbreak prompts for assessing adversarial robustness to bias elicitation,” in <i>Discovery Science</i>, 2024.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{DS2024,
+  title={Are Large Language Models Really Bias-Free? Jailbreak Prompts for Assessing Adversarial Robustness to Bias Elicitation},
+  author={Cantini, Riccardo and Cosenza, Giada and Orsino, Alessio and Talia, Domenico},
+  booktitle={International Conference on Discovery Science},
+  pages={52--68},
+  year={2024},
+  organization={Springer}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, C. Cosentino, and F. Marozzo, “Multi-dimensional classification on social media data for detailed reporting with large language models,” in <i>AIAI</i>, 2024.</li>
+  <li>R. Cantini, C. Cosentino, and F. Marozzo, “Multi-dimensional classification on social media data for detailed reporting with large language models,” in <i>AIAI</i>, 2024.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{AIAI24,
+  title={Multi-dimensional Classification on Social Media Data for Detailed Reporting with Large Language Models},
+  author={Cantini, Riccardo and Cosentino, Cristian and Marozzo, Fabrizio},
+  booktitle={IFIP International Conference on Artificial Intelligence Applications and Innovations},
+  pages={100--114},
+  year={2024},
+  organization={Springer}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “Unmasking covid-19 false information on twitter,” in <i>Discovery Science</i>, 2023.</li>
+  <li>R. Cantini, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “Unmasking covid-19 false information on twitter,” in <i>Discovery Science</i>, 2023.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{DS2023,
+  title={Unmasking COVID-19 False Information on Twitter: A Topic-Based Approach with BERT},
+  author={Cantini, Riccardo and Cosentino, Cristian and Kilanioti, Irene and Marozzo, Fabrizio and Talia, Domenico},
+  booktitle={International Conference on Discovery Science},
+  pages={126--140},
+  year={2023},
+  organization={Springer},
+  DOI= {https://doi.org/10.1007/978-3-031-45275-8_9}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini and F. Marozzo, “Topic detection and tracking in social media platforms,” in <i>PKCI</i>, 2023.</li>
+  <li>R. Cantini and F. Marozzo, “Topic detection and tracking in social media platforms,” in <i>Pervasive Knowledge and Collective Intelligence on Web and Social Media</i>, 2023.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@InProceedings{PERSOM,
+author="Cantini, Riccardo
+and Marozzo, Fabrizio",
+editor="Comito, Carmela
+and Talia, Domenico",
+title="Topic Detection and Tracking in Social Media Platforms",
+booktitle="Pervasive Knowledge and Collective Intelligence on Web and Social Media",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="41--56",
+doi={10.1007/978-3-031-31469-8_3}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, M. Passarelli, and P. Trunfio, “A visual tool for reducing returns in e-commerce platforms,” in <i>RTSI</i>, 2021.</li>
+  <li>R. Cantini, F. Marozzo, A. Orsino, M. Passarelli, and P. Trunfio, “A visual tool for reducing returns in e-commerce platforms,” in <i>IEEE 6th International Forum on Research and Technology for Society and Industry (RTSI)</i>, 2021.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{RTSI,
+  title={A visual tool for reducing returns in e-commerce platforms},
+  author={Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio and Passarelli, Martina and Trunfio, Paolo},
+  booktitle={2021 IEEE 6th International Forum on Research and Technology for Society and Industry (RTSI)},
+  pages={474--479},
+  year={2021},
+  organization={IEEE},
+  doi={10.1109/RTSI50628.2021.9597230}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Discovering political polarization on social media: A case study,” in <i>SKG</i>, 2019.</li>
+  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Discovering political polarization on social media: A case study,” in <i>15th International Conference on Semantics, Knowledge and Grids (SKG)</i>, 2019.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{SKG,
+  title={Discovering political polarization on social media: A case study},
+  author={Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+  booktitle={2019 15th International Conference on Semantics, Knowledge and Grids (SKG)},
+  pages={182--189},
+  year={2019},
+  organization={IEEE},
+  doi={10.1109/SKG49510.2019.00038}
+}">
+      Cite
+    </button>
+</li>
 </ol>
 
 <h3>Workshops</h3>
 <ol start="24">
-  <li>R. Cantini, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.</li>
+  <li>R. Cantini, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{bias_rlm,
+  title={Is Reasoning All you Need? Probing Bias in the Age of Reasoning Language Models},
+  author={Cantini, Riccardo and Gabriele, Nicola and Orsino, Alessio and Talia, Domenico},
+  booktitle={Third AEQUITAS Workshop on Fairness and Bias in AI (ECAI 2025)},
+  year={2025}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, N. Gabriele, and A. Orsino, “A parameter-efficient approach to distilling large language models via meta-learning,” in <i>ADBIS</i>, 2025.</li>
+  <li>R. Cantini, N. Gabriele, and A. Orsino, “A parameter-efficient approach to distilling large language models via meta-learning,” in <i>ADBIS</i>, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{meta_distil_peft,
+  title={A Parameter-Efficient Approach to Distilling Large Language Models via Meta-learning},
+  author={Cantini, Riccardo and Gabriele, Nicola and Orsino, Alessio},
+  booktitle={European Conference on Advances in Databases and Information Systems},
+  pages={433--445},
+  year={2025},
+  organization={Springer}
+}
+">
+      Cite
+    </button>
+</li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Advancing green and fair ai: A research perspective on environmental and social sustainability,” <i>Ital-IA 2025</i>.</li>
+  <li>L. Belcastro, R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Advancing green and fair ai: A research perspective on environmental and social sustainability,” <i>Ital-IA 2025</i>.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{ITAL-IA25-FAIR,
+  title={Advancing Green and Fair AI: A Research Perspective on Environmental and Social Sustainability},
+  author={Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio and Talia, Domenico and Trunfio, Paolo},
+  booktitle={5th National Conference on Artificial Intelligence (Ital-IA 2025)},
+  year={2025}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, D. M. Longo, and D. Thakur, “Preface to the proceedings of green-aware ai 2024,” <i>AIxIA 2024</i>.</li>
+  <li>R. Cantini, D. M. Longo, and D. Thakur, “Preface to the proceedings of green-aware ai 2024,” <i>AIxIA 2024</i>.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{GreenAI24-preface,
+  title={Preface to the Proceedings of Green-Aware AI 2024},
+  author={Cantini, Riccardo and Longo, Davide M. and Thakur, Dipanwita},
+  booktitle={1st Workshop on Green-Aware Artificial Intelligence, 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA)},
+  year={2024}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, A. Orsino, D. Talia, and P. Trunfio, “Towards interpretable energy estimation for edge ai applications,” <i>IPDPS 2025</i>.</li>
+  <li>R. Cantini, A. Orsino, D. Talia, and P. Trunfio, “Towards interpretable energy estimation for edge ai applications,” <i>IPDPS 2025</i>.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{IPDPS25,
+  title={Towards Interpretable Energy Estimation for Edge AI Applications},
+  author={Cantini, Riccardo and Orsino, Alessio and Talia, Domenico and Trunfio, Paolo},
+  booktitle={3rd International Workshop on Intelligent and Adaptive Edge-Cloud Operations and Services, 39th IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
+  year={2025}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>P. Lindia, R. Cantini, F. Bettucci, L. Sartori, and P. Trunfio, “Enhancing the evaluation of fault detection models in smart agriculture using llm agents,” <i>AIxIA 2024</i>.</li>
+  <li>P. Lindia, R. Cantini, F. Bettucci, L. Sartori, and P. Trunfio, “Enhancing the evaluation of fault detection models in smart agriculture using llm agents,” <i>AIxIA 2024</i>.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{GreenAI24,
+  title={Enhancing the Evaluation of Fault Detection Models in Smart Agriculture Using LLM Agents for Rule-Based Anomaly Generation},
+  author={Lindia, Paolo and Cantini, Riccardo and Bettucci, Francesco and Sartori, Luigi and Trunfio, Paolo},
+  booktitle={1st Workshop on Green-Aware Artificial Intelligence, 23rd International Conference of the Italian Association for Artificial Intelligence (AIxIA)},
+  year={2024}
+}">
+      Cite
+    </button>
+</li>
 </ol>
 
 <h3>Books</h3>
 <ol start="30">
-  <li>D. Talia, P. Trunfio, F. Marozzo, L. Belcastro, R. Cantini, and A. Orsino, <i>Programming Big Data Applications</i>. World Scientific, 2023.</li>
+  <li>D. Talia, P. Trunfio, F. Marozzo, L. Belcastro, R. Cantini, and A. Orsino, <i>Programming Big Data Applications</i>. World Scientific, 2023.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@Book{big-data-book-2023,
+      AUTHOR = {Talia, Domenico and Trunfio, Paolo and Marozzo, Fabrizio and Belcastro, Loris and Cantini, Riccardo and Orsino, Alessio},
+      TITLE = {Programming Big Data Applications: Scalable Tools and Frameworks for Your Needs},
+      YEAR = {2023},
+      PUBLISHER = {World Scientific},
+      ISBN = {978-1-80061-504-5},
+      DOI = {https://doi.org/10.1142/q0444}
+}">
+      Cite
+    </button>
+</li>
 </ol>
 
 <h3>Chapters</h3>
 <ol start="31">
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Shedding light inside the black box,” in <i>Explainable Machine Intelligence in Healthcare</i>, 2025.</li>
+  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Shedding light inside the black box,” in <i>Explainable Machine Intelligence in Healthcare</i>, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@InCollection{xai-healthcare-chapter,
+      AUTHOR = {Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
+      TITLE = {Shedding Light Inside the Black Box: Techniques for Explainable Artificial Intelligence in Healthcare},
+      YEAR = {2025},
+      BOOKTITLE = {Explainable Machine Intelligence in Healthcare},
+      publisher="Springer Nature"
+}">
+      Cite
+    </button>
+</li>
 
-  <li>R. Cantini, F. Marozzo, and A. Orsino, “Deep learning meets smart agriculture,” in <i>Device-Edge-Cloud Continuum</i>, 2023.</li>
+  <li>R. Cantini, F. Marozzo, and A. Orsino, “Deep learning meets smart agriculture,” in <i>Device-Edge-Cloud Continuum</i>, 2023.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@InCollection{chapter-iot-deep-2023,
+      AUTHOR = {Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio},
+      TITLE = {Deep learning meets smart agriculture: using LSTM networks to handle anomalous and missing sensor data in the compute continuum},
+      YEAR = {2023},
+      pages={141--153},
+      publisher="Springer Nature",
+      BOOKTITLE = {Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications}
+}">
+      Cite
+    </button>
+</li>
 
-  <li>A. Orsino, R. Cantini, and F. Marozzo, “Evaluating the performance of a multimodal speaker tracking system,” in <i>Device-Edge-Cloud Continuum</i>, 2023.</li>
+  <li>A. Orsino, R. Cantini, and F. Marozzo, “Evaluating the performance of a multimodal speaker tracking system,” in <i>Device-Edge-Cloud Continuum</i>, 2023.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@InCollection{chapter-iot-speaker-2023,
+      AUTHOR = {Orsino, Alessio and Cantini, Riccardo and Marozzo, Fabrizio},
+      TITLE = {Evaluating the performance of a multimodal speaker tracking system at the edge-to-cloud continuum},
+      YEAR = {2023},
+      pages={155--166},
+      publisher="Springer Nature",
+      BOOKTITLE = {Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications}
+}">
+      Cite
+    </button>
+</li>
 </ol>
 
 
