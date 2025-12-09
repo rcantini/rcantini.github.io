@@ -142,3 +142,41 @@ preview_only = false
 
   <li>A. Orsino, R. Cantini, and F. Marozzo, “Evaluating the performance of a multimodal speaker tracking system,” in <i>Device-Edge-Cloud Continuum</i>, 2023.</li>
 </ol>
+
+
+
+<!-- Modal -->
+<div id="bibModal" style="
+  display:none;
+  position:fixed;
+  top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.5);
+">
+  <div style="
+    background:white;
+    max-width:600px;
+    margin:10% auto;
+    padding:20px;
+    border-radius:10px;
+    position:relative;
+  ">
+    <button onclick="closeModal()" style="
+      position:absolute; top:10px; right:10px;
+    ">✕</button>
+
+    <h3>BibTeX</h3>
+    <pre id="modalBibtex" style="white-space:pre-wrap;"></pre>
+  </div>
+</div>
+
+<script>
+function showBibtex(id) {
+  const bib = document.getElementById(id).textContent;
+  document.getElementById('modalBibtex').textContent = bib;
+  document.getElementById('bibModal').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('bibModal').style.display = 'none';
+}
+</script>
