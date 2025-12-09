@@ -86,7 +86,7 @@ preview_only = false
 
 <h3>Conferences</h3>
 <ol start="17">
-  <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.</li>
+  <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.
     <button onclick="showBibtex('bib1')">Cite</button>
 
     <pre id="bib1" style="display:none;">
