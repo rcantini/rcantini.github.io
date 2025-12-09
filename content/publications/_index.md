@@ -249,7 +249,7 @@ DOI = {10.3390/app12031209}
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, G. Bruno, and P. Trunfio, “Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs,” <i>ACM TKDD</i>, vol. 16, no. 2, 2021.
+  <li>R. Cantini, F. Marozzo, G. Bruno, and P. Trunfio, “Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs,” <i>ACM Transactions on Knowledge Discovery from Data (TKDD)</i>, vol. 16, no. 2, 2021.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{HASHET,
@@ -387,15 +387,14 @@ publisher={MDPI}
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @InProceedings{PERSOM,
-author="Cantini, Riccardo
-and Marozzo, Fabrizio",
-editor="Comito, Carmela
-and Talia, Domenico",
-title="Topic Detection and Tracking in Social Media Platforms",
-booktitle="Pervasive Knowledge and Collective Intelligence on Web and Social Media",
-year="2023",
-publisher="Springer Nature Switzerland",
-address="Cham",
+author={Cantini, Riccardo
+and Marozzo, Fabrizio},
+editor={Comito, Carmela
+and Talia, Domenico},
+title={Topic Detection and Tracking in Social Media Platforms},
+booktitle={Pervasive Knowledge and Collective Intelligence on Web and Social Media},
+year={2023},
+publisher={Springer Nature},
 pages="41--56",
 doi={10.1007/978-3-031-31469-8_3}
 }">
@@ -548,7 +547,7 @@ doi={10.1007/978-3-031-31469-8_3}
       TITLE = {Shedding Light Inside the Black Box: Techniques for Explainable Artificial Intelligence in Healthcare},
       YEAR = {2025},
       BOOKTITLE = {Explainable Machine Intelligence in Healthcare},
-      publisher="Springer Nature"
+      publisher={Springer Nature}
 }">
       Cite
     </button>
@@ -562,7 +561,7 @@ doi={10.1007/978-3-031-31469-8_3}
       TITLE = {Deep learning meets smart agriculture: using LSTM networks to handle anomalous and missing sensor data in the compute continuum},
       YEAR = {2023},
       pages={141--153},
-      publisher="Springer Nature",
+      publisher={Springer Nature},
       BOOKTITLE = {Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications}
 }">
       Cite
@@ -577,7 +576,7 @@ doi={10.1007/978-3-031-31469-8_3}
       TITLE = {Evaluating the performance of a multimodal speaker tracking system at the edge-to-cloud continuum},
       YEAR = {2023},
       pages={155--166},
-      publisher="Springer Nature",
+      publisher={Springer Nature},
       BOOKTITLE = {Device-Edge-Cloud Continuum - Paradigms, Architectures and Applications}
 }">
       Cite
