@@ -51,7 +51,20 @@ preview_only = false
 
 <h3>Journals</h3>
 <ol>
-  <li>R. Cantini, M. Capalbo, and D. Talia, “Zep-nas: Enabling green-aware model design via zero-cost emission proxy in neural architecture search,” <i>Array</i>, p. 100566, 2025.</li>
+  <li>R. Cantini, M. Capalbo, and D. Talia, “Zep-nas: Enabling green-aware model design via zero-cost emission proxy in neural architecture search,” <i>Array</i>, p. 100566, 2025.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{zep_nas,
+  title={ZEP-NAS: Enabling green-aware model design via zero-cost emission proxy in neural architecture search},
+  author={Cantini, Riccardo and Capalbo, Matteo and Talia, Domenico},
+  journal={Array},
+  pages={100566},
+  year={2025},
+  publisher={Elsevier}
+}">
+      Cite
+    </button>
+</li>
 
   <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Dynamic hashtag recommendation in social media with trend shift detection and adaptation,” <i>Transactions on Computational Social Systems</i>, 2025.</li>
 
