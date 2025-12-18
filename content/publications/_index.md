@@ -50,19 +50,41 @@ preview_only = false
 +++
 
 <style>
+/* ===== Minimal publication stats ===== */
 .pub-stats {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 15px;
-  margin-bottom: 25px;
-  background: #fafafa;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 16px;
+  padding: 14px 0;
+  margin-bottom: 28px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
-.pub-stats ul {
-  margin: 0;
-  padding-left: 20px;
+
+.pub-stat {
+  text-align: center;
+}
+
+.pub-stat .value {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.pub-stat .label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 2px;
+}
+
+.pub-stat.year {
+  grid-column: 1 / -1;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #555;
+  padding-top: 6px;
 }
 </style>
-</head>
 
 <body class="container my-4">
 
@@ -642,20 +664,20 @@ function closeBib() {
 
 function computePublicationStats() {
   const sections = [
-    { name: "Journals", selector: "h3:nth-of-type(1) + ol > li" },
-    { name: "Conferences", selector: "h3:nth-of-type(2) + ol > li" },
-    { name: "Workshops", selector: "h3:nth-of-type(3) + ol > li" },
-    { name: "Books", selector: "h3:nth-of-type(4) + ol > li" },
-    { name: "Chapters", selector: "h3:nth-of-type(5) + ol > li" }
+    { label: "Journals", selector: "h3:nth-of-type(1) + ol > li" },
+    { label: "Conferences", selector: "h3:nth-of-type(2) + ol > li" },
+    { label: "Workshops", selector: "h3:nth-of-type(3) + ol > li" },
+    { label: "Books", selector: "h3:nth-of-type(4) + ol > li" },
+    { label: "Chapters", selector: "h3:nth-of-type(5) + ol > li" }
   ];
 
   let total = 0;
-  const byType = {};
   const byYear = {};
+  const byType = {};
 
   sections.forEach(sec => {
     const items = document.querySelectorAll(sec.selector);
-    byType[sec.name] = items.length;
+    byType[sec.label] = items.length;
     total += items.length;
 
     items.forEach(li => {
@@ -667,24 +689,31 @@ function computePublicationStats() {
     });
   });
 
-  const list = document.getElementById("pub-stats-list");
-  list.innerHTML = `
-    <li><b>Total publications:</b> ${total}</li>
-    <li><b>Journals:</b> ${byType.Journals}</li>
-    <li><b>Conferences:</b> ${byType.Conferences}</li>
-    <li><b>Workshops:</b> ${byType.Workshops}</li>
-    <li><b>Books:</b> ${byType.Books}</li>
-    <li><b>Chapters:</b> ${byType.Chapters}</li>
-    <li><b>Publications by year:</b> ${
-      Object.keys(byYear).sort((a,b)=>b-a)
-      .map(y => `${y}: ${byYear[y]}`).join(", ")
-    }</li>
+  const stats = document.getElementById("pub-stats");
+  stats.innerHTML = `
+    <div class="pub-stat">
+      <div class="value">${total}</div>
+      <div class="label">Total</div>
+    </div>
+    ${Object.entries(byType).map(([k,v]) => `
+      <div class="pub-stat">
+        <div class="value">${v}</div>
+        <div class="label">${k}</div>
+      </div>
+    `).join("")}
+    <div class="pub-stat year">
+      <b>By year:</b>
+      ${Object.keys(byYear).sort((a,b)=>b-a)
+        .map(y => `${y} (${byYear[y]})`)
+        .join(" · ")}
+    </div>
   `;
 }
 
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
