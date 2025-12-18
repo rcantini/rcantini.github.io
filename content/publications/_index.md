@@ -80,11 +80,11 @@ preview_only = false
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, A. Orsino, M. Ruggiero, and D. Talia, “<a href="https://link.springer.com/article/10.1007/s10994-025-06862-6" target="_blank" rel="noopener noreferrer">Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with LLM-as-a-judge</a>”, <i>Machine Learning</i>, vol. 114, no. 11, p. 249, 2025.
+  <li><b>R. Cantini</b>, A. Orsino, M. Ruggiero, and D. Talia, “<a href="https://link.springer.com/article/10.1007/s10994-025-06862-6" target="_blank" rel="noopener noreferrer">Benchmarking adversarial robustness to bias elicitation in large language models: scalable automated assessment with llm-as-a-judge</a>”, <i>Machine Learning</i>, vol. 114, no. 11, p. 249, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{clear_bias,
-  title={Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with llm-as-a-judge},
+  title={Benchmarking adversarial robustness to bias elicitation in large language models: scalable automated assessment with llm-as-a-judge},
   author={Cantini, Riccardo and Orsino, Alessio and Ruggiero, Massimo and Talia, Domenico},
   journal={Machine Learning},
   volume={114},
@@ -97,7 +97,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S2468696425000229" target="_blank" rel="noopener noreferrer">Detecting mental disorder on social media: A chatgpt-augmented explainable approach</a>”, <i>Online Social Networks and Media</i>, vol. 48, p. 100321, 2025.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S2468696425000229" target="_blank" rel="noopener noreferrer">Detecting mental disorder on social media: a ChatGPT-augmented explainable approach</a>”, <i>Online Social Networks and Media</i>, vol. 48, p. 100321, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{depression_det,
@@ -128,7 +128,7 @@ preview_only = false
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “<a href="https://link.springer.com/article/10.1007/s10994-024-06727-4" target="_blank" rel="noopener noreferrer">Unmasking deception: A topic-oriented multimodal approach to uncover false information on social media</a>”, <i>Machine Learning</i>, vol. 114, no. 1, p. 13, 2025.
+  <li><b>R. Cantini</b>, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “<a href="https://link.springer.com/article/10.1007/s10994-024-06727-4" target="_blank" rel="noopener noreferrer">Unmasking deception: a topic-oriented multimodal approach to uncover false information on social media</a>”, <i>Machine Learning</i>, vol. 114, no. 1, p. 13, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{ML2024,
@@ -182,7 +182,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://link.springer.com/article/10.1186/s40537-021-00555-2" target="_blank" rel="noopener noreferrer">Programming big data analysis: Principles and solutions</a>”, <i>Journal of Big Data</i>, vol. 9, no. 1, 2022.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://link.springer.com/article/10.1186/s40537-021-00555-2" target="_blank" rel="noopener noreferrer">Programming big data analysis: principles and solutions</a>”, <i>Journal of Big Data</i>, vol. 9, no. 1, 2022.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{SURVEY,
@@ -368,7 +368,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-45275-8_9" target="_blank" rel="noopener noreferrer">Unmasking covid-19 false information on twitter</a>”, in <i>Discovery Science</i>, 2023.
+  <li><b>R. Cantini</b>, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-45275-8_9" target="_blank" rel="noopener noreferrer">Unmasking covid-19 false information on twitter: a topic-based approach with bert</a>”, in <i>Discovery Science</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{DS2023,
@@ -419,11 +419,11 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/9044124" target="_blank" rel="noopener noreferrer">Discovering political polarization on social media: A case study</a>”, in <i>15th International Conference on Semantics, Knowledge and Grids (SKG)</i>, 2019.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/9044124" target="_blank" rel="noopener noreferrer">Discovering political polarization on social media: a case study</a>”, in <i>15th International Conference on Semantics, Knowledge and Grids (SKG)</i>, 2019.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{SKG,
-  title={Discovering political polarization on social media: A case study},
+  title={Discovering political polarization on social media: a case study},
   author={Belcastro, Loris and Cantini, Riccardo and Marozzo, Fabrizio and Talia, Domenico and Trunfio, Paolo},
   booktitle={2019 15th International Conference on Semantics, Knowledge and Grids (SKG)},
   pages={182--189},
@@ -438,20 +438,21 @@ doi={10.1007/978-3-031-31469-8_3}
 
 <h3>Workshops</h3>
 <ol start="24">
-  <li>R. Cantini, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.
+  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{bias_rlm,
   title={Is Reasoning All you Need? Probing Bias in the Age of Reasoning Language Models},
   author={Cantini, Riccardo and Gabriele, Nicola and Orsino, Alessio and Talia, Domenico},
   booktitle={Third AEQUITAS Workshop on Fairness and Bias in AI (ECAI 2025)},
-  year={2025}
+  year={2025},
+  note={To appear}
 }">
       Cite
     </button>
 </li>
 
-  <li>R. Cantini, N. Gabriele, and A. Orsino, “A parameter-efficient approach to distilling large language models via meta-learning,” in <i>ADBIS</i>, 2025.
+  <li><b>R. Cantini</b>, N. Gabriele, and A. Orsino, “<a href="https://link.springer.com/chapter/10.1007/978-3-032-05727-3_36" target="_blank" rel="noopener noreferrer">A parameter-efficient approach to distilling large language models via meta-learning</a>”, in <i>ADBIS</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{meta_distil_peft,
@@ -467,7 +468,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Advancing green and fair ai: A research perspective on environmental and social sustainability,” <i>Ital-IA 2025</i>.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ceur-ws.org/Vol-4121/Ital-IA_2025_paper_66.pdf" target="_blank" rel="noopener noreferrer">Advancing green and fair ai: a research perspective on environmental and social sustainability</a>”, <i>Ital-IA 2025</i>.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{ITAL-IA25-FAIR,
@@ -480,7 +481,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>R. Cantini, D. M. Longo, and D. Thakur, “Preface to the proceedings of green-aware ai 2024,” <i>AIxIA 2024</i>.
+  <li><b>R. Cantini</b>, D. M. Longo, and D. Thakur, “<a href="https://ceur-ws.org/Vol-3934/preface.pdf" target="_blank" rel="noopener noreferrer">Preface to the proceedings of green-aware ai 2024</a>”, <i>AIxIA 2024</i>.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{GreenAI24-preface,
@@ -493,7 +494,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>R. Cantini, A. Orsino, D. Talia, and P. Trunfio, “Towards interpretable energy estimation for edge ai applications,” <i>IPDPS 2025</i>.
+  <li><b>R. Cantini</b>, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/11106034" target="_blank" rel="noopener noreferrer">Towards interpretable energy estimation for edge ai applications</a>”, <i>IPDPS 2025</i>.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{IPDPS25,
@@ -506,7 +507,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>P. Lindia, R. Cantini, F. Bettucci, L. Sartori, and P. Trunfio, “Enhancing the evaluation of fault detection models in smart agriculture using llm agents,” <i>AIxIA 2024</i>.
+  <li>P. Lindia, <b>R. Cantini</b>, F. Bettucci, L. Sartori, and P. Trunfio, “<a href="https://ceur-ws.org/Vol-3934/paper5.pdf" target="_blank" rel="noopener noreferrer">Enhancing the evaluation of fault detection models in smart agriculture using llm agents for rule-based anomaly generation</a>”, <i>AIxIA 2024</i>.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{GreenAI24,
@@ -522,7 +523,7 @@ doi={10.1007/978-3-031-31469-8_3}
 
 <h3>Books</h3>
 <ol start="30">
-  <li>D. Talia, P. Trunfio, F. Marozzo, L. Belcastro, R. Cantini, and A. Orsino, <i>Programming Big Data Applications</i>. World Scientific, 2023.
+  <li>D. Talia, P. Trunfio, F. Marozzo, L. Belcastro, <b>R. Cantini</b>, and A. Orsino, “<a href="https://www.worldscientific.com/worldscibooks/10.1142/q0444?srsltid=AfmBOoqM_SFfrT8VlsDRNM9eyPIIPUEBu6TFjNJVct8XNPwnYWOMThHc#t=aboutBook" target="_blank" rel="noopener noreferrer">Programming big data applications: scalable tools and frameworks for your needs</a>”, <i>World Scientific</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @Book{big-data-book-2023,
@@ -540,7 +541,7 @@ doi={10.1007/978-3-031-31469-8_3}
 
 <h3>Chapters</h3>
 <ol start="31">
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Shedding light inside the black box,” in <i>Explainable Machine Intelligence in Healthcare</i>, 2025.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-91379-2_4" target="_blank" rel="noopener noreferrer">Shedding light inside the black box: techniques for explainable artificial intelligence in healthcare</a>”, in <i>Explainable Machine Intelligence in Healthcare</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @InCollection{xai-healthcare-chapter,
@@ -554,12 +555,12 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, and A. Orsino, “Deep learning meets smart agriculture,” in <i>Device-Edge-Cloud Continuum</i>, 2023.
+  <li><b>R. Cantini</b>, F. Marozzo, and A. Orsino, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-42194-5_8" target="_blank" rel="noopener noreferrer">Deep learning meets smart agriculture: using lstm networks to handle anomalous and missing sensor data in the compute continuum</a>”, in <i>Device-Edge-Cloud Continuum</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @InCollection{chapter-iot-deep-2023,
       AUTHOR = {Cantini, Riccardo and Marozzo, Fabrizio and Orsino, Alessio},
-      TITLE = {Deep learning meets smart agriculture: using LSTM networks to handle anomalous and missing sensor data in the compute continuum},
+      TITLE = {Deep learning meets smart agriculture: using lstm networks to handle anomalous and missing sensor data in the compute continuum},
       YEAR = {2023},
       pages={141--153},
       publisher={Springer Nature},
@@ -569,7 +570,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>A. Orsino, R. Cantini, and F. Marozzo, “Evaluating the performance of a multimodal speaker tracking system,” in <i>Device-Edge-Cloud Continuum</i>, 2023.
+  <li>A. Orsino, <b>R. Cantini</b>, and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-42194-5_9" target="_blank" rel="noopener noreferrer">Evaluating the performance of a multimodal speaker tracking system at the edge-to-cloud continuum</a>”, in <i>Device-Edge-Cloud Continuum</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @InCollection{chapter-iot-speaker-2023,
@@ -614,6 +615,7 @@ function closeBib() {
 }
 
 </script>
+
 
 
 
