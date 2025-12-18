@@ -67,7 +67,7 @@ preview_only = false
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://doi.org/10.1016/j.array.2025.100566" target="_blank" rel="noopener noreferrer">Dynamic hashtag recommendation in social media with trend shift detection and adaptation</a>”, <i>Transactions on Computational Social Systems</i>, 2025.
+  <li><b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/11230078" target="_blank" rel="noopener noreferrer">Dynamic hashtag recommendation in social media with trend shift detection and adaptation</a>”, <i>Transactions on Computational Social Systems</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{hadapts,
@@ -614,6 +614,7 @@ function closeBib() {
 }
 
 </script>
+
 
 
 
