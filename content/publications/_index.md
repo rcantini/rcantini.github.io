@@ -323,7 +323,7 @@ publisher={MDPI}
 
 <h3>Conferences</h3>
 <ol start="17">
-  <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Neural topic modeling in social media by clustering latent hashtag representations,” in <i>ECAI 2025</i>, 2025.
+  <li><b>R. Cantini</b>, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ebooks.iospress.nl/volumearticle/75736" target="_blank" rel="noopener noreferrer">Neural topic modeling in social media by clustering latent hashtag representations</a>”, in <i>ECAI 2025</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @incollection{ntm_hec,
@@ -338,7 +338,7 @@ publisher={MDPI}
     </button>
   </li>
 
-  <li>R. Cantini, G. Cosenza, A. Orsino, and D. Talia, “Are large language models really bias-free? jailbreak prompts for assessing adversarial robustness to bias elicitation,” in <i>Discovery Science</i>, 2024.
+  <li><b>R. Cantini</b>, G. Cosenza, A. Orsino, and D. Talia, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-78977-9_4" target="_blank" rel="noopener noreferrer">Are large language models really bias-free? jailbreak prompts for assessing adversarial robustness to bias elicitation</a>”, in <i>Discovery Science</i>, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{DS2024,
@@ -353,7 +353,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li>R. Cantini, C. Cosentino, and F. Marozzo, “Multi-dimensional classification on social media data for detailed reporting with large language models,” in <i>AIAI</i>, 2024.
+  <li><b>R. Cantini</b>, C. Cosentino, and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-63215-0_8" target="_blank" rel="noopener noreferrer">Multi-dimensional classification on social media data for detailed reporting with large language models</a>”, in <i>AIAI</i>, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{AIAI24,
@@ -368,7 +368,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li>R. Cantini, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “Unmasking covid-19 false information on twitter,” in <i>Discovery Science</i>, 2023.
+  <li><b>R. Cantini</b>, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-45275-8_9" target="_blank" rel="noopener noreferrer">Unmasking covid-19 false information on twitter</a>”, in <i>Discovery Science</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{DS2023,
@@ -384,7 +384,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li>R. Cantini and F. Marozzo, “Topic detection and tracking in social media platforms,” in <i>Pervasive Knowledge and Collective Intelligence on Web and Social Media</i>, 2023.
+  <li><b>R. Cantini</b> and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-31469-8_3" target="_blank" rel="noopener noreferrer">Topic detection and tracking in social media platforms</a>”, in <i>Pervasive Knowledge and Collective Intelligence on Web and Social Media</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @InProceedings{PERSOM,
@@ -403,7 +403,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, M. Passarelli, and P. Trunfio, “A visual tool for reducing returns in e-commerce platforms,” in <i>IEEE 6th International Forum on Research and Technology for Society and Industry (RTSI)</i>, 2021.
+  <li><b>R. Cantini</b>, F. Marozzo, A. Orsino, M. Passarelli, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/9597230" target="_blank" rel="noopener noreferrer">A visual tool for reducing returns in e-commerce platforms</a>”, in <i>IEEE 6th International Forum on Research and Technology for Society and Industry (RTSI)</i>, 2021.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{RTSI,
@@ -419,7 +419,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Discovering political polarization on social media: A case study,” in <i>15th International Conference on Semantics, Knowledge and Grids (SKG)</i>, 2019.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/9044124" target="_blank" rel="noopener noreferrer">Discovering political polarization on social media: A case study</a>”, in <i>15th International Conference on Semantics, Knowledge and Grids (SKG)</i>, 2019.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{SKG,
@@ -614,6 +614,7 @@ function closeBib() {
 }
 
 </script>
+
 
 
 
