@@ -640,10 +640,6 @@ function closeBib() {
   if (modal) modal.style.display = 'none';
 }
 
-
-/* =========================
-   PUBLICATION STATISTICS
-   ========================= */
 function computePublicationStats() {
   const sections = [
     { name: "Journals", selector: "h3:nth-of-type(1) + ol > li" },
@@ -689,6 +685,7 @@ function computePublicationStats() {
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
