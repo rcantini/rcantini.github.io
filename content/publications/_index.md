@@ -49,6 +49,32 @@ preview_only = false
 
 +++
 
+<style>
+.pub-stats {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 25px;
+  background: #fafafa;
+}
+.pub-stats ul {
+  margin: 0;
+  padding-left: 20px;
+}
+</style>
+</head>
+
+<body class="container my-4">
+
+<!-- ===================== -->
+<!-- PUBLICATION STATISTICS -->
+<!-- ===================== -->
+<div id="pub-stats" class="pub-stats">
+  <h3>Publication Statistics</h3>
+  <ul id="pub-stats-list"></ul>
+</div>
+
+
 <h3>Journals</h3>
 <ol>
   <li><b>R. Cantini</b>, M. Capalbo, and D. Talia, 
@@ -614,7 +640,56 @@ function closeBib() {
   if (modal) modal.style.display = 'none';
 }
 
+
+/* =========================
+   PUBLICATION STATISTICS
+   ========================= */
+function computePublicationStats() {
+  const sections = [
+    { name: "Journals", selector: "h3:nth-of-type(1) + ol > li" },
+    { name: "Conferences", selector: "h3:nth-of-type(2) + ol > li" },
+    { name: "Workshops", selector: "h3:nth-of-type(3) + ol > li" },
+    { name: "Books", selector: "h3:nth-of-type(4) + ol > li" },
+    { name: "Chapters", selector: "h3:nth-of-type(5) + ol > li" }
+  ];
+
+  let total = 0;
+  const byType = {};
+  const byYear = {};
+
+  sections.forEach(sec => {
+    const items = document.querySelectorAll(sec.selector);
+    byType[sec.name] = items.length;
+    total += items.length;
+
+    items.forEach(li => {
+      const years = li.textContent.match(/\b(19|20)\d{2}\b/g);
+      if (years) {
+        const year = years[years.length - 1];
+        byYear[year] = (byYear[year] || 0) + 1;
+      }
+    });
+  });
+
+  const list = document.getElementById("pub-stats-list");
+  list.innerHTML = `
+    <li><b>Total publications:</b> ${total}</li>
+    <li><b>Journals:</b> ${byType.Journals}</li>
+    <li><b>Conferences:</b> ${byType.Conferences}</li>
+    <li><b>Workshops:</b> ${byType.Workshops}</li>
+    <li><b>Books:</b> ${byType.Books}</li>
+    <li><b>Chapters:</b> ${byType.Chapters}</li>
+    <li><b>Publications by year:</b> ${
+      Object.keys(byYear).sort((a,b)=>b-a)
+      .map(y => `${y}: ${byYear[y]}`).join(", ")
+    }</li>
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", computePublicationStats);
+
 </script>
+
 
 
 
