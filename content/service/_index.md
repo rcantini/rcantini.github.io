@@ -54,8 +54,7 @@ preview_only = false
         <ul>
             <li>Associate Editor of <em>Journal of Big Data</em>, Springer (SJR rank: Q1).</li>
             <li>Editorial Board Member of <em>Discover Artificial Intelligence</em>, Springer (SJR rank: Q1).</li>
-            <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>. <a href="https://www.mdpi.com/journal/BDCC/special_issues/1XP11D36SD" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fas fa-link mr-1"></i>Link</a>
-            </li>
+            <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>.</li>
         </ul>
 <h3>Program Committee</h3>
         <ul>
