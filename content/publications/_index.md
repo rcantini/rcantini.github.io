@@ -67,7 +67,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Dynamic hashtag recommendation in social media with trend shift detection and adaptation,” <i>Transactions on Computational Social Systems</i>, 2025.
+  <li><b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://doi.org/10.1016/j.array.2025.100566" target="_blank" rel="noopener noreferrer">Dynamic hashtag recommendation in social media with trend shift detection and adaptation</a>”, <i>Transactions on Computational Social Systems</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{hadapts,
@@ -80,7 +80,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, A. Orsino, M. Ruggiero, and D. Talia, “Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with llm-as-a-judge,” <i>Machine Learning</i>, vol. 114, no. 11, p. 249, 2025.
+  <li><b>R. Cantini</b>, A. Orsino, M. Ruggiero, and D. Talia, “<a href="https://link.springer.com/article/10.1007/s10994-025-06862-6" target="_blank" rel="noopener noreferrer">Benchmarking adversarial robustness to bias elicitation in large language models: Scalable automated assessment with LLM-as-a-judge</a>”, <i>Machine Learning</i>, vol. 114, no. 11, p. 249, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{clear_bias,
@@ -97,7 +97,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Detecting mental disorder on social media: A chatgpt-augmented explainable approach,” <i>Online Social Networks and Media</i>, vol. 48, p. 100321, 2025.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S2468696425000229" target="_blank" rel="noopener noreferrer">Detecting mental disorder on social media: A chatgpt-augmented explainable approach</a>”, <i>Online Social Networks and Media</i>, vol. 48, p. 100321, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{depression_det,
@@ -113,7 +113,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “Harnessing prompt-based large language models for disaster monitoring and automated reporting from social media feedback,” <i>Online Social Networks and Media</i>, vol. 45, p. 100295, 2025.
+  <li><b>R. Cantini</b>, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S246869642400020X" target="_blank" rel="noopener noreferrer">Harnessing prompt-based large language models for disaster monitoring and automated reporting from social media feedback</a>”, <i>Online Social Networks and Media</i>, vol. 45, p. 100295, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @Article{llms-disaster-monitoring-2024,
@@ -128,7 +128,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “Unmasking deception: A topic-oriented multimodal approach to uncover false information on social media,” <i>Machine Learning</i>, vol. 114, no. 1, p. 13, 2025.
+  <li><b>R. Cantini</b>, C. Cosentino, I. Kilanioti, F. Marozzo, and D. Talia, “<a href="https://link.springer.com/article/10.1007/s10994-024-06727-4" target="_blank" rel="noopener noreferrer">Unmasking deception: A topic-oriented multimodal approach to uncover false information on social media</a>”, <i>Machine Learning</i>, vol. 114, no. 1, p. 13, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{ML2024,
@@ -145,7 +145,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, A. Orsino, and D. Talia, “Xai-driven knowledge distillation of large language models for efficient deployment on low-resource devices,” <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.
+  <li><b>R. Cantini</b>, A. Orsino, and D. Talia, “<a href="https://link.springer.com/article/10.1186/s40537-024-00928-3" target="_blank" rel="noopener noreferrer">Xai-driven knowledge distillation of large language models for efficient deployment on low-resource devices</a>”, <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{DiXtill,
@@ -164,7 +164,7 @@ preview_only = false
 
 </li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, et al., “Block size estimation for data partitioning in hpc applications using machine learning techniques,” <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.
+  <li><b>R. Cantini</b>, F. Marozzo, A. Orsino, et al., “<a href="https://link.springer.com/article/10.1186/s40537-023-00862-w" target="_blank" rel="noopener noreferrer">Block size estimation for data partitioning in hpc applications using machine learning techniques</a>”, <i>Journal of Big Data</i>, vol. 11, no. 1, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{BLEST_ML,
@@ -182,7 +182,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Programming big data analysis: Principles and solutions,” <i>Journal of Big Data</i>, vol. 9, no. 1, 2022.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://link.springer.com/article/10.1186/s40537-021-00555-2" target="_blank" rel="noopener noreferrer">Programming big data analysis: Principles and solutions</a>”, <i>Journal of Big Data</i>, vol. 9, no. 1, 2022.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{SURVEY,
@@ -199,7 +199,7 @@ preview_only = false
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Analyzing political polarization on social media by deleting bot spamming,” <i>Big Data and Cognitive Computing</i>, vol. 6, no. 1, 2022.
+  <li><b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://www.mdpi.com/2504-2289/6/1/3" target="_blank" rel="noopener noreferrer">Analyzing political polarization on social media by deleting bot spamming</a>”, <i>Big Data and Cognitive Computing</i>, vol. 6, no. 1, 2022.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{TIMBRE,
@@ -216,7 +216,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li>L. Belcastro, F. Branda, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Analyzing voter behavior on social media during the 2020 us presidential election campaign,” <i>Social Network Analysis and Mining</i>, vol. 12, no. 1, 2022.
+  <li>L. Belcastro, F. Branda, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://link.springer.com/article/10.1007/s13278-022-00913-9" target="_blank" rel="noopener noreferrer">Analyzing voter behavior on social media during the 2020 us presidential election campaign</a>”, <i>Social Network Analysis and Mining</i>, vol. 12, no. 1, 2022.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{USA2020,
@@ -233,7 +233,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li>L. Belcastro, R. Cantini, and F. Marozzo, “Knowledge discovery from large amounts of social media data,” <i>Applied Sciences</i>, vol. 12, no. 3, 2022.
+  <li>L. Belcastro, <b>R. Cantini</b>, and F. Marozzo, “<a href="https://www.mdpi.com/2076-3417/12/3/1209" target="_blank" rel="noopener noreferrer">Knowledge discovery from large amounts of social media data</a>”, <i>Applied Sciences</i>, vol. 12, no. 3, 2022.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{APPL,
@@ -250,7 +250,7 @@ DOI = {10.3390/app12031209}
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, G. Bruno, and P. Trunfio, “Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs,” <i>ACM Transactions on Knowledge Discovery from Data (TKDD)</i>, vol. 16, no. 2, 2021.
+  <li><b>R. Cantini</b>, F. Marozzo, G. Bruno, and P. Trunfio, “<a href="https://dl.acm.org/doi/abs/10.1145/3466876" target="_blank" rel="noopener noreferrer">Learning sentence-to-hashtags semantic mapping for hashtag recommendation on microblogs</a>”, <i>ACM Transactions on Knowledge Discovery from Data (TKDD)</i>, vol. 16, no. 2, 2021.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{HASHET,
@@ -269,7 +269,7 @@ DOI = {10.3390/app12031209}
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, S. Mazza, D. Talia, and P. Trunfio, “A weighted artificial bee colony algorithm for influence maximization,” <i>Online Social Networks and Media</i>, vol. 26, p. 100167, 2021.
+  <li><b>R. Cantini</b>, F. Marozzo, S. Mazza, D. Talia, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S2468696421000483" target="_blank" rel="noopener noreferrer">A weighted artificial bee colony algorithm for influence maximization</a>”, <i>Online Social Networks and Media</i>, vol. 26, p. 100167, 2021.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{WABC,
@@ -286,7 +286,7 @@ DOI = {10.3390/app12031209}
     </button>
 </li>
 
-  <li>R. Cantini, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “Exploiting machine learning for improving in-memory execution of data-intensive workflows on parallel machines,” <i>Future Internet</i>, vol. 13, no. 5, 2021.
+  <li><b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://www.mdpi.com/1999-5903/13/5/121" target="_blank" rel="noopener noreferrer">Exploiting machine learning for improving in-memory execution of data-intensive workflows on parallel machines</a>”, <i>Future Internet</i>, vol. 13, no. 5, 2021.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{IIWM,
@@ -303,7 +303,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li>L. Belcastro, R. Cantini, F. Marozzo, D. Talia, and P. Trunfio, “Learning political polarization on social media using neural networks,” <i>IEEE Access</i>, vol. 8, 2020.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/9026882" target="_blank" rel="noopener noreferrer">Learning political polarization on social media using neural networks</a>”, <i>IEEE Access</i>, vol. 8, 2020.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{IOM-NN,
@@ -614,5 +614,6 @@ function closeBib() {
 }
 
 </script>
+
 
 
