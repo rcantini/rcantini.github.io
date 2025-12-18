@@ -64,8 +64,8 @@ preview_only = false
 
 .pub-stats-main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns → 2 rows */
+  gap: 22px 28px;
   justify-items: center;
 }
 
@@ -91,11 +91,16 @@ preview_only = false
 
 .pub-year {
   display: grid;
-  grid-template-columns: 36px 1fr;
+  grid-template-columns: 36px 1fr 20px; /* year | bar | count */
   align-items: center;
   gap: 8px;
   font-size: 0.75rem;
   color: #555;
+}
+
+.pub-year-count {
+  text-align: right;
+  color: #666;
 }
 
 .pub-year-bar {
@@ -736,18 +741,20 @@ function computePublicationStats() {
   const box = document.getElementById("pub-stats-years");
 
   box.innerHTML = years.map(y => `
-    <div class="pub-year">
-      <div>${y}</div>
-      <div class="pub-year-bar">
-        <span style="width:${(byYear[y]/max)*100}%"></span>
-      </div>
+  <div class="pub-year">
+    <div>${y}</div>
+    <div class="pub-year-bar">
+      <span style="width:${(byYear[y]/max)*100}%"></span>
     </div>
+    <div class="pub-year-count">${byYear[y]}</div>
+  </div>
   `).join("");
 }
 
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
