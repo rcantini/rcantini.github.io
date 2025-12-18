@@ -116,6 +116,30 @@ preview_only = false
   background: #444;
   border-radius: 3px;
 }
+
+@media (max-width: 700px) {
+
+  /* Stack stats and chart vertically */
+  .pub-stats {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* Stats: 2 columns on mobile */
+  .pub-stats-main {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px 20px;
+  }
+
+  /* Year bars take full width */
+  .pub-years {
+    min-width: 100%;
+  }
+
+  .pub-year {
+    grid-template-columns: 36px 1fr 24px;
+  }
+}
 </style>
 
 <body class="container my-4">
@@ -754,6 +778,7 @@ function computePublicationStats() {
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
