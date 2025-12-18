@@ -542,7 +542,7 @@ doi={10.1007/978-3-031-31469-8_3}
 
 <h3>Workshops</h3>
 <ol start="24">
-  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.
+  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025. To appear.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{bias_rlm,
@@ -778,6 +778,7 @@ function computePublicationStats() {
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
