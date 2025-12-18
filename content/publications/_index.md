@@ -50,11 +50,11 @@ preview_only = false
 +++
 
 <style>
-/* ===== Minimal publication stats ===== */
 .pub-stats {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 16px;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 28px;
   padding: 14px 0;
   margin-bottom: 28px;
   border-top: 1px solid #e5e5e5;
@@ -62,27 +62,54 @@ preview_only = false
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+.pub-stats-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 18px;
+  justify-items: center;
+}
+
 .pub-stat {
   text-align: center;
 }
 
 .pub-stat .value {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 
 .pub-stat .label {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: #666;
-  margin-top: 2px;
 }
 
-.pub-stat.year {
-  grid-column: 1 / -1;
-  text-align: left;
-  font-size: 0.85rem;
+.pub-years {
+  display: grid;
+  gap: 6px;
+  min-width: 180px;
+}
+
+.pub-year {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
   color: #555;
-  padding-top: 6px;
+}
+
+.pub-year-bar {
+  height: 6px;
+  background: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.pub-year-bar span {
+  display: block;
+  height: 100%;
+  background: #444;
+  border-radius: 3px;
 }
 </style>
 
@@ -92,8 +119,8 @@ preview_only = false
 <!-- PUBLICATION STATISTICS -->
 <!-- ===================== -->
 <div id="pub-stats" class="pub-stats">
-  <h3>Publication Statistics</h3>
-  <ul id="pub-stats-list"></ul>
+  <div id="pub-stats-main" class="pub-stats-main"></div>
+  <div id="pub-stats-years" class="pub-years"></div>
 </div>
 
 
@@ -672,8 +699,8 @@ function computePublicationStats() {
   ];
 
   let total = 0;
-  const byYear = {};
   const byType = {};
+  const byYear = {};
 
   sections.forEach(sec => {
     const items = document.querySelectorAll(sec.selector);
@@ -689,8 +716,8 @@ function computePublicationStats() {
     });
   });
 
-  const stats = document.getElementById("pub-stats");
-  stats.innerHTML = `
+  /* ===== Main stats ===== */
+  document.getElementById("pub-stats-main").innerHTML = `
     <div class="pub-stat">
       <div class="value">${total}</div>
       <div class="label">Total</div>
@@ -701,18 +728,27 @@ function computePublicationStats() {
         <div class="label">${k}</div>
       </div>
     `).join("")}
-    <div class="pub-stat year">
-      <b>By year:</b>
-      ${Object.keys(byYear).sort((a,b)=>b-a)
-        .map(y => `${y} (${byYear[y]})`)
-        .join(" · ")}
-    </div>
   `;
+
+  /* ===== Year micro-bars ===== */
+  const years = Object.keys(byYear).sort((a,b)=>b-a);
+  const max = Math.max(...Object.values(byYear));
+  const box = document.getElementById("pub-stats-years");
+
+  box.innerHTML = years.map(y => `
+    <div class="pub-year">
+      <div>${y}</div>
+      <div class="pub-year-bar">
+        <span style="width:${(byYear[y]/max)*100}%"></span>
+      </div>
+    </div>
+  `).join("");
 }
 
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
