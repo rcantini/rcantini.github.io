@@ -52,9 +52,7 @@ preview_only = false
 <h3>Journals</h3>
 <ol>
   <li>R. Cantini, M. Capalbo, and D. Talia, 
-    “<a href="https://doi.org/10.1016/j.array.2025.100566" target="_blank" rel="noopener noreferrer">
-  ZEP-NAS: Enabling green-aware model design via zero-cost emission proxy in neural architecture search
-</a>”, <i>Array</i>, p. 100566, 2025.
+    “<a href="https://doi.org/10.1016/j.array.2025.100566" target="_blank" rel="noopener noreferrer">ZEP-NAS: Enabling green-aware model design via zero-cost emission proxy in neural architecture search</a>”, <i>Array</i>, p. 100566, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{zep_nas,
@@ -616,3 +614,4 @@ function closeBib() {
 }
 
 </script>
+
