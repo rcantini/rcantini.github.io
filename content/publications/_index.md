@@ -427,7 +427,7 @@ publisher={MDPI}
 
 <h3>Conferences</h3>
 <ol start="17">
-  <li><b>R. Cantini</b>, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ebooks.iospress.nl/volumearticle/75736" target="_blank" rel="noopener noreferrer">Neural topic modeling in social media by clustering latent hashtag representations</a>”, in <i>ECAI 2025</i>, 2025.
+  <li><b>R. Cantini</b>, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ebooks.iospress.nl/volumearticle/75736" target="_blank" rel="noopener noreferrer">Neural topic modeling in social media by clustering latent hashtag representations</a>”, in <i>European Conference on Artificial Intelligence (ECAI)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @incollection{ntm_hec,
@@ -457,7 +457,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, C. Cosentino, and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-63215-0_8" target="_blank" rel="noopener noreferrer">Multi-dimensional classification on social media data for detailed reporting with large language models</a>”, in <i>AIAI</i>, 2024.
+  <li><b>R. Cantini</b>, C. Cosentino, and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-63215-0_8" target="_blank" rel="noopener noreferrer">Multi-dimensional classification on social media data for detailed reporting with large language models</a>”, in <i>Artificial Intelligence Applications and Innovations (AIAI)</i>, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{AIAI24,
@@ -488,7 +488,7 @@ publisher={MDPI}
     </button>
 </li>
 
-  <li><b>R. Cantini</b> and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-31469-8_3" target="_blank" rel="noopener noreferrer">Topic detection and tracking in social media platforms</a>”, in <i>Pervasive Knowledge and Collective Intelligence on Web and Social Media</i>, 2023.
+  <li><b>R. Cantini</b> and F. Marozzo, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-31469-8_3" target="_blank" rel="noopener noreferrer">Topic detection and tracking in social media platforms</a>”, in <i>Pervasive Knowledge and Collective Intelligence on Web and Social Media (PerSoM)</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @InProceedings{PERSOM,
@@ -542,7 +542,7 @@ doi={10.1007/978-3-031-31469-8_3}
 
 <h3>Workshops</h3>
 <ol start="24">
-  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “<a href="https://ceur-ws.org/Vol-4147/paper6.pdf" target="_blank" rel="noopener noreferrer">Is reasoning all you need? probing bias in the age of reasoning language models</a>”, <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.
+  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “<a href="https://ceur-ws.org/Vol-4147/paper6.pdf" target="_blank" rel="noopener noreferrer">Is reasoning all you need? probing bias in the age of reasoning language models</a>”, <i>Third AEQUITAS Workshop on Fairness and Bias in AI (ECAI)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{bias_rlm,
@@ -555,7 +555,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, N. Gabriele, and A. Orsino, “<a href="https://link.springer.com/chapter/10.1007/978-3-032-05727-3_36" target="_blank" rel="noopener noreferrer">A parameter-efficient approach to distilling large language models via meta-learning</a>”, in <i>ADBIS</i>, 2025.
+  <li><b>R. Cantini</b>, N. Gabriele, and A. Orsino, “<a href="https://link.springer.com/chapter/10.1007/978-3-032-05727-3_36" target="_blank" rel="noopener noreferrer">A parameter-efficient approach to distilling large language models via meta-learning</a>”, in <i>European Conference on Advances in Databases and Information Systems (ADBIS)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{meta_distil_peft,
@@ -571,7 +571,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ceur-ws.org/Vol-4121/Ital-IA_2025_paper_66.pdf" target="_blank" rel="noopener noreferrer">Advancing green and fair ai: a research perspective on environmental and social sustainability</a>”, <i>Ital-IA 2025</i>.
+  <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ceur-ws.org/Vol-4121/Ital-IA_2025_paper_66.pdf" target="_blank" rel="noopener noreferrer">Advancing green and fair ai: a research perspective on environmental and social sustainability</a>”, <i>Ital-IA</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{ITAL-IA25-FAIR,
@@ -584,7 +584,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, D. M. Longo, and D. Thakur, “<a href="https://ceur-ws.org/Vol-3934/preface.pdf" target="_blank" rel="noopener noreferrer">Preface to the proceedings of green-aware ai 2024</a>”, <i>AIxIA 2024</i>.
+  <li><b>R. Cantini</b>, D. M. Longo, and D. Thakur, “<a href="https://ceur-ws.org/Vol-3934/preface.pdf" target="_blank" rel="noopener noreferrer">Preface to the proceedings of green-aware ai 2024</a>”, <i>Green-Aware AI (AIxIA)</i>, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{GreenAI24-preface,
@@ -597,7 +597,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li><b>R. Cantini</b>, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/11106034" target="_blank" rel="noopener noreferrer">Towards interpretable energy estimation for edge ai applications</a>”, <i>IPDPS 2025</i>.
+  <li><b>R. Cantini</b>, A. Orsino, D. Talia, and P. Trunfio, “<a href="https://ieeexplore.ieee.org/document/11106034" target="_blank" rel="noopener noreferrer">Towards interpretable energy estimation for edge ai applications</a>”, <i>International Workshop on Intelligent and Adaptive Edge-Cloud Operations and Services (IPDPS)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{IPDPS25,
@@ -610,7 +610,7 @@ doi={10.1007/978-3-031-31469-8_3}
     </button>
 </li>
 
-  <li>P. Lindia, <b>R. Cantini</b>, F. Bettucci, L. Sartori, and P. Trunfio, “<a href="https://ceur-ws.org/Vol-3934/paper5.pdf" target="_blank" rel="noopener noreferrer">Enhancing the evaluation of fault detection models in smart agriculture using llm agents for rule-based anomaly generation</a>”, <i>AIxIA 2024</i>.
+  <li>P. Lindia, <b>R. Cantini</b>, F. Bettucci, L. Sartori, and P. Trunfio, “<a href="https://ceur-ws.org/Vol-3934/paper5.pdf" target="_blank" rel="noopener noreferrer">Enhancing the evaluation of fault detection models in smart agriculture using llm agents for rule-based anomaly generation</a>”, <i>Green-Aware AI (AIxIA)</i>, 2024.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{GreenAI24,
@@ -777,6 +777,7 @@ function computePublicationStats() {
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
