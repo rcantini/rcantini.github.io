@@ -542,15 +542,14 @@ doi={10.1007/978-3-031-31469-8_3}
 
 <h3>Workshops</h3>
 <ol start="24">
-  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “Is reasoning all you need? probing bias in the age of reasoning language models,” <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025. To appear.
+  <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “<a href="https://ceur-ws.org/Vol-4147/paper6.pdf" target="_blank" rel="noopener noreferrer">Is reasoning all you need? probing bias in the age of reasoning language models</a>”, <i>AEQUITAS Workshop (ECAI 2025)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{bias_rlm,
   title={Is Reasoning All you Need? Probing Bias in the Age of Reasoning Language Models},
   author={Cantini, Riccardo and Gabriele, Nicola and Orsino, Alessio and Talia, Domenico},
   booktitle={Third AEQUITAS Workshop on Fairness and Bias in AI (ECAI 2025)},
-  year={2025},
-  note={To appear}
+  year={2025}
 }">
       Cite
     </button>
@@ -778,6 +777,7 @@ function computePublicationStats() {
 document.addEventListener("DOMContentLoaded", computePublicationStats);
 
 </script>
+
 
 
 
