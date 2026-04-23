@@ -58,6 +58,8 @@ preview_only = false
         </ul>
 <h3>Program Committee</h3>
         <ul>
+	    <li>PC member of the <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases</em> (ECML-PKDD) 2026 (Core rank: A).
+            </li>
             <li>Program Chair of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
             </li>
             <li>PC member of the <em>3rd Workshop on Fairness and Bias in AI</em> (AEQUITAS 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
