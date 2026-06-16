@@ -58,21 +58,28 @@ preview_only = false
         </ul>
 <h3>Program Committee</h3>
         <ul>
-	    <li>PC member of the <em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases</em> (ECML-PKDD) 2026 (Core rank: A).
-            </li>
-            <li>Program Chair of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
-            </li>
-            <li>PC member of the <em>3rd Workshop on Fairness and Bias in AI</em> (AEQUITAS 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
-            </li>
-            <li>PC member of the <em>2nd Workshop on Hypermedia Multi-Agent Systems</em> (HyperAgents 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).
-            </li>
-            <li>Program Chair of the <em>1st Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2024), co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence</em> (AIxIA 2024).
-            </li>
-            <li>PC member of the <em>World Conference on Explainable Artificial Intelligence</em> (XAI) 2025.</li>
-            <li>PC member of the <em>International Conference on Discovery Science</em> (DS) 2024 (Core rank: B).</li>
-    <li>PC member of the <em>Workshop on Large Language Model Agents</em> at the <em>International Conference on Learning Representations</em> (ICLR) 2024 (Core rank: A<sup>*</sup>).</li>
-            <li>PC member of the <em>International Conference on Advanced Data Mining and Applications</em> (ADMA) 2023, 2024 (Core rank: C).</li>
+    <li>
+        Program Chair
+        <ul>
+            <li><em>Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).</li>
+            <li><em>Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2024), co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence</em> (AIxIA 2024).</li>
         </ul>
+    </li>
+
+    <li>
+        PC Member
+        <ul>
+            <li><em>Workshop on Computing for Well-being</em> (WellComp 2026), co-located with the <em>ACM International Joint Conference on Pervasive and Ubiquitous Computing</em> (UbiComp, Core rank: A<sup>*</sup>).</li>
+            <li><em>European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases</em> (ECML-PKDD) 2026 (Core rank: A).</li>
+            <li><em>Workshop on Fairness and Bias in AI</em> (AEQUITAS 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).</li>
+            <li><em>Workshop on Hypermedia Multi-Agent Systems</em> (HyperAgents 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).</li>
+            <li><em>World Conference on Explainable Artificial Intelligence</em> (XAI) 2025.</li>
+            <li><em>International Conference on Discovery Science</em> (DS) 2024, 2025, 2026 (Core rank: B).</li>
+            <li><em>Workshop on Large Language Model Agents</em> (LLMAgents), co-located with the <em>International Conference on Learning Representations</em> (ICLR 2024, Core rank: A<sup>*</sup>).</li>
+            <li><em>International Conference on Advanced Data Mining and Applications</em> (ADMA) 2023, 2024, 2025, 2026 (Core rank: C).</li>
+        </ul>
+    </li>
+</ul>
 
 <h3>Organization of Scientific Events</h3>
         <ul>
