@@ -23,7 +23,7 @@ modeling, OLAP, performance management, and the use of BI tools for analysis and
     <br>&#9642; <i>Teaching Assistant</i>, 16 hours of lessons. A.Y. 2025-2026, 2024-2025, 2023-2024.</p>
     <li><strong>Operating Systems</strong>. Bachelor's Degree in Computer Engineering, DIMES, University of Calabria, Rende (CS).</li>
     <p>Topics Covered: main constructs for modeling and implementing multi-threaded applications, issues related to synchronization and access to shared variables, and concurrency mechanisms in Java, particularly Semaphores and Monitors.
-    <br>&#9642; <i>Teaching Assistant</i>, 27 hours of lessons. A.Y. 2025-2026, 2024-2025, 2023-2024, 2022-2023, 2021-2022.</p>
+    <br>&#9642; <i>Teaching Assistant</i>, 27 hours of lessons. A.Y. 2024-2025, 2023-2024, 2022-2023, 2021-2022.</p>
     <li><strong>Distributed Systems and Cloud/Edge Computing for the Internet of Things</strong>. Master's Degree in Computer Engineering for the Internet of Things, DIMES, University of Calabria, Rende (CS).</li>
     <p>Topics Covered: fundamental concepts of Edge Computing in relation to Cloud architectures and the Internet of Things, with a focus on major tools and frameworks for modeling, simulating, and implementing large-scale interoperable IoT applications.
     <br>&#9642; <i>Teaching Assistant</i>, 23 hours of lessons. A.Y. 2021-2022, 2020-2021, 2019-2020.</p>
