@@ -75,7 +75,7 @@ Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, 
         </h5>
         <div class="stream-meta article-metadata">
             <div>
-                <span><b>Funded by:</b> Italian Ministry of University and Research (MUR), within the National Research, Innovation and Competitiveness Plan 2021–2027 (PN RIC 2021–2027), with the contribution of the European Union, in continuity with NRRP investments supporting research and innovation</span>
+                <span><b>Funded by:</b> Italian Ministry of University and Research (MUR), within the National Research, Innovation and Competitiveness Plan 2021–2027 (PN RIC 2021–2027), with the contribution of the European Union, in continuity with NRRP investments supporting research and innovation.</span>
             </div>
             <div>
                 <span><b>Research Objective:</b> Development of AI-driven digital twin systems across the Edge–Cloud–HPC continuum, enabling scalable, energy-efficient, and secure data processing to support research, industry, and public-sector innovation through advanced computing infrastructures and technology transfer.</span>
@@ -96,7 +96,7 @@ Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, 
         </h5>
         <div class="stream-meta article-metadata">
             <div>
-                <span><b>Funded by:</b> European Union’s NextGenerationEU program, under the Italian National Recovery and Resilience Plan (NRRP)</span>
+                <span><b>Funded by:</b> European Union’s NextGenerationEU program, under the Italian National Recovery and Resilience Plan (NRRP).</span>
             </div>
             <div>
                 <span><b>Research Objective:</b> Design and implementation of sustainable AI techniques focusing on interpretable energy estimation and the efficient, fair, and trustworthy use of Large Language Models.</span>
@@ -117,7 +117,7 @@ Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, 
         </h5>
         <div class="stream-meta article-metadata">
             <div>
-                <span><b>Funded by:</b> European High-Performance Computing Joint Undertaking (EuroHPC JU)</span>
+                <span><b>Funded by:</b> European High-Performance Computing Joint Undertaking (EuroHPC JU).</span>
             </div>
             <div>
                 <span><b>Research Objective:</b> Use of machine learning techniques for optimizing data partitioning to support efficient execution of data-intensive workflows in HPC environments.</span>
@@ -138,7 +138,7 @@ Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, 
         </h5>
         <div class="stream-meta article-metadata">
             <div>
-                <span><b>Funded by:</b> European Union's Horizon 2020 Research and Innovation Programme</span>
+                <span><b>Funded by:</b> European Union's Horizon 2020 Research and Innovation Programme.</span>
             </div>
             <div>
                 <span><b>Research Objective:</b> Development of in-memory techniques for the efficient execution of data-intensive applications on Exascale architectures.</span>
