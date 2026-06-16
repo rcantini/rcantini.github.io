@@ -62,49 +62,109 @@ Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, 
 
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
+
 <div class="media stream-item" style="margin-top: 40px;">
-	<div class="mr-3">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/FAIR_logo.png" alt="FAIR_LOGO" style="margin-top: 0px;"></a>
-	</div>
-	<div class="media-body">
-		<h5 class="mb-0 mt-0"><a href="https://fondazione-fair.it/" target="_blank">
-FAIR: Future Artificial Intelligence Research</a></h5>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European Union's NextGenerationEU program</span>
-			</div>
-		</div>
-	</div>
+    <div class="mr-3">
+        <a href="#" target="_blank">
+            <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            ECHO-TWIN: Edge-Cloud-HPC Optimized Twins based on Workflow-enhanced Inference Networks
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Funded by:</b> European Union (Horizon Europe Programme)</span>
+            </div>
+            <div>
+                <span><b>Research Objective:</b> Development of AI-driven digital twin systems across the Edge–Cloud–HPC continuum, enabling scalable, energy-efficient, and secure data processing to support research, industry, and public-sector innovation through advanced computing infrastructures and technology transfer.</span>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px;">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo" style="margin-top: 0px;"></a>
-	</div>
-	<div class="media-body">
-		<h5 class="mb-0 mt-0"><a href="https://eflows4hpc.eu/" target="_blank">
-eFlows4HPC: enabling dynamic and Intelligent workflows in the future EuroHPC ecosystem</a></h5>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European High-Performance Computing Joint Undertaking</span>
-			</div>
-		</div>
-	</div>
+    <div class="mr-3">
+        <a href="https://fondazione-fair.it/" target="_blank">
+            <img src="logos/FAIR_logo.png" alt="FAIR_logo">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            FAIR: Future Artificial Intelligence Research
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Funded by:</b> European Union's NextGenerationEU program</span>
+            </div>
+            <div>
+                <span><b>Research Objective:</b> Design and implementation of sustainable AI techniques focusing on interpretable energy estimation and the efficient, fair, and trustworthy use of Large Language Models.</span>
+            </div>
+        </div>
+    </div>
 </div>
+
 <div class="media stream-item">
-	<div class="mr-3" style="margin-top:5px;">
-		<a href="https://doi.org/10.1142/q0444" target="_blank">
-			<img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-top: 0px; margin-bottom:0px;"></a>
-	</div>
-	<div class="media-body">
-		<h5 class="mb-0 mt-0"><a href="https://cordis.europa.eu/project/id/801091" target="_blank">
-ASPIDE: exAScale ProgramIng models for extreme Data procEssing</a></h5>
-		<div class="stream-meta article-metadata">
-			<div>
-				<span>Funded by the European Union’s Horizon 2020 Research and Innovation Program</span>
-			</div>
-		</div>
-	</div>
+    <div class="mr-3" style="margin-top:5px;">
+        <a href="https://eflows4hpc.eu/" target="_blank">
+            <img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            eFlows4HPC: Enabling Dynamic and Intelligent Workflows in the Future EuroHPC Ecosystem
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Funded by:</b> European High-Performance Computing Joint Undertaking (EuroHPC JU)</span>
+            </div>
+            <div>
+                <span><b>Research Objective:</b> Use of machine learning techniques for optimizing data partitioning to support efficient execution of data-intensive workflows in HPC environments.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="media stream-item">
+    <div class="mr-3" style="margin-top:5px;">
+        <a href="https://cordis.europa.eu/project/id/801091" target="_blank">
+            <img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            ASPIDE: exAScale ProgramIng models for extreme Data procEssing
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Funded by:</b> European Union's Horizon 2020 Research and Innovation Programme</span>
+            </div>
+            <div>
+                <span><b>Research Objective:</b> Development of in-memory techniques for the efficient execution of data-intensive applications on Exascale architectures.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="media stream-item">
+    <div class="mr-3" style="margin-top:5px;">
+        <a href="#" target="_blank">
+            <img src="logos/SmartMacingo_logo.png" alt="SmartMacingo_logo">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            Smart Macingo
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Funded by:</b> Industry / Applied Research Project</span>
+            </div>
+            <div>
+                <span><b>Research Objective:</b> Use of machine learning techniques for estimating transportation service prices.</span>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
