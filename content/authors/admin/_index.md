@@ -50,7 +50,14 @@ email: ""
 #- Visitors
 ---
 <div style="text-align: justify">
-Riccardo Cantini is an assistant professor (RTDA) at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019, and obtained his European Ph.D. in Information and Communication Technologies in 2023. In 2018 he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>), and between 2021 and 2022 he was a visiting researcher at the Barcelona Supercomputing Center (<a href="https://www.bsc.es/">BSC-CNS</a>).<br>His research interests include <i>deep learning</i>, with a focus on Large Language Models and sustainable AI, and <i>big social data analysis</i>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.</div>
+
+Riccardo Cantini is an Assistant Professor (RTD-A) at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019 and obtained his European Ph.D. in Information and Communication Technologies in 2023.
+
+In 2018, he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>). From April 2021 to July 2022, he was a Research Intern in the Workflows and Distributed Computing Group at the Department of Computer Science of the Barcelona Supercomputing Center (BSC), Spain. From April to July 2026, he was a Research Intern at the Data Management and Knowledge-Driven AI (DMKI) Lab, part of the Databases and Artificial Intelligence (DBAI) Group within the Institute of Logic and Computation, Faculty of Informatics, TU Wien, Austria.
+
+His research interests include <i>deep learning</i>, with a particular focus on Large Language Models and sustainable AI, as well as <i>big social data analysis</i>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+
+</div>
 <div class="row">
 	<div class="col-md-7">
 	<h3>Education</h3>
