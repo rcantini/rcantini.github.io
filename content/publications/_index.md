@@ -427,6 +427,22 @@ publisher={MDPI}
 
 <h3>Conferences</h3>
 <ol start="17">
+
+<li>A. Vaccarella, <b>R. Cantini</b>, D. Talia, P. Trunfio, M. Talia, R. Lappano, and M. Maggiolini, “<a href="#" target="_blank" rel="noopener noreferrer">ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information</a>”, in <i>21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)</i>, 2026.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@inproceedings{clinAgent,
+  title={ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information},
+  author={Vaccarella, Antonino and Cantini, Riccardo and Talia, Domenico and Trunfio, Paolo and Talia, Marianna and Lappano, Rosamaria and Maggiolini, Marcello},
+  booktitle={21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)},
+  year={2026},
+  note={To appear}
+}">
+      Cite
+    </button>
+  </li>
+
+
   <li><b>R. Cantini</b>, C. Cosentino, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://ebooks.iospress.nl/volumearticle/75736" target="_blank" rel="noopener noreferrer">Neural topic modeling in social media by clustering latent hashtag representations</a>”, in <i>European Conference on Artificial Intelligence (ECAI)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
