@@ -18,7 +18,8 @@ organizations:
   url: "https://www.dimes.unical.it/"
 
 # Short bio (displayed in user profile at end of posts)
-bio: Riccardo Cantini is an assistant professor at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His current research focuses on *deep learning*, with a focus on Large Language Models and sustainable AI, and *big social data analysis*, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+bio: Riccardo Cantini is an assistant professor at the Department of Computer Science, Modeling, Electronics and Systems Engineering (DIMES), University of Calabria. His research interests include *large language models and sustainable AI*, with a focus on LLM and agentic systems, their applications, interpretability, fairness, trustworthiness, and efficient deployment in edge-based settings, as well as *big social data analysis*, focusing on politically polarized data and efficient processing of data-intensive applications across distributed and edge-to-cloud environments.
+
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
@@ -54,7 +55,7 @@ email: ""
 Riccardo Cantini is an Assistant Professor (RTD-A) at the Department of Computer Science, Modeling, Electronics and Systems Engineering (<a href="https://www.dimes.unical.it/">DIMES</a>), University of Calabria. He graduated magna cum laude in Computer Engineering in 2019 and obtained his European Ph.D. in Information and Communication Technologies in 2023.
 In 2018, he joined the Scalable Computing and Cloud Laboratory (<a href="http://scalab.dimes.unical.it/">SCALab</a>). From April 2021 to July 2022, he was a Research Intern in the Workflows and Distributed Computing Group at the Department of Computer Science of the Barcelona Supercomputing Center (BSC), Spain. From April to July 2026, he was a Research Intern at the Data Management and Knowledge-Driven AI (DMKI) Lab, part of the Databases and Artificial Intelligence (DBAI) Group within the Institute of Logic and Computation, Faculty of Informatics, TU Wien, Austria.
 
-His research interests include <i>deep learning</i>, with a particular focus on Large Language Models and sustainable AI, as well as <i>big social data analysis</i>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+His research interests include <i>large language models and sustainable AI</i>, with a focus on LLM and agentic systems, their applications, interpretability, fairness, trustworthiness, and efficient deployment in edge-based settings, as well as <i>big social data analysis</i>, focusing on politically polarized data and efficient processing of data-intensive applications across distributed and edge-to-cloud environments.
 
 </div>
 <div class="row">
