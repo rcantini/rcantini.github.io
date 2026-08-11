@@ -49,16 +49,25 @@ preview_only = false
 
 +++
 <div style="text-align: left">
-Riccardo Cantini’s research spans two distinct areas: <em>deep learning</em>, focusing on Large Language Models (LLMs) and sustainable artificial intelligence, and <em>big social data analysis</em>, targeting politically polarized data and the efficient execution of data-intensive applications in high-performance distributed environments.
+Riccardo Cantini's research spans two interconnected areas: <em>large language models and sustainable AI</em>, with a focus on LLM and agentic systems, their applications, interpretability, fairness, trustworthiness, and efficient deployment in edge-based settings, and <em>big social data analysis</em>, with emphasis on political polarization, data-intensive applications, and efficient processing across distributed and edge-to-cloud environments.
 
-<ul>
-    <li><strong><a href="/topics/deep_learning_llm/">Deep Learning and Large Language Models</a></strong></li>
-    <p>Riccardo Cantini’s research in deep learning explores the potential of Transformer-based LLMs, such as BERT and GPT, showcasing their versatility across diverse domains. Sustainability is a central theme in this research area, emphasizing green awareness and promoting the efficient, fair, and trustworthy use of LLMs.
-</p>
-    <li><strong><a href="/topics/big_social_data/">Big Social Data Analysis</a></strong></li>
-    <p>Riccardo Cantini’s research in big social data analysis explores how detailed user information from social media can be leveraged to uncover users’ perceptions of real-world events, offering data-driven insights into socio-political phenomena. His work addresses critical issues including reliability, language barriers, and dynamicity, while also tackling the challenges related to resource-intensive computation.</p>
-</ul>
+<h3>Large Language Models and Sustainable AI</h3>
+
+<p><strong>LLM Applications.</strong><br>
+Research explores LLM-based methods for extracting knowledge and insights from unstructured data, particularly in social media and healthcare. Contributions include hashtag recommendation, topic modeling, misinformation detection, automated reporting and summarization, public health and disaster monitoring, disease grade prediction, and mental health detection. Recent work investigates agentic conversational systems for natural-language access to structured domain knowledge, including clinical trial information and domain-specific data subject to business rules. A recurring focus is the integration of explainability and interpretability into LLM pipelines to produce reliable and actionable outputs.</p>
+
+<p><strong>Efficient and Responsible AI.</strong><br>
+Research addresses the computational, environmental, and social sustainability of AI. Contributions include knowledge distillation, neural network pruning and quantization, parameter-efficient fine-tuning, and their combination for efficient training and deployment on resource-constrained devices. This line of work also includes green-aware neural architecture search and interpretable energy estimation for edge AI systems. The social dimension encompasses LLM bias and stereotypes, adversarial robustness, and the effects of model scale and reasoning capabilities on fairness and safety. At the intersection of efficiency and responsible AI, research explores the joint optimization of model compression and fairness under resource constraints by designing quantization-aware debiasing techniques with mixed-precision allocation within a fixed memory budget.</p>
+
+<h3>Big Social Data Analysis</h3>
+
+<p><strong>Political Polarization in Big Social Data.</strong><br>
+Research focuses on politically polarized social media data generated during elections and referenda. Contributions include neural and semi-supervised methods for scalable estimation of user polarization; sentiment and emotional-support analysis of political actors; assessment of the effects of bots and temporal dynamics on polarization estimates; and analysis of information diffusion, influence, and competing narrative strategies in polarized networks.</p>
+
+<p><strong>Big Data Frameworks and ML-Based Optimizations.</strong><br>
+Research addresses the efficient execution of data-intensive applications in high-performance distributed environments. Contributions include the investigation of scalable programming paradigms for big data analysis and machine learning-based optimization of parallel and distributed systems, including workflow scheduling and data partitioning strategies for reducing resource consumption and execution time. This systems perspective extends to the edge-to-cloud continuum, applying machine and deep learning to sensor data analysis, smart agriculture anomaly detection, and industrial decision-support systems, connecting scalable data processing with domain-specific applications across industrial and environmental contexts.</p>
 </div>
+
 
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
