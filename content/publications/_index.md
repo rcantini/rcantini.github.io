@@ -155,6 +155,22 @@ preview_only = false
 
 <h3>Journals</h3>
 <ol>
+
+  <li>P. Lindia, <b>R. Cantini</b>, F. Bettucci, L. Sartori, and P. Trunfio, “<a href="#" target="_blank" rel="noopener noreferrer">Predictive maintenance in agricultural machinery: Activity-aware anomaly detection with llm-generated synthetic faults</a>”, <i>Computers in Industry</i>, 2026, to appear.
+<button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
+      data-bib="
+@article{anomaly_comp_ind,
+  title={Predictive maintenance in agricultural machinery: Activity-aware anomaly detection with llm-generated synthetic faults},
+  author={Lindia, Paolo and Cantini, Riccardo and Bettucci, Francesco and Sartori, Luigi and Trunfio, Paolo},
+  journal={Computers in Industry},
+  publisher={Elsevier},
+  year={2026},
+  note={to appear}
+}">
+      Cite
+    </button>
+</li>
+
   <li><b>R. Cantini</b>, M. Capalbo, and D. Talia, 
     “<a href="https://doi.org/10.1016/j.array.2025.100566" target="_blank" rel="noopener noreferrer">ZEP-NAS: Enabling green-aware model design via zero-cost emission proxy in neural architecture search</a>”, <i>Array</i>, p. 100566, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
@@ -428,7 +444,7 @@ publisher={MDPI}
 <h3>Conferences</h3>
 <ol start="17">
 
-<li>A. Vaccarella, <b>R. Cantini</b>, D. Talia, P. Trunfio, M. Talia, R. Lappano, and M. Maggiolini, “<a href="#" target="_blank" rel="noopener noreferrer">ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information</a>”, in <i>21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)</i>, 2026.
+<li>A. Vaccarella, <b>R. Cantini</b>, D. Talia, P. Trunfio, M. Talia, R. Lappano, and M. Maggiolini, “<a href="#" target="_blank" rel="noopener noreferrer">ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information</a>”, in <i>21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)</i>, to appear, 2026.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{clinAgent,
@@ -436,7 +452,7 @@ publisher={MDPI}
   author={Vaccarella, Antonino and Cantini, Riccardo and Talia, Domenico and Trunfio, Paolo and Talia, Marianna and Lappano, Rosamaria and Maggiolini, Marcello},
   booktitle={21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)},
   year={2026},
-  note={To appear}
+  note={to appear}
 }">
       Cite
     </button>
