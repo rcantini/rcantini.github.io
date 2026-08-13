@@ -64,7 +64,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <p><strong>Big Data Frameworks and ML-Based Optimizations.</strong> Research addresses the efficient execution of data-intensive applications in high-performance distributed environments. Contributions include the investigation of scalable programming paradigms for big data analysis and machine learning-based optimization of parallel and distributed systems, including workflow scheduling and data partitioning strategies for reducing resource consumption and execution time. This systems perspective extends to the edge-to-cloud continuum, applying machine and deep learning to sensor data analysis, smart agriculture anomaly detection, and industrial decision-support systems, connecting scalable data processing with domain-specific applications across industrial and environmental contexts.</p>
 </div>
 
-<div style="text-align: left">
+<div style="text-align: left; margin-top: 40px;">
 <h3><b>Research Internships</b></h3>
 
 <div class="media stream-item" style="margin-top: 40px;">
@@ -95,7 +95,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     </div>
 </div>
 
-<div class="media stream-item" style="margin-top: 50px;">
+<div class="media stream-item" style="margin-top: 40px;">
     <div class="mr-3">
         <a href="https://www.bsc.es/" target="_blank">
             <img src="photos/BSC.jpg" alt="Barcelona Supercomputing Center" 
