@@ -69,7 +69,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 
 <div class="media stream-item" style="margin-top: 40px;">
     <div class="mr-3">
-        <a href="#" target="_blank">
+        <a href="https://dmki-tuwien.github.io/index.html" target="_blank">
             <img src="photos/TU.jpg" alt="TU Wien" 
                  style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
         </a>
@@ -97,7 +97,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 
 <div class="media stream-item" style="margin-top: 50px;">
     <div class="mr-3">
-        <a href="#" target="_blank">
+        <a href="https://www.bsc.es/" target="_blank">
             <img src="photos/BSC.jpg" alt="Barcelona Supercomputing Center" 
                  style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
         </a>
@@ -131,7 +131,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 
 <div class="media stream-item" style="margin-top: 40px;">
     <div class="mr-3">
-        <a href="#" target="_blank">
+        <a href="https://www.cnr.it/it/news/14348" target="_blank">
             <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo">
         </a>
     </div>
