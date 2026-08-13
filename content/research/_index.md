@@ -193,7 +193,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 <div class="media stream-item">
-    <div class="mr-3" style="margin-top:-20px;">
+    <div class="mr-3">
         <a href="https://cordis.europa.eu/project/id/801091" target="_blank">
             <img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo">
         </a>
