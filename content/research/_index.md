@@ -67,7 +67,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div style="text-align: left">
 <h3><b>Research Internships</b></h3>
 
-<div class="media stream-item" style="margin-top: 40px; align-items: flex-start;">
+<div class="media stream-item" style="margin-top: 40px;">
     <div class="mr-3">
         <a href="#" target="_blank">
             <img src="photos/TU.jpg" alt="TU Wien" 
@@ -76,7 +76,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     </div>
     <div class="media-body">
         <h5 class="mb-0 mt-0">
-            Research Intern — Data Management and Knowledge-Driven AI (DMKI) Lab
+            Data Management and Knowledge-Driven AI (DMKI) Lab
         </h5>
         <div class="stream-meta article-metadata">
             <div>
@@ -95,7 +95,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     </div>
 </div>
 
-<div class="media stream-item" style="margin-top: 50px; align-items: flex-start;">
+<div class="media stream-item" style="margin-top: 50px;">
     <div class="mr-3">
         <a href="#" target="_blank">
             <img src="photos/BSC.jpg" alt="Barcelona Supercomputing Center" 
@@ -104,7 +104,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     </div>
     <div class="media-body">
         <h5 class="mb-0 mt-0">
-            Research Intern — Workflows and Distributed Computing Group
+            Workflows and Distributed Computing Group
         </h5>
         <div class="stream-meta article-metadata">
             <div>
