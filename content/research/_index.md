@@ -129,7 +129,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
 
-<div class="media stream-item" style="margin-top: 40px;">
+<div class="media stream-item" style="margin-top: 80px;">
     <div class="mr-3">
         <a href="#" target="_blank">
             <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo">
