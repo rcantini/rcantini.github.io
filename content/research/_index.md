@@ -129,7 +129,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
 
-<div class="media stream-item" style="margin-top: 40px;">
+<div class="media stream-item" style="margin-top: 20px;">
     <div class="mr-3">
         <a href="#" target="_blank">
             <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo">
@@ -193,7 +193,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 <div class="media stream-item">
-    <div class="mr-3">
+    <div class="mr-3" style="margin-top:-10px;">
         <a href="https://cordis.europa.eu/project/id/801091" target="_blank">
             <img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo">
         </a>
