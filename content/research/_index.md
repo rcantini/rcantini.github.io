@@ -68,7 +68,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <h3><b>Research Internships</b></h3>
 
 <div class="media stream-item" style="margin-top: 40px; align-items: flex-start;">
-    <div class="mr-3" style="flex: 0 0 150px; width: 150px;">
+    <div class="mr-3">
         <a href="#" target="_blank">
             <img src="photos/TU.jpg" alt="TU Wien" 
                  style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
@@ -96,7 +96,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 <div class="media stream-item" style="margin-top: 50px; align-items: flex-start;">
-    <div class="mr-3" style="flex: 0 0 150px; width: 150px;">
+    <div class="mr-3">
         <a href="#" target="_blank">
             <img src="photos/BSC.jpg" alt="Barcelona Supercomputing Center" 
                  style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
@@ -124,27 +124,6 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 </div>
-
-<style>
-/* Responsive layout for research internship entries */
-@media (max-width: 768px) {
-    .stream-item {
-        flex-direction: column;
-    }
-
-    .stream-item .mr-3 {
-        flex: 0 0 auto !important;
-        width: 100% !important;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .stream-item .mr-3 img {
-        width: 180px !important;
-        max-height: 180px !important;
-    }
-}
-</style>
 
 
 <div style="text-align: left">
