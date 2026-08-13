@@ -86,7 +86,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
                 <span><b>Period:</b> April 2026 – July 2026</span>
             </div>
             <div>
-                <span><b>Research Title:</b> <em>Uncertainty-Aware Text-to-SQL with Abstention under Domain Knowledge in Agentic LLM Systems</em></span>
+                <span><b>Research Title:</b> Uncertainty-Aware Text-to-SQL with Abstention under Domain Knowledge in Agentic LLM Systems</span>
             </div>
             <div>
                 <span><b>Scientific Supervisor:</b> Prof. Dr.-Ing. Katja Hose</span>
@@ -114,7 +114,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
                 <span><b>Period:</b> April 2021 – July 2022</span>
             </div>
             <div>
-                <span><b>Research Title:</b> <em>Machine Learning for Optimizing Data-Intensive Workflow Execution in HPC Systems</em></span>
+                <span><b>Research Title:</b> Machine Learning for Optimizing Data-Intensive Workflow Execution in HPC Systems</span>
             </div>
             <div>
                 <span><b>Scientific Supervisor:</b> Prof. Rosa M. Badia</span>
