@@ -64,6 +64,88 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <p><strong>Big Data Frameworks and ML-Based Optimizations.</strong> Research addresses the efficient execution of data-intensive applications in high-performance distributed environments. Contributions include the investigation of scalable programming paradigms for big data analysis and machine learning-based optimization of parallel and distributed systems, including workflow scheduling and data partitioning strategies for reducing resource consumption and execution time. This systems perspective extends to the edge-to-cloud continuum, applying machine and deep learning to sensor data analysis, smart agriculture anomaly detection, and industrial decision-support systems, connecting scalable data processing with domain-specific applications across industrial and environmental contexts.</p>
 </div>
 
+<div style="text-align: left">
+<h3><b>Research Internships</b></h3>
+
+<div class="media stream-item" style="margin-top: 40px; align-items: flex-start;">
+    <div class="mr-3" style="flex: 0 0 150px; width: 150px;">
+        <a href="#" target="_blank">
+            <img src="photos/TU.jpg" alt="TU Wien" 
+                 style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            Research Intern — Data Management and Knowledge-Driven AI (DMKI) Lab
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Institution:</b> Databases and Artificial Intelligence (DBAI) Group, Institute of Logic and Computation, Faculty of Informatics, TU Wien, Austria.</span>
+            </div>
+            <div>
+                <span><b>Period:</b> April 2026 – July 2026</span>
+            </div>
+            <div>
+                <span><b>Research Title:</b> <em>Uncertainty-Aware Text-to-SQL with Abstention under Domain Knowledge in Agentic LLM Systems</em></span>
+            </div>
+            <div>
+                <span><b>Scientific Supervisor:</b> Prof. Dr.-Ing. Katja Hose</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="media stream-item" style="margin-top: 50px; align-items: flex-start;">
+    <div class="mr-3" style="flex: 0 0 150px; width: 150px;">
+        <a href="#" target="_blank">
+            <img src="photos/BSC.jpg" alt="Barcelona Supercomputing Center" 
+                 style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            Research Intern — Workflows and Distributed Computing Group
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Institution:</b> Department of Computer Science, Barcelona Supercomputing Center (BSC), Spain.</span>
+            </div>
+            <div>
+                <span><b>Period:</b> April 2021 – July 2022</span>
+            </div>
+            <div>
+                <span><b>Research Title:</b> <em>Machine Learning for Optimizing Data-Intensive Workflow Execution in HPC Systems</em></span>
+            </div>
+            <div>
+                <span><b>Scientific Supervisor:</b> Prof. Rosa M. Badia</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<style>
+/* Responsive layout for research internship entries */
+@media (max-width: 768px) {
+    .stream-item {
+        flex-direction: column;
+    }
+
+    .stream-item .mr-3 {
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .stream-item .mr-3 img {
+        width: 180px !important;
+        max-height: 180px !important;
+    }
+}
+</style>
+
 
 <div style="text-align: left">
 <h3><b>Participation in Research Projects</b></h3>
