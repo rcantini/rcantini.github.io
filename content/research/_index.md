@@ -192,7 +192,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     </div>
 </div>
 
-<div class="media stream-item">
+<div class="media stream-item" style="margin-top:-10px;">
     <div class="mr-3" style="margin-top:-20px;">
         <a href="https://cordis.europa.eu/project/id/801091" target="_blank">
             <img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo">
@@ -213,7 +213,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     </div>
 </div>
 
-<div class="media stream-item">
+<div class="media stream-item" style="margin-top:-10px;">
     <div class="mr-3" style="margin-top:-20px;">
         <a href="https://www.wesmart.it/project/smart-macingo/" target="_blank">
             <img src="logos/smart_macingo.jpg" alt="SMART_MACINGO_logo">
