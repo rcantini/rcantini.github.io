@@ -212,4 +212,26 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
         </div>
     </div>
 </div>
+
+<div class="media stream-item">
+    <div class="mr-3">
+        <a href="https://www.wesmart.it/project/smart-macingo/" target="_blank">
+            <img src="logos/smart_macingo.jpg" alt="SMART_MACINGO_logo">
+        </a>
+    </div>
+    <div class="media-body">
+        <h5 class="mb-0 mt-0">
+            Smart Macingo
+        </h5>
+        <div class="stream-meta article-metadata">
+            <div>
+                <span><b>Funded by:</b> European Regional Development Fund (ERDF), under the Calabria Regional Operational Programme (ROP) 2014--2020.</span>
+            </div>
+            <div>
+                <span><b>Research Objective:</b> Use of machine learning techniques to estimate transportation service prices.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
 </div>
