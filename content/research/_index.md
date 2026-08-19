@@ -132,7 +132,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item" style="margin-top: 40px;">
     <div class="mr-3">
         <a href="https://www.cnr.it/it/news/14348" target="_blank">
-            <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo">
+            <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo" style="margin-bottom:0px">
         </a>
     </div>
     <div class="media-body">
@@ -153,7 +153,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item">
     <div class="mr-3">
         <a href="https://fondazione-fair.it/" target="_blank">
-            <img src="logos/FAIR_logo.png" alt="FAIR_logo">
+            <img src="logos/FAIR_logo.png" alt="FAIR_logo" style="margin-bottom:0px">
         </a>
     </div>
     <div class="media-body">
@@ -172,7 +172,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 <div class="media stream-item">
-    <div class="mr-3" style="margin-top:20px;">
+    <div class="mr-3" style="margin-top:20px; margin-bottom:0px">
         <a href="https://eflows4hpc.eu/" target="_blank">
             <img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo">
         </a>
