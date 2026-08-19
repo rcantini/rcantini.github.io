@@ -214,7 +214,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 <div class="media stream-item" style="margin-top:-20px;">
-    <div class="mr-3" style="margin-top:-25px;">
+    <div class="mr-3" style="margin-top:-40px;">
         <a href="https://www.wesmart.it/project/smart-macingo/" target="_blank">
             <img src="logos/smart_macingo.jpg" alt="SMART_MACINGO_logo">
         </a>
