@@ -71,7 +71,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     <div class="mr-3">
         <a href="https://dmki-tuwien.github.io/index.html" target="_blank">
             <img src="photos/TU.jpg" alt="TU Wien" 
-                 style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
+                 style="width: 150px; height: auto; max-height: 150px; object-fit: contain; margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
@@ -99,7 +99,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
     <div class="mr-3">
         <a href="https://www.bsc.es/" target="_blank">
             <img src="photos/BSC.jpg" alt="Barcelona Supercomputing Center" 
-                 style="width: 150px; height: auto; max-height: 150px; object-fit: contain;">
+                 style="width: 150px; height: auto; max-height: 150px; object-fit: contain; margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
@@ -132,7 +132,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item" style="margin-top: 40px;">
     <div class="mr-3">
         <a href="https://www.cnr.it/it/news/14348" target="_blank">
-            <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo" style="margin-bottom:0px">
+            <img src="logos/ECHO-TWIN_logo.png" alt="ECHO-TWIN_logo" style="margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
@@ -153,7 +153,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item">
     <div class="mr-3">
         <a href="https://fondazione-fair.it/" target="_blank">
-            <img src="logos/FAIR_logo.png" alt="FAIR_logo" style="margin-bottom:0px">
+            <img src="logos/FAIR_logo.png" alt="FAIR_logo" style="margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
@@ -174,7 +174,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item">
     <div class="mr-3">
         <a href="https://eflows4hpc.eu/" target="_blank">
-            <img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo">
+            <img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo" style="margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
@@ -195,7 +195,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item">
     <div class="mr-3">
         <a href="https://cordis.europa.eu/project/id/801091" target="_blank">
-            <img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-bottom:0px">
+            <img src="logos/ASPIDE_logo.png" alt="ASPIDE_logo" style="margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
@@ -216,7 +216,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 <div class="media stream-item">
     <div class="mr-3">
         <a href="https://www.wesmart.it/project/smart-macingo/" target="_blank">
-            <img src="logos/smart_macingo.png" alt="SMART_MACINGO_logo" style="margin-bottom:0px">
+            <img src="logos/smart_macingo.png" alt="SMART_MACINGO_logo" style="margin-bottom:0px; margin-top:0px">
         </a>
     </div>
     <div class="media-body">
