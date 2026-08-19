@@ -172,7 +172,7 @@ Riccardo Cantini's research spans two interconnected areas: <em>large language m
 </div>
 
 <div class="media stream-item">
-    <div class="mr-3" style="margin-top:20px; margin-bottom:0px">
+    <div class="mr-3" style="margin-top:20px margin-bottom:0px">
         <a href="https://eflows4hpc.eu/" target="_blank">
             <img src="logos/eFlows4HPC_logo.png" alt="eFlows4HPC_logo">
         </a>
