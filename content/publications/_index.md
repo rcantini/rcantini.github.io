@@ -156,7 +156,7 @@ preview_only = false
 <h3>Journals</h3>
 <ol>
 
-  <li>P. Lindia, <b>R. Cantini</b>, F. Bettucci, L. Sartori, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S0166361526001065" target="_blank" rel="noopener noreferrer">Predictive maintenance in agricultural machinery: Activity-aware anomaly detection with llm-generated synthetic faults</a>”, <i>Computers in Industry</i>, vol. 181, p. 104539, 2026.
+  <li>P. Lindia, <b>R. Cantini</b>, F. Bettucci, L. Sartori, and P. Trunfio, “<a href="https://www.sciencedirect.com/science/article/pii/S0166361526001065" target="_blank" rel="noopener noreferrer">Predictive maintenance in agricultural machinery: Activity-aware anomaly detection with language model-generated synthetic faults</a>”, <i>Computers in Industry</i>, vol. 181, p. 104539, 2026.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @article{anomaly_comp_ind,
