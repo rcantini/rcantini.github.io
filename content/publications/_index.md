@@ -443,7 +443,7 @@ publisher={MDPI}
 </ol>
 
 <h3>Conferences</h3>
-<ol start="17">
+<ol>
 
 <li>A. Vaccarella, <b>R. Cantini</b>, D. Talia, P. Trunfio, M. Talia, R. Lappano, and M. Maggiolini, “<a href="#" target="_blank" rel="noopener noreferrer">ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information</a>”, in <i>21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)</i>, to appear, 2026.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
@@ -574,7 +574,7 @@ doi={10.1007/978-3-031-31469-8_3}
 </ol>
 
 <h3>Workshops</h3>
-<ol start="24">
+<ol>
   <li><b>R. Cantini</b>, N. Gabriele, A. Orsino, and D. Talia, “<a href="https://ceur-ws.org/Vol-4147/paper6.pdf" target="_blank" rel="noopener noreferrer">Is reasoning all you need? probing bias in the age of reasoning language models</a>”, <i>AEQUITAS Workshop on Fairness and Bias in AI (ECAI)</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
@@ -658,7 +658,7 @@ doi={10.1007/978-3-031-31469-8_3}
 </ol>
 
 <h3>Books</h3>
-<ol start="30">
+<ol>
   <li>D. Talia, P. Trunfio, F. Marozzo, L. Belcastro, <b>R. Cantini</b>, and A. Orsino, “<a href="https://www.worldscientific.com/worldscibooks/10.1142/q0444?srsltid=AfmBOoqM_SFfrT8VlsDRNM9eyPIIPUEBu6TFjNJVct8XNPwnYWOMThHc#t=aboutBook" target="_blank" rel="noopener noreferrer">Programming big data applications: scalable tools and frameworks for your needs</a>”, <i>World Scientific</i>, 2023.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
@@ -676,7 +676,7 @@ doi={10.1007/978-3-031-31469-8_3}
 </ol>
 
 <h3>Chapters</h3>
-<ol start="31">
+<ol>
   <li>L. Belcastro, <b>R. Cantini</b>, F. Marozzo, D. Talia, and P. Trunfio, “<a href="https://link.springer.com/chapter/10.1007/978-3-031-91379-2_4" target="_blank" rel="noopener noreferrer">Shedding light inside the black box: techniques for explainable artificial intelligence in healthcare</a>”, in <i>Explainable Machine Intelligence in Healthcare</i>, 2025.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
@@ -808,6 +808,32 @@ function computePublicationStats() {
 }
 
 document.addEventListener("DOMContentLoaded", computePublicationStats);
+
+/* ===== Automatic numbering across sections ===== */
+function renumberPublicationSections() {
+  const headings = document.querySelectorAll(
+    "h3"
+  );
+
+  let nextNumber = 1;
+
+  headings.forEach(heading => {
+    const list = heading.nextElementSibling;
+
+    if (list && list.tagName === "OL") {
+      list.start = nextNumber;
+
+      const items = list.querySelectorAll(":scope > li");
+      nextNumber += items.length;
+    }
+  });
+}
+
+document.addEventListener(
+  "DOMContentLoaded",
+  renumberPublicationSections
+);
+
 
 </script>
 
