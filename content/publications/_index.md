@@ -445,7 +445,7 @@ publisher={MDPI}
 <h3>Conferences</h3>
 <ol>
 
-<li>A. Vaccarella, <b>R. Cantini</b>, D. Talia, P. Trunfio, M. Talia, R. Lappano, and M. Maggiolini, “<a href="https://arxiv.org/abs/2609.13860" target="_blank" rel="noopener noreferrer">ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information</a>”, in <i>21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)</i>, to appear, 2026.
+<li>A. Vaccarella, <b>R. Cantini</b>, D. Talia, P. Trunfio, M. Talia, R. Lappano, and M. Maggiolini, “<a href="https://arxiv.org/abs/2609.13860" target="_blank" rel="noopener noreferrer">ClinAgent: A ReAct-Based Agent for Conversational Access to Clinical Trial Information</a>”, in <i>21st International Conference on Computational Intelligence methods for Bioinformatics and Biostatistics (CIBB)</i>, 2026.
 <button class="btn btn-outline-primary my-1 mr-1 btn-sm" onclick="showBibFromButton(this)" 
       data-bib="
 @inproceedings{clinAgent,
