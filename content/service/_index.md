@@ -54,6 +54,8 @@ preview_only = false
         <ul>
             <li>Associate Editor of <em>Journal of Big Data</em>, Springer (SJR rank: Q1).</li>
             <li>Editorial Board Member of <em>Discover Artificial Intelligence</em>, Springer (SJR rank: Q1).</li>
+            <li>Guest Editor for the special issue <em>Large Language Models at the Edge: Foundations, Innovations, and Applications</em> in the journal <em>Big Data and Cognitive Computing</em>.</li>
+            <li>Guest Editor for the special issue <em>Efficient, Scalable, and Sustainable AI for the IoT–Edge–Cloud Continuum</em> in the journal <em>IoT</em>.</li>
             <li>Guest Editor for the special issue <em>Generative AI and Large Language Models</em> in the journal <em>Big Data and Cognitive Computing</em>.</li>
         </ul>
 <h3>Program Committee</h3>
@@ -61,6 +63,7 @@ preview_only = false
     <li>
         <i>Program Chair</i>
         <ul>
+            <li><em>Workshop on Research and Innovation in Scalable and Efficient Deep Learning</em> (RISE-DL 2026), co-located with the <em>16th International Conference on the Internet of Things</em> (IoT 2026).</li>
             <li><em>Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025), co-located with the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025, Core rank: A).</li>
             <li><em>Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2024), co-located with the <em>23rd International Conference of the Italian Association for Artificial Intelligence</em> (AIxIA 2024).</li>
         </ul>
@@ -82,8 +85,8 @@ preview_only = false
 
 <h3>Organization of Scientific Events</h3>
         <ul>
-	<li>Organizer of the <em>1st Workshop on Research and Innovation in Scalable and Efficient Deep Learning</em> (RISE-DL 2026) at the <em>16th International Conference on the Internet of Things</em> (IoT 2026), with the sponsorship of the <a href="https://www.cnr.it/it/news/14348" target="_blank">ECHO-TWIN</a> project, Newcastle upon Tyne (UK), 17-20 November 2026. <a href="https://rise-dl.github.io/2026/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a>
-	</li>
+	          <li>Organizer of the <em>1st Workshop on Research and Innovation in Scalable and Efficient Deep Learning</em> (RISE-DL 2026) at the <em>16th International Conference on the Internet of Things</em> (IoT 2026), with the sponsorship of the <a href="https://www.cnr.it/it/news/14348" target="_blank">ECHO-TWIN</a> project, Newcastle upon Tyne (UK), 17-20 November 2026. <a href="https://rise-dl.github.io/2026/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a>
+	          </li>
             <li>Organizer of the <em>2nd Workshop on Green-Aware Artificial Intelligence</em> (Green-Aware AI 2025) at the <em>28th European Conference on Artificial Intelligence</em> (ECAI 2025), with the sponsorship of the <a href="https://fondazione-fair.it/" target="_blank">FAIR</a> foundation, Bologna, 25-26 October 2025. <a href="https://green-aware2025.web.app" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-globe mr-1"></i>Website</a> <a href="https://fondazione-fair.it/evento/2nd-workshop-on-green-aware-artificial-intelligence-green-aware-ai/" target="_blank" class="btn btn-outline-primary my-1 mr-1 btn-sm"><i class="fa fa-newspaper mr-1"></i>FAIR News</a>
             </li>
             <li>
